@@ -12,7 +12,7 @@
 		<key>targetControllerClass</key>
 		<string>JSEmieViewController</string>
 		<key>detail</key>
-		<string>摇奖机</string>
+		<string>摇奖机Demo</string>
 	</dict>
 </array>
 </plist>

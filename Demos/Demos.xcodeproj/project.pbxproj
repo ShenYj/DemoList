@@ -18,6 +18,8 @@
 		F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5EC1D730055009B6754 /* UIImageView+JSWebCache.m */; };
 		F720A5F21D73018E009B6754 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = F720A5F11D73018E009B6754 /* apps.plist */; };
 		F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F41D730503009B6754 /* JSEmieViewController.m */; };
+		F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F71D731EC6009B6754 /* JSNumLabel.m */; };
+		F720A5FB1D732100009B6754 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5FA1D732100009B6754 /* JSButton.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
 		F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76265741D7143400055ECBA /* LaunchScreen.storyboard */; };
@@ -59,6 +61,10 @@
 		F720A5F11D73018E009B6754 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 		F720A5F31D730503009B6754 /* JSEmieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSEmieViewController.h; sourceTree = "<group>"; };
 		F720A5F41D730503009B6754 /* JSEmieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSEmieViewController.m; sourceTree = "<group>"; };
+		F720A5F61D731EC6009B6754 /* JSNumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNumLabel.h; sourceTree = "<group>"; };
+		F720A5F71D731EC6009B6754 /* JSNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNumLabel.m; sourceTree = "<group>"; };
+		F720A5F91D732100009B6754 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
+		F720A5FA1D732100009B6754 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -262,6 +268,10 @@
 		F76265851D7143AC0055ECBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F720A5F61D731EC6009B6754 /* JSNumLabel.h */,
+				F720A5F71D731EC6009B6754 /* JSNumLabel.m */,
+				F720A5F91D732100009B6754 /* JSButton.h */,
+				F720A5FA1D732100009B6754 /* JSButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,10 +513,12 @@
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
+				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,
 				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
+				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
