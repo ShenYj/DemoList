@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSAppsTableController</string>
+		<key>detail</key>
+		<string>自定义Operation,模拟图片下载</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSEmieViewController</string>
+		<key>detail</key>
+		<string>摇奖机</string>
+	</dict>
+</array>
+</plist>
