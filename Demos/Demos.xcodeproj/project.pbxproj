@@ -54,6 +54,8 @@
 		F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */; };
 		F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AF1D7401C00041A7DC /* DrawingBoard.m */; };
 		F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758C31D7403310041A7DC /* DrawingBoardView.xib */; };
+		F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758C81D7408E50041A7DC /* JSGestureViewController.m */; };
+		F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758CC1D7408E50041A7DC /* UnlockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +149,10 @@
 		F79758AE1D7401C00041A7DC /* DrawingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoard.h; sourceTree = "<group>"; };
 		F79758AF1D7401C00041A7DC /* DrawingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoard.m; sourceTree = "<group>"; };
 		F79758C31D7403310041A7DC /* DrawingBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardView.xib; sourceTree = "<group>"; };
+		F79758C71D7408E50041A7DC /* JSGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGestureViewController.h; sourceTree = "<group>"; };
+		F79758C81D7408E50041A7DC /* JSGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGestureViewController.m; sourceTree = "<group>"; };
+		F79758CB1D7408E50041A7DC /* UnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockView.h; sourceTree = "<group>"; };
+		F79758CC1D7408E50041A7DC /* UnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,6 +277,7 @@
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F797588C1D73FF130041A7DC /* 幸运转盘 */,
 				F79758A21D7401C00041A7DC /* 小画板 */,
+				F79758C51D7408E50041A7DC /* 手势解锁 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -623,6 +630,41 @@
 			path = Classes/Views;
 			sourceTree = "<group>";
 		};
+		F79758C51D7408E50041A7DC /* 手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				F79758C61D7408E50041A7DC /* Controller */,
+				F79758C91D7408E50041A7DC /* Model */,
+				F79758CA1D7408E50041A7DC /* View */,
+			);
+			path = "手势解锁";
+			sourceTree = "<group>";
+		};
+		F79758C61D7408E50041A7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F79758C71D7408E50041A7DC /* JSGestureViewController.h */,
+				F79758C81D7408E50041A7DC /* JSGestureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F79758C91D7408E50041A7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F79758CA1D7408E50041A7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F79758CB1D7408E50041A7DC /* UnlockView.h */,
+				F79758CC1D7408E50041A7DC /* UnlockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -774,6 +816,7 @@
 				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,
 				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
+				F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */,
 				F79758671D73C1710041A7DC /* JSViewController.m in Sources */,
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
@@ -784,6 +827,7 @@
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
+				F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,

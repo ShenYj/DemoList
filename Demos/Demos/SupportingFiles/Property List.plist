@@ -46,9 +46,9 @@
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string></string>
+		<string>JSGestureViewController</string>
 		<key>detail</key>
-		<string>demo</string>
+		<string>手势解锁</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>

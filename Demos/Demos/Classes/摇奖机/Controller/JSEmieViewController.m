@@ -33,6 +33,9 @@
 }
 
 - (void)preapareView{
+   
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     _queue = [[NSOperationQueue alloc] init];
     _label_1 = [[JSNumLabel alloc] init];
     _label_2 = [[JSNumLabel alloc] init];

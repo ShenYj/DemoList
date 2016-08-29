@@ -65,6 +65,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
     cell.textLabel.text = @(indexPath.row).description;
     cell.detailTextLabel.text = model.detail;
+    cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     
     return cell;
 }
@@ -76,8 +77,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     Class class = NSClassFromString(model.targetControllerClass);
     
     UIViewController *viewController =  [[class alloc] init];
-    
-    viewController.view.backgroundColor = [UIColor whiteColor];
     
     [self.navigationController pushViewController:viewController animated:YES];
 }

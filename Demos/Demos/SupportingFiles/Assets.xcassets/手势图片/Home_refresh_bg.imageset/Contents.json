@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Home_refresh_bg.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "LuckyBackground@2x.jpg",
       "scale" : "2x"
     },
     {

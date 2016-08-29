@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "gesture_node_normal.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "LuckyBackground@2x.jpg",
+      "filename" : "gesture_node_normal@2x.png",
       "scale" : "2x"
     },
     {
