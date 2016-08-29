@@ -50,6 +50,10 @@
 		F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758981D73FF130041A7DC /* JSRotateView.m */; };
 		F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758991D73FF130041A7DC /* JSRotateView.xib */; };
 		F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758A01D73FFB80041A7DC /* JSLucyButton.m */; };
+		F79758B81D7401C00041A7DC /* JSDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */; };
+		F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */; };
+		F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AF1D7401C00041A7DC /* DrawingBoard.m */; };
+		F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758C31D7403310041A7DC /* DrawingBoardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +140,13 @@
 		F79758991D73FF130041A7DC /* JSRotateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRotateView.xib; sourceTree = "<group>"; };
 		F797589F1D73FFB80041A7DC /* JSLucyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLucyButton.h; sourceTree = "<group>"; };
 		F79758A01D73FFB80041A7DC /* JSLucyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLucyButton.m; sourceTree = "<group>"; };
+		F79758A51D7401C00041A7DC /* JSDrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDrawingBoardViewController.h; sourceTree = "<group>"; };
+		F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDrawingBoardViewController.m; sourceTree = "<group>"; };
+		F79758AC1D7401C00041A7DC /* BezierPathWithLIneColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathWithLIneColour.h; sourceTree = "<group>"; };
+		F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathWithLIneColour.m; sourceTree = "<group>"; };
+		F79758AE1D7401C00041A7DC /* DrawingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoard.h; sourceTree = "<group>"; };
+		F79758AF1D7401C00041A7DC /* DrawingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoard.m; sourceTree = "<group>"; };
+		F79758C31D7403310041A7DC /* DrawingBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardView.xib; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,6 +270,7 @@
 				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F797588C1D73FF130041A7DC /* 幸运转盘 */,
+				F79758A21D7401C00041A7DC /* 小画板 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -570,6 +582,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F79758A21D7401C00041A7DC /* 小画板 */ = {
+			isa = PBXGroup;
+			children = (
+				F79758A41D7401C00041A7DC /* Controllers */,
+				F79758A71D7401C00041A7DC /* Models */,
+				F79758AB1D7401C00041A7DC /* Views */,
+			);
+			path = "小画板";
+			sourceTree = "<group>";
+		};
+		F79758A41D7401C00041A7DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F79758A51D7401C00041A7DC /* JSDrawingBoardViewController.h */,
+				F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */,
+			);
+			name = Controllers;
+			path = Classes/Controllers;
+			sourceTree = "<group>";
+		};
+		F79758A71D7401C00041A7DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = Classes/Models;
+			sourceTree = "<group>";
+		};
+		F79758AB1D7401C00041A7DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F79758C31D7403310041A7DC /* DrawingBoardView.xib */,
+				F79758AC1D7401C00041A7DC /* BezierPathWithLIneColour.h */,
+				F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */,
+				F79758AE1D7401C00041A7DC /* DrawingBoard.h */,
+				F79758AF1D7401C00041A7DC /* DrawingBoard.m */,
+			);
+			name = Views;
+			path = Classes/Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -636,6 +689,7 @@
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
 				F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */,
 				F76265911D7144960055ECBA /* Property List.plist in Resources */,
+				F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */,
 				F720A5F21D73018E009B6754 /* apps.plist in Resources */,
 				F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -709,11 +763,13 @@
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
 				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
+				F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */,
 				F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
 				F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */,
 				F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */,
+				F79758B81D7401C00041A7DC /* JSDrawingBoardViewController.m in Sources */,
 				F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */,
 				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,
 				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
@@ -722,6 +778,7 @@
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
 				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
+				F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,

@@ -40,19 +40,19 @@
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string>JSLoopRootViewController</string>
+		<string>JSDrawingBoardViewController</string>
+		<key>detail</key>
+		<string>小画板</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string></string>
 		<key>detail</key>
 		<string>demo</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string>JSLoopRootViewController</string>
-		<key>detail</key>
-		<string>demo</string>
-	</dict>
-	<dict>
-		<key>targetControllerClass</key>
-		<string>JSLoopRootViewController</string>
+		<string></string>
 		<key>detail</key>
 		<string>demo</string>
 	</dict>
