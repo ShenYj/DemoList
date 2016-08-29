@@ -20,5 +20,11 @@
 		<key>detail</key>
 		<string>随着滚动顶部视图变化(下拉放大,上拉平移)</string>
 	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSViewController</string>
+		<key>detail</key>
+		<string>TableView实现二级联动</string>
+	</dict>
 </array>
 </plist>

@@ -38,6 +38,10 @@
 		F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B21D71466F0055ECBA /* JSRootViewController.m */; };
 		F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B51D7147EA0055ECBA /* JSTableViewController.m */; };
 		F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758551D73BD460041A7DC /* JSHeaderViewController.m */; };
+		F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585C1D73C1710041A7DC /* JSDetailTableView.m */; };
+		F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585E1D73C1710041A7DC /* JSMenumTableView.m */; };
+		F79758671D73C1710041A7DC /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758601D73C1710041A7DC /* JSViewController.m */; };
+		F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758641D73C1710041A7DC /* JSSectionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +105,14 @@
 		F76265B51D7147EA0055ECBA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
 		F79758541D73BD460041A7DC /* JSHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderViewController.h; sourceTree = "<group>"; };
 		F79758551D73BD460041A7DC /* JSHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderViewController.m; sourceTree = "<group>"; };
+		F797585B1D73C1710041A7DC /* JSDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailTableView.h; sourceTree = "<group>"; };
+		F797585C1D73C1710041A7DC /* JSDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailTableView.m; sourceTree = "<group>"; };
+		F797585D1D73C1710041A7DC /* JSMenumTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumTableView.h; sourceTree = "<group>"; };
+		F797585E1D73C1710041A7DC /* JSMenumTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumTableView.m; sourceTree = "<group>"; };
+		F797585F1D73C1710041A7DC /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		F79758601D73C1710041A7DC /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		F79758631D73C1710041A7DC /* JSSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeaderView.h; sourceTree = "<group>"; };
+		F79758641D73C1710041A7DC /* JSSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeaderView.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +233,7 @@
 				F762658A1D7144380055ECBA /* Main */,
 				F79758521D73BD460041A7DC /* ScaleHeaderView */,
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
+				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -416,6 +429,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F79758591D73C1710041A7DC /* TableView联动 */ = {
+			isa = PBXGroup;
+			children = (
+				F797585A1D73C1710041A7DC /* Controller */,
+				F79758611D73C1710041A7DC /* Model */,
+				F79758621D73C1710041A7DC /* View */,
+			);
+			path = "TableView联动";
+			sourceTree = "<group>";
+		};
+		F797585A1D73C1710041A7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F797585B1D73C1710041A7DC /* JSDetailTableView.h */,
+				F797585C1D73C1710041A7DC /* JSDetailTableView.m */,
+				F797585D1D73C1710041A7DC /* JSMenumTableView.h */,
+				F797585E1D73C1710041A7DC /* JSMenumTableView.m */,
+				F797585F1D73C1710041A7DC /* JSViewController.h */,
+				F79758601D73C1710041A7DC /* JSViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F79758611D73C1710041A7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F79758621D73C1710041A7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F79758631D73C1710041A7DC /* JSSectionHeaderView.h */,
+				F79758641D73C1710041A7DC /* JSSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
+				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
 				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
@@ -550,9 +603,12 @@
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
+				F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */,
+				F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */,
 				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,
 				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
+				F79758671D73C1710041A7DC /* JSViewController.m in Sources */,
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
 				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
