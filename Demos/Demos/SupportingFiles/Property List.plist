@@ -48,13 +48,13 @@
 		<key>targetControllerClass</key>
 		<string>JSGestureViewController</string>
 		<key>detail</key>
-		<string>手势解锁</string>
+		<string>模仿手势解锁</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string></string>
+		<string>JSClockViewController</string>
 		<key>detail</key>
-		<string>demo</string>
+		<string>模拟时钟表盘</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>

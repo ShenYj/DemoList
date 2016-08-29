@@ -56,6 +56,7 @@
 		F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758C31D7403310041A7DC /* DrawingBoardView.xib */; };
 		F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758C81D7408E50041A7DC /* JSGestureViewController.m */; };
 		F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758CC1D7408E50041A7DC /* UnlockView.m */; };
+		F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758D21D7416990041A7DC /* JSClockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +154,8 @@
 		F79758C81D7408E50041A7DC /* JSGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGestureViewController.m; sourceTree = "<group>"; };
 		F79758CB1D7408E50041A7DC /* UnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockView.h; sourceTree = "<group>"; };
 		F79758CC1D7408E50041A7DC /* UnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
+		F79758D11D7416990041A7DC /* JSClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClockViewController.h; sourceTree = "<group>"; };
+		F79758D21D7416990041A7DC /* JSClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClockViewController.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +281,7 @@
 				F797588C1D73FF130041A7DC /* 幸运转盘 */,
 				F79758A21D7401C00041A7DC /* 小画板 */,
 				F79758C51D7408E50041A7DC /* 手势解锁 */,
+				F79758CF1D7416990041A7DC /* 时钟 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -665,6 +669,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F79758CF1D7416990041A7DC /* 时钟 */ = {
+			isa = PBXGroup;
+			children = (
+				F79758D01D7416990041A7DC /* Controller */,
+				F79758D31D7416990041A7DC /* Model */,
+				F79758D41D7416990041A7DC /* View */,
+			);
+			path = "时钟";
+			sourceTree = "<group>";
+		};
+		F79758D01D7416990041A7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F79758D11D7416990041A7DC /* JSClockViewController.h */,
+				F79758D21D7416990041A7DC /* JSClockViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F79758D31D7416990041A7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F79758D41D7416990041A7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -792,6 +829,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */,
 				F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */,
 				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
