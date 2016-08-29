@@ -37,6 +37,7 @@
 		F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265A71D7145A40055ECBA /* UIView+JSFrame.m */; };
 		F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B21D71466F0055ECBA /* JSRootViewController.m */; };
 		F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B51D7147EA0055ECBA /* JSTableViewController.m */; };
+		F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758551D73BD460041A7DC /* JSHeaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,8 @@
 		F76265B21D71466F0055ECBA /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewController.m; sourceTree = "<group>"; };
 		F76265B41D7147EA0055ECBA /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
 		F76265B51D7147EA0055ECBA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
+		F79758541D73BD460041A7DC /* JSHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderViewController.h; sourceTree = "<group>"; };
+		F79758551D73BD460041A7DC /* JSHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderViewController.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				F762658A1D7144380055ECBA /* Main */,
+				F79758521D73BD460041A7DC /* ScaleHeaderView */,
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F76265861D7143AC0055ECBA /* Copy */,
@@ -379,6 +383,39 @@
 			path = "UIKit+JSExtension";
 			sourceTree = "<group>";
 		};
+		F79758521D73BD460041A7DC /* ScaleHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F79758531D73BD460041A7DC /* Controller */,
+				F79758561D73BD460041A7DC /* Model */,
+				F79758571D73BD460041A7DC /* View */,
+			);
+			path = ScaleHeaderView;
+			sourceTree = "<group>";
+		};
+		F79758531D73BD460041A7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F79758541D73BD460041A7DC /* JSHeaderViewController.h */,
+				F79758551D73BD460041A7DC /* JSHeaderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F79758561D73BD460041A7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F79758571D73BD460041A7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +564,7 @@
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,
+				F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */,
 				F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
