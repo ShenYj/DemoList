@@ -30,7 +30,43 @@
 		<key>targetControllerClass</key>
 		<string>JSLoopRootViewController</string>
 		<key>detail</key>
-		<string>无限轮播器</string>
+		<string>无限轮播器,支持自动轮播,包含PageControl</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLukyViewController</string>
+		<key>detail</key>
+		<string>幸运转盘</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>demo</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>demo</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>demo</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>demo</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>demo</string>
 	</dict>
 </array>
 </plist>

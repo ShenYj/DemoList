@@ -46,6 +46,10 @@
 		F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758711D73CD630041A7DC /* JSLoopRootViewController.m */; };
 		F79758751D73CE390041A7DC /* JSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758741D73CE390041A7DC /* JSLayout.m */; };
 		F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758771D73DB110041A7DC /* JSLoopViewCell.m */; };
+		F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F797588F1D73FF130041A7DC /* JSLukyViewController.m */; };
+		F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758981D73FF130041A7DC /* JSRotateView.m */; };
+		F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758991D73FF130041A7DC /* JSRotateView.xib */; };
+		F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758A01D73FFB80041A7DC /* JSLucyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +129,13 @@
 		F79758741D73CE390041A7DC /* JSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLayout.m; sourceTree = "<group>"; };
 		F79758761D73DB110041A7DC /* JSLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopViewCell.h; sourceTree = "<group>"; };
 		F79758771D73DB110041A7DC /* JSLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopViewCell.m; sourceTree = "<group>"; };
+		F797588E1D73FF130041A7DC /* JSLukyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLukyViewController.h; sourceTree = "<group>"; };
+		F797588F1D73FF130041A7DC /* JSLukyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLukyViewController.m; sourceTree = "<group>"; };
+		F79758971D73FF130041A7DC /* JSRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRotateView.h; sourceTree = "<group>"; };
+		F79758981D73FF130041A7DC /* JSRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRotateView.m; sourceTree = "<group>"; };
+		F79758991D73FF130041A7DC /* JSRotateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRotateView.xib; sourceTree = "<group>"; };
+		F797589F1D73FFB80041A7DC /* JSLucyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLucyButton.h; sourceTree = "<group>"; };
+		F79758A01D73FFB80041A7DC /* JSLucyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLucyButton.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +258,7 @@
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
 				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
+				F797588C1D73FF130041A7DC /* 幸运转盘 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -520,6 +532,44 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F797588C1D73FF130041A7DC /* 幸运转盘 */ = {
+			isa = PBXGroup;
+			children = (
+				F797588D1D73FF130041A7DC /* Controllers */,
+				F79758901D73FF130041A7DC /* Models */,
+				F79758941D73FF130041A7DC /* Views */,
+			);
+			path = "幸运转盘";
+			sourceTree = "<group>";
+		};
+		F797588D1D73FF130041A7DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F797588E1D73FF130041A7DC /* JSLukyViewController.h */,
+				F797588F1D73FF130041A7DC /* JSLukyViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F79758901D73FF130041A7DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F79758941D73FF130041A7DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F797589F1D73FFB80041A7DC /* JSLucyButton.h */,
+				F79758A01D73FFB80041A7DC /* JSLucyButton.m */,
+				F79758971D73FF130041A7DC /* JSRotateView.h */,
+				F79758981D73FF130041A7DC /* JSRotateView.m */,
+				F79758991D73FF130041A7DC /* JSRotateView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,6 +634,7 @@
 			files = (
 				F762658F1D71446A0055ECBA /* Main.storyboard in Resources */,
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
+				F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */,
 				F76265911D7144960055ECBA /* Property List.plist in Resources */,
 				F720A5F21D73018E009B6754 /* apps.plist in Resources */,
 				F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */,
@@ -645,11 +696,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */,
 				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
 				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
 				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
+				F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */,
 				F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
@@ -659,6 +712,7 @@
 				F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
+				F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */,
 				F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */,
 				F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */,
 				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,

@@ -140,10 +140,8 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (void)dealloc{
-    
     [_timer invalidate];
     _timer = nil;
-    
 }
 
 @end
