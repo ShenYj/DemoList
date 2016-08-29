@@ -35,7 +35,7 @@
 
 #pragma mark - 宏定义
 
-#define SCREEN_SIZE [UIScreen mainScreen].bounds
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
 
 
 

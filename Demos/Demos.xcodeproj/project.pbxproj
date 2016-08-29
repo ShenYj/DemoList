@@ -42,6 +42,10 @@
 		F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585E1D73C1710041A7DC /* JSMenumTableView.m */; };
 		F79758671D73C1710041A7DC /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758601D73C1710041A7DC /* JSViewController.m */; };
 		F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758641D73C1710041A7DC /* JSSectionHeaderView.m */; };
+		F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797586E1D73CD4E0041A7DC /* JSLoopView.m */; };
+		F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758711D73CD630041A7DC /* JSLoopRootViewController.m */; };
+		F79758751D73CE390041A7DC /* JSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758741D73CE390041A7DC /* JSLayout.m */; };
+		F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758771D73DB110041A7DC /* JSLoopViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +117,14 @@
 		F79758601D73C1710041A7DC /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
 		F79758631D73C1710041A7DC /* JSSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeaderView.h; sourceTree = "<group>"; };
 		F79758641D73C1710041A7DC /* JSSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeaderView.m; sourceTree = "<group>"; };
+		F797586D1D73CD4E0041A7DC /* JSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopView.h; sourceTree = "<group>"; };
+		F797586E1D73CD4E0041A7DC /* JSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopView.m; sourceTree = "<group>"; };
+		F79758701D73CD630041A7DC /* JSLoopRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopRootViewController.h; sourceTree = "<group>"; };
+		F79758711D73CD630041A7DC /* JSLoopRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopRootViewController.m; sourceTree = "<group>"; };
+		F79758731D73CE390041A7DC /* JSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLayout.h; sourceTree = "<group>"; };
+		F79758741D73CE390041A7DC /* JSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLayout.m; sourceTree = "<group>"; };
+		F79758761D73DB110041A7DC /* JSLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopViewCell.h; sourceTree = "<group>"; };
+		F79758771D73DB110041A7DC /* JSLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopViewCell.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +247,7 @@
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
 				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
+				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
 			path = Classes;
@@ -468,6 +481,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F79758691D73CD2D0041A7DC /* 轮播器 */ = {
+			isa = PBXGroup;
+			children = (
+				F797586A1D73CD2D0041A7DC /* Controller */,
+				F797586B1D73CD2D0041A7DC /* Model */,
+				F797586C1D73CD2D0041A7DC /* View */,
+			);
+			path = "轮播器";
+			sourceTree = "<group>";
+		};
+		F797586A1D73CD2D0041A7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F79758701D73CD630041A7DC /* JSLoopRootViewController.h */,
+				F79758711D73CD630041A7DC /* JSLoopRootViewController.m */,
+				F797586D1D73CD4E0041A7DC /* JSLoopView.h */,
+				F797586E1D73CD4E0041A7DC /* JSLoopView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F797586B1D73CD2D0041A7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F797586C1D73CD2D0041A7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F79758731D73CE390041A7DC /* JSLayout.h */,
+				F79758741D73CE390041A7DC /* JSLayout.m */,
+				F79758761D73DB110041A7DC /* JSLoopViewCell.h */,
+				F79758771D73DB110041A7DC /* JSLoopViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -593,14 +645,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
 				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
 				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
+				F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
+				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
+				F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
 				F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */,

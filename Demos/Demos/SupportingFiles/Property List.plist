@@ -26,5 +26,11 @@
 		<key>detail</key>
 		<string>TableView实现二级联动</string>
 	</dict>
+	<dict>
+		<key>targetControllerClass</key>
+		<string>JSLoopRootViewController</string>
+		<key>detail</key>
+		<string>无限轮播器</string>
+	</dict>
 </array>
 </plist>
