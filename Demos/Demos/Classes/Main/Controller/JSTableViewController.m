@@ -82,6 +82,14 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // 显示导航栏
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
