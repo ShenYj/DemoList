@@ -22,6 +22,12 @@
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
+		<string>JSHeadViewController</string>
+		<key>detail</key>
+		<string>随着滚动顶部视图变化(下拉放大,上拉缩小)</string>
+	</dict>
+	<dict>
+		<key>targetControllerClass</key>
 		<string>JSViewController</string>
 		<key>detail</key>
 		<string>TableView实现二级联动</string>
@@ -58,13 +64,13 @@
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string>JSLoopRootViewController</string>
+		<string>JSMusicViewController</string>
 		<key>detail</key>
-		<string>demo</string>
+		<string>仿QQ音乐播放器(播放本地音乐)</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string>JSLoopRootViewController</string>
+		<string></string>
 		<key>detail</key>
 		<string>demo</string>
 	</dict>

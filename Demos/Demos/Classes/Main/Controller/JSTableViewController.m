@@ -65,7 +65,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
     cell.textLabel.text = @(indexPath.row).description;
     cell.detailTextLabel.text = model.detail;
-    cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     
     return cell;
 }

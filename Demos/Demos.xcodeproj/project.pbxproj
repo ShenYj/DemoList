@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
+		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
+		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
+		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
+		F71DC0571D74634900F5843C /* JSHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC0511D74634900F5843C /* JSHeadCell.m */; };
+		F71DC0581D74634900F5843C /* JSFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC0531D74634900F5843C /* JSFooterView.m */; };
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
 		F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D71D730009009B6754 /* JSAppsTableController.m */; };
 		F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5DC1D730009009B6754 /* JSAppsModel.m */; };
@@ -57,11 +62,41 @@
 		F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758C81D7408E50041A7DC /* JSGestureViewController.m */; };
 		F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758CC1D7408E50041A7DC /* UnlockView.m */; };
 		F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758D21D7416990041A7DC /* JSClockViewController.m */; };
+		F79759121D742E6C0041A7DC /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FD1D742E6C0041A7DC /* buyao.wav */; };
+		F79759131D742E6C0041A7DC /* chatcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FE1D742E6C0041A7DC /* chatcome.wav */; };
+		F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */; };
+		F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759001D742E6C0041A7DC /* I'm yours.lrc */; };
+		F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79759011D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 */; };
+		F79759171D742E6C0041A7DC /* jason.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79759021D742E6C0041A7DC /* jason.jpg */; };
+		F79759181D742E6C0041A7DC /* lamazhengzhuan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79759031D742E6C0041A7DC /* lamazhengzhuan.jpg */; };
+		F79759191D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79759041D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 */; };
+		F797591A1D742E6C0041A7DC /* paomo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79759051D742E6C0041A7DC /* paomo.jpg */; };
+		F797591B1D742E6C0041A7DC /* st.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79759061D742E6C0041A7DC /* st.jpg */; };
+		F797591C1D742E6C0041A7DC /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79759071D742E6C0041A7DC /* test.wav */; };
+		F797591D1D742E6C0041A7DC /* The salt water room.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759081D742E6C0041A7DC /* The salt water room.lrc */; };
+		F797591E1D742E6C0041A7DC /* xpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79759091D742E6C0041A7DC /* xpg.jpg */; };
+		F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F797590A1D742E6C0041A7DC /* 小苹果.lrc */; };
+		F79759201D742E6C0041A7DC /* 小苹果.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F797590B1D742E6C0041A7DC /* 小苹果.mp3 */; };
+		F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F797590C1D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 */; };
+		F79759221D742E6C0041A7DC /* 月半小夜曲.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F797590D1D742E6C0041A7DC /* 月半小夜曲.lrc */; };
+		F79759231D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F797590E1D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 */; };
+		F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F797590F1D742E6C0041A7DC /* 李克勤.jpg */; };
+		F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759101D742E6C0041A7DC /* 泡沫.lrc */; };
+		F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
+		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
+		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		F71DC04D1D74634900F5843C /* JSFriendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFriendsModel.h; sourceTree = "<group>"; };
+		F71DC04E1D74634900F5843C /* JSFriendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFriendsModel.m; sourceTree = "<group>"; };
+		F71DC0501D74634900F5843C /* JSHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadCell.h; sourceTree = "<group>"; };
+		F71DC0511D74634900F5843C /* JSHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadCell.m; sourceTree = "<group>"; };
+		F71DC0521D74634900F5843C /* JSFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFooterView.h; sourceTree = "<group>"; };
+		F71DC0531D74634900F5843C /* JSFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFooterView.m; sourceTree = "<group>"; };
 		F720A5D11D72F9CF009B6754 /* JSSubControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSubControllerModel.h; sourceTree = "<group>"; };
 		F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSubControllerModel.m; sourceTree = "<group>"; };
 		F720A5D61D730009009B6754 /* JSAppsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppsTableController.h; sourceTree = "<group>"; };
@@ -156,6 +191,27 @@
 		F79758CC1D7408E50041A7DC /* UnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
 		F79758D11D7416990041A7DC /* JSClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClockViewController.h; sourceTree = "<group>"; };
 		F79758D21D7416990041A7DC /* JSClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClockViewController.m; sourceTree = "<group>"; };
+		F79758FD1D742E6C0041A7DC /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
+		F79758FE1D742E6C0041A7DC /* chatcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chatcome.wav; sourceTree = "<group>"; };
+		F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G.E.M. 邓紫棋 - 泡沫.mp3"; sourceTree = "<group>"; };
+		F79759001D742E6C0041A7DC /* I'm yours.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "I'm yours.lrc"; sourceTree = "<group>"; };
+		F79759011D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jason Mraz - I'm Yours.mp3"; sourceTree = "<group>"; };
+		F79759021D742E6C0041A7DC /* jason.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jason.jpg; sourceTree = "<group>"; };
+		F79759031D742E6C0041A7DC /* lamazhengzhuan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lamazhengzhuan.jpg; sourceTree = "<group>"; };
+		F79759041D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Owl City - The Saltwater Room.mp3"; sourceTree = "<group>"; };
+		F79759051D742E6C0041A7DC /* paomo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paomo.jpg; sourceTree = "<group>"; };
+		F79759061D742E6C0041A7DC /* st.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = st.jpg; sourceTree = "<group>"; };
+		F79759071D742E6C0041A7DC /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		F79759081D742E6C0041A7DC /* The salt water room.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "The salt water room.lrc"; sourceTree = "<group>"; };
+		F79759091D742E6C0041A7DC /* xpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xpg.jpg; sourceTree = "<group>"; };
+		F797590A1D742E6C0041A7DC /* 小苹果.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "小苹果.lrc"; sourceTree = "<group>"; };
+		F797590B1D742E6C0041A7DC /* 小苹果.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小苹果.mp3"; sourceTree = "<group>"; };
+		F797590C1D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "张译 - 稳稳的幸福.mp3"; sourceTree = "<group>"; };
+		F797590D1D742E6C0041A7DC /* 月半小夜曲.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "月半小夜曲.lrc"; sourceTree = "<group>"; };
+		F797590E1D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李克勤 - 月半小夜曲.mp3"; sourceTree = "<group>"; };
+		F797590F1D742E6C0041A7DC /* 李克勤.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "李克勤.jpg"; sourceTree = "<group>"; };
+		F79759101D742E6C0041A7DC /* 泡沫.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泡沫.lrc"; sourceTree = "<group>"; };
+		F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "稳稳的幸福.lrc"; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +242,46 @@
 				75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F71DC0471D74634900F5843C /* 自定义顶部视图 */ = {
+			isa = PBXGroup;
+			children = (
+				F71DC0481D74634900F5843C /* Controllers */,
+				F71DC04B1D74634900F5843C /* Models */,
+				F71DC04F1D74634900F5843C /* Views */,
+			);
+			path = "自定义顶部视图";
+			sourceTree = "<group>";
+		};
+		F71DC0481D74634900F5843C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F71DC0491D74634900F5843C /* JSHeadViewController.h */,
+				F71DC04A1D74634900F5843C /* JSHeadViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F71DC04B1D74634900F5843C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F71DC04C1D74634900F5843C /* friends.plist */,
+				F71DC04D1D74634900F5843C /* JSFriendsModel.h */,
+				F71DC04E1D74634900F5843C /* JSFriendsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F71DC04F1D74634900F5843C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F71DC0501D74634900F5843C /* JSHeadCell.h */,
+				F71DC0511D74634900F5843C /* JSHeadCell.m */,
+				F71DC0521D74634900F5843C /* JSFooterView.h */,
+				F71DC0531D74634900F5843C /* JSFooterView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F720A5D41D730009009B6754 /* SyncDownLoadImg */ = {
@@ -275,14 +371,15 @@
 			children = (
 				F762658A1D7144380055ECBA /* Main */,
 				F79758521D73BD460041A7DC /* ScaleHeaderView */,
+				F71DC0471D74634900F5843C /* 自定义顶部视图 */,
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
 				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F797588C1D73FF130041A7DC /* 幸运转盘 */,
 				F79758A21D7401C00041A7DC /* 小画板 */,
 				F79758C51D7408E50041A7DC /* 手势解锁 */,
-				F79758CF1D7416990041A7DC /* 时钟 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
+				F79758CF1D7416990041A7DC /* 时钟 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
 			path = Classes;
@@ -291,6 +388,7 @@
 		F76265701D7143400055ECBA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F79758FC1D742E6C0041A7DC /* Assets */,
 				F76265661D7142FC0055ECBA /* Info.plist */,
 				F76265711D7143400055ECBA /* AppDelegate.h */,
 				F76265721D7143400055ECBA /* AppDelegate.m */,
@@ -702,6 +800,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F79758FC1D742E6C0041A7DC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F79758FD1D742E6C0041A7DC /* buyao.wav */,
+				F79758FE1D742E6C0041A7DC /* chatcome.wav */,
+				F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */,
+				F79759001D742E6C0041A7DC /* I'm yours.lrc */,
+				F79759011D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 */,
+				F79759021D742E6C0041A7DC /* jason.jpg */,
+				F79759031D742E6C0041A7DC /* lamazhengzhuan.jpg */,
+				F79759041D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 */,
+				F79759051D742E6C0041A7DC /* paomo.jpg */,
+				F79759061D742E6C0041A7DC /* st.jpg */,
+				F79759071D742E6C0041A7DC /* test.wav */,
+				F79759081D742E6C0041A7DC /* The salt water room.lrc */,
+				F79759091D742E6C0041A7DC /* xpg.jpg */,
+				F797590A1D742E6C0041A7DC /* 小苹果.lrc */,
+				F797590B1D742E6C0041A7DC /* 小苹果.mp3 */,
+				F797590C1D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 */,
+				F797590D1D742E6C0041A7DC /* 月半小夜曲.lrc */,
+				F797590E1D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 */,
+				F797590F1D742E6C0041A7DC /* 李克勤.jpg */,
+				F79759101D742E6C0041A7DC /* 泡沫.lrc */,
+				F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -764,13 +890,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F797591B1D742E6C0041A7DC /* st.jpg in Resources */,
+				F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */,
+				F79759131D742E6C0041A7DC /* chatcome.wav in Resources */,
+				F79759231D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 in Resources */,
 				F762658F1D71446A0055ECBA /* Main.storyboard in Resources */,
+				F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */,
+				F79759171D742E6C0041A7DC /* jason.jpg in Resources */,
+				F797591D1D742E6C0041A7DC /* The salt water room.lrc in Resources */,
+				F79759191D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 in Resources */,
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
 				F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */,
+				F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */,
+				F79759201D742E6C0041A7DC /* 小苹果.mp3 in Resources */,
+				F79759121D742E6C0041A7DC /* buyao.wav in Resources */,
+				F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */,
+				F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */,
 				F76265911D7144960055ECBA /* Property List.plist in Resources */,
+				F79759221D742E6C0041A7DC /* 月半小夜曲.lrc in Resources */,
+				F79759181D742E6C0041A7DC /* lamazhengzhuan.jpg in Resources */,
 				F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */,
+				F797591A1D742E6C0041A7DC /* paomo.jpg in Resources */,
 				F720A5F21D73018E009B6754 /* apps.plist in Resources */,
+				F797591E1D742E6C0041A7DC /* xpg.jpg in Resources */,
+				F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */,
+				F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */,
+				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
+				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
 				F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */,
+				F71DC0551D74634900F5843C /* friends.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,11 +977,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71DC0581D74634900F5843C /* JSFooterView.m in Sources */,
+				F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */,
 				F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */,
 				F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */,
 				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
 				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
+				F71DC0571D74634900F5843C /* JSHeadCell.m in Sources */,
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
 				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
 				F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */,
@@ -859,6 +1010,7 @@
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
 				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
+				F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */,
 				F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
