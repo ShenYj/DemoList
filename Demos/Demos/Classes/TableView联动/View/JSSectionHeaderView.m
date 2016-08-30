@@ -7,7 +7,7 @@
 //
 
 #import "JSSectionHeaderView.h"
-#import "JSUIkitExtension.h"
+
 
 static NSString * const headerReuseId = @"header";
 

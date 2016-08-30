@@ -82,9 +82,9 @@
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string></string>
+		<string>JSModelsTableViewController</string>
 		<key>detail</key>
-		<string></string>
+		<string>模型嵌套(仿QQ好友列表样式)</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>

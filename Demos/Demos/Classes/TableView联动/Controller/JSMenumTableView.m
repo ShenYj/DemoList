@@ -62,7 +62,6 @@ static NSString * const reuseID = @"menum";
     JSSectionHeaderView *headerView = [JSSectionHeaderView headerViewWithTableView:tableView];
     
     headerView.data = section;
-
     
     return headerView;
 }

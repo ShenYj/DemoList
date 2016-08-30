@@ -12,6 +12,11 @@
 		F719BF491D754D4400015113 /* JSKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF431D754D4400015113 /* JSKeyboardViewController.m */; };
 		F719BF4A1D754D4400015113 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BF451D754D4400015113 /* provinces.plist */; };
 		F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF471D754D4400015113 /* SJProvinces.m */; };
+		F719BFC21D758B4E00015113 /* JSModelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */; };
+		F719BFC31D758B4E00015113 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFBA1D758B4E00015113 /* DemoList.plist */; };
+		F719BFC41D758B4E00015113 /* JSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBC1D758B4E00015113 /* JSCategoryModel.m */; };
+		F719BFC51D758B4E00015113 /* JSDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBE1D758B4E00015113 /* JSDetailModel.m */; };
+		F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFC11D758B4E00015113 /* JSSectionHeadView.m */; };
 		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
 		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
 		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
@@ -99,6 +104,15 @@
 		F719BF451D754D4400015113 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
 		F719BF461D754D4400015113 /* SJProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProvinces.h; sourceTree = "<group>"; };
 		F719BF471D754D4400015113 /* SJProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProvinces.m; sourceTree = "<group>"; };
+		F719BFB71D758B4E00015113 /* JSModelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSModelsTableViewController.h; sourceTree = "<group>"; };
+		F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSModelsTableViewController.m; sourceTree = "<group>"; };
+		F719BFBA1D758B4E00015113 /* DemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoList.plist; sourceTree = "<group>"; };
+		F719BFBB1D758B4E00015113 /* JSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCategoryModel.h; sourceTree = "<group>"; };
+		F719BFBC1D758B4E00015113 /* JSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCategoryModel.m; sourceTree = "<group>"; };
+		F719BFBD1D758B4E00015113 /* JSDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailModel.h; sourceTree = "<group>"; };
+		F719BFBE1D758B4E00015113 /* JSDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailModel.m; sourceTree = "<group>"; };
+		F719BFC01D758B4E00015113 /* JSSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeadView.h; sourceTree = "<group>"; };
+		F719BFC11D758B4E00015113 /* JSSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeadView.m; sourceTree = "<group>"; };
 		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
 		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
 		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
@@ -325,6 +339,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F719BFB51D758B4E00015113 /* 模型嵌套 */ = {
+			isa = PBXGroup;
+			children = (
+				F719BFB61D758B4E00015113 /* Controller */,
+				F719BFB91D758B4E00015113 /* Model */,
+				F719BFBF1D758B4E00015113 /* View */,
+			);
+			path = "模型嵌套";
+			sourceTree = "<group>";
+		};
+		F719BFB61D758B4E00015113 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F719BFB71D758B4E00015113 /* JSModelsTableViewController.h */,
+				F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F719BFB91D758B4E00015113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F719BFBA1D758B4E00015113 /* DemoList.plist */,
+				F719BFBB1D758B4E00015113 /* JSCategoryModel.h */,
+				F719BFBC1D758B4E00015113 /* JSCategoryModel.m */,
+				F719BFBD1D758B4E00015113 /* JSDetailModel.h */,
+				F719BFBE1D758B4E00015113 /* JSDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F719BFBF1D758B4E00015113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F719BFC01D758B4E00015113 /* JSSectionHeadView.h */,
+				F719BFC11D758B4E00015113 /* JSSectionHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F71DC0471D74634900F5843C /* 自定义顶部视图2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +420,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F720A5D41D730009009B6754 /* SyncDownLoadImg */ = {
+		F720A5D41D730009009B6754 /* 图片下载处理 */ = {
 			isa = PBXGroup;
 			children = (
 				F720A5E41D730055009B6754 /* JSOperation */,
@@ -374,6 +428,7 @@
 				F720A5DA1D730009009B6754 /* Models */,
 				F720A5DD1D730009009B6754 /* Views */,
 			);
+			name = "图片下载处理";
 			path = SyncDownLoadImg;
 			sourceTree = "<group>";
 		};
@@ -454,8 +509,9 @@
 				F762658A1D7144380055ECBA /* Main */,
 				F79758521D73BD460041A7DC /* 自定义顶部视图1 */,
 				F71DC0471D74634900F5843C /* 自定义顶部视图2 */,
-				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
+				F720A5D41D730009009B6754 /* 图片下载处理 */,
 				F79758591D73C1710041A7DC /* TableView联动 */,
+				F719BFB51D758B4E00015113 /* 模型嵌套 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
 				F797588C1D73FF130041A7DC /* 幸运转盘 */,
 				F79758A21D7401C00041A7DC /* 小画板 */,
@@ -989,6 +1045,7 @@
 				F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */,
 				F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */,
 				F79759201D742E6C0041A7DC /* 小苹果.mp3 in Resources */,
+				F719BFC31D758B4E00015113 /* DemoList.plist in Resources */,
 				F79759121D742E6C0041A7DC /* buyao.wav in Resources */,
 				F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */,
 				F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */,
@@ -1074,11 +1131,13 @@
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
 				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
 				F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */,
+				F719BFC51D758B4E00015113 /* JSDetailModel.m in Sources */,
 				F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
 				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
+				F719BFC21D758B4E00015113 /* JSModelsTableViewController.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */,
 				F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */,
@@ -1093,6 +1152,7 @@
 				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
 				F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */,
+				F719BFC41D758B4E00015113 /* JSCategoryModel.m in Sources */,
 				F79758671D73C1710041A7DC /* JSViewController.m in Sources */,
 				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
 				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
@@ -1112,6 +1172,7 @@
 				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,
 				F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */,
 				F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */,
+				F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
