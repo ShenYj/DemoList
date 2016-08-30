@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
+		F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF3C1D754B5B00015113 /* JSSparkViewController.m */; };
 		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
 		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
 		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
@@ -88,6 +89,8 @@
 /* Begin PBXFileReference section */
 		75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F719BF3B1D754B5B00015113 /* JSSparkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSparkViewController.h; sourceTree = "<group>"; };
+		F719BF3C1D754B5B00015113 /* JSSparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSparkViewController.m; sourceTree = "<group>"; };
 		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
 		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
 		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
@@ -244,13 +247,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F71DC0471D74634900F5843C /* 自定义顶部视图 */ = {
+		F719BF391D754B5B00015113 /* 跟随手指移动的特效 */ = {
+			isa = PBXGroup;
+			children = (
+				F719BF3A1D754B5B00015113 /* Controller */,
+				F719BF3D1D754B5B00015113 /* Model */,
+				F719BF3E1D754B5B00015113 /* View */,
+			);
+			path = "跟随手指移动的特效";
+			sourceTree = "<group>";
+		};
+		F719BF3A1D754B5B00015113 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F719BF3B1D754B5B00015113 /* JSSparkViewController.h */,
+				F719BF3C1D754B5B00015113 /* JSSparkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F719BF3D1D754B5B00015113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F719BF3E1D754B5B00015113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71DC0471D74634900F5843C /* 自定义顶部视图2 */ = {
 			isa = PBXGroup;
 			children = (
 				F71DC0481D74634900F5843C /* Controllers */,
 				F71DC04B1D74634900F5843C /* Models */,
 				F71DC04F1D74634900F5843C /* Views */,
 			);
+			name = "自定义顶部视图2";
 			path = "自定义顶部视图";
 			sourceTree = "<group>";
 		};
@@ -370,8 +407,8 @@
 			isa = PBXGroup;
 			children = (
 				F762658A1D7144380055ECBA /* Main */,
-				F79758521D73BD460041A7DC /* ScaleHeaderView */,
-				F71DC0471D74634900F5843C /* 自定义顶部视图 */,
+				F79758521D73BD460041A7DC /* 自定义顶部视图1 */,
+				F71DC0471D74634900F5843C /* 自定义顶部视图2 */,
 				F720A5D41D730009009B6754 /* SyncDownLoadImg */,
 				F79758591D73C1710041A7DC /* TableView联动 */,
 				F76265821D7143AC0055ECBA /* 摇奖机 */,
@@ -380,6 +417,7 @@
 				F79758C51D7408E50041A7DC /* 手势解锁 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F79758CF1D7416990041A7DC /* 时钟 */,
+				F719BF391D754B5B00015113 /* 跟随手指移动的特效 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
 			path = Classes;
@@ -542,13 +580,14 @@
 			path = "UIKit+JSExtension";
 			sourceTree = "<group>";
 		};
-		F79758521D73BD460041A7DC /* ScaleHeaderView */ = {
+		F79758521D73BD460041A7DC /* 自定义顶部视图1 */ = {
 			isa = PBXGroup;
 			children = (
 				F79758531D73BD460041A7DC /* Controller */,
 				F79758561D73BD460041A7DC /* Model */,
 				F79758571D73BD460041A7DC /* View */,
 			);
+			name = "自定义顶部视图1";
 			path = ScaleHeaderView;
 			sourceTree = "<group>";
 		};
@@ -1012,6 +1051,7 @@
 				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
 				F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */,
 				F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */,
+				F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,

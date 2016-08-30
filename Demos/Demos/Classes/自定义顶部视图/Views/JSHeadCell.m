@@ -20,7 +20,7 @@
 @property (nonatomic,weak) UILabel *userNameLabel;
 @property (nonatomic,weak) UILabel *userContentLabel;
 @property (nonatomic,weak) UIImageView *userPicturesImageView;
-
+@property (nonatomic,strong) MASConstraint *sizeConstrain;
 
 @end
 @implementation JSHeadCell
@@ -87,6 +87,13 @@
         
     }];
     
+    [self.userPicturesImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.mas_equalTo(self.userContentLabel.mas_bottom).mas_offset( KMargin );
+        make.bottom.mas_equalTo(self).mas_offset( -KMargin );
+        make.centerX.mas_equalTo(self);
+        self.sizeConstrain = make.size.mas_offset(CGSizeZero);
+    }];
     
 }
 
@@ -94,7 +101,7 @@
     
     //图片未做处理
     self.userIconImageView.layer.cornerRadius = 25;
-    self.userIconImageView.clipsToBounds = YES;     //self.userIconImageView.layer.masksToBounds = YES;
+    self.userIconImageView.clipsToBounds = YES;//self.userIconImageView.layer.masksToBounds = YES;
     
     self.userNameLabel.font = [UIFont systemFontOfSize:14];
     
@@ -111,13 +118,6 @@
     self.userNameLabel.text = friends.nickname;
     self.userContentLabel.text = friends.content;
     
-//    CGRect rect = [friends.content boundingRectWithSize:CGSizeMake(SCREEN_SIZE.width - 2*KMargin, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil];
-//    
-//    [self.userContentLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.height.mas_equalTo(rect.size.height);
-//    }];
-    
-    
     if (self.friends.picture.length > 0) {
         
         self.userPicturesImageView.hidden = NO;
@@ -125,32 +125,20 @@
         
         [self.userPicturesImageView mas_updateConstraints:^(MASConstraintMaker *make) {
             
-            make.top.mas_equalTo(self.userContentLabel.mas_bottom).mas_offset( KMargin );
-            make.bottom.mas_equalTo(self).mas_offset( -KMargin );
-            make.centerX.mas_equalTo(self);
-            make.size.mas_equalTo(friends.pictureImage.size);
+            self.sizeConstrain = make.size.mas_offset(friends.pictureImage.size);
             
         }];
         
     }else{
         
+        self.userPicturesImageView.hidden = YES;
         [self.userPicturesImageView mas_updateConstraints:^(MASConstraintMaker *make) {
             
-            make.top.mas_equalTo(self.userContentLabel.mas_bottom).mas_offset( KMargin );
-            make.bottom.mas_equalTo(self).mas_offset( -KMargin );
-            make.centerX.mas_equalTo(self);
-            make.size.mas_equalTo(CGSizeMake(1, 1));
+            self.sizeConstrain = make.size.mas_offset(CGSizeZero);
             
         }];
         
-        self.userPicturesImageView.hidden = YES;
-        
-        
     }
-    
-
-    
-    
 
 }
 

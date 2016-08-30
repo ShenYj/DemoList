@@ -23,6 +23,13 @@ static NSString *reuseId = @"friends";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 准备视图
+    [self prepareView];
+    
+}
+
+- (void)prepareView{
+    
     self.tableView.estimatedRowHeight = 250;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
@@ -48,8 +55,6 @@ static NSString *reuseId = @"friends";
     self.tableView.tableFooterView = footerView;
     
     footerView.delegate = self;
-    
-    
 }
 
 #pragma mark -- FooterView代理方法
@@ -115,6 +120,11 @@ static NSString *reuseId = @"friends";
     
     
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark -- 懒加载
 -(NSArray *)friendsArray{
     

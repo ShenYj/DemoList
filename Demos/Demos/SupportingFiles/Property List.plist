@@ -18,13 +18,13 @@
 		<key>targetControllerClass</key>
 		<string>JSHeaderViewController</string>
 		<key>detail</key>
-		<string>随着滚动顶部视图变化(下拉放大,上拉平移)</string>
+		<string>自定义顶部视图1-随着滚动顶部视图变化(下拉放大,上拉平移)</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
 		<string>JSHeadViewController</string>
 		<key>detail</key>
-		<string>随着滚动顶部视图变化(下拉放大,上拉缩小)</string>
+		<string>自定义顶部视图2-随着滚动顶部视图变化(下拉放大,上拉平移)</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
@@ -66,13 +66,13 @@
 		<key>targetControllerClass</key>
 		<string>JSMusicViewController</string>
 		<key>detail</key>
-		<string>仿QQ音乐播放器(播放本地音乐)</string>
+		<string>仿QQ音乐播放器(播放本地音乐)--待更新</string>
 	</dict>
 	<dict>
 		<key>targetControllerClass</key>
-		<string></string>
+		<string>JSSparkViewController</string>
 		<key>detail</key>
-		<string>demo</string>
+		<string>跟随手指移动特效</string>
 	</dict>
 </array>
 </plist>
