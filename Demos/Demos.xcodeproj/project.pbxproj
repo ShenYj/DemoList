@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
 		F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF3C1D754B5B00015113 /* JSSparkViewController.m */; };
+		F719BF491D754D4400015113 /* JSKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF431D754D4400015113 /* JSKeyboardViewController.m */; };
+		F719BF4A1D754D4400015113 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BF451D754D4400015113 /* provinces.plist */; };
+		F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF471D754D4400015113 /* SJProvinces.m */; };
 		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
 		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
 		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
@@ -91,6 +94,11 @@
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F719BF3B1D754B5B00015113 /* JSSparkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSparkViewController.h; sourceTree = "<group>"; };
 		F719BF3C1D754B5B00015113 /* JSSparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSparkViewController.m; sourceTree = "<group>"; };
+		F719BF421D754D4400015113 /* JSKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKeyboardViewController.h; sourceTree = "<group>"; };
+		F719BF431D754D4400015113 /* JSKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKeyboardViewController.m; sourceTree = "<group>"; };
+		F719BF451D754D4400015113 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		F719BF461D754D4400015113 /* SJProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProvinces.h; sourceTree = "<group>"; };
+		F719BF471D754D4400015113 /* SJProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProvinces.m; sourceTree = "<group>"; };
 		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
 		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
 		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
@@ -280,6 +288,43 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F719BF401D754D4400015113 /* 键盘处理 */ = {
+			isa = PBXGroup;
+			children = (
+				F719BF411D754D4400015113 /* Controller */,
+				F719BF441D754D4400015113 /* Model */,
+				F719BF481D754D4400015113 /* View */,
+			);
+			name = "键盘处理";
+			path = "键盘处理(TF&PickerView)";
+			sourceTree = "<group>";
+		};
+		F719BF411D754D4400015113 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F719BF421D754D4400015113 /* JSKeyboardViewController.h */,
+				F719BF431D754D4400015113 /* JSKeyboardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F719BF441D754D4400015113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F719BF451D754D4400015113 /* provinces.plist */,
+				F719BF461D754D4400015113 /* SJProvinces.h */,
+				F719BF471D754D4400015113 /* SJProvinces.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F719BF481D754D4400015113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F71DC0471D74634900F5843C /* 自定义顶部视图2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +462,7 @@
 				F79758C51D7408E50041A7DC /* 手势解锁 */,
 				F79758691D73CD2D0041A7DC /* 轮播器 */,
 				F79758CF1D7416990041A7DC /* 时钟 */,
+				F719BF401D754D4400015113 /* 键盘处理 */,
 				F719BF391D754B5B00015113 /* 跟随手指移动的特效 */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
@@ -931,6 +977,7 @@
 			files = (
 				F797591B1D742E6C0041A7DC /* st.jpg in Resources */,
 				F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */,
+				F719BF4A1D754D4400015113 /* provinces.plist in Resources */,
 				F79759131D742E6C0041A7DC /* chatcome.wav in Resources */,
 				F79759231D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 in Resources */,
 				F762658F1D71446A0055ECBA /* Main.storyboard in Resources */,
@@ -1034,6 +1081,7 @@
 				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */,
+				F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */,
 				F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
@@ -1058,6 +1106,7 @@
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
 				F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */,
+				F719BF491D754D4400015113 /* JSKeyboardViewController.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,
