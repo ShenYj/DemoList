@@ -22,20 +22,6 @@
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray<JSSubControllerModel *> *)loadData{
-    
-    NSArray *tmpArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"Property List.plist" ofType:nil]];
-    
-    NSMutableArray *mArr = [NSMutableArray array];
-    
-    for (NSDictionary *dict in tmpArr) {
-        
-        JSSubControllerModel *model = [JSSubControllerModel ModelWithDict:dict];
-        
-        [mArr addObject:model];
-    }
-    
-    return mArr.copy;
-}
+
 
 @end

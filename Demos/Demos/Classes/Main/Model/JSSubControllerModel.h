@@ -21,6 +21,6 @@
 // 类方法
 + (instancetype)ModelWithDict:(NSDictionary *)dict;
 
-+ (NSArray <JSSubControllerModel *> *)loadData;
+
 
 @end

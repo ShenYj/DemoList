@@ -17,6 +17,9 @@
 		F719BFC41D758B4E00015113 /* JSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBC1D758B4E00015113 /* JSCategoryModel.m */; };
 		F719BFC51D758B4E00015113 /* JSDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBE1D758B4E00015113 /* JSDetailModel.m */; };
 		F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFC11D758B4E00015113 /* JSSectionHeadView.m */; };
+		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
+		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
+		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
 		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
 		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
 		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
@@ -113,6 +116,11 @@
 		F719BFBE1D758B4E00015113 /* JSDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailModel.m; sourceTree = "<group>"; };
 		F719BFC01D758B4E00015113 /* JSSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeadView.h; sourceTree = "<group>"; };
 		F719BFC11D758B4E00015113 /* JSSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeadView.m; sourceTree = "<group>"; };
+		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
+		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
+		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
+		F719BFCC1D75989A00015113 /* JSMenumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumHeader.h; sourceTree = "<group>"; };
+		F719BFCD1D75989A00015113 /* JSMenumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumHeader.m; sourceTree = "<group>"; };
 		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
 		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
 		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
@@ -538,6 +546,7 @@
 				F76265781D7143400055ECBA /* main.m */,
 				F76265901D7144960055ECBA /* Property List.plist */,
 				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
+				F719BFC71D75976800015113 /* Demos.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -636,6 +645,8 @@
 		F762658C1D7144380055ECBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F719BFC91D7597A600015113 /* JSSectionModel.h */,
+				F719BFCA1D7597A600015113 /* JSSectionModel.m */,
 				F720A5D11D72F9CF009B6754 /* JSSubControllerModel.h */,
 				F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */,
 			);
@@ -645,6 +656,8 @@
 		F762658D1D7144380055ECBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F719BFCC1D75989A00015113 /* JSMenumHeader.h */,
+				F719BFCD1D75989A00015113 /* JSMenumHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1060,6 +1073,7 @@
 				F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */,
 				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
+				F719BFC81D75976800015113 /* Demos.plist in Resources */,
 				F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */,
 				F71DC0551D74634900F5843C /* friends.plist in Resources */,
 			);
@@ -1126,6 +1140,7 @@
 				F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */,
 				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
 				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
+				F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */,
 				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
 				F71DC0571D74634900F5843C /* JSHeadCell.m in Sources */,
 				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
@@ -1170,6 +1185,7 @@
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,
+				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,
 				F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */,
 				F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */,
 				F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */,
