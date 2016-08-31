@@ -69,12 +69,6 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string>JSMusicViewController</string>
-				<key>detail</key>
-				<string>仿QQ音乐播放器(播放本地音乐)--待更新</string>
-			</dict>
-			<dict>
-				<key>targetControllerClass</key>
 				<string>JSSparkViewController</string>
 				<key>detail</key>
 				<string>跟随手指移动特效</string>
@@ -90,6 +84,12 @@
 				<string>JSModelsTableViewController</string>
 				<key>detail</key>
 				<string>模型嵌套(仿QQ好友列表样式)</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string>JSNewsHomeController</string>
+				<key>detail</key>
+				<string>模仿网易新闻首页(待更新)</string>
 			</dict>
 		</array>
 	</dict>
@@ -111,6 +111,12 @@
 		<string>多媒体类</string>
 		<key>demos</key>
 		<array>
+			<dict>
+				<key>targetControllerClass</key>
+				<string>JSMusicViewController</string>
+				<key>detail</key>
+				<string>仿QQ音乐播放器(播放本地音乐)--待更新</string>
+			</dict>
 			<dict>
 				<key>targetControllerClass</key>
 				<string></string>

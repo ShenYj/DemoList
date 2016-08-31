@@ -42,7 +42,6 @@
 		F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76265741D7143400055ECBA /* LaunchScreen.storyboard */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
 		F762658F1D71446A0055ECBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F762658E1D71446A0055ECBA /* Main.storyboard */; };
-		F76265911D7144960055ECBA /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76265901D7144960055ECBA /* Property List.plist */; };
 		F76265941D71454A0055ECBA /* JSNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265931D71454A0055ECBA /* JSNavController.m */; };
 		F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265991D7145A40055ECBA /* NSArray+JSLog.m */; };
 		F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = F762659B1D7145A40055ECBA /* NSString+Emoji.m */; };
@@ -161,7 +160,6 @@
 		F76265751D7143400055ECBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76265781D7143400055ECBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F762658E1D71446A0055ECBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F76265901D7144960055ECBA /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		F76265921D71454A0055ECBA /* JSNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavController.h; sourceTree = "<group>"; };
 		F76265931D71454A0055ECBA /* JSNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavController.m; sourceTree = "<group>"; };
 		F76265971D7145A40055ECBA /* JSUIkitExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSUIkitExtension.h; sourceTree = "<group>"; };
@@ -544,7 +542,6 @@
 				F76265741D7143400055ECBA /* LaunchScreen.storyboard */,
 				F762658E1D71446A0055ECBA /* Main.storyboard */,
 				F76265781D7143400055ECBA /* main.m */,
-				F76265901D7144960055ECBA /* Property List.plist */,
 				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
 				F719BFC71D75976800015113 /* Demos.plist */,
 			);
@@ -1062,7 +1059,6 @@
 				F79759121D742E6C0041A7DC /* buyao.wav in Resources */,
 				F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */,
 				F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */,
-				F76265911D7144960055ECBA /* Property List.plist in Resources */,
 				F79759221D742E6C0041A7DC /* 月半小夜曲.lrc in Resources */,
 				F79759181D742E6C0041A7DC /* lamazhengzhuan.jpg in Resources */,
 				F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */,

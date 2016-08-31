@@ -26,7 +26,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         // 成员变量初始化
         _data = [JSAppsModel loadAppsData];
         
-        
     }
     return self;
 }
@@ -75,7 +74,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (void)dealloc{
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 }
 
 
