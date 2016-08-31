@@ -43,7 +43,7 @@ static NSString * const headerReuseId = @"header";
 
 - (void)prepareView{
     
-    self.contentView.backgroundColor = [UIColor js_RGBColorWithRed:58 withGreen:166 withBlue:252];
+    self.contentView.backgroundColor = [UIColor js_colorWithHex:0xF0FFF0];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(TapContentView:)];
     [self.contentView addGestureRecognizer:tap];

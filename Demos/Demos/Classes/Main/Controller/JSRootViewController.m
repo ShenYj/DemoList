@@ -38,6 +38,7 @@
 
 - (void)prepareView{
     
+    //    self.automaticallyAdjustsScrollViewInsets = NO;
     _RootTableViewController = [[JSTableViewController alloc] init];
     [self addChildViewController:_RootTableViewController];
     [self.view addSubview:_RootTableViewController.tableView];

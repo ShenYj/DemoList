@@ -34,12 +34,19 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"%f--%f",self.tableView.contentInset.top,self.tableView.contentOffset.y);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets= NO;
+//    self.automaticallyAdjustsScrollViewInsets= NO;
     self.tableView.sectionFooterHeight = 0;
     self.tableView.backgroundColor = [UIColor whiteColor];
+//    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
 //    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseIdentifier];
+    [self.tableView setContentInset:UIEdgeInsetsMake(-20, 0, 0, 0)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,9 +98,8 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 44;
+    return 34;
 }
-
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

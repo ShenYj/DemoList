@@ -37,9 +37,9 @@
 		F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F41D730503009B6754 /* JSEmieViewController.m */; };
 		F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F71D731EC6009B6754 /* JSNumLabel.m */; };
 		F720A5FB1D732100009B6754 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5FA1D732100009B6754 /* JSButton.m */; };
+		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
-		F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76265741D7143400055ECBA /* LaunchScreen.storyboard */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
 		F762658F1D71446A0055ECBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F762658E1D71446A0055ECBA /* Main.storyboard */; };
 		F76265941D71454A0055ECBA /* JSNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265931D71454A0055ECBA /* JSNavController.m */; };
@@ -152,12 +152,12 @@
 		F720A5F71D731EC6009B6754 /* JSNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNumLabel.m; sourceTree = "<group>"; };
 		F720A5F91D732100009B6754 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
 		F720A5FA1D732100009B6754 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
+		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F76265721D7143400055ECBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F76265731D7143400055ECBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F76265751D7143400055ECBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76265781D7143400055ECBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F762658E1D71446A0055ECBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F76265921D71454A0055ECBA /* JSNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavController.h; sourceTree = "<group>"; };
@@ -534,16 +534,16 @@
 		F76265701D7143400055ECBA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				F79758FC1D742E6C0041A7DC /* Assets */,
+				F719BFC71D75976800015113 /* Demos.plist */,
+				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
+				F76265731D7143400055ECBA /* Assets.xcassets */,
 				F76265661D7142FC0055ECBA /* Info.plist */,
 				F76265711D7143400055ECBA /* AppDelegate.h */,
 				F76265721D7143400055ECBA /* AppDelegate.m */,
-				F76265731D7143400055ECBA /* Assets.xcassets */,
-				F76265741D7143400055ECBA /* LaunchScreen.storyboard */,
 				F762658E1D71446A0055ECBA /* Main.storyboard */,
+				F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */,
 				F76265781D7143400055ECBA /* main.m */,
-				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
-				F719BFC71D75976800015113 /* Demos.plist */,
+				F79758FC1D742E6C0041A7DC /* Assets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -1064,13 +1064,13 @@
 				F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */,
 				F797591A1D742E6C0041A7DC /* paomo.jpg in Resources */,
 				F720A5F21D73018E009B6754 /* apps.plist in Resources */,
+				F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */,
 				F797591E1D742E6C0041A7DC /* xpg.jpg in Resources */,
 				F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */,
 				F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */,
 				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
 				F719BFC81D75976800015113 /* Demos.plist in Resources */,
-				F762657B1D7143400055ECBA /* LaunchScreen.storyboard in Resources */,
 				F71DC0551D74634900F5843C /* friends.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1191,12 +1191,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F76265741D7143400055ECBA /* LaunchScreen.storyboard */ = {
+		F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F76265751D7143400055ECBA /* Base */,
+				F74A69A51D7683BB00783D78 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = "Launch Screen.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
