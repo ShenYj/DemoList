@@ -79,14 +79,52 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     // 设置占位文字
     self.searchController.searchBar.placeholder = @"Search here...";
     
+    __weak typeof(self) weakSelf = self;
+    // 设置下拉刷新 - 1 Normal
+    
+//    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        
+//        NSMutableArray *moreData = [NSMutableArray arrayWithArray:_data];
+//        _data = [moreData arrayByAddingObjectsFromArray:_data];
+//        [weakSelf.tableView reloadData];
+//        [weakSelf.tableView.mj_header endRefreshing];
+//    }];
+    
+    // 设置下拉刷新 - 2 Gif
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
         
+        NSMutableArray *moreData = [NSMutableArray arrayWithArray:_data];
+        _data = [moreData arrayByAddingObjectsFromArray:_data];
+        [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_header endRefreshing];
     }];
-    [header setImages:@[] forState:MJRefreshStateRefreshing];
+    
+//    header.lastUpdatedTimeLabel.hidden = YES;
+//    header.stateLabel.hidden = YES;
+    
+    NSArray *arr = @[
+                     [UIImage imageNamed:@"AppIcon40x40"]
+                     ];
+    NSArray *arr2 = @[[UIImage imageNamed:@"channel_song_list_play_btn"]];
+    
+    [header setImages:arr forState:MJRefreshStateIdle];
+    [header setImages:arr2 forState:MJRefreshStateRefreshing];
+    
     
     self.tableView.mj_header = header;
-
+    
+    
+    // 下拉刷新
+//    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+//        
+//        [self.tableView.mj_footer endRefreshingWithNoMoreData];
+//    }];
+    
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    }];
 }
+
 
 #pragma mark - UISearchResultsUpdating
 
@@ -102,7 +140,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
     // 过滤数据
     self.resultArr = [NSMutableArray arrayWithArray:[_data filteredArrayUsingPredicate:preicate]];
-    //刷新表格
+    // 刷新表格
     [self.tableView reloadData];
 }
 
