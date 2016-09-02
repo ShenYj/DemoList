@@ -30,8 +30,8 @@
 
 #import "Masonry.h"
 #import "YYWebImage.h"
-
-
+#import "YYModel.h"
+#import "MJRefresh.h"
 
 #pragma mark - 宏定义
 

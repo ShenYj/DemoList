@@ -10,7 +10,7 @@
 
 static NSString * const reuseIdentifier = @"reuseIdentifier";
 
-@interface JSSearchTableViewController () <UISearchResultsUpdating>
+@interface JSSearchTableViewController () <UISearchResultsUpdating,UISearchBarDelegate>
 
 // 搜索控制器
 @property (nonatomic,strong) UISearchController *searchController;
@@ -66,6 +66,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
     // 设置代理
     self.searchController.searchResultsUpdater = self;
+    self.searchController.searchBar.delegate = self;
     
     // 设置属性
     
@@ -73,9 +74,17 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     self.searchController.dimsBackgroundDuringPresentation = NO;
     // 保证在UISearchController在激活状态下用户push到下一个view controller之后search bar不会仍留在界面上。
     self.searchController.definesPresentationContext = YES;
+    // 是否隐藏导航栏
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
+    // 设置占位文字
+    self.searchController.searchBar.placeholder = @"Search here...";
     
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
+        
+    }];
+    [header setImages:@[] forState:MJRefreshStateRefreshing];
     
-    
+    self.tableView.mj_header = header;
 
 }
 
@@ -83,6 +92,18 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     
+    NSString *searchString = self.searchController.searchBar.text;
+    
+    NSPredicate *preicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", searchString];
+    
+    if (self.resultArr != nil) {
+        [self.resultArr removeAllObjects];
+    }
+    
+    // 过滤数据
+    self.resultArr = [NSMutableArray arrayWithArray:[_data filteredArrayUsingPredicate:preicate]];
+    //刷新表格
+    [self.tableView reloadData];
 }
 
 
@@ -95,7 +116,14 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return _data.count;
+    
+    if (self.searchController.isActive) {
+        
+        return self.resultArr.count;
+    }else{
+        
+        return _data.count;
+    }
 }
 
 
@@ -109,7 +137,17 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
     }
     
-    NSDictionary *Candy = _data[indexPath.row];
+    
+    NSDictionary *Candy = nil;
+    
+    if (self.searchController.isActive) {
+        
+        Candy = self.resultArr[indexPath.row];
+        
+    }else{
+        
+        Candy = _data[indexPath.row];
+    }
     
     cell.textLabel.text = Candy[@"category"];
     cell.textLabel.textColor = [UIColor js_colorWithHex:0x9370DB];
@@ -119,15 +157,35 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     return cell;
 }
 
-#pragma mark - lazy
 
-- (NSMutableArray *)resultArr{
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (!_resultArr) {
-        _resultArr = [NSMutableArray array];
-    }
-    return _resultArr;
+    NSLog(@"Section:%ld,Row:%ld",indexPath.section,indexPath.row);
 }
+
+
+- (NSArray <UITableViewRowAction *>*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSMutableArray *mDataArr = [NSMutableArray arrayWithArray:_data];
+    
+    NSString *cureHistoryDeleteBtnString = @"删除";
+    // 添加一个删除按钮
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:cureHistoryDeleteBtnString handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"删除本行");
+        
+         // 1.删除数据源
+        [mDataArr removeObjectAtIndex:indexPath.row];
+        _data = mDataArr;
+         // 2.删除数据库
+         
+         // 3.更新UI
+        [tableView reloadData];
+         
+    }];
+    return @[deleteRowAction];
+}
+
 
 
 /*
