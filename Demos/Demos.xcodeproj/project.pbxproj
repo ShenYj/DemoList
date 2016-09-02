@@ -53,6 +53,7 @@
 		F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265A71D7145A40055ECBA /* UIView+JSFrame.m */; };
 		F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B21D71466F0055ECBA /* JSRootViewController.m */; };
 		F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B51D7147EA0055ECBA /* JSTableViewController.m */; };
+		F77810CD1D787FA40098DB71 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */; };
 		F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758551D73BD460041A7DC /* JSHeaderViewController.m */; };
 		F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585C1D73C1710041A7DC /* JSDetailTableView.m */; };
 		F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585E1D73C1710041A7DC /* JSMenumTableView.m */; };
@@ -184,6 +185,8 @@
 		F76265B21D71466F0055ECBA /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewController.m; sourceTree = "<group>"; };
 		F76265B41D7147EA0055ECBA /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
 		F76265B51D7147EA0055ECBA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
+		F77810CB1D787FA40098DB71 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
+		F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
 		F79758541D73BD460041A7DC /* JSHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderViewController.h; sourceTree = "<group>"; };
 		F79758551D73BD460041A7DC /* JSHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderViewController.m; sourceTree = "<group>"; };
 		F797585B1D73C1710041A7DC /* JSDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailTableView.h; sourceTree = "<group>"; };
@@ -526,6 +529,7 @@
 				F79758CF1D7416990041A7DC /* 时钟 */,
 				F719BF401D754D4400015113 /* 键盘处理 */,
 				F719BF391D754B5B00015113 /* 跟随手指移动的特效 */,
+				F77810C71D787F850098DB71 /* UISearchDisplayController */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
 			path = Classes;
@@ -690,6 +694,39 @@
 				F76265A71D7145A40055ECBA /* UIView+JSFrame.m */,
 			);
 			path = "UIKit+JSExtension";
+			sourceTree = "<group>";
+		};
+		F77810C71D787F850098DB71 /* UISearchDisplayController */ = {
+			isa = PBXGroup;
+			children = (
+				F77810C81D787F850098DB71 /* Controller */,
+				F77810C91D787F850098DB71 /* Model */,
+				F77810CA1D787F850098DB71 /* View */,
+			);
+			path = UISearchDisplayController;
+			sourceTree = "<group>";
+		};
+		F77810C81D787F850098DB71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77810CB1D787FA40098DB71 /* JSSearchTableViewController.h */,
+				F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F77810C91D787F850098DB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F77810CA1D787F850098DB71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F79758521D73BD460041A7DC /* 自定义顶部视图1 */ = {
@@ -1148,6 +1185,7 @@
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
 				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
+				F77810CD1D787FA40098DB71 /* JSSearchTableViewController.m in Sources */,
 				F719BFC21D758B4E00015113 /* JSModelsTableViewController.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */,

@@ -36,7 +36,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    NSLog(@"%f--%f",self.tableView.contentInset.top,self.tableView.contentOffset.y);
 }
 
 - (void)viewDidLoad {

@@ -8,48 +8,127 @@
 
 #import "JSSearchTableViewController.h"
 
-@interface JSSearchTableViewController ()
+static NSString * const reuseIdentifier = @"reuseIdentifier";
+
+@interface JSSearchTableViewController () <UISearchResultsUpdating>
+
+// 搜索控制器
+@property (nonatomic,strong) UISearchController *searchController;
+// 保存搜索结果
+@property (nonatomic,strong) NSMutableArray *resultArr;
 
 @end
 
-@implementation JSSearchTableViewController
+@implementation JSSearchTableViewController{
+    
+    NSArray *_data;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    _data = @[
+              @{@"category":@"Chocolate", @"name":@"Chocolate Bar1"},
+              @{@"category":@"Chocolate", @"name":@"Chocolate Chip1"},
+              @{@"category":@"Chocolate", @"name":@"Dark Chocolate1"},
+              @{@"category":@"Hard", @"name":@"Lollipop1"},
+              @{@"category":@"Hard", @"name":@"Candy Cane1"},
+              @{@"category":@"Hard", @"name":@"Jaw Breaker1"},
+              @{@"category":@"Other", @"name":@"Caramel1"},
+              @{@"category":@"Other", @"name":@"Sour Chew1"},
+              @{@"category":@"Other", @"name":@"Gummi Bear"},
+              @{@"category":@"Chocolate", @"name":@"Chocolate Bar2"},
+              @{@"category":@"Chocolate", @"name":@"Chocolate Chip2"},
+              @{@"category":@"Chocolate", @"name":@"Dark Chocolate2"},
+              @{@"category":@"Hard", @"name":@"Lollipop2"},
+              @{@"category":@"Hard", @"name":@"Candy Cane2"},
+              @{@"category":@"Hard", @"name":@"Jaw Breaker2"},
+              @{@"category":@"Other", @"name":@"Caramel2"},
+              @{@"category":@"Other", @"name":@"Sour Chew2"},
+              @{@"category":@"Other", @"name":@"Gummi Bear2"},
+              @{@"category":@"Chocolate", @"name":@"Chocolate Bar3"},
+              @{@"category":@"Chocolate", @"name":@"Chocolate Chip3"},
+              @{@"category":@"Chocolate", @"name":@"Dark Chocolate3"},
+              @{@"category":@"Hard", @"name":@"Lollipop3"},
+              @{@"category":@"Hard", @"name":@"Candy Cane3"},
+              @{@"category":@"Hard", @"name":@"Jaw Breaker3"},
+              @{@"category":@"Other", @"name":@"Caramel3"},
+              @{@"category":@"Other", @"name":@"Sour Chew3"},
+              @{@"category":@"Other", @"name":@"Gummi Bear3"}
+              ];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
+    
+    
+    // 设置代理
+    self.searchController.searchResultsUpdater = self;
+    
+    // 设置属性
+    
+    // 默认情况下,UISearchController会暗化前一个视图
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    // 保证在UISearchController在激活状态下用户push到下一个view controller之后search bar不会仍留在界面上。
+    self.searchController.definesPresentationContext = YES;
+    
+    
+    
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UISearchResultsUpdating
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
 }
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return _data.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
+    }
+    
+    NSDictionary *Candy = _data[indexPath.row];
+    
+    cell.textLabel.text = Candy[@"category"];
+    cell.textLabel.textColor = [UIColor js_colorWithHex:0x9370DB];
+    cell.detailTextLabel.text = Candy[@"name"];
+    cell.detailTextLabel.textColor = [UIColor js_colorWithHex:0x1E90FF];
     
     return cell;
 }
-*/
+
+#pragma mark - lazy
+
+- (NSMutableArray *)resultArr{
+    
+    if (!_resultArr) {
+        _resultArr = [NSMutableArray array];
+    }
+    return _resultArr;
+}
+
 
 /*
 // Override to support conditional editing of the table view.

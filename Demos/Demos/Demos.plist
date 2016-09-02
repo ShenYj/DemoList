@@ -100,9 +100,9 @@
 		<array>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSSearchTableViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>演示搜索栏使用</string>
 			</dict>
 		</array>
 	</dict>

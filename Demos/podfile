@@ -10,6 +10,6 @@ target 'Demos' do
 pod 'Masonry'
 pod ‘YYWebImage'
 pod 'AFNetworking'
-
-
+pod ‘MJRefresh’
+pod ‘YYModel’
 end
