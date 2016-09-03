@@ -113,7 +113,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
     self.tableView.mj_header = header;
     
-    
     // 下拉刷新
 //    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
 //        
@@ -123,7 +122,11 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         [self.tableView.mj_footer endRefreshingWithNoMoreData];
     }];
+    
+    
 }
+
+
 
 
 #pragma mark - UISearchResultsUpdating

@@ -37,6 +37,7 @@
 		F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F41D730503009B6754 /* JSEmieViewController.m */; };
 		F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F71D731EC6009B6754 /* JSNumLabel.m */; };
 		F720A5FB1D732100009B6754 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5FA1D732100009B6754 /* JSButton.m */; };
+		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
@@ -153,6 +154,8 @@
 		F720A5F71D731EC6009B6754 /* JSNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNumLabel.m; sourceTree = "<group>"; };
 		F720A5F91D732100009B6754 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
 		F720A5FA1D732100009B6754 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
+		F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
+		F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
@@ -692,6 +695,8 @@
 				F76265A51D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m */,
 				F76265A61D7145A40055ECBA /* UIView+JSFrame.h */,
 				F76265A71D7145A40055ECBA /* UIView+JSFrame.m */,
+				F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */,
+				F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */,
 			);
 			path = "UIKit+JSExtension";
 			sourceTree = "<group>";
@@ -1208,6 +1213,7 @@
 				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
 				F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */,
 				F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */,
+				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,
 				F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
