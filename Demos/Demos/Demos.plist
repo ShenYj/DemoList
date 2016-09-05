@@ -91,6 +91,12 @@
 				<key>detail</key>
 				<string>模仿网易新闻首页(待更新)</string>
 			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string>JSWebViewController</string>
+				<key>detail</key>
+				<string>演示OC与Javascript交互</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

@@ -17,6 +17,6 @@
 #import "UIImage+JSExtension.h"
 #import "UINavigationController+JSFullScreenPopGesture.h"
 #import "UIView+JSFrame.h"
-
+#import "NSObject+JSObjc.h"
 
 #endif /* JSUIkitExtension_h */
