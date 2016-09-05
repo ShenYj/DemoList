@@ -97,6 +97,12 @@
 				<key>detail</key>
 				<string>演示OC与Javascript交互</string>
 			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
