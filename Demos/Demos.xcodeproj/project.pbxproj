@@ -8,38 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
-		F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF3C1D754B5B00015113 /* JSSparkViewController.m */; };
-		F719BF491D754D4400015113 /* JSKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF431D754D4400015113 /* JSKeyboardViewController.m */; };
-		F719BF4A1D754D4400015113 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BF451D754D4400015113 /* provinces.plist */; };
-		F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BF471D754D4400015113 /* SJProvinces.m */; };
-		F719BFC21D758B4E00015113 /* JSModelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */; };
-		F719BFC31D758B4E00015113 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFBA1D758B4E00015113 /* DemoList.plist */; };
-		F719BFC41D758B4E00015113 /* JSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBC1D758B4E00015113 /* JSCategoryModel.m */; };
-		F719BFC51D758B4E00015113 /* JSDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFBE1D758B4E00015113 /* JSDetailModel.m */; };
-		F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFC11D758B4E00015113 /* JSSectionHeadView.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
-		F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04A1D74634900F5843C /* JSHeadViewController.m */; };
-		F71DC0551D74634900F5843C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71DC04C1D74634900F5843C /* friends.plist */; };
-		F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC04E1D74634900F5843C /* JSFriendsModel.m */; };
-		F71DC0571D74634900F5843C /* JSHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC0511D74634900F5843C /* JSHeadCell.m */; };
-		F71DC0581D74634900F5843C /* JSFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F71DC0531D74634900F5843C /* JSFooterView.m */; };
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
-		F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D71D730009009B6754 /* JSAppsTableController.m */; };
-		F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5DC1D730009009B6754 /* JSAppsModel.m */; };
-		F720A5E31D730009009B6754 /* JSAppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5DF1D730009009B6754 /* JSAppCell.m */; };
-		F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5E61D730055009B6754 /* JSDownLoadImageOperation.m */; };
-		F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5E81D730055009B6754 /* JSDownLoadOperationManager.m */; };
-		F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5EA1D730055009B6754 /* NSString+JSAppendPath.m */; };
-		F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5EC1D730055009B6754 /* UIImageView+JSWebCache.m */; };
-		F720A5F21D73018E009B6754 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = F720A5F11D73018E009B6754 /* apps.plist */; };
-		F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F41D730503009B6754 /* JSEmieViewController.m */; };
-		F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5F71D731EC6009B6754 /* JSNumLabel.m */; };
-		F720A5FB1D732100009B6754 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5FA1D732100009B6754 /* JSButton.m */; };
-		F743A7D61D7D0C0D00576254 /* JSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7D51D7D0C0D00576254 /* JSWebViewController.m */; };
-		F743A7D81D7D0CB500576254 /* JS与OC交互Demo.html in Resources */ = {isa = PBXBuildFile; fileRef = F743A7D71D7D0CB500576254 /* JS与OC交互Demo.html */; };
-		F743A7DB1D7D431800576254 /* JSCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7DA1D7D431800576254 /* JSCartView.m */; };
+		F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7E41D7DB0E400576254 /* JSWebViewController.m */; };
+		F743A8981D7DB0E400576254 /* JS与OC交互Demo.html in Resources */ = {isa = PBXBuildFile; fileRef = F743A7E61D7DB0E400576254 /* JS与OC交互Demo.html */; };
+		F743A8991D7DB0E400576254 /* JSCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7E91D7DB0E400576254 /* JSCartView.m */; };
+		F743A89A1D7DB0E400576254 /* JSHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7ED1D7DB0E400576254 /* JSHeaderViewController.m */; };
+		F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7F31D7DB0E400576254 /* JSAppsTableController.m */; };
+		F743A89C1D7DB0E400576254 /* JSDownLoadImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7F61D7DB0E400576254 /* JSDownLoadImageOperation.m */; };
+		F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7F81D7DB0E400576254 /* JSDownLoadOperationManager.m */; };
+		F743A89E1D7DB0E400576254 /* NSString+JSAppendPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7FA1D7DB0E400576254 /* NSString+JSAppendPath.m */; };
+		F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7FC1D7DB0E400576254 /* UIImageView+JSWebCache.m */; };
+		F743A8A01D7DB0E400576254 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = F743A7FE1D7DB0E400576254 /* apps.plist */; };
+		F743A8A11D7DB0E400576254 /* JSAppsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8001D7DB0E400576254 /* JSAppsModel.m */; };
+		F743A8A21D7DB0E400576254 /* JSAppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8031D7DB0E400576254 /* JSAppCell.m */; };
+		F743A8A31D7DB0E400576254 /* JSDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8071D7DB0E400576254 /* JSDetailTableView.m */; };
+		F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8091D7DB0E400576254 /* JSMenumTableView.m */; };
+		F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A80B1D7DB0E400576254 /* JSViewController.m */; };
+		F743A8A61D7DB0E400576254 /* JSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */; };
+		F743A8A71D7DB0E400576254 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */; };
+		F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A81A1D7DB0E400576254 /* JSDrawingBoardViewController.m */; };
+		F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A81F1D7DB0E400576254 /* BezierPathWithLIneColour.m */; };
+		F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8211D7DB0E400576254 /* DrawingBoard.m */; };
+		F743A8AB1D7DB0E400576254 /* DrawingBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F743A8221D7DB0E400576254 /* DrawingBoardView.xib */; };
+		F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8271D7DB0E400576254 /* JSLukyViewController.m */; };
+		F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A82C1D7DB0E400576254 /* JSLucyButton.m */; };
+		F743A8AE1D7DB0E400576254 /* JSRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A82E1D7DB0E400576254 /* JSRotateView.m */; };
+		F743A8AF1D7DB0E400576254 /* JSRotateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F743A82F1D7DB0E400576254 /* JSRotateView.xib */; };
+		F743A8B01D7DB0E400576254 /* JSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8331D7DB0E400576254 /* JSGestureViewController.m */; };
+		F743A8B11D7DB0E400576254 /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8371D7DB0E400576254 /* UnlockView.m */; };
+		F743A8B21D7DB0E400576254 /* JSEmieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A83B1D7DB0E400576254 /* JSEmieViewController.m */; };
+		F743A8B31D7DB0E400576254 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A83F1D7DB0E400576254 /* JSButton.m */; };
+		F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8411D7DB0E400576254 /* JSNumLabel.m */; };
+		F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8451D7DB0E400576254 /* JSClockViewController.m */; };
+		F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A84B1D7DB0E400576254 /* JSModelsTableViewController.m */; };
+		F743A8B71D7DB0E400576254 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F743A84D1D7DB0E400576254 /* DemoList.plist */; };
+		F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A84F1D7DB0E400576254 /* JSCategoryModel.m */; };
+		F743A8B91D7DB0E400576254 /* JSDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8511D7DB0E400576254 /* JSDetailModel.m */; };
+		F743A8BA1D7DB0E400576254 /* JSSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8541D7DB0E400576254 /* JSSectionHeadView.m */; };
+		F743A8BB1D7DB0E400576254 /* JSHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A86C1D7DB0E400576254 /* JSHeadViewController.m */; };
+		F743A8BC1D7DB0E400576254 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = F743A86E1D7DB0E400576254 /* friends.plist */; };
+		F743A8BD1D7DB0E400576254 /* JSFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8701D7DB0E400576254 /* JSFriendsModel.m */; };
+		F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8731D7DB0E400576254 /* JSFooterView.m */; };
+		F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8751D7DB0E400576254 /* JSHeadCell.m */; };
+		F743A8C01D7DB0E400576254 /* JSSparkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8791D7DB0E400576254 /* JSSparkViewController.m */; };
+		F743A8C11D7DB0E400576254 /* JSLoopRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A87F1D7DB0E400576254 /* JSLoopRootViewController.m */; };
+		F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8811D7DB0E400576254 /* JSLoopView.m */; };
+		F743A8C31D7DB0E400576254 /* JSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8851D7DB0E400576254 /* JSLayout.m */; };
+		F743A8C41D7DB0E400576254 /* JSLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8871D7DB0E400576254 /* JSLoopViewCell.m */; };
+		F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A88B1D7DB0E400576254 /* JSKeyboardViewController.m */; };
+		F743A8C61D7DB0E400576254 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = F743A88D1D7DB0E400576254 /* provinces.plist */; };
+		F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A88F1D7DB0E400576254 /* SJProvinces.m */; };
 		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
@@ -57,27 +78,6 @@
 		F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265A71D7145A40055ECBA /* UIView+JSFrame.m */; };
 		F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B21D71466F0055ECBA /* JSRootViewController.m */; };
 		F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B51D7147EA0055ECBA /* JSTableViewController.m */; };
-		F77810CD1D787FA40098DB71 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */; };
-		F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758551D73BD460041A7DC /* JSHeaderViewController.m */; };
-		F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585C1D73C1710041A7DC /* JSDetailTableView.m */; };
-		F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797585E1D73C1710041A7DC /* JSMenumTableView.m */; };
-		F79758671D73C1710041A7DC /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758601D73C1710041A7DC /* JSViewController.m */; };
-		F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758641D73C1710041A7DC /* JSSectionHeaderView.m */; };
-		F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F797586E1D73CD4E0041A7DC /* JSLoopView.m */; };
-		F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758711D73CD630041A7DC /* JSLoopRootViewController.m */; };
-		F79758751D73CE390041A7DC /* JSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758741D73CE390041A7DC /* JSLayout.m */; };
-		F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758771D73DB110041A7DC /* JSLoopViewCell.m */; };
-		F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F797588F1D73FF130041A7DC /* JSLukyViewController.m */; };
-		F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758981D73FF130041A7DC /* JSRotateView.m */; };
-		F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758991D73FF130041A7DC /* JSRotateView.xib */; };
-		F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758A01D73FFB80041A7DC /* JSLucyButton.m */; };
-		F79758B81D7401C00041A7DC /* JSDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */; };
-		F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */; };
-		F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758AF1D7401C00041A7DC /* DrawingBoard.m */; };
-		F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79758C31D7403310041A7DC /* DrawingBoardView.xib */; };
-		F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758C81D7408E50041A7DC /* JSGestureViewController.m */; };
-		F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758CC1D7408E50041A7DC /* UnlockView.m */; };
-		F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79758D21D7416990041A7DC /* JSClockViewController.m */; };
 		F79759121D742E6C0041A7DC /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FD1D742E6C0041A7DC /* buyao.wav */; };
 		F79759131D742E6C0041A7DC /* chatcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FE1D742E6C0041A7DC /* chatcome.wav */; };
 		F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */; };
@@ -104,64 +104,104 @@
 /* Begin PBXFileReference section */
 		75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F719BF3B1D754B5B00015113 /* JSSparkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSparkViewController.h; sourceTree = "<group>"; };
-		F719BF3C1D754B5B00015113 /* JSSparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSparkViewController.m; sourceTree = "<group>"; };
-		F719BF421D754D4400015113 /* JSKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKeyboardViewController.h; sourceTree = "<group>"; };
-		F719BF431D754D4400015113 /* JSKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKeyboardViewController.m; sourceTree = "<group>"; };
-		F719BF451D754D4400015113 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
-		F719BF461D754D4400015113 /* SJProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProvinces.h; sourceTree = "<group>"; };
-		F719BF471D754D4400015113 /* SJProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProvinces.m; sourceTree = "<group>"; };
-		F719BFB71D758B4E00015113 /* JSModelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSModelsTableViewController.h; sourceTree = "<group>"; };
-		F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSModelsTableViewController.m; sourceTree = "<group>"; };
-		F719BFBA1D758B4E00015113 /* DemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoList.plist; sourceTree = "<group>"; };
-		F719BFBB1D758B4E00015113 /* JSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCategoryModel.h; sourceTree = "<group>"; };
-		F719BFBC1D758B4E00015113 /* JSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCategoryModel.m; sourceTree = "<group>"; };
-		F719BFBD1D758B4E00015113 /* JSDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailModel.h; sourceTree = "<group>"; };
-		F719BFBE1D758B4E00015113 /* JSDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailModel.m; sourceTree = "<group>"; };
-		F719BFC01D758B4E00015113 /* JSSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeadView.h; sourceTree = "<group>"; };
-		F719BFC11D758B4E00015113 /* JSSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeadView.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
 		F719BFCC1D75989A00015113 /* JSMenumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumHeader.h; sourceTree = "<group>"; };
 		F719BFCD1D75989A00015113 /* JSMenumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumHeader.m; sourceTree = "<group>"; };
-		F71DC0491D74634900F5843C /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
-		F71DC04A1D74634900F5843C /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
-		F71DC04C1D74634900F5843C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
-		F71DC04D1D74634900F5843C /* JSFriendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFriendsModel.h; sourceTree = "<group>"; };
-		F71DC04E1D74634900F5843C /* JSFriendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFriendsModel.m; sourceTree = "<group>"; };
-		F71DC0501D74634900F5843C /* JSHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadCell.h; sourceTree = "<group>"; };
-		F71DC0511D74634900F5843C /* JSHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadCell.m; sourceTree = "<group>"; };
-		F71DC0521D74634900F5843C /* JSFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFooterView.h; sourceTree = "<group>"; };
-		F71DC0531D74634900F5843C /* JSFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFooterView.m; sourceTree = "<group>"; };
 		F720A5D11D72F9CF009B6754 /* JSSubControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSubControllerModel.h; sourceTree = "<group>"; };
 		F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSubControllerModel.m; sourceTree = "<group>"; };
-		F720A5D61D730009009B6754 /* JSAppsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppsTableController.h; sourceTree = "<group>"; };
-		F720A5D71D730009009B6754 /* JSAppsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppsTableController.m; sourceTree = "<group>"; };
-		F720A5DB1D730009009B6754 /* JSAppsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppsModel.h; sourceTree = "<group>"; };
-		F720A5DC1D730009009B6754 /* JSAppsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppsModel.m; sourceTree = "<group>"; };
-		F720A5DE1D730009009B6754 /* JSAppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppCell.h; sourceTree = "<group>"; };
-		F720A5DF1D730009009B6754 /* JSAppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppCell.m; sourceTree = "<group>"; };
-		F720A5E51D730055009B6754 /* JSDownLoadImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownLoadImageOperation.h; sourceTree = "<group>"; };
-		F720A5E61D730055009B6754 /* JSDownLoadImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownLoadImageOperation.m; sourceTree = "<group>"; };
-		F720A5E71D730055009B6754 /* JSDownLoadOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownLoadOperationManager.h; sourceTree = "<group>"; };
-		F720A5E81D730055009B6754 /* JSDownLoadOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownLoadOperationManager.m; sourceTree = "<group>"; };
-		F720A5E91D730055009B6754 /* NSString+JSAppendPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSAppendPath.h"; sourceTree = "<group>"; };
-		F720A5EA1D730055009B6754 /* NSString+JSAppendPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSAppendPath.m"; sourceTree = "<group>"; };
-		F720A5EB1D730055009B6754 /* UIImageView+JSWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JSWebCache.h"; sourceTree = "<group>"; };
-		F720A5EC1D730055009B6754 /* UIImageView+JSWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JSWebCache.m"; sourceTree = "<group>"; };
-		F720A5F11D73018E009B6754 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
-		F720A5F31D730503009B6754 /* JSEmieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSEmieViewController.h; sourceTree = "<group>"; };
-		F720A5F41D730503009B6754 /* JSEmieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSEmieViewController.m; sourceTree = "<group>"; };
-		F720A5F61D731EC6009B6754 /* JSNumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNumLabel.h; sourceTree = "<group>"; };
-		F720A5F71D731EC6009B6754 /* JSNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNumLabel.m; sourceTree = "<group>"; };
-		F720A5F91D732100009B6754 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
-		F720A5FA1D732100009B6754 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
-		F743A7D41D7D0C0D00576254 /* JSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebViewController.h; sourceTree = "<group>"; };
-		F743A7D51D7D0C0D00576254 /* JSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebViewController.m; sourceTree = "<group>"; };
-		F743A7D71D7D0CB500576254 /* JS与OC交互Demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互Demo.html"; sourceTree = "<group>"; };
-		F743A7D91D7D431800576254 /* JSCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCartView.h; sourceTree = "<group>"; };
-		F743A7DA1D7D431800576254 /* JSCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCartView.m; sourceTree = "<group>"; };
+		F743A7E31D7DB0E400576254 /* JSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebViewController.h; sourceTree = "<group>"; };
+		F743A7E41D7DB0E400576254 /* JSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebViewController.m; sourceTree = "<group>"; };
+		F743A7E61D7DB0E400576254 /* JS与OC交互Demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互Demo.html"; sourceTree = "<group>"; };
+		F743A7E81D7DB0E400576254 /* JSCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCartView.h; sourceTree = "<group>"; };
+		F743A7E91D7DB0E400576254 /* JSCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCartView.m; sourceTree = "<group>"; };
+		F743A7EC1D7DB0E400576254 /* JSHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderViewController.h; sourceTree = "<group>"; };
+		F743A7ED1D7DB0E400576254 /* JSHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderViewController.m; sourceTree = "<group>"; };
+		F743A7F21D7DB0E400576254 /* JSAppsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppsTableController.h; sourceTree = "<group>"; };
+		F743A7F31D7DB0E400576254 /* JSAppsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppsTableController.m; sourceTree = "<group>"; };
+		F743A7F51D7DB0E400576254 /* JSDownLoadImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownLoadImageOperation.h; sourceTree = "<group>"; };
+		F743A7F61D7DB0E400576254 /* JSDownLoadImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownLoadImageOperation.m; sourceTree = "<group>"; };
+		F743A7F71D7DB0E400576254 /* JSDownLoadOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownLoadOperationManager.h; sourceTree = "<group>"; };
+		F743A7F81D7DB0E400576254 /* JSDownLoadOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownLoadOperationManager.m; sourceTree = "<group>"; };
+		F743A7F91D7DB0E400576254 /* NSString+JSAppendPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSAppendPath.h"; sourceTree = "<group>"; };
+		F743A7FA1D7DB0E400576254 /* NSString+JSAppendPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSAppendPath.m"; sourceTree = "<group>"; };
+		F743A7FB1D7DB0E400576254 /* UIImageView+JSWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JSWebCache.h"; sourceTree = "<group>"; };
+		F743A7FC1D7DB0E400576254 /* UIImageView+JSWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JSWebCache.m"; sourceTree = "<group>"; };
+		F743A7FE1D7DB0E400576254 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		F743A7FF1D7DB0E400576254 /* JSAppsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppsModel.h; sourceTree = "<group>"; };
+		F743A8001D7DB0E400576254 /* JSAppsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppsModel.m; sourceTree = "<group>"; };
+		F743A8021D7DB0E400576254 /* JSAppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppCell.h; sourceTree = "<group>"; };
+		F743A8031D7DB0E400576254 /* JSAppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppCell.m; sourceTree = "<group>"; };
+		F743A8061D7DB0E400576254 /* JSDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailTableView.h; sourceTree = "<group>"; };
+		F743A8071D7DB0E400576254 /* JSDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailTableView.m; sourceTree = "<group>"; };
+		F743A8081D7DB0E400576254 /* JSMenumTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumTableView.h; sourceTree = "<group>"; };
+		F743A8091D7DB0E400576254 /* JSMenumTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumTableView.m; sourceTree = "<group>"; };
+		F743A80A1D7DB0E400576254 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		F743A80B1D7DB0E400576254 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		F743A80E1D7DB0E400576254 /* JSSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeaderView.h; sourceTree = "<group>"; };
+		F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeaderView.m; sourceTree = "<group>"; };
+		F743A8121D7DB0E400576254 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
+		F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
+		F743A8191D7DB0E400576254 /* JSDrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDrawingBoardViewController.h; sourceTree = "<group>"; };
+		F743A81A1D7DB0E400576254 /* JSDrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDrawingBoardViewController.m; sourceTree = "<group>"; };
+		F743A81E1D7DB0E400576254 /* BezierPathWithLIneColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathWithLIneColour.h; sourceTree = "<group>"; };
+		F743A81F1D7DB0E400576254 /* BezierPathWithLIneColour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathWithLIneColour.m; sourceTree = "<group>"; };
+		F743A8201D7DB0E400576254 /* DrawingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoard.h; sourceTree = "<group>"; };
+		F743A8211D7DB0E400576254 /* DrawingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoard.m; sourceTree = "<group>"; };
+		F743A8221D7DB0E400576254 /* DrawingBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardView.xib; sourceTree = "<group>"; };
+		F743A8261D7DB0E400576254 /* JSLukyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLukyViewController.h; sourceTree = "<group>"; };
+		F743A8271D7DB0E400576254 /* JSLukyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLukyViewController.m; sourceTree = "<group>"; };
+		F743A82B1D7DB0E400576254 /* JSLucyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLucyButton.h; sourceTree = "<group>"; };
+		F743A82C1D7DB0E400576254 /* JSLucyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLucyButton.m; sourceTree = "<group>"; };
+		F743A82D1D7DB0E400576254 /* JSRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRotateView.h; sourceTree = "<group>"; };
+		F743A82E1D7DB0E400576254 /* JSRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRotateView.m; sourceTree = "<group>"; };
+		F743A82F1D7DB0E400576254 /* JSRotateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRotateView.xib; sourceTree = "<group>"; };
+		F743A8321D7DB0E400576254 /* JSGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGestureViewController.h; sourceTree = "<group>"; };
+		F743A8331D7DB0E400576254 /* JSGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGestureViewController.m; sourceTree = "<group>"; };
+		F743A8361D7DB0E400576254 /* UnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockView.h; sourceTree = "<group>"; };
+		F743A8371D7DB0E400576254 /* UnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
+		F743A83A1D7DB0E400576254 /* JSEmieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSEmieViewController.h; sourceTree = "<group>"; };
+		F743A83B1D7DB0E400576254 /* JSEmieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSEmieViewController.m; sourceTree = "<group>"; };
+		F743A83E1D7DB0E400576254 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
+		F743A83F1D7DB0E400576254 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
+		F743A8401D7DB0E400576254 /* JSNumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNumLabel.h; sourceTree = "<group>"; };
+		F743A8411D7DB0E400576254 /* JSNumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNumLabel.m; sourceTree = "<group>"; };
+		F743A8441D7DB0E400576254 /* JSClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClockViewController.h; sourceTree = "<group>"; };
+		F743A8451D7DB0E400576254 /* JSClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClockViewController.m; sourceTree = "<group>"; };
+		F743A84A1D7DB0E400576254 /* JSModelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSModelsTableViewController.h; sourceTree = "<group>"; };
+		F743A84B1D7DB0E400576254 /* JSModelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSModelsTableViewController.m; sourceTree = "<group>"; };
+		F743A84D1D7DB0E400576254 /* DemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoList.plist; sourceTree = "<group>"; };
+		F743A84E1D7DB0E400576254 /* JSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCategoryModel.h; sourceTree = "<group>"; };
+		F743A84F1D7DB0E400576254 /* JSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCategoryModel.m; sourceTree = "<group>"; };
+		F743A8501D7DB0E400576254 /* JSDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailModel.h; sourceTree = "<group>"; };
+		F743A8511D7DB0E400576254 /* JSDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailModel.m; sourceTree = "<group>"; };
+		F743A8531D7DB0E400576254 /* JSSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeadView.h; sourceTree = "<group>"; };
+		F743A8541D7DB0E400576254 /* JSSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeadView.m; sourceTree = "<group>"; };
+		F743A86B1D7DB0E400576254 /* JSHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadViewController.h; sourceTree = "<group>"; };
+		F743A86C1D7DB0E400576254 /* JSHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadViewController.m; sourceTree = "<group>"; };
+		F743A86E1D7DB0E400576254 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		F743A86F1D7DB0E400576254 /* JSFriendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFriendsModel.h; sourceTree = "<group>"; };
+		F743A8701D7DB0E400576254 /* JSFriendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFriendsModel.m; sourceTree = "<group>"; };
+		F743A8721D7DB0E400576254 /* JSFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFooterView.h; sourceTree = "<group>"; };
+		F743A8731D7DB0E400576254 /* JSFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFooterView.m; sourceTree = "<group>"; };
+		F743A8741D7DB0E400576254 /* JSHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeadCell.h; sourceTree = "<group>"; };
+		F743A8751D7DB0E400576254 /* JSHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeadCell.m; sourceTree = "<group>"; };
+		F743A8781D7DB0E400576254 /* JSSparkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSparkViewController.h; sourceTree = "<group>"; };
+		F743A8791D7DB0E400576254 /* JSSparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSparkViewController.m; sourceTree = "<group>"; };
+		F743A87E1D7DB0E400576254 /* JSLoopRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopRootViewController.h; sourceTree = "<group>"; };
+		F743A87F1D7DB0E400576254 /* JSLoopRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopRootViewController.m; sourceTree = "<group>"; };
+		F743A8801D7DB0E400576254 /* JSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopView.h; sourceTree = "<group>"; };
+		F743A8811D7DB0E400576254 /* JSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopView.m; sourceTree = "<group>"; };
+		F743A8841D7DB0E400576254 /* JSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLayout.h; sourceTree = "<group>"; };
+		F743A8851D7DB0E400576254 /* JSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLayout.m; sourceTree = "<group>"; };
+		F743A8861D7DB0E400576254 /* JSLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopViewCell.h; sourceTree = "<group>"; };
+		F743A8871D7DB0E400576254 /* JSLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopViewCell.m; sourceTree = "<group>"; };
+		F743A88A1D7DB0E400576254 /* JSKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKeyboardViewController.h; sourceTree = "<group>"; };
+		F743A88B1D7DB0E400576254 /* JSKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKeyboardViewController.m; sourceTree = "<group>"; };
+		F743A88D1D7DB0E400576254 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		F743A88E1D7DB0E400576254 /* SJProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProvinces.h; sourceTree = "<group>"; };
+		F743A88F1D7DB0E400576254 /* SJProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProvinces.m; sourceTree = "<group>"; };
 		F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
 		F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -196,46 +236,6 @@
 		F76265B21D71466F0055ECBA /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewController.m; sourceTree = "<group>"; };
 		F76265B41D7147EA0055ECBA /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
 		F76265B51D7147EA0055ECBA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
-		F77810CB1D787FA40098DB71 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
-		F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
-		F79758541D73BD460041A7DC /* JSHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderViewController.h; sourceTree = "<group>"; };
-		F79758551D73BD460041A7DC /* JSHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderViewController.m; sourceTree = "<group>"; };
-		F797585B1D73C1710041A7DC /* JSDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailTableView.h; sourceTree = "<group>"; };
-		F797585C1D73C1710041A7DC /* JSDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailTableView.m; sourceTree = "<group>"; };
-		F797585D1D73C1710041A7DC /* JSMenumTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumTableView.h; sourceTree = "<group>"; };
-		F797585E1D73C1710041A7DC /* JSMenumTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumTableView.m; sourceTree = "<group>"; };
-		F797585F1D73C1710041A7DC /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
-		F79758601D73C1710041A7DC /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
-		F79758631D73C1710041A7DC /* JSSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeaderView.h; sourceTree = "<group>"; };
-		F79758641D73C1710041A7DC /* JSSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeaderView.m; sourceTree = "<group>"; };
-		F797586D1D73CD4E0041A7DC /* JSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopView.h; sourceTree = "<group>"; };
-		F797586E1D73CD4E0041A7DC /* JSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopView.m; sourceTree = "<group>"; };
-		F79758701D73CD630041A7DC /* JSLoopRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopRootViewController.h; sourceTree = "<group>"; };
-		F79758711D73CD630041A7DC /* JSLoopRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopRootViewController.m; sourceTree = "<group>"; };
-		F79758731D73CE390041A7DC /* JSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLayout.h; sourceTree = "<group>"; };
-		F79758741D73CE390041A7DC /* JSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLayout.m; sourceTree = "<group>"; };
-		F79758761D73DB110041A7DC /* JSLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopViewCell.h; sourceTree = "<group>"; };
-		F79758771D73DB110041A7DC /* JSLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopViewCell.m; sourceTree = "<group>"; };
-		F797588E1D73FF130041A7DC /* JSLukyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLukyViewController.h; sourceTree = "<group>"; };
-		F797588F1D73FF130041A7DC /* JSLukyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLukyViewController.m; sourceTree = "<group>"; };
-		F79758971D73FF130041A7DC /* JSRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRotateView.h; sourceTree = "<group>"; };
-		F79758981D73FF130041A7DC /* JSRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRotateView.m; sourceTree = "<group>"; };
-		F79758991D73FF130041A7DC /* JSRotateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRotateView.xib; sourceTree = "<group>"; };
-		F797589F1D73FFB80041A7DC /* JSLucyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLucyButton.h; sourceTree = "<group>"; };
-		F79758A01D73FFB80041A7DC /* JSLucyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLucyButton.m; sourceTree = "<group>"; };
-		F79758A51D7401C00041A7DC /* JSDrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDrawingBoardViewController.h; sourceTree = "<group>"; };
-		F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDrawingBoardViewController.m; sourceTree = "<group>"; };
-		F79758AC1D7401C00041A7DC /* BezierPathWithLIneColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathWithLIneColour.h; sourceTree = "<group>"; };
-		F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathWithLIneColour.m; sourceTree = "<group>"; };
-		F79758AE1D7401C00041A7DC /* DrawingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoard.h; sourceTree = "<group>"; };
-		F79758AF1D7401C00041A7DC /* DrawingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoard.m; sourceTree = "<group>"; };
-		F79758C31D7403310041A7DC /* DrawingBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardView.xib; sourceTree = "<group>"; };
-		F79758C71D7408E50041A7DC /* JSGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGestureViewController.h; sourceTree = "<group>"; };
-		F79758C81D7408E50041A7DC /* JSGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGestureViewController.m; sourceTree = "<group>"; };
-		F79758CB1D7408E50041A7DC /* UnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockView.h; sourceTree = "<group>"; };
-		F79758CC1D7408E50041A7DC /* UnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
-		F79758D11D7416990041A7DC /* JSClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClockViewController.h; sourceTree = "<group>"; };
-		F79758D21D7416990041A7DC /* JSClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClockViewController.m; sourceTree = "<group>"; };
 		F79758FD1D742E6C0041A7DC /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
 		F79758FE1D742E6C0041A7DC /* chatcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chatcome.wav; sourceTree = "<group>"; };
 		F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G.E.M. 邓紫棋 - 泡沫.mp3"; sourceTree = "<group>"; };
@@ -289,246 +289,804 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F719BF391D754B5B00015113 /* 跟随手指移动的特效 */ = {
+		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
 			isa = PBXGroup;
 			children = (
-				F719BF3A1D754B5B00015113 /* Controller */,
-				F719BF3D1D754B5B00015113 /* Model */,
-				F719BF3E1D754B5B00015113 /* View */,
+				F743A7E11D7DB0E400576254 /* OC与JS交互Demo */,
+				F743A7EA1D7DB0E400576254 /* ScaleHeaderView */,
+				F743A7F01D7DB0E400576254 /* SyncDownLoadImg */,
+				F743A8041D7DB0E400576254 /* TableView联动 */,
+				F743A8101D7DB0E400576254 /* UISearchDisplayController */,
+				F743A8161D7DB0E400576254 /* 小画板 */,
+				F743A8241D7DB0E400576254 /* 幸运转盘 */,
+				F743A8301D7DB0E400576254 /* 手势解锁 */,
+				F743A8381D7DB0E400576254 /* 摇奖机 */,
+				F743A8421D7DB0E400576254 /* 时钟 */,
+				F743A8481D7DB0E400576254 /* 模型嵌套 */,
+				F743A8551D7DB0E400576254 /* 网易新闻 */,
+				F743A8691D7DB0E400576254 /* 自定义顶部视图 */,
+				F743A8761D7DB0E400576254 /* 跟随手指移动的特效 */,
+				F743A87C1D7DB0E400576254 /* 轮播器 */,
+				F743A8881D7DB0E400576254 /* 键盘处理(TF&PickerView) */,
 			);
-			path = "跟随手指移动的特效";
+			path = "01-逻辑处理";
 			sourceTree = "<group>";
 		};
-		F719BF3A1D754B5B00015113 /* Controller */ = {
+		F743A7E11D7DB0E400576254 /* OC与JS交互Demo */ = {
 			isa = PBXGroup;
 			children = (
-				F719BF3B1D754B5B00015113 /* JSSparkViewController.h */,
-				F719BF3C1D754B5B00015113 /* JSSparkViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F719BF3D1D754B5B00015113 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F719BF3E1D754B5B00015113 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F719BF401D754D4400015113 /* 键盘处理 */ = {
-			isa = PBXGroup;
-			children = (
-				F719BF411D754D4400015113 /* Controller */,
-				F719BF441D754D4400015113 /* Model */,
-				F719BF481D754D4400015113 /* View */,
-			);
-			name = "键盘处理";
-			path = "键盘处理(TF&PickerView)";
-			sourceTree = "<group>";
-		};
-		F719BF411D754D4400015113 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F719BF421D754D4400015113 /* JSKeyboardViewController.h */,
-				F719BF431D754D4400015113 /* JSKeyboardViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F719BF441D754D4400015113 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F719BF451D754D4400015113 /* provinces.plist */,
-				F719BF461D754D4400015113 /* SJProvinces.h */,
-				F719BF471D754D4400015113 /* SJProvinces.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F719BF481D754D4400015113 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F719BFB51D758B4E00015113 /* 模型嵌套 */ = {
-			isa = PBXGroup;
-			children = (
-				F719BFB61D758B4E00015113 /* Controller */,
-				F719BFB91D758B4E00015113 /* Model */,
-				F719BFBF1D758B4E00015113 /* View */,
-			);
-			path = "模型嵌套";
-			sourceTree = "<group>";
-		};
-		F719BFB61D758B4E00015113 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F719BFB71D758B4E00015113 /* JSModelsTableViewController.h */,
-				F719BFB81D758B4E00015113 /* JSModelsTableViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F719BFB91D758B4E00015113 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F719BFBA1D758B4E00015113 /* DemoList.plist */,
-				F719BFBB1D758B4E00015113 /* JSCategoryModel.h */,
-				F719BFBC1D758B4E00015113 /* JSCategoryModel.m */,
-				F719BFBD1D758B4E00015113 /* JSDetailModel.h */,
-				F719BFBE1D758B4E00015113 /* JSDetailModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F719BFBF1D758B4E00015113 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F719BFC01D758B4E00015113 /* JSSectionHeadView.h */,
-				F719BFC11D758B4E00015113 /* JSSectionHeadView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F71DC0471D74634900F5843C /* 自定义顶部视图2 */ = {
-			isa = PBXGroup;
-			children = (
-				F71DC0481D74634900F5843C /* Controllers */,
-				F71DC04B1D74634900F5843C /* Models */,
-				F71DC04F1D74634900F5843C /* Views */,
-			);
-			name = "自定义顶部视图2";
-			path = "自定义顶部视图";
-			sourceTree = "<group>";
-		};
-		F71DC0481D74634900F5843C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F71DC0491D74634900F5843C /* JSHeadViewController.h */,
-				F71DC04A1D74634900F5843C /* JSHeadViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F71DC04B1D74634900F5843C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F71DC04C1D74634900F5843C /* friends.plist */,
-				F71DC04D1D74634900F5843C /* JSFriendsModel.h */,
-				F71DC04E1D74634900F5843C /* JSFriendsModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F71DC04F1D74634900F5843C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F71DC0501D74634900F5843C /* JSHeadCell.h */,
-				F71DC0511D74634900F5843C /* JSHeadCell.m */,
-				F71DC0521D74634900F5843C /* JSFooterView.h */,
-				F71DC0531D74634900F5843C /* JSFooterView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F720A5D41D730009009B6754 /* 图片下载处理 */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5E41D730055009B6754 /* JSOperation */,
-				F720A5D51D730009009B6754 /* Controllers */,
-				F720A5DA1D730009009B6754 /* Models */,
-				F720A5DD1D730009009B6754 /* Views */,
-			);
-			name = "图片下载处理";
-			path = SyncDownLoadImg;
-			sourceTree = "<group>";
-		};
-		F720A5D51D730009009B6754 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5D61D730009009B6754 /* JSAppsTableController.h */,
-				F720A5D71D730009009B6754 /* JSAppsTableController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F720A5DA1D730009009B6754 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5F11D73018E009B6754 /* apps.plist */,
-				F720A5DB1D730009009B6754 /* JSAppsModel.h */,
-				F720A5DC1D730009009B6754 /* JSAppsModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F720A5DD1D730009009B6754 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5DE1D730009009B6754 /* JSAppCell.h */,
-				F720A5DF1D730009009B6754 /* JSAppCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F720A5E41D730055009B6754 /* JSOperation */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5E51D730055009B6754 /* JSDownLoadImageOperation.h */,
-				F720A5E61D730055009B6754 /* JSDownLoadImageOperation.m */,
-				F720A5E71D730055009B6754 /* JSDownLoadOperationManager.h */,
-				F720A5E81D730055009B6754 /* JSDownLoadOperationManager.m */,
-				F720A5E91D730055009B6754 /* NSString+JSAppendPath.h */,
-				F720A5EA1D730055009B6754 /* NSString+JSAppendPath.m */,
-				F720A5EB1D730055009B6754 /* UIImageView+JSWebCache.h */,
-				F720A5EC1D730055009B6754 /* UIImageView+JSWebCache.m */,
-			);
-			path = JSOperation;
-			sourceTree = "<group>";
-		};
-		F743A7D01D7D0BD100576254 /* OC与JS交互Demo */ = {
-			isa = PBXGroup;
-			children = (
-				F743A7D11D7D0BD100576254 /* Controller */,
-				F743A7D21D7D0BD100576254 /* Model */,
-				F743A7D31D7D0BD100576254 /* View */,
+				F743A7E21D7DB0E400576254 /* Controller */,
+				F743A7E51D7DB0E400576254 /* Model */,
+				F743A7E71D7DB0E400576254 /* View */,
 			);
 			path = "OC与JS交互Demo";
 			sourceTree = "<group>";
 		};
-		F743A7D11D7D0BD100576254 /* Controller */ = {
+		F743A7E21D7DB0E400576254 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F743A7D41D7D0C0D00576254 /* JSWebViewController.h */,
-				F743A7D51D7D0C0D00576254 /* JSWebViewController.m */,
+				F743A7E31D7DB0E400576254 /* JSWebViewController.h */,
+				F743A7E41D7DB0E400576254 /* JSWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F743A7D21D7D0BD100576254 /* Model */ = {
+		F743A7E51D7DB0E400576254 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F743A7D71D7D0CB500576254 /* JS与OC交互Demo.html */,
+				F743A7E61D7DB0E400576254 /* JS与OC交互Demo.html */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F743A7D31D7D0BD100576254 /* View */ = {
+		F743A7E71D7DB0E400576254 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F743A7D91D7D431800576254 /* JSCartView.h */,
-				F743A7DA1D7D431800576254 /* JSCartView.m */,
+				F743A7E81D7DB0E400576254 /* JSCartView.h */,
+				F743A7E91D7DB0E400576254 /* JSCartView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F743A7EA1D7DB0E400576254 /* ScaleHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7EB1D7DB0E400576254 /* Controller */,
+				F743A7EE1D7DB0E400576254 /* Model */,
+				F743A7EF1D7DB0E400576254 /* View */,
+			);
+			path = ScaleHeaderView;
+			sourceTree = "<group>";
+		};
+		F743A7EB1D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7EC1D7DB0E400576254 /* JSHeaderViewController.h */,
+				F743A7ED1D7DB0E400576254 /* JSHeaderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A7EE1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A7EF1D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A7F01D7DB0E400576254 /* SyncDownLoadImg */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7F11D7DB0E400576254 /* Controllers */,
+				F743A7F41D7DB0E400576254 /* JSOperation */,
+				F743A7FD1D7DB0E400576254 /* Models */,
+				F743A8011D7DB0E400576254 /* Views */,
+			);
+			path = SyncDownLoadImg;
+			sourceTree = "<group>";
+		};
+		F743A7F11D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7F21D7DB0E400576254 /* JSAppsTableController.h */,
+				F743A7F31D7DB0E400576254 /* JSAppsTableController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A7F41D7DB0E400576254 /* JSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7F51D7DB0E400576254 /* JSDownLoadImageOperation.h */,
+				F743A7F61D7DB0E400576254 /* JSDownLoadImageOperation.m */,
+				F743A7F71D7DB0E400576254 /* JSDownLoadOperationManager.h */,
+				F743A7F81D7DB0E400576254 /* JSDownLoadOperationManager.m */,
+				F743A7F91D7DB0E400576254 /* NSString+JSAppendPath.h */,
+				F743A7FA1D7DB0E400576254 /* NSString+JSAppendPath.m */,
+				F743A7FB1D7DB0E400576254 /* UIImageView+JSWebCache.h */,
+				F743A7FC1D7DB0E400576254 /* UIImageView+JSWebCache.m */,
+			);
+			path = JSOperation;
+			sourceTree = "<group>";
+		};
+		F743A7FD1D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F743A7FE1D7DB0E400576254 /* apps.plist */,
+				F743A7FF1D7DB0E400576254 /* JSAppsModel.h */,
+				F743A8001D7DB0E400576254 /* JSAppsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A8011D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8021D7DB0E400576254 /* JSAppCell.h */,
+				F743A8031D7DB0E400576254 /* JSAppCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8041D7DB0E400576254 /* TableView联动 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8051D7DB0E400576254 /* Controller */,
+				F743A80C1D7DB0E400576254 /* Model */,
+				F743A80D1D7DB0E400576254 /* View */,
+			);
+			path = "TableView联动";
+			sourceTree = "<group>";
+		};
+		F743A8051D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8061D7DB0E400576254 /* JSDetailTableView.h */,
+				F743A8071D7DB0E400576254 /* JSDetailTableView.m */,
+				F743A8081D7DB0E400576254 /* JSMenumTableView.h */,
+				F743A8091D7DB0E400576254 /* JSMenumTableView.m */,
+				F743A80A1D7DB0E400576254 /* JSViewController.h */,
+				F743A80B1D7DB0E400576254 /* JSViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A80C1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A80D1D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F743A80E1D7DB0E400576254 /* JSSectionHeaderView.h */,
+				F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8101D7DB0E400576254 /* UISearchDisplayController */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8111D7DB0E400576254 /* Controller */,
+				F743A8141D7DB0E400576254 /* Model */,
+				F743A8151D7DB0E400576254 /* View */,
+			);
+			path = UISearchDisplayController;
+			sourceTree = "<group>";
+		};
+		F743A8111D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8121D7DB0E400576254 /* JSSearchTableViewController.h */,
+				F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A8141D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8151D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8161D7DB0E400576254 /* 小画板 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8171D7DB0E400576254 /* Classes */,
+			);
+			path = "小画板";
+			sourceTree = "<group>";
+		};
+		F743A8171D7DB0E400576254 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8181D7DB0E400576254 /* Controllers */,
+				F743A81B1D7DB0E400576254 /* Models */,
+				F743A81D1D7DB0E400576254 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F743A8181D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8191D7DB0E400576254 /* JSDrawingBoardViewController.h */,
+				F743A81A1D7DB0E400576254 /* JSDrawingBoardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A81B1D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A81D1D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F743A81E1D7DB0E400576254 /* BezierPathWithLIneColour.h */,
+				F743A81F1D7DB0E400576254 /* BezierPathWithLIneColour.m */,
+				F743A8201D7DB0E400576254 /* DrawingBoard.h */,
+				F743A8211D7DB0E400576254 /* DrawingBoard.m */,
+				F743A8221D7DB0E400576254 /* DrawingBoardView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8241D7DB0E400576254 /* 幸运转盘 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8251D7DB0E400576254 /* Controllers */,
+				F743A8281D7DB0E400576254 /* Models */,
+				F743A82A1D7DB0E400576254 /* Views */,
+			);
+			path = "幸运转盘";
+			sourceTree = "<group>";
+		};
+		F743A8251D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8261D7DB0E400576254 /* JSLukyViewController.h */,
+				F743A8271D7DB0E400576254 /* JSLukyViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A8281D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A82A1D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F743A82B1D7DB0E400576254 /* JSLucyButton.h */,
+				F743A82C1D7DB0E400576254 /* JSLucyButton.m */,
+				F743A82D1D7DB0E400576254 /* JSRotateView.h */,
+				F743A82E1D7DB0E400576254 /* JSRotateView.m */,
+				F743A82F1D7DB0E400576254 /* JSRotateView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8301D7DB0E400576254 /* 手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8311D7DB0E400576254 /* Controller */,
+				F743A8341D7DB0E400576254 /* Model */,
+				F743A8351D7DB0E400576254 /* View */,
+			);
+			path = "手势解锁";
+			sourceTree = "<group>";
+		};
+		F743A8311D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8321D7DB0E400576254 /* JSGestureViewController.h */,
+				F743A8331D7DB0E400576254 /* JSGestureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A8341D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8351D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8361D7DB0E400576254 /* UnlockView.h */,
+				F743A8371D7DB0E400576254 /* UnlockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8381D7DB0E400576254 /* 摇奖机 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8391D7DB0E400576254 /* Controller */,
+				F743A83C1D7DB0E400576254 /* Model */,
+				F743A83D1D7DB0E400576254 /* View */,
+			);
+			path = "摇奖机";
+			sourceTree = "<group>";
+		};
+		F743A8391D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A83A1D7DB0E400576254 /* JSEmieViewController.h */,
+				F743A83B1D7DB0E400576254 /* JSEmieViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A83C1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A83D1D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F743A83E1D7DB0E400576254 /* JSButton.h */,
+				F743A83F1D7DB0E400576254 /* JSButton.m */,
+				F743A8401D7DB0E400576254 /* JSNumLabel.h */,
+				F743A8411D7DB0E400576254 /* JSNumLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8421D7DB0E400576254 /* 时钟 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8431D7DB0E400576254 /* Controller */,
+				F743A8461D7DB0E400576254 /* Model */,
+				F743A8471D7DB0E400576254 /* View */,
+			);
+			path = "时钟";
+			sourceTree = "<group>";
+		};
+		F743A8431D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8441D7DB0E400576254 /* JSClockViewController.h */,
+				F743A8451D7DB0E400576254 /* JSClockViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A8461D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8471D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8481D7DB0E400576254 /* 模型嵌套 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8491D7DB0E400576254 /* Controller */,
+				F743A84C1D7DB0E400576254 /* Model */,
+				F743A8521D7DB0E400576254 /* View */,
+			);
+			path = "模型嵌套";
+			sourceTree = "<group>";
+		};
+		F743A8491D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A84A1D7DB0E400576254 /* JSModelsTableViewController.h */,
+				F743A84B1D7DB0E400576254 /* JSModelsTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A84C1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F743A84D1D7DB0E400576254 /* DemoList.plist */,
+				F743A84E1D7DB0E400576254 /* JSCategoryModel.h */,
+				F743A84F1D7DB0E400576254 /* JSCategoryModel.m */,
+				F743A8501D7DB0E400576254 /* JSDetailModel.h */,
+				F743A8511D7DB0E400576254 /* JSDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8521D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8531D7DB0E400576254 /* JSSectionHeadView.h */,
+				F743A8541D7DB0E400576254 /* JSSectionHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8551D7DB0E400576254 /* 网易新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8561D7DB0E400576254 /* Channel */,
+				F743A85B1D7DB0E400576254 /* Cycle */,
+				F743A85F1D7DB0E400576254 /* Home */,
+				F743A8631D7DB0E400576254 /* Navigation */,
+				F743A8641D7DB0E400576254 /* NetworkTool */,
+				F743A8651D7DB0E400576254 /* News */,
+			);
+			path = "网易新闻";
+			sourceTree = "<group>";
+		};
+		F743A8561D7DB0E400576254 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8571D7DB0E400576254 /* Controllers */,
+				F743A8581D7DB0E400576254 /* Models */,
+				F743A8591D7DB0E400576254 /* Others */,
+				F743A85A1D7DB0E400576254 /* Views */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		F743A8571D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A8581D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A8591D7DB0E400576254 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F743A85A1D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A85B1D7DB0E400576254 /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				F743A85C1D7DB0E400576254 /* Controllers */,
+				F743A85D1D7DB0E400576254 /* Models */,
+				F743A85E1D7DB0E400576254 /* Views */,
+			);
+			path = Cycle;
+			sourceTree = "<group>";
+		};
+		F743A85C1D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A85D1D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A85E1D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A85F1D7DB0E400576254 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8601D7DB0E400576254 /* Controllers */,
+				F743A8611D7DB0E400576254 /* Models */,
+				F743A8621D7DB0E400576254 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F743A8601D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A8611D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A8621D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8631D7DB0E400576254 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F743A8641D7DB0E400576254 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		F743A8651D7DB0E400576254 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8661D7DB0E400576254 /* Controllers */,
+				F743A8671D7DB0E400576254 /* Models */,
+				F743A8681D7DB0E400576254 /* Views */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F743A8661D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A8671D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A8681D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8691D7DB0E400576254 /* 自定义顶部视图 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A86A1D7DB0E400576254 /* Controllers */,
+				F743A86D1D7DB0E400576254 /* Models */,
+				F743A8711D7DB0E400576254 /* Views */,
+			);
+			path = "自定义顶部视图";
+			sourceTree = "<group>";
+		};
+		F743A86A1D7DB0E400576254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F743A86B1D7DB0E400576254 /* JSHeadViewController.h */,
+				F743A86C1D7DB0E400576254 /* JSHeadViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F743A86D1D7DB0E400576254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F743A86E1D7DB0E400576254 /* friends.plist */,
+				F743A86F1D7DB0E400576254 /* JSFriendsModel.h */,
+				F743A8701D7DB0E400576254 /* JSFriendsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F743A8711D7DB0E400576254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8721D7DB0E400576254 /* JSFooterView.h */,
+				F743A8731D7DB0E400576254 /* JSFooterView.m */,
+				F743A8741D7DB0E400576254 /* JSHeadCell.h */,
+				F743A8751D7DB0E400576254 /* JSHeadCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F743A8761D7DB0E400576254 /* 跟随手指移动的特效 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8771D7DB0E400576254 /* Controller */,
+				F743A87A1D7DB0E400576254 /* Model */,
+				F743A87B1D7DB0E400576254 /* View */,
+			);
+			path = "跟随手指移动的特效";
+			sourceTree = "<group>";
+		};
+		F743A8771D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8781D7DB0E400576254 /* JSSparkViewController.h */,
+				F743A8791D7DB0E400576254 /* JSSparkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A87A1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A87B1D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A87C1D7DB0E400576254 /* 轮播器 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A87D1D7DB0E400576254 /* Controller */,
+				F743A8821D7DB0E400576254 /* Model */,
+				F743A8831D7DB0E400576254 /* View */,
+			);
+			path = "轮播器";
+			sourceTree = "<group>";
+		};
+		F743A87D1D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A87E1D7DB0E400576254 /* JSLoopRootViewController.h */,
+				F743A87F1D7DB0E400576254 /* JSLoopRootViewController.m */,
+				F743A8801D7DB0E400576254 /* JSLoopView.h */,
+				F743A8811D7DB0E400576254 /* JSLoopView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A8821D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8831D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8841D7DB0E400576254 /* JSLayout.h */,
+				F743A8851D7DB0E400576254 /* JSLayout.m */,
+				F743A8861D7DB0E400576254 /* JSLoopViewCell.h */,
+				F743A8871D7DB0E400576254 /* JSLoopViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8881D7DB0E400576254 /* 键盘处理(TF&PickerView) */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8891D7DB0E400576254 /* Controller */,
+				F743A88C1D7DB0E400576254 /* Model */,
+				F743A8901D7DB0E400576254 /* View */,
+			);
+			path = "键盘处理(TF&PickerView)";
+			sourceTree = "<group>";
+		};
+		F743A8891D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F743A88A1D7DB0E400576254 /* JSKeyboardViewController.h */,
+				F743A88B1D7DB0E400576254 /* JSKeyboardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A88C1D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F743A88D1D7DB0E400576254 /* provinces.plist */,
+				F743A88E1D7DB0E400576254 /* SJProvinces.h */,
+				F743A88F1D7DB0E400576254 /* SJProvinces.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8901D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8921D7DB0E400576254 /* 地图使用 */,
+			);
+			path = "02-视图搭建";
+			sourceTree = "<group>";
+		};
+		F743A8921D7DB0E400576254 /* 地图使用 */ = {
+			isa = PBXGroup;
+			children = (
+				F743A8931D7DB0E400576254 /* Controller */,
+				F743A8941D7DB0E400576254 /* Model */,
+				F743A8951D7DB0E400576254 /* View */,
+			);
+			path = "地图使用";
+			sourceTree = "<group>";
+		};
+		F743A8931D7DB0E400576254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F743A8941D7DB0E400576254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F743A8951D7DB0E400576254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F743A8961D7DB0E400576254 /* 03-多媒体类 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "03-多媒体类";
 			sourceTree = "<group>";
 		};
 		F76265491D7142FC0055ECBA = {
@@ -562,22 +1120,10 @@
 		F762656C1D7143400055ECBA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F743A7E01D7DB0E400576254 /* 01-逻辑处理 */,
+				F743A8911D7DB0E400576254 /* 02-视图搭建 */,
+				F743A8961D7DB0E400576254 /* 03-多媒体类 */,
 				F762658A1D7144380055ECBA /* Main */,
-				F79758521D73BD460041A7DC /* 自定义顶部视图1 */,
-				F71DC0471D74634900F5843C /* 自定义顶部视图2 */,
-				F720A5D41D730009009B6754 /* 图片下载处理 */,
-				F79758591D73C1710041A7DC /* TableView联动 */,
-				F719BFB51D758B4E00015113 /* 模型嵌套 */,
-				F76265821D7143AC0055ECBA /* 摇奖机 */,
-				F797588C1D73FF130041A7DC /* 幸运转盘 */,
-				F79758A21D7401C00041A7DC /* 小画板 */,
-				F79758C51D7408E50041A7DC /* 手势解锁 */,
-				F79758691D73CD2D0041A7DC /* 轮播器 */,
-				F79758CF1D7416990041A7DC /* 时钟 */,
-				F719BF401D754D4400015113 /* 键盘处理 */,
-				F719BF391D754B5B00015113 /* 跟随手指移动的特效 */,
-				F77810C71D787F850098DB71 /* UISearchDisplayController */,
-				F743A7D01D7D0BD100576254 /* OC与JS交互Demo */,
 				F76265861D7143AC0055ECBA /* Copy */,
 			);
 			path = Classes;
@@ -598,43 +1144,6 @@
 				F79758FC1D742E6C0041A7DC /* Assets */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		F76265821D7143AC0055ECBA /* 摇奖机 */ = {
-			isa = PBXGroup;
-			children = (
-				F76265831D7143AC0055ECBA /* Controller */,
-				F76265841D7143AC0055ECBA /* Model */,
-				F76265851D7143AC0055ECBA /* View */,
-			);
-			path = "摇奖机";
-			sourceTree = "<group>";
-		};
-		F76265831D7143AC0055ECBA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5F31D730503009B6754 /* JSEmieViewController.h */,
-				F720A5F41D730503009B6754 /* JSEmieViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F76265841D7143AC0055ECBA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F76265851D7143AC0055ECBA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F720A5F61D731EC6009B6754 /* JSNumLabel.h */,
-				F720A5F71D731EC6009B6754 /* JSNumLabel.m */,
-				F720A5F91D732100009B6754 /* JSButton.h */,
-				F720A5FA1D732100009B6754 /* JSButton.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F76265861D7143AC0055ECBA /* Copy */ = {
@@ -746,298 +1255,6 @@
 			path = "UIKit+JSExtension";
 			sourceTree = "<group>";
 		};
-		F77810C71D787F850098DB71 /* UISearchDisplayController */ = {
-			isa = PBXGroup;
-			children = (
-				F77810C81D787F850098DB71 /* Controller */,
-				F77810C91D787F850098DB71 /* Model */,
-				F77810CA1D787F850098DB71 /* View */,
-			);
-			path = UISearchDisplayController;
-			sourceTree = "<group>";
-		};
-		F77810C81D787F850098DB71 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F77810CB1D787FA40098DB71 /* JSSearchTableViewController.h */,
-				F77810CC1D787FA40098DB71 /* JSSearchTableViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F77810C91D787F850098DB71 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F77810CA1D787F850098DB71 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F79758521D73BD460041A7DC /* 自定义顶部视图1 */ = {
-			isa = PBXGroup;
-			children = (
-				F79758531D73BD460041A7DC /* Controller */,
-				F79758561D73BD460041A7DC /* Model */,
-				F79758571D73BD460041A7DC /* View */,
-			);
-			name = "自定义顶部视图1";
-			path = ScaleHeaderView;
-			sourceTree = "<group>";
-		};
-		F79758531D73BD460041A7DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F79758541D73BD460041A7DC /* JSHeaderViewController.h */,
-				F79758551D73BD460041A7DC /* JSHeaderViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F79758561D73BD460041A7DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F79758571D73BD460041A7DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F79758591D73C1710041A7DC /* TableView联动 */ = {
-			isa = PBXGroup;
-			children = (
-				F797585A1D73C1710041A7DC /* Controller */,
-				F79758611D73C1710041A7DC /* Model */,
-				F79758621D73C1710041A7DC /* View */,
-			);
-			path = "TableView联动";
-			sourceTree = "<group>";
-		};
-		F797585A1D73C1710041A7DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F797585B1D73C1710041A7DC /* JSDetailTableView.h */,
-				F797585C1D73C1710041A7DC /* JSDetailTableView.m */,
-				F797585D1D73C1710041A7DC /* JSMenumTableView.h */,
-				F797585E1D73C1710041A7DC /* JSMenumTableView.m */,
-				F797585F1D73C1710041A7DC /* JSViewController.h */,
-				F79758601D73C1710041A7DC /* JSViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F79758611D73C1710041A7DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F79758621D73C1710041A7DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F79758631D73C1710041A7DC /* JSSectionHeaderView.h */,
-				F79758641D73C1710041A7DC /* JSSectionHeaderView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F79758691D73CD2D0041A7DC /* 轮播器 */ = {
-			isa = PBXGroup;
-			children = (
-				F797586A1D73CD2D0041A7DC /* Controller */,
-				F797586B1D73CD2D0041A7DC /* Model */,
-				F797586C1D73CD2D0041A7DC /* View */,
-			);
-			path = "轮播器";
-			sourceTree = "<group>";
-		};
-		F797586A1D73CD2D0041A7DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F79758701D73CD630041A7DC /* JSLoopRootViewController.h */,
-				F79758711D73CD630041A7DC /* JSLoopRootViewController.m */,
-				F797586D1D73CD4E0041A7DC /* JSLoopView.h */,
-				F797586E1D73CD4E0041A7DC /* JSLoopView.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F797586B1D73CD2D0041A7DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F797586C1D73CD2D0041A7DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F79758731D73CE390041A7DC /* JSLayout.h */,
-				F79758741D73CE390041A7DC /* JSLayout.m */,
-				F79758761D73DB110041A7DC /* JSLoopViewCell.h */,
-				F79758771D73DB110041A7DC /* JSLoopViewCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F797588C1D73FF130041A7DC /* 幸运转盘 */ = {
-			isa = PBXGroup;
-			children = (
-				F797588D1D73FF130041A7DC /* Controllers */,
-				F79758901D73FF130041A7DC /* Models */,
-				F79758941D73FF130041A7DC /* Views */,
-			);
-			path = "幸运转盘";
-			sourceTree = "<group>";
-		};
-		F797588D1D73FF130041A7DC /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F797588E1D73FF130041A7DC /* JSLukyViewController.h */,
-				F797588F1D73FF130041A7DC /* JSLukyViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F79758901D73FF130041A7DC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F79758941D73FF130041A7DC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F797589F1D73FFB80041A7DC /* JSLucyButton.h */,
-				F79758A01D73FFB80041A7DC /* JSLucyButton.m */,
-				F79758971D73FF130041A7DC /* JSRotateView.h */,
-				F79758981D73FF130041A7DC /* JSRotateView.m */,
-				F79758991D73FF130041A7DC /* JSRotateView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F79758A21D7401C00041A7DC /* 小画板 */ = {
-			isa = PBXGroup;
-			children = (
-				F79758A41D7401C00041A7DC /* Controllers */,
-				F79758A71D7401C00041A7DC /* Models */,
-				F79758AB1D7401C00041A7DC /* Views */,
-			);
-			path = "小画板";
-			sourceTree = "<group>";
-		};
-		F79758A41D7401C00041A7DC /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F79758A51D7401C00041A7DC /* JSDrawingBoardViewController.h */,
-				F79758A61D7401C00041A7DC /* JSDrawingBoardViewController.m */,
-			);
-			name = Controllers;
-			path = Classes/Controllers;
-			sourceTree = "<group>";
-		};
-		F79758A71D7401C00041A7DC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			path = Classes/Models;
-			sourceTree = "<group>";
-		};
-		F79758AB1D7401C00041A7DC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F79758C31D7403310041A7DC /* DrawingBoardView.xib */,
-				F79758AC1D7401C00041A7DC /* BezierPathWithLIneColour.h */,
-				F79758AD1D7401C00041A7DC /* BezierPathWithLIneColour.m */,
-				F79758AE1D7401C00041A7DC /* DrawingBoard.h */,
-				F79758AF1D7401C00041A7DC /* DrawingBoard.m */,
-			);
-			name = Views;
-			path = Classes/Views;
-			sourceTree = "<group>";
-		};
-		F79758C51D7408E50041A7DC /* 手势解锁 */ = {
-			isa = PBXGroup;
-			children = (
-				F79758C61D7408E50041A7DC /* Controller */,
-				F79758C91D7408E50041A7DC /* Model */,
-				F79758CA1D7408E50041A7DC /* View */,
-			);
-			path = "手势解锁";
-			sourceTree = "<group>";
-		};
-		F79758C61D7408E50041A7DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F79758C71D7408E50041A7DC /* JSGestureViewController.h */,
-				F79758C81D7408E50041A7DC /* JSGestureViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F79758C91D7408E50041A7DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F79758CA1D7408E50041A7DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F79758CB1D7408E50041A7DC /* UnlockView.h */,
-				F79758CC1D7408E50041A7DC /* UnlockView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F79758CF1D7416990041A7DC /* 时钟 */ = {
-			isa = PBXGroup;
-			children = (
-				F79758D01D7416990041A7DC /* Controller */,
-				F79758D31D7416990041A7DC /* Model */,
-				F79758D41D7416990041A7DC /* View */,
-			);
-			path = "时钟";
-			sourceTree = "<group>";
-		};
-		F79758D01D7416990041A7DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F79758D11D7416990041A7DC /* JSClockViewController.h */,
-				F79758D21D7416990041A7DC /* JSClockViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F79758D31D7416990041A7DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F79758D41D7416990041A7DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F79758FC1D742E6C0041A7DC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -1128,30 +1345,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F743A8AB1D7DB0E400576254 /* DrawingBoardView.xib in Resources */,
 				F797591B1D742E6C0041A7DC /* st.jpg in Resources */,
+				F743A8C61D7DB0E400576254 /* provinces.plist in Resources */,
 				F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */,
-				F719BF4A1D754D4400015113 /* provinces.plist in Resources */,
 				F79759131D742E6C0041A7DC /* chatcome.wav in Resources */,
 				F79759231D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 in Resources */,
 				F762658F1D71446A0055ECBA /* Main.storyboard in Resources */,
 				F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */,
 				F79759171D742E6C0041A7DC /* jason.jpg in Resources */,
+				F743A8A01D7DB0E400576254 /* apps.plist in Resources */,
 				F797591D1D742E6C0041A7DC /* The salt water room.lrc in Resources */,
 				F79759191D742E6C0041A7DC /* Owl City - The Saltwater Room.mp3 in Resources */,
+				F743A8AF1D7DB0E400576254 /* JSRotateView.xib in Resources */,
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
-				F743A7D81D7D0CB500576254 /* JS与OC交互Demo.html in Resources */,
-				F797589E1D73FF130041A7DC /* JSRotateView.xib in Resources */,
 				F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */,
 				F79759201D742E6C0041A7DC /* 小苹果.mp3 in Resources */,
-				F719BFC31D758B4E00015113 /* DemoList.plist in Resources */,
 				F79759121D742E6C0041A7DC /* buyao.wav in Resources */,
 				F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */,
 				F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */,
 				F79759221D742E6C0041A7DC /* 月半小夜曲.lrc in Resources */,
 				F79759181D742E6C0041A7DC /* lamazhengzhuan.jpg in Resources */,
-				F79758C41D7403310041A7DC /* DrawingBoardView.xib in Resources */,
 				F797591A1D742E6C0041A7DC /* paomo.jpg in Resources */,
-				F720A5F21D73018E009B6754 /* apps.plist in Resources */,
+				F743A8B71D7DB0E400576254 /* DemoList.plist in Resources */,
 				F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */,
 				F797591E1D742E6C0041A7DC /* xpg.jpg in Resources */,
 				F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */,
@@ -1159,7 +1375,8 @@
 				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
 				F719BFC81D75976800015113 /* Demos.plist in Resources */,
-				F71DC0551D74634900F5843C /* friends.plist in Resources */,
+				F743A8981D7DB0E400576254 /* JS与OC交互Demo.html in Resources */,
+				F743A8BC1D7DB0E400576254 /* friends.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1218,65 +1435,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F743A7D61D7D0C0D00576254 /* JSWebViewController.m in Sources */,
-				F71DC0581D74634900F5843C /* JSFooterView.m in Sources */,
-				F71DC0541D74634900F5843C /* JSHeadViewController.m in Sources */,
-				F79758D51D7416990041A7DC /* JSClockViewController.m in Sources */,
-				F797589A1D73FF130041A7DC /* JSLukyViewController.m in Sources */,
-				F79758751D73CE390041A7DC /* JSLayout.m in Sources */,
-				F720A5EE1D730055009B6754 /* JSDownLoadOperationManager.m in Sources */,
+				F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */,
+				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
+				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
+				F743A8B01D7DB0E400576254 /* JSGestureViewController.m in Sources */,
 				F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */,
-				F79758651D73C1710041A7DC /* JSDetailTableView.m in Sources */,
-				F71DC0571D74634900F5843C /* JSHeadCell.m in Sources */,
-				F720A5E01D730009009B6754 /* JSAppsTableController.m in Sources */,
-				F720A5E21D730009009B6754 /* JSAppsModel.m in Sources */,
-				F79758A11D73FFB80041A7DC /* JSLucyButton.m in Sources */,
-				F719BFC51D758B4E00015113 /* JSDetailModel.m in Sources */,
-				F79758781D73DB110041A7DC /* JSLoopViewCell.m in Sources */,
+				F743A89C1D7DB0E400576254 /* JSDownLoadImageOperation.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
+				F743A8C31D7DB0E400576254 /* JSLayout.m in Sources */,
+				F743A8BB1D7DB0E400576254 /* JSHeadViewController.m in Sources */,
+				F743A8991D7DB0E400576254 /* JSCartView.m in Sources */,
+				F743A8B21D7DB0E400576254 /* JSEmieViewController.m in Sources */,
+				F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */,
+				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
-				F797586F1D73CD4E0041A7DC /* JSLoopView.m in Sources */,
-				F77810CD1D787FA40098DB71 /* JSSearchTableViewController.m in Sources */,
-				F719BFC21D758B4E00015113 /* JSModelsTableViewController.m in Sources */,
+				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
+				F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */,
+				F743A8A11D7DB0E400576254 /* JSAppsModel.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
-				F79758BA1D7401C00041A7DC /* BezierPathWithLIneColour.m in Sources */,
-				F719BF4B1D754D4400015113 /* SJProvinces.m in Sources */,
-				F79758721D73CD630041A7DC /* JSLoopRootViewController.m in Sources */,
+				F743A8AE1D7DB0E400576254 /* JSRotateView.m in Sources */,
+				F743A8C41D7DB0E400576254 /* JSLoopViewCell.m in Sources */,
+				F743A8B11D7DB0E400576254 /* UnlockView.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
+				F743A89A1D7DB0E400576254 /* JSHeaderViewController.m in Sources */,
+				F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */,
+				F743A8C11D7DB0E400576254 /* JSLoopRootViewController.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
-				F797589D1D73FF130041A7DC /* JSRotateView.m in Sources */,
-				F79758681D73C1710041A7DC /* JSSectionHeaderView.m in Sources */,
-				F79758B81D7401C00041A7DC /* JSDrawingBoardViewController.m in Sources */,
-				F79758661D73C1710041A7DC /* JSMenumTableView.m in Sources */,
-				F720A5F81D731EC6009B6754 /* JSNumLabel.m in Sources */,
-				F720A5E31D730009009B6754 /* JSAppCell.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
-				F79758CE1D7408E50041A7DC /* UnlockView.m in Sources */,
-				F719BFC41D758B4E00015113 /* JSCategoryModel.m in Sources */,
-				F79758671D73C1710041A7DC /* JSViewController.m in Sources */,
-				F720A5ED1D730055009B6754 /* JSDownLoadImageOperation.m in Sources */,
-				F720A5EF1D730055009B6754 /* NSString+JSAppendPath.m in Sources */,
-				F720A5FB1D732100009B6754 /* JSButton.m in Sources */,
-				F71DC0561D74634900F5843C /* JSFriendsModel.m in Sources */,
-				F79758BB1D7401C00041A7DC /* DrawingBoard.m in Sources */,
+				F743A8C01D7DB0E400576254 /* JSSparkViewController.m in Sources */,
+				F743A8BD1D7DB0E400576254 /* JSFriendsModel.m in Sources */,
 				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,
-				F719BF3F1D754B5B00015113 /* JSSparkViewController.m in Sources */,
+				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
+				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
+				F743A8A71D7DB0E400576254 /* JSSearchTableViewController.m in Sources */,
+				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
+				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
+				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
+				F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */,
+				F743A8BA1D7DB0E400576254 /* JSSectionHeadView.m in Sources */,
+				F743A89E1D7DB0E400576254 /* NSString+JSAppendPath.m in Sources */,
+				F743A8A61D7DB0E400576254 /* JSSectionHeaderView.m in Sources */,
+				F743A8A21D7DB0E400576254 /* JSAppCell.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
+				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
+				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
+				F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */,
+				F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */,
+				F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
-				F79758CD1D7408E50041A7DC /* JSGestureViewController.m in Sources */,
-				F719BF491D754D4400015113 /* JSKeyboardViewController.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
+				F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */,
+				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
+				F743A8B91D7DB0E400576254 /* JSDetailModel.m in Sources */,
+				F743A8A31D7DB0E400576254 /* JSDetailTableView.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
-				F720A5F01D730055009B6754 /* UIImageView+JSWebCache.m in Sources */,
 				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,
-				F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */,
-				F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */,
-				F743A7DB1D7D431800576254 /* JSCartView.m in Sources */,
-				F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -101,6 +101,12 @@
 				<key>targetControllerClass</key>
 				<string></string>
 				<key>detail</key>
+				<string>自定义下拉刷新工具类</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
 				<string>demo</string>
 			</dict>
 		</array>
@@ -115,6 +121,18 @@
 				<string>JSSearchTableViewController</string>
 				<key>detail</key>
 				<string>演示搜索栏使用</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>地图</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
 			</dict>
 		</array>
 	</dict>
