@@ -39,6 +39,7 @@
 		F720A5FB1D732100009B6754 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5FA1D732100009B6754 /* JSButton.m */; };
 		F743A7D61D7D0C0D00576254 /* JSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7D51D7D0C0D00576254 /* JSWebViewController.m */; };
 		F743A7D81D7D0CB500576254 /* JS与OC交互Demo.html in Resources */ = {isa = PBXBuildFile; fileRef = F743A7D71D7D0CB500576254 /* JS与OC交互Demo.html */; };
+		F743A7DB1D7D431800576254 /* JSCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A7DA1D7D431800576254 /* JSCartView.m */; };
 		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
@@ -159,6 +160,8 @@
 		F743A7D41D7D0C0D00576254 /* JSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebViewController.h; sourceTree = "<group>"; };
 		F743A7D51D7D0C0D00576254 /* JSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebViewController.m; sourceTree = "<group>"; };
 		F743A7D71D7D0CB500576254 /* JS与OC交互Demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互Demo.html"; sourceTree = "<group>"; };
+		F743A7D91D7D431800576254 /* JSCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCartView.h; sourceTree = "<group>"; };
+		F743A7DA1D7D431800576254 /* JSCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCartView.m; sourceTree = "<group>"; };
 		F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
 		F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -522,6 +525,8 @@
 		F743A7D31D7D0BD100576254 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F743A7D91D7D431800576254 /* JSCartView.h */,
+				F743A7DA1D7D431800576254 /* JSCartView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1270,6 +1275,7 @@
 				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,
 				F79758581D73BD460041A7DC /* JSHeaderViewController.m in Sources */,
 				F720A5F51D730503009B6754 /* JSEmieViewController.m in Sources */,
+				F743A7DB1D7D431800576254 /* JSCartView.m in Sources */,
 				F719BFC61D758B4E00015113 /* JSSectionHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
