@@ -9,7 +9,9 @@
 #import "JSMapViewController.h"
 #import <MapKit/MapKit.h>
 #import "JSZoomButton.h"
+#import "JSAnnotation.h"
 
+static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -87,6 +89,38 @@
 }
 
 
+// 添加自定义大头针
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ 
+    UITouch *touch = touches.anyObject;
+    CGPoint point = [touch locationInView:touch.view];
+    
+    CLLocationCoordinate2D coordinate = [self.mapView convertPoint:point toCoordinateFromView:self.mapView];
+    NSLog(@"%f--%f",coordinate.latitude,coordinate.longitude);
+
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+    
+    
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        
+        if (placemarks.count == 0 || error) {
+            NSLog(@"坐标转换失败:%@",error);
+            return ;
+        }
+        
+        CLPlacemark *placeMark = placemarks.lastObject;
+        
+        JSAnnotation *annotation = [[JSAnnotation alloc] init];
+        annotation.title = placeMark.locality;
+        annotation.subtitle = placeMark.name;
+        
+        [self.mapView addAnnotation:annotation];
+    }];
+    
+    
+}
 
 #pragma mark - target
 
@@ -234,6 +268,9 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    self.mapView.showsUserLocation = NO;
+    self.mapView.delegate = nil;
+    self.mapView = nil;
     [self.mapView removeFromSuperview];
     
 }

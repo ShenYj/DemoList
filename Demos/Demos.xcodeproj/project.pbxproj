@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
 		F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90231D7E71F300840F11 /* JSZoomButton.m */; };
+		F70B902B1D7E7F9D00840F11 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */; };
+		F70B902E1D7E850D00840F11 /* JSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B902D1D7E850D00840F11 /* JSAnnotation.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
@@ -29,7 +31,6 @@
 		F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8091D7DB0E400576254 /* JSMenumTableView.m */; };
 		F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A80B1D7DB0E400576254 /* JSViewController.m */; };
 		F743A8A61D7DB0E400576254 /* JSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */; };
-		F743A8A71D7DB0E400576254 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */; };
 		F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A81A1D7DB0E400576254 /* JSDrawingBoardViewController.m */; };
 		F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A81F1D7DB0E400576254 /* BezierPathWithLIneColour.m */; };
 		F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8211D7DB0E400576254 /* DrawingBoard.m */; };
@@ -108,6 +109,10 @@
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70B90221D7E71F300840F11 /* JSZoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZoomButton.h; sourceTree = "<group>"; };
 		F70B90231D7E71F300840F11 /* JSZoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZoomButton.m; sourceTree = "<group>"; };
+		F70B90271D7E7F9D00840F11 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
+		F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
+		F70B902C1D7E850D00840F11 /* JSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnnotation.h; sourceTree = "<group>"; };
+		F70B902D1D7E850D00840F11 /* JSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnnotation.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
@@ -145,8 +150,6 @@
 		F743A80B1D7DB0E400576254 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
 		F743A80E1D7DB0E400576254 /* JSSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionHeaderView.h; sourceTree = "<group>"; };
 		F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionHeaderView.m; sourceTree = "<group>"; };
-		F743A8121D7DB0E400576254 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
-		F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
 		F743A8191D7DB0E400576254 /* JSDrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDrawingBoardViewController.h; sourceTree = "<group>"; };
 		F743A81A1D7DB0E400576254 /* JSDrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDrawingBoardViewController.m; sourceTree = "<group>"; };
 		F743A81E1D7DB0E400576254 /* BezierPathWithLIneColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathWithLIneColour.h; sourceTree = "<group>"; };
@@ -295,6 +298,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F70B90251D7E7F9D00840F11 /* UISearchDisplayController */ = {
+			isa = PBXGroup;
+			children = (
+				F70B90261D7E7F9D00840F11 /* Controller */,
+				F70B90291D7E7F9D00840F11 /* Model */,
+				F70B902A1D7E7F9D00840F11 /* View */,
+			);
+			path = UISearchDisplayController;
+			sourceTree = "<group>";
+		};
+		F70B90261D7E7F9D00840F11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F70B90271D7E7F9D00840F11 /* JSSearchTableViewController.h */,
+				F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F70B90291D7E7F9D00840F11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F70B902A1D7E7F9D00840F11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,7 +338,6 @@
 				F743A7EA1D7DB0E400576254 /* ScaleHeaderView */,
 				F743A7F01D7DB0E400576254 /* SyncDownLoadImg */,
 				F743A8041D7DB0E400576254 /* TableView联动 */,
-				F743A8101D7DB0E400576254 /* UISearchDisplayController */,
 				F743A8161D7DB0E400576254 /* 小画板 */,
 				F743A8241D7DB0E400576254 /* 幸运转盘 */,
 				F743A8301D7DB0E400576254 /* 手势解锁 */,
@@ -476,39 +511,6 @@
 			children = (
 				F743A80E1D7DB0E400576254 /* JSSectionHeaderView.h */,
 				F743A80F1D7DB0E400576254 /* JSSectionHeaderView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F743A8101D7DB0E400576254 /* UISearchDisplayController */ = {
-			isa = PBXGroup;
-			children = (
-				F743A8111D7DB0E400576254 /* Controller */,
-				F743A8141D7DB0E400576254 /* Model */,
-				F743A8151D7DB0E400576254 /* View */,
-			);
-			path = UISearchDisplayController;
-			sourceTree = "<group>";
-		};
-		F743A8111D7DB0E400576254 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F743A8121D7DB0E400576254 /* JSSearchTableViewController.h */,
-				F743A8131D7DB0E400576254 /* JSSearchTableViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F743A8141D7DB0E400576254 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F743A8151D7DB0E400576254 /* View */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1052,6 +1054,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F70B90251D7E7F9D00840F11 /* UISearchDisplayController */,
 				F743A8921D7DB0E400576254 /* 地图使用 */,
 			);
 			path = "02-视图搭建";
@@ -1088,6 +1091,8 @@
 			children = (
 				F70B90221D7E71F300840F11 /* JSZoomButton.h */,
 				F70B90231D7E71F300840F11 /* JSZoomButton.m */,
+				F70B902C1D7E850D00840F11 /* JSAnnotation.h */,
+				F70B902D1D7E850D00840F11 /* JSAnnotation.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1449,6 +1454,7 @@
 				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
 				F743A8B01D7DB0E400576254 /* JSGestureViewController.m in Sources */,
+				F70B902B1D7E7F9D00840F11 /* JSSearchTableViewController.m in Sources */,
 				F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */,
 				F743A89C1D7DB0E400576254 /* JSDownLoadImageOperation.m in Sources */,
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
@@ -1480,7 +1486,6 @@
 				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
-				F743A8A71D7DB0E400576254 /* JSSearchTableViewController.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
@@ -1496,6 +1501,7 @@
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
 				F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */,
+				F70B902E1D7E850D00840F11 /* JSAnnotation.m in Sources */,
 				F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */,
 				F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
