@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         
+        self.titleLabel.font = [UIFont systemFontOfSize:14];
         self.layer.borderColor = [UIColor js_colorWithHex:0xFF1493].CGColor;
         self.layer.borderWidth = 2;
         [self setTitleColor:[UIColor js_colorWithHex:0x1E90FF] forState:UIControlStateNormal];
