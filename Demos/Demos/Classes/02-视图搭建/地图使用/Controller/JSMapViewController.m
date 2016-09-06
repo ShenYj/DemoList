@@ -218,6 +218,26 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 #pragma mark - MKMapViewDelegate
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    
+    // 排除定位大头针
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    
+    
+    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:reuseIdentifier];
+    
+    if ( annotationView == nil ) {
+        
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
+    }
+    // 设置颜色需要使用MKPinAnnotationView
+    annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
+    
+    return annotationView;
+}
+
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
     
     // 点击定位按钮时刷新坐标视图
