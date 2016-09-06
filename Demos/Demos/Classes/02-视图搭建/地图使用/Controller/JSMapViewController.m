@@ -129,7 +129,7 @@
     
     [self.navigationInputView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.view);
-        make.centerY.mas_equalTo(self.view).mas_offset(-100);
+        make.centerY.mas_equalTo(self.view).mas_offset(-150);
         make.height.mas_equalTo(40);
         make.width.mas_equalTo(300);
     }];
@@ -243,6 +243,14 @@
 
 // 导航按钮点击事件
 - (void)clickNavigationButton:(JSNavigationButton *)sender{
+    
+    
+    // 显示目标地点录入视图
+    self.navigationInputView.hidden = NO;
+    
+    
+    return ;
+    
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     
@@ -467,6 +475,7 @@
     if (_navigationBySystemMapButton == nil) {
         _navigationBySystemMapButton = [[JSNavigationButton alloc] init];
         [_navigationBySystemMapButton setTitle:@"系统地图" forState:UIControlStateNormal];
+        [_navigationBySystemMapButton addTarget:self action:@selector(clickNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _navigationBySystemMapButton;
 }
@@ -475,6 +484,7 @@
     if (_navigationByCustomMapButton == nil) {
         _navigationByCustomMapButton = [[JSNavigationButton alloc] init];
         [_navigationByCustomMapButton setTitle:@"自定义导航" forState:UIControlStateNormal];
+        [_navigationByCustomMapButton addTarget:self action:@selector(clickNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _navigationByCustomMapButton;
 }
@@ -482,6 +492,7 @@
 - (JSNavigationInfoView *)navigationInputView{
     if (_navigationInputView == nil) {
         _navigationInputView = [[JSNavigationInfoView alloc] init];
+        _navigationInputView.hidden = YES;
     }
     return _navigationInputView;
 }
