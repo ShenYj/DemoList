@@ -233,7 +233,12 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     }
     // 设置颜色需要使用MKPinAnnotationView
-    annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
+    //annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
+    
+    // 显示标注
+    annotationView.canShowCallout = YES;
+    // 掉落动画
+    annotationView.animatesDrop = YES;
     
     return annotationView;
 }
