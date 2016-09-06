@@ -101,16 +101,14 @@
 - (void)clickTrackingButton:(UIButton *)sender{
     
     self.mapView.showsUserLocation = YES;
-    self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    //self.mapView.userTrackingMode = MKUserTrackingModeFollow;
 }
 
 
 #pragma mark - MKMapViewDelegate
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-   
-    //NSLog(@"%f--%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
-    //NSLog(@"%f--%f",mapView.centerCoordinate.latitude,mapView.centerCoordinate.longitude);
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder reverseGeocodeLocation:self.mapView.userLocation.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
@@ -129,17 +127,11 @@
     
 }
 
-//- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
-//
-//    [self.mapView removeFromSuperview];
-//    [self.view addSubview:mapView];
-//}
-
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
     //CLLocation 位置对象
-    CLLocation *location = locations.lastObject;
+    //CLLocation *location = locations.lastObject;
     //打印坐标(经纬度)
     // NSLog(@"%f, %f", location.coordinate.latitude, location.coordinate.longitude);
     //[manager stopUpdatingLocation];停止定位(一次性定位)
@@ -168,7 +160,7 @@
 
 - (UISegmentedControl *)segmentControl{
     if (_segmentControl == nil) {
-        NSArray *items = @[@"标准",@"卫星",@"混合",@"卫星鸟瞰",@"混合鸟瞰",];
+        NSArray *items = @[@"标准",@"卫星",@"混合",@"卫星鸟瞰",@"混合鸟瞰"];
         _segmentControl = [[UISegmentedControl alloc] initWithItems:items];
         _segmentControl.selectedSegmentIndex = 0;
         [_segmentControl addTarget:self action:@selector(clickSegment:) forControlEvents:UIControlEventValueChanged];
