@@ -17,6 +17,8 @@
 @property (nonatomic,strong) MKMapView *mapView;
 // segmentControl
 @property (nonatomic,strong) UISegmentedControl *segmentControl;
+// 定位按钮
+@property (nonatomic,strong) UIButton *trackingButton;
 
 @end
 
@@ -41,9 +43,10 @@
     
     [self.view addSubview:self.mapView];
     [self.view addSubview:self.segmentControl];
+    [self.view addSubview:self.trackingButton];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view);
+        make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
     }];
     
     [self.segmentControl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -52,8 +55,15 @@
         make.size.mas_equalTo(CGSizeMake(300, 34));
     }];
     
+    [self.trackingButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view).mas_offset(5);
+        make.right.mas_equalTo(self.segmentControl.mas_left).mas_offset(-5);
+        make.top.mas_equalTo(self.segmentControl);
+        make.height.mas_equalTo(34);
+    }];
     
-    self.mapView.showsUserLocation = YES;
+    
+    
     
     
 }
@@ -88,14 +98,29 @@
     
 }
 
+- (void)clickTrackingButton:(UIButton *)sender{
+    
+    self.mapView.showsUserLocation = YES;
+    self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+}
 
 
 #pragma mark - MKMapViewDelegate
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+   
+    //NSLog(@"%f--%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+    //NSLog(@"%f--%f",mapView.centerCoordinate.latitude,mapView.centerCoordinate.longitude);
     
-    NSLog(@"%f--%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
-    NSLog(@"%f--%f",mapView.centerCoordinate.latitude,mapView.centerCoordinate.longitude);
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.latitude];
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        
+        CLPlacemark *placeMark = placemarks.lastObject;
+        
+        NSLog(@"%zd",placemarks.count);
+        
+    }];
     
 }
 
@@ -111,7 +136,7 @@
     //CLLocation 位置对象
     CLLocation *location = locations.lastObject;
     //打印坐标(经纬度)
-    NSLog(@"%f, %f", location.coordinate.latitude, location.coordinate.longitude);
+    // NSLog(@"%f, %f", location.coordinate.latitude, location.coordinate.longitude);
     //[manager stopUpdatingLocation];停止定位(一次性定位)
 
 }
@@ -131,7 +156,6 @@
 - (MKMapView *)mapView{
     if (_mapView == nil) {
         _mapView = [[MKMapView alloc] init];
-        _mapView.userTrackingMode = MKUserTrackingModeFollow;
         _mapView.delegate = self;
     }
     return _mapView;
@@ -145,6 +169,18 @@
         [_segmentControl addTarget:self action:@selector(clickSegment:) forControlEvents:UIControlEventValueChanged];
     }
     return _segmentControl;
+}
+
+- (UIButton *)trackingButton{
+    if (_trackingButton == nil) {
+        _trackingButton = [[UIButton alloc]init];
+        [_trackingButton setTitle:@"定位" forState:UIControlStateNormal];
+        _trackingButton.layer.borderColor = [UIColor js_colorWithHex:0x7B68EE].CGColor;
+        _trackingButton.layer.borderWidth = 2;
+        [_trackingButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_trackingButton addTarget:self action:@selector(clickTrackingButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _trackingButton;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
