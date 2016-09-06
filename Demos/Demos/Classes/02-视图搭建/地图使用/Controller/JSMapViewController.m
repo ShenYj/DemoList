@@ -384,6 +384,8 @@
 
 - (void)navigationInfoView:(JSNavigationInfoView *)navigationInfoView withDestinationString:(NSString *)destinationString withCompletionHandler:(void (^)())completionHandler{
     
+    NSLog(@"%zd",navigationInfoView.inputViewType);
+    
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     
     [geocoder geocodeAddressString:destinationString completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {

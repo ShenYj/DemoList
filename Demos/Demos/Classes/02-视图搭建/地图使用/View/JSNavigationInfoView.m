@@ -71,6 +71,8 @@
         
         [self.delegate navigationInfoView:self withDestinationString:self.destinationTextField.text withCompletionHandler:nil];
     }
+    
+    self.hidden = YES;
 }
 
 
