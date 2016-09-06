@@ -13,7 +13,7 @@
 #import "JSNavigationButton.h"
 #import "JSCoordinateView.h"
 #import "JSAnnotationView.h"
-
+#import "JSNavigationInfoView.h"
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -37,6 +37,8 @@
 @property (nonatomic,strong) JSNavigationButton *navigationBySystemMapButton;
 // 导航(使用自定义地图)
 @property (nonatomic,strong) JSNavigationButton *navigationByCustomMapButton;
+// 导航信息视图 (填写目标地址)
+@property (nonatomic,strong) JSNavigationInfoView *navigationInputView;
 
 @end
 
@@ -68,6 +70,7 @@
     [self.view addSubview:self.coordinateView];
     [self.view addSubview:self.navigationBySystemMapButton];
     [self.view addSubview:self.navigationByCustomMapButton];
+    [self.view addSubview:self.navigationInputView];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
@@ -122,6 +125,13 @@
         make.top.mas_equalTo(self.zoomOut);
         make.size.mas_equalTo(CGSizeMake(80, 34));
         make.right.mas_equalTo(self.navigationBySystemMapButton);
+    }];
+    
+    [self.navigationInputView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self.view);
+        make.centerY.mas_equalTo(self.view).mas_offset(-100);
+        make.height.mas_equalTo(40);
+        make.width.mas_equalTo(300);
     }];
     
 }
@@ -467,6 +477,13 @@
         [_navigationByCustomMapButton setTitle:@"自定义导航" forState:UIControlStateNormal];
     }
     return _navigationByCustomMapButton;
+}
+
+- (JSNavigationInfoView *)navigationInputView{
+    if (_navigationInputView == nil) {
+        _navigationInputView = [[JSNavigationInfoView alloc] init];
+    }
+    return _navigationInputView;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
