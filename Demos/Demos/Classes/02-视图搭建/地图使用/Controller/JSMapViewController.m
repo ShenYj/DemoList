@@ -39,6 +39,8 @@
 @property (nonatomic,strong) JSNavigationButton *navigationByCustomMapButton;
 // 导航信息视图 (填写目标地址)
 @property (nonatomic,strong) JSNavigationInfoView *navigationInputView;
+// 移除所有大头针
+@property (nonatomic,strong) UIButton *removeAnnotationButton;
 
 @end
 
@@ -71,6 +73,7 @@
     [self.view addSubview:self.navigationBySystemMapButton];
     [self.view addSubview:self.navigationByCustomMapButton];
     [self.view addSubview:self.navigationInputView];
+    [self.view addSubview:self.removeAnnotationButton];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
@@ -132,6 +135,11 @@
         make.centerY.mas_equalTo(self.view).mas_offset(-150);
         make.height.mas_equalTo(40);
         make.width.mas_equalTo(300);
+    }];
+    
+    [self.removeAnnotationButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.bottom.mas_equalTo(self.view).mas_offset(-5);
+        make.size.mas_equalTo(CGSizeMake(80, 30));
     }];
     
 }
@@ -299,6 +307,13 @@
     self.showCoordinateViewButton.selected = !sender.isSelected;
     self.coordinateView.hidden = !self.showCoordinateViewButton.isSelected;
 }
+
+// 移除地图中的所有大头针
+- (void)clickRemoveAllAnnotationButton:(UIButton *)sender{
+    
+    [self.mapView removeAnnotations:self.mapView.annotations];
+}
+
 
 #pragma mark - MKMapViewDelegate
 
@@ -495,6 +510,19 @@
         _navigationInputView.hidden = YES;
     }
     return _navigationInputView;
+}
+
+- (UIButton *)removeAnnotationButton{
+    if (_removeAnnotationButton == nil) {
+        _removeAnnotationButton = [[UIButton alloc] init];
+        _removeAnnotationButton.layer.borderColor = [UIColor js_colorWithHex:0xFF1493].CGColor;
+        _removeAnnotationButton.layer.borderWidth = 2;
+        _removeAnnotationButton.titleLabel.font = [UIFont systemFontOfSize:13];
+        [_removeAnnotationButton setTitleColor:[UIColor js_colorWithHex:0x363636] forState:UIControlStateNormal];
+        [_removeAnnotationButton setTitle:@"移除大头针" forState:UIControlStateNormal];
+        [_removeAnnotationButton addTarget:self action:@selector(clickRemoveAllAnnotationButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _removeAnnotationButton;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
