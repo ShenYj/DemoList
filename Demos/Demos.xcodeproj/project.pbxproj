@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
+		F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90231D7E71F300840F11 /* JSZoomButton.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
@@ -105,6 +106,8 @@
 /* Begin PBXFileReference section */
 		75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70B90221D7E71F300840F11 /* JSZoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZoomButton.h; sourceTree = "<group>"; };
+		F70B90231D7E71F300840F11 /* JSZoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZoomButton.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
@@ -1083,6 +1086,8 @@
 		F743A8951D7DB0E400576254 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F70B90221D7E71F300840F11 /* JSZoomButton.h */,
+				F70B90231D7E71F300840F11 /* JSZoomButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1455,6 +1460,7 @@
 				F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */,
 				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
+				F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
 				F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */,
 				F743A8A11D7DB0E400576254 /* JSAppsModel.m in Sources */,

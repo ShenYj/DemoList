@@ -8,6 +8,8 @@
 
 #import "JSMapViewController.h"
 #import <MapKit/MapKit.h>
+#import "JSZoomButton.h"
+
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -19,6 +21,10 @@
 @property (nonatomic,strong) UISegmentedControl *segmentControl;
 // 定位按钮
 @property (nonatomic,strong) UIButton *trackingButton;
+// 放大
+@property (nonatomic,strong) JSZoomButton *zoomIn;
+// 缩小
+@property (nonatomic,strong) JSZoomButton *zoomOut;
 
 @end
 
@@ -44,6 +50,8 @@
     [self.view addSubview:self.mapView];
     [self.view addSubview:self.segmentControl];
     [self.view addSubview:self.trackingButton];
+    [self.view addSubview:self.zoomIn];
+    [self.view addSubview:self.zoomOut];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
@@ -62,7 +70,17 @@
         make.height.mas_equalTo(34);
     }];
     
+    [self.zoomIn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view).mas_offset(10);
+        make.size.mas_equalTo(CGSizeMake(40, 34));
+        make.centerY.mas_equalTo(self.view).mas_offset(0);
+    }];
     
+    [self.zoomOut mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view).mas_offset(10);
+        make.size.mas_equalTo(CGSizeMake(40, 34));
+        make.top.mas_equalTo(self.zoomIn.mas_bottom).mas_offset(5);
+    }];
     
     
     
@@ -103,6 +121,20 @@
     self.mapView.showsUserLocation = YES;
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     //self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+}
+
+- (void)clickZoomButton:(JSZoomButton *)sender{
+    
+    switch (sender.zoomType) {
+        case ZoomTypeIn:
+            
+            break;
+        case ZoomTypeOut:
+            
+            break;
+        default:
+            break;
+    }
 }
 
 
@@ -178,6 +210,22 @@
         [_trackingButton addTarget:self action:@selector(clickTrackingButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _trackingButton;
+}
+
+- (JSZoomButton *)zoomIn{
+    if (_zoomIn == nil) {
+        _zoomIn = [[JSZoomButton alloc] init];
+        [_zoomIn setTitle:@"放大" forState:UIControlStateNormal];
+    }
+    return _zoomIn;
+}
+
+- (JSZoomButton *)zoomOut{
+    if (_zoomOut == nil) {
+        _zoomOut = [[JSZoomButton alloc] init];
+        [_zoomOut setTitle:@"缩小" forState:UIControlStateNormal];
+    }
+    return _zoomOut;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
