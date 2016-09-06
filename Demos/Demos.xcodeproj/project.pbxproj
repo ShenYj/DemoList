@@ -11,6 +11,7 @@
 		F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90231D7E71F300840F11 /* JSZoomButton.m */; };
 		F70B902B1D7E7F9D00840F11 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */; };
 		F70B902E1D7E850D00840F11 /* JSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B902D1D7E850D00840F11 /* JSAnnotation.m */; };
+		F70B90311D7E900100840F11 /* JSCoordinateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90301D7E900100840F11 /* JSCoordinateView.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
@@ -113,6 +114,8 @@
 		F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSearchTableViewController.m; sourceTree = "<group>"; };
 		F70B902C1D7E850D00840F11 /* JSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnnotation.h; sourceTree = "<group>"; };
 		F70B902D1D7E850D00840F11 /* JSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnnotation.m; sourceTree = "<group>"; };
+		F70B902F1D7E900100840F11 /* JSCoordinateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoordinateView.h; sourceTree = "<group>"; };
+		F70B90301D7E900100840F11 /* JSCoordinateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoordinateView.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
@@ -1091,6 +1094,8 @@
 			children = (
 				F70B90221D7E71F300840F11 /* JSZoomButton.h */,
 				F70B90231D7E71F300840F11 /* JSZoomButton.m */,
+				F70B902F1D7E900100840F11 /* JSCoordinateView.h */,
+				F70B90301D7E900100840F11 /* JSCoordinateView.m */,
 				F70B902C1D7E850D00840F11 /* JSAnnotation.h */,
 				F70B902D1D7E850D00840F11 /* JSAnnotation.m */,
 			);
@@ -1492,6 +1497,7 @@
 				F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */,
 				F743A8BA1D7DB0E400576254 /* JSSectionHeadView.m in Sources */,
 				F743A89E1D7DB0E400576254 /* NSString+JSAppendPath.m in Sources */,
+				F70B90311D7E900100840F11 /* JSCoordinateView.m in Sources */,
 				F743A8A61D7DB0E400576254 /* JSSectionHeaderView.m in Sources */,
 				F743A8A21D7DB0E400576254 /* JSAppCell.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,

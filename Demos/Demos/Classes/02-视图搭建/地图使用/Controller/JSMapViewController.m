@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "JSZoomButton.h"
 #import "JSAnnotation.h"
+#import "JSCoordinateView.h"
 
 static NSString * const reuseIdentifier = @"reuseIdentifier";
 
@@ -23,10 +24,14 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 @property (nonatomic,strong) UISegmentedControl *segmentControl;
 // 定位按钮
 @property (nonatomic,strong) UIButton *trackingButton;
+// 是否显示坐标视图按钮
+@property (nonatomic,strong) UIButton *showCoordinateViewButton;
 // 放大
 @property (nonatomic,strong) JSZoomButton *zoomIn;
 // 缩小
 @property (nonatomic,strong) JSZoomButton *zoomOut;
+// 经纬度视图
+@property (nonatomic,strong) JSCoordinateView *coordinateView;
 
 @end
 
@@ -52,8 +57,10 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     [self.view addSubview:self.mapView];
     [self.view addSubview:self.segmentControl];
     [self.view addSubview:self.trackingButton];
+    [self.view addSubview:self.showCoordinateViewButton];
     [self.view addSubview:self.zoomIn];
     [self.view addSubview:self.zoomOut];
+    [self.view addSubview:self.coordinateView];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
@@ -72,6 +79,13 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         make.height.mas_equalTo(34);
     }];
     
+    [self.showCoordinateViewButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.trackingButton);
+        make.left.mas_equalTo(self.segmentControl.mas_right).mas_offset(5);
+        make.right.mas_equalTo(self.view).mas_offset(-5);
+        make.bottom.mas_equalTo(self.trackingButton);
+    }];
+    
     [self.zoomIn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view).mas_offset(10);
         make.size.mas_equalTo(CGSizeMake(40, 34));
@@ -84,7 +98,11 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         make.top.mas_equalTo(self.zoomIn.mas_bottom).mas_offset(5);
     }];
     
-    
+    [self.coordinateView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.segmentControl.mas_bottom).mas_offset(5);
+        make.size.mas_equalTo(CGSizeMake(100, 65));
+        make.right.mas_equalTo(self.view).mas_offset(-5);
+    }];
     
 }
 
@@ -96,8 +114,11 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     CGPoint point = [touch locationInView:touch.view];
     
     CLLocationCoordinate2D coordinate = [self.mapView convertPoint:point toCoordinateFromView:self.mapView];
-    NSLog(@"%f--%f",coordinate.latitude,coordinate.longitude);
-
+    
+    if (!self.coordinateView.hidden) {
+        
+        self.coordinateView.coordinate = coordinate;
+    }
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
@@ -171,6 +192,12 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     
 }
 
+// 显示/隐藏坐标视图按钮点击事件
+- (void)clickShowCoordinateViewButton:(UIButton *)sender{
+    
+    self.showCoordinateViewButton.selected = !sender.isSelected;
+    self.coordinateView.hidden = !self.showCoordinateViewButton.isSelected;
+}
 
 #pragma mark - MKMapViewDelegate
 
@@ -234,9 +261,24 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     return _segmentControl;
 }
 
+- (UIButton *)showCoordinateViewButton{
+    if (_showCoordinateViewButton == nil) {
+        _showCoordinateViewButton = [[UIButton alloc] init];
+        _showCoordinateViewButton.titleLabel.font = [UIFont systemFontOfSize:12];
+        _showCoordinateViewButton.layer.borderColor = [UIColor js_colorWithHex:0x7B68EE].CGColor;
+        _showCoordinateViewButton.layer.borderWidth = 2;
+        [_showCoordinateViewButton setTitle:@"坐标" forState:UIControlStateNormal];
+        [_showCoordinateViewButton setTitleColor:[UIColor js_colorWithHex:0xFF69B4] forState:UIControlStateNormal];
+        [_showCoordinateViewButton setTitleColor:[UIColor js_colorWithHex:0xA020F0] forState:UIControlStateSelected];
+        [_showCoordinateViewButton addTarget:self action:@selector(clickShowCoordinateViewButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _showCoordinateViewButton;
+}
+
 - (UIButton *)trackingButton{
     if (_trackingButton == nil) {
         _trackingButton = [[UIButton alloc]init];
+        _trackingButton.titleLabel.font = [UIFont systemFontOfSize:12];
         [_trackingButton setTitle:@"定位" forState:UIControlStateNormal];
         _trackingButton.layer.borderColor = [UIColor js_colorWithHex:0x7B68EE].CGColor;
         _trackingButton.layer.borderWidth = 2;
@@ -264,6 +306,14 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
         [_zoomOut addTarget:self action:@selector(clickZoomButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _zoomOut;
+}
+
+- (JSCoordinateView *)coordinateView{
+    if (_coordinateView == nil) {
+        _coordinateView = [[JSCoordinateView alloc] init];
+        _coordinateView.hidden = YES;
+    }
+    return _coordinateView;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
