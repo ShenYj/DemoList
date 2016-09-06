@@ -10,9 +10,9 @@
 #import <MapKit/MapKit.h>
 #import "JSZoomButton.h"
 #import "JSAnnotation.h"
+#import "JSNavigationButton.h"
 #import "JSCoordinateView.h"
 #import "JSAnnotationView.h"
-
 
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
@@ -33,6 +33,10 @@
 @property (nonatomic,strong) JSZoomButton *zoomOut;
 // 经纬度视图
 @property (nonatomic,strong) JSCoordinateView *coordinateView;
+// 导航(使用系统内置地图)
+@property (nonatomic,strong) JSNavigationButton *navigationBySystemMapButton;
+// 导航(使用自定义地图)
+@property (nonatomic,strong) JSNavigationButton *navigationByCustomMapButton;
 
 @end
 
@@ -62,6 +66,8 @@
     [self.view addSubview:self.zoomIn];
     [self.view addSubview:self.zoomOut];
     [self.view addSubview:self.coordinateView];
+    [self.view addSubview:self.navigationBySystemMapButton];
+    [self.view addSubview:self.navigationByCustomMapButton];
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).mas_offset(UIEdgeInsetsMake(64, 0, 0, 0));
@@ -105,7 +111,11 @@
         make.right.mas_equalTo(self.view).mas_offset(-5);
     }];
     
+    
+    
 }
+
+
 
 
 // 添加自定义大头针
@@ -227,7 +237,6 @@
     }
     
     JSAnnotationView *annotationView = [JSAnnotationView annotationWihMapView:mapView];
-    
     
 //    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
 //    
@@ -387,6 +396,20 @@
         _coordinateView.hidden = YES;
     }
     return _coordinateView;
+}
+
+- (JSNavigationButton *)navigationBySystemMapButton{
+    if (_navigationBySystemMapButton == nil) {
+        _navigationBySystemMapButton = [[JSNavigationButton alloc] init];
+    }
+    return _navigationBySystemMapButton;
+}
+
+- (JSNavigationButton *)navigationByCustomMapButton{
+    if (_navigationByCustomMapButton == nil) {
+        _navigationByCustomMapButton = [[JSNavigationButton alloc] init];
+    }
+    return _navigationByCustomMapButton;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
