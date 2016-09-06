@@ -62,7 +62,15 @@
 
 - (void)clickStartNavigationButton:(UIButton *)sender{
     
-    NSLog(@"%s",__func__);
+    if (!self.destinationTextField.hasText) {
+        NSLog(@"目标地址为空!");
+        return ;
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(navigationInfoView:withDestinationString:withCompletionHandler:)]) {
+        
+        [self.delegate navigationInfoView:self withDestinationString:self.destinationTextField.text withCompletionHandler:nil];
+    }
 }
 
 

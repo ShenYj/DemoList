@@ -15,7 +15,7 @@
 #import "JSAnnotationView.h"
 #import "JSNavigationInfoView.h"
 
-@interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
+@interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate,JSNavigationInfoViewDelegate>
 
 // 位置管理者
 @property (nonatomic,strong) CLLocationManager *locationManager;
@@ -46,10 +46,21 @@
 
 @implementation JSMapViewController
 
+#pragma mark - ViewControllerMethods
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     
     [self prepareView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.mapView.showsUserLocation = NO;
+    self.mapView.delegate = nil;
+    self.mapView = nil;
+    [self.mapView removeFromSuperview];
+    
 }
 
 - (void)prepareView{
@@ -252,48 +263,16 @@
 // 导航按钮点击事件
 - (void)clickNavigationButton:(JSNavigationButton *)sender{
     
-    
     // 显示目标地点录入视图
     self.navigationInputView.hidden = NO;
-    
-    
-    return ;
-    
-    
-    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    
-    
-    [geocoder geocodeAddressString:nil completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-       
-        
-        if (error || placemarks.count == 0 ) {
-            NSLog(@"地标转换失败:%@",error);
-            return ;
-        }
-        // 当前地图项目
-        MKMapItem *currentMapItem = [MKMapItem mapItemForCurrentLocation];
-        
-        // 目标地图项目
-        CLPlacemark *placeMark_cl = [[CLPlacemark alloc] initWithPlacemark:placemarks.lastObject];
-        MKPlacemark *placeMark_mk = [[MKPlacemark alloc] initWithPlacemark:placeMark_cl];
-        MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
-        
-        // 打开内置地图进行导航
-        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{}];
-        
-        
-    }];
-    
-    
     
     switch (sender.navigationType) {
             
         case NavigationTypeBySystemMap:
-            
-            
+            self.navigationInputView.inputViewType = JSNavigationInputViewTypeSystemType;
             break;
         case NavigationTypeByCustomMap:
-            
+            self.navigationInputView.inputViewType = JSNavigationInputViewTypeCustomType;
             break;
             
         default:
@@ -399,6 +378,37 @@
     // NSLog(@"%f, %f", location.coordinate.latitude, location.coordinate.longitude);
     //[manager stopUpdatingLocation];停止定位(一次性定位)
 
+}
+
+#pragma mark - JSNavigationInfoViewDelegate
+
+- (void)navigationInfoView:(JSNavigationInfoView *)navigationInfoView withDestinationString:(NSString *)destinationString withCompletionHandler:(void (^)())completionHandler{
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder geocodeAddressString:destinationString completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        
+        
+        if (error || placemarks.count == 0 ) {
+            NSLog(@"地标转换失败:%@",error);
+            return ;
+        }
+        // 当前地图项目
+        MKMapItem *currentMapItem = [MKMapItem mapItemForCurrentLocation];
+        
+        // 目标地图项目
+        CLPlacemark *placeMark_cl = [[CLPlacemark alloc] initWithPlacemark:placemarks.lastObject];
+        MKPlacemark *placeMark_mk = [[MKPlacemark alloc] initWithPlacemark:placeMark_cl];
+        MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
+        
+        // 打开内置地图进行导航
+        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{}];
+        
+        
+    }];
+    
+    
+    
 }
 
 #pragma mark - lazy
@@ -507,6 +517,7 @@
 - (JSNavigationInfoView *)navigationInputView{
     if (_navigationInputView == nil) {
         _navigationInputView = [[JSNavigationInfoView alloc] init];
+        _navigationInputView.delegate = self;
         _navigationInputView.hidden = YES;
     }
     return _navigationInputView;
@@ -525,14 +536,7 @@
     return _removeAnnotationButton;
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.mapView.showsUserLocation = NO;
-    self.mapView.delegate = nil;
-    self.mapView = nil;
-    [self.mapView removeFromSuperview];
-    
-}
+
 
 
 
