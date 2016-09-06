@@ -12,4 +12,5 @@ pod ‘YYWebImage'
 pod 'AFNetworking'
 pod ‘MJRefresh’
 pod ‘YYModel’
+pod 'FSCalendar'
 end

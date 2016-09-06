@@ -130,9 +130,15 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
+				<string>JSCalendarViewController</string>
+				<key>detail</key>
+				<string>FSCalendar体验</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
 				<string></string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>Demo</string>
 			</dict>
 		</array>
 	</dict>
