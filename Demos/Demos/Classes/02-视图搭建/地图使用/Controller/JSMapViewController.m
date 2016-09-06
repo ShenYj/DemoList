@@ -11,8 +11,9 @@
 #import "JSZoomButton.h"
 #import "JSAnnotation.h"
 #import "JSCoordinateView.h"
+#import "JSAnnotationView.h"
 
-static NSString * const identifier = @"reuseIdentifier";
+
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -225,25 +226,27 @@ static NSString * const identifier = @"reuseIdentifier";
         return nil;
     }
     
+    JSAnnotationView *annotationView = [JSAnnotationView annotationWihMapView:mapView];
     
-    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     
-    if ( annotationView == nil ) {
-        
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-    }
-    // 设置颜色需要使用MKPinAnnotationView
-    //annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
-    
-    // 显示标注
-    annotationView.canShowCallout = YES;
-    // 掉落动画 (MKPinAnnotationView 的属性)
-    //annotationView.animatesDrop = YES;
-    
-    [[UIImage imageNamed:@"LuckyLeftPressed"] js_ImageWithSize:CGSizeMake(30, 30) completion:^(UIImage *img) {
-        
-        annotationView.image = [UIImage js_imageWithOriginalImage:img];
-    }];
+//    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+//    
+//    if ( annotationView == nil ) {
+//        
+//        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+//    }
+//    // 设置颜色需要使用MKPinAnnotationView
+//    //annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
+//    
+//    // 显示标注
+//    annotationView.canShowCallout = YES;
+//    // 掉落动画 (MKPinAnnotationView 的属性)
+//    //annotationView.animatesDrop = YES;
+//    
+//    [[UIImage imageNamed:@"LuckyLeftPressed"] js_ImageWithSize:CGSizeMake(30, 30) completion:^(UIImage *img) {
+//        
+//        annotationView.image = [UIImage js_imageWithOriginalImage:img];
+//    }];
     
     return annotationView;
 }
