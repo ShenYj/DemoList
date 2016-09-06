@@ -404,7 +404,7 @@
         MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
         
         // 打开内置地图进行导航
-        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{}];
+        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving}];
         
         
     }];
