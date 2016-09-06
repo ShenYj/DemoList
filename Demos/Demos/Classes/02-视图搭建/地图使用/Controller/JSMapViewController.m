@@ -113,12 +113,17 @@
     //NSLog(@"%f--%f",mapView.centerCoordinate.latitude,mapView.centerCoordinate.longitude);
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.latitude];
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+    [geocoder reverseGeocodeLocation:self.mapView.userLocation.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        
+        if (placemarks.count == 0 || error) {
+            
+            return ;
+        }
         
         CLPlacemark *placeMark = placemarks.lastObject;
         
-        NSLog(@"%zd",placemarks.count);
+        self.mapView.userLocation.title = placeMark.locality;
+        self.mapView.userLocation.subtitle = placeMark.name;
         
     }];
     
