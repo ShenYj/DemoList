@@ -234,9 +234,36 @@
 // 导航按钮点击事件
 - (void)clickNavigationButton:(JSNavigationButton *)sender{
     
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    
+    [geocoder geocodeAddressString:nil completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+       
+        
+        if (error || placemarks.count == 0 ) {
+            NSLog(@"地标转换失败:%@",error);
+            return ;
+        }
+        // 当前地图项目
+        MKMapItem *currentMapItem = [MKMapItem mapItemForCurrentLocation];
+        
+        // 目标地图项目
+        CLPlacemark *placeMark_cl = [[CLPlacemark alloc] initWithPlacemark:placemarks.lastObject];
+        MKPlacemark *placeMark_mk = [[MKPlacemark alloc] initWithPlacemark:placeMark_cl];
+        MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
+        
+        // 打开内置地图进行导航
+        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{}];
+        
+        
+    }];
+    
+    
+    
     switch (sender.navigationType) {
             
         case NavigationTypeBySystemMap:
+            
             
             break;
         case NavigationTypeByCustomMap:

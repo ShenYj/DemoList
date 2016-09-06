@@ -15,6 +15,7 @@
 		F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90331D7EB5E500840F11 /* JSAnnotationView.m */; };
 		F70B903F1D7EE7CF00840F11 /* JSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B903E1D7EE7CF00840F11 /* JSCalendarViewController.m */; };
 		F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90431D7EFE5900840F11 /* JSNavigationButton.m */; };
+		F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
@@ -125,6 +126,8 @@
 		F70B903E1D7EE7CF00840F11 /* JSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCalendarViewController.m; sourceTree = "<group>"; };
 		F70B90421D7EFE5900840F11 /* JSNavigationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationButton.h; sourceTree = "<group>"; };
 		F70B90431D7EFE5900840F11 /* JSNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationButton.m; sourceTree = "<group>"; };
+		F70B90451D7F0DB800840F11 /* JSNavigationInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationInfoView.h; sourceTree = "<group>"; };
+		F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationInfoView.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
@@ -1145,6 +1148,8 @@
 				F70B90331D7EB5E500840F11 /* JSAnnotationView.m */,
 				F70B902C1D7E850D00840F11 /* JSAnnotation.h */,
 				F70B902D1D7E850D00840F11 /* JSAnnotation.m */,
+				F70B90451D7F0DB800840F11 /* JSNavigationInfoView.h */,
+				F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1560,6 +1565,7 @@
 				F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */,
 				F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
+				F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */,
 				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
