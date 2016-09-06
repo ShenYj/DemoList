@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    ZoomTypeIn = 100,
-    ZoomTypeOut = 101,
+    ZoomTypeIn = 10,
+    ZoomTypeOut = 40,
 } ZoomType;
 
 @interface JSZoomButton : UIButton

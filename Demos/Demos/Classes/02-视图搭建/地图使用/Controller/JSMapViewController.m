@@ -90,6 +90,7 @@
 
 #pragma mark - target
 
+// 切换地图点击事件
 - (void)clickSegment:(UISegmentedControl *)sender{
     
     //MKMapTypeSatelliteFlyover(卫星鸟瞰)与MKMapTypeHybridFlyover(混合鸟瞰)中国暂不支持
@@ -116,6 +117,7 @@
     
 }
 
+// 定位按钮点击事件
 - (void)clickTrackingButton:(UIButton *)sender{
     
     self.mapView.showsUserLocation = YES;
@@ -123,18 +125,16 @@
     //self.mapView.userTrackingMode = MKUserTrackingModeFollow;
 }
 
+// 放大、缩小按钮点击事件
 - (void)clickZoomButton:(JSZoomButton *)sender{
     
-    switch (sender.zoomType) {
-        case ZoomTypeIn:
-            
-            break;
-        case ZoomTypeOut:
-            
-            break;
-        default:
-            break;
-    }
+    NSInteger scale = 0.05 * sender.zoomType;
+    
+    MKCoordinateSpan zoomSpan = MKCoordinateSpanMake(self.mapView.region.span.latitudeDelta * scale, self.mapView.region.span.longitudeDelta * scale);
+    CLLocationCoordinate2D center = self.mapView.region.center;
+    
+    [self.mapView setRegion:MKCoordinateRegionMake(center, zoomSpan) animated:YES];
+    
 }
 
 
@@ -215,7 +215,9 @@
 - (JSZoomButton *)zoomIn{
     if (_zoomIn == nil) {
         _zoomIn = [[JSZoomButton alloc] init];
+        _zoomIn.zoomType = ZoomTypeIn;
         [_zoomIn setTitle:@"放大" forState:UIControlStateNormal];
+        [_zoomIn addTarget:self action:@selector(clickZoomButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _zoomIn;
 }
@@ -223,7 +225,9 @@
 - (JSZoomButton *)zoomOut{
     if (_zoomOut == nil) {
         _zoomOut = [[JSZoomButton alloc] init];
+        _zoomOut.zoomType = ZoomTypeOut;
         [_zoomOut setTitle:@"缩小" forState:UIControlStateNormal];
+        [_zoomOut addTarget:self action:@selector(clickZoomButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _zoomOut;
 }
