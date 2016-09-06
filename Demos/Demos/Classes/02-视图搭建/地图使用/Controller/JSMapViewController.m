@@ -109,6 +109,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 // 添加自定义大头针
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
  
     UITouch *touch = touches.anyObject;
     CGPoint point = [touch locationInView:touch.view];
@@ -123,7 +124,6 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
     
-    
     [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         
         if (placemarks.count == 0 || error) {
@@ -131,13 +131,29 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
             return ;
         }
         
-        CLPlacemark *placeMark = placemarks.lastObject;
+        // 只有在中国区内时,才进行赋值
+        CLPlacemark *placeMark = nil;
+        
+        for (CLPlacemark *obj in placemarks) {
+            
+            if ([obj.country isEqualToString:@"中国"]) {
+                
+                placeMark = obj;
+            }
+        }
+        
+        if (placeMark == nil) {
+            return ;
+        }
+        
         
         JSAnnotation *annotation = [[JSAnnotation alloc] init];
         annotation.title = placeMark.locality;
         annotation.subtitle = placeMark.name;
-        
+        annotation.coordinate = location.coordinate;
         [self.mapView addAnnotation:annotation];
+        
+        
     }];
     
     
@@ -178,6 +194,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     self.mapView.showsUserLocation = YES;
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     //self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+    
 }
 
 // 放大、缩小按钮点击事件
@@ -202,6 +219,12 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 #pragma mark - MKMapViewDelegate
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    
+    // 点击定位按钮时刷新坐标视图
+    if (!self.coordinateView.hidden) {
+        
+        self.coordinateView.coordinate = self.mapView.userLocation.coordinate;
+    }
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder reverseGeocodeLocation:self.mapView.userLocation.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
