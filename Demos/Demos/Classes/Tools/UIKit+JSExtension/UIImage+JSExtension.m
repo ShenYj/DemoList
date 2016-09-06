@@ -10,6 +10,7 @@
 
 @implementation UIImage (Color)
 
+
 // 根据传入Size重新生成图片(优化后)
 - (void)js_ImageWithSize:(CGSize)size completion:(void(^)(UIImage *img))completion{
     

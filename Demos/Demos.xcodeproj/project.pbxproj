@@ -428,8 +428,8 @@
 		F743A7F01D7DB0E400576254 /* SyncDownLoadImg */ = {
 			isa = PBXGroup;
 			children = (
-				F743A7F11D7DB0E400576254 /* Controllers */,
 				F743A7F41D7DB0E400576254 /* JSOperation */,
+				F743A7F11D7DB0E400576254 /* Controllers */,
 				F743A7FD1D7DB0E400576254 /* Models */,
 				F743A8011D7DB0E400576254 /* Views */,
 			);
@@ -1131,8 +1131,8 @@
 			isa = PBXGroup;
 			children = (
 				F762656C1D7143400055ECBA /* Classes */,
-				F76265701D7143400055ECBA /* SupportingFiles */,
 				F76265951D7145990055ECBA /* Tools */,
+				F76265701D7143400055ECBA /* SupportingFiles */,
 			);
 			path = Demos;
 			sourceTree = "<group>";

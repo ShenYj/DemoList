@@ -12,7 +12,7 @@
 #import "JSAnnotation.h"
 #import "JSCoordinateView.h"
 
-static NSString * const reuseIdentifier = @"reuseIdentifier";
+static NSString * const identifier = @"reuseIdentifier";
 
 @interface JSMapViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -226,21 +226,43 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     }
     
     
-    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:reuseIdentifier];
+    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     
     if ( annotationView == nil ) {
         
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
     }
     // 设置颜色需要使用MKPinAnnotationView
     //annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
     
     // 显示标注
     annotationView.canShowCallout = YES;
-    // 掉落动画
-    annotationView.animatesDrop = YES;
+    // 掉落动画 (MKPinAnnotationView 的属性)
+    //annotationView.animatesDrop = YES;
+    
+    [[UIImage imageNamed:@"LuckyLeftPressed"] js_ImageWithSize:CGSizeMake(30, 30) completion:^(UIImage *img) {
+        
+        annotationView.image = [UIImage js_imageWithOriginalImage:img];
+    }];
     
     return annotationView;
+}
+
+// 已经添加大头针时调用
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray<MKAnnotationView *> *)views{
+    
+    for (MKAnnotationView *annoV in views) {
+        
+        if ([annoV.annotation isKindOfClass:[MKUserLocation class]]) {
+            return ;
+        }
+        CGRect frame = annoV.frame;
+        annoV.frame = CGRectMake(frame.origin.x, 0, frame.size.width, frame.size.height);
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            annoV.frame = frame;
+        }];
+    }
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
