@@ -61,6 +61,7 @@
 		F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A88B1D7DB0E400576254 /* JSKeyboardViewController.m */; };
 		F743A8C61D7DB0E400576254 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = F743A88D1D7DB0E400576254 /* provinces.plist */; };
 		F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A88F1D7DB0E400576254 /* SJProvinces.m */; };
+		F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8C91D7DB22C00576254 /* JSMapViewController.m */; };
 		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
@@ -202,6 +203,8 @@
 		F743A88D1D7DB0E400576254 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
 		F743A88E1D7DB0E400576254 /* SJProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJProvinces.h; sourceTree = "<group>"; };
 		F743A88F1D7DB0E400576254 /* SJProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJProvinces.m; sourceTree = "<group>"; };
+		F743A8C81D7DB22C00576254 /* JSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMapViewController.h; sourceTree = "<group>"; };
+		F743A8C91D7DB22C00576254 /* JSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMapViewController.m; sourceTree = "<group>"; };
 		F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
 		F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -1064,6 +1067,8 @@
 		F743A8931D7DB0E400576254 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F743A8C81D7DB22C00576254 /* JSMapViewController.h */,
+				F743A8C91D7DB22C00576254 /* JSMapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1481,6 +1486,7 @@
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
 				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
+				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
 				F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */,
