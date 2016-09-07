@@ -126,7 +126,7 @@
 				<key>targetControllerClass</key>
 				<string>JSMapViewController</string>
 				<key>detail</key>
-				<string>演示地图使用,实现定位、切换地图类型、放大、缩小</string>
+				<string>演示地图使用,实现定位、切换地图类型、放大、缩小; 坐标转换、插入/移除大头针、内置地图/自定义地图导航</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

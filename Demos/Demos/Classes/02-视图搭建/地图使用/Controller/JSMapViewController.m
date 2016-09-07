@@ -271,9 +271,11 @@
     switch (sender.navigationType) {
             
         case NavigationTypeBySystemMap:
+            NSLog(@"NavigationTypeBySystemMap");
             self.navigationInputView.inputViewType = JSNavigationInputViewTypeSystemType;
             break;
         case NavigationTypeByCustomMap:
+            NSLog(@"NavigationTypeByCustomMap");
             self.navigationInputView.inputViewType = JSNavigationInputViewTypeCustomType;
             break;
             
@@ -429,7 +431,13 @@
                 return ;
             }
             
-            
+            for (MKRoute *route in response.routes) {
+                
+                for (MKRouteStep *routeStep in route.steps) {
+                    
+                    NSLog(@"%@",routeStep.instructions);
+                }
+            }
             
             
         }];
@@ -535,6 +543,7 @@
 - (JSNavigationButton *)navigationBySystemMapButton{
     if (_navigationBySystemMapButton == nil) {
         _navigationBySystemMapButton = [[JSNavigationButton alloc] init];
+        _navigationBySystemMapButton.navigationType = NavigationTypeBySystemMap;
         [_navigationBySystemMapButton setTitle:@"系统地图" forState:UIControlStateNormal];
         [_navigationBySystemMapButton addTarget:self action:@selector(clickNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -544,6 +553,7 @@
 - (JSNavigationButton *)navigationByCustomMapButton{
     if (_navigationByCustomMapButton == nil) {
         _navigationByCustomMapButton = [[JSNavigationButton alloc] init];
+        _navigationByCustomMapButton.navigationType = NavigationTypeByCustomMap;
         [_navigationByCustomMapButton setTitle:@"自定义导航" forState:UIControlStateNormal];
         [_navigationByCustomMapButton addTarget:self action:@selector(clickNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
     }

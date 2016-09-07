@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum : NSUInteger {
+typedef NS_ENUM(NSUInteger, NavigationType) {
     NavigationTypeBySystemMap,
-    NavigationTypeByCustomMap,
-} NavigationType;
+    NavigationTypeByCustomMap
+};
+
+
+//typedef enum : NSUInteger {
+//    NavigationTypeBySystemMap,
+//    NavigationTypeByCustomMap,
+//} NavigationType;
 
 @interface JSNavigationButton : UIButton
 
