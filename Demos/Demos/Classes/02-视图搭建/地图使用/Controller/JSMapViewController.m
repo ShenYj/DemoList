@@ -48,6 +48,8 @@
 
 #pragma mark - ViewControllerMethods
 
+
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     
@@ -384,30 +386,39 @@
 
 - (void)navigationInfoView:(JSNavigationInfoView *)navigationInfoView withDestinationString:(NSString *)destinationString withCompletionHandler:(void (^)())completionHandler{
     
-    NSLog(@"%zd",navigationInfoView.inputViewType);
-    
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     
-    [geocoder geocodeAddressString:destinationString completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-        
-        
-        if (error || placemarks.count == 0 ) {
-            NSLog(@"地标转换失败:%@",error);
-            return ;
-        }
-        // 当前地图项目
-        MKMapItem *currentMapItem = [MKMapItem mapItemForCurrentLocation];
-        
-        // 目标地图项目
-        CLPlacemark *placeMark_cl = [[CLPlacemark alloc] initWithPlacemark:placemarks.lastObject];
-        MKPlacemark *placeMark_mk = [[MKPlacemark alloc] initWithPlacemark:placeMark_cl];
-        MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
-        
-        // 打开内置地图进行导航
-        [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving}];
-        
-        
-    }];
+    switch (navigationInfoView.inputViewType) {
+            
+        case JSNavigationInputViewTypeSystemType:
+            [geocoder geocodeAddressString:destinationString completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+                
+                if (error || placemarks.count == 0 ) {
+                    NSLog(@"地标转换失败:%@",error);
+                    return ;
+                }
+                
+                // 当前地图项目
+                MKMapItem *currentMapItem = [MKMapItem mapItemForCurrentLocation];
+                
+                // 目标地图项目
+                CLPlacemark *placeMark_cl = [[CLPlacemark alloc] initWithPlacemark:placemarks.lastObject];
+                MKPlacemark *placeMark_mk = [[MKPlacemark alloc] initWithPlacemark:placeMark_cl];
+                MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:placeMark_mk];
+                
+                // 打开内置地图进行导航
+                [MKMapItem openMapsWithItems:@[currentMapItem,destinationMapItem] launchOptions:@{MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving}];
+                
+            }];
+            break;
+        case JSNavigationInputViewTypeCustomType:
+            
+            break;
+            
+        default:
+            break;
+    }
+    
     
     
     
