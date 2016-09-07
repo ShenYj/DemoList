@@ -309,26 +309,20 @@
     
     JSAnnotationView *annotationView = [JSAnnotationView annotationWihMapView:mapView];
     
-//    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-//    
-//    if ( annotationView == nil ) {
-//        
-//        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-//    }
-//    // 设置颜色需要使用MKPinAnnotationView
-//    //annotationView.pinTintColor = [UIColor js_colorWithHex:0x8A2BE2];
-//    
-//    // 显示标注
-//    annotationView.canShowCallout = YES;
-//    // 掉落动画 (MKPinAnnotationView 的属性)
-//    //annotationView.animatesDrop = YES;
-//    
-//    [[UIImage imageNamed:@"LuckyLeftPressed"] js_ImageWithSize:CGSizeMake(30, 30) completion:^(UIImage *img) {
-//        
-//        annotationView.image = [UIImage js_imageWithOriginalImage:img];
-//    }];
-    
     return annotationView;
+}
+
+// 设置地图覆盖物样式
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
+    
+    MKPolylineRenderer *polylineRender = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    
+    // 设置样式
+    polylineRender.strokeColor = [UIColor purpleColor];
+    polylineRender.lineWidth = 2;
+    
+    return polylineRender;
+    
 }
 
 // 已经添加大头针时调用
@@ -390,8 +384,6 @@
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     
-    
-    
     [geocoder geocodeAddressString:destinationString completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         
         if (error || placemarks.count == 0 ) {
@@ -433,23 +425,21 @@
             
             for (MKRoute *route in response.routes) {
                 
+                // 添加地图覆盖物到地图上 (需要提前设置样式)
+                [self.mapView addOverlay:route.polyline];
+                
                 for (MKRouteStep *routeStep in route.steps) {
                     
+                    // 每一步路线
                     NSLog(@"%@",routeStep.instructions);
+                    
                 }
             }
             
             
         }];
         
-        
-        
     }];
-    
-    
-    
-
-    
     
     
     
