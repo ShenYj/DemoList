@@ -52,10 +52,6 @@
     [self presentViewController:composeViewController animated:YES completion:nil];
 }
 
-- (void)clickAddImageButton:(UIButton *)sender{
-    
-    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-}
 
 
 #pragma mark - lazy

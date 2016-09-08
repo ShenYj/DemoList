@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "JSNavController.h"
 #import "JSRootViewController.h"
-
+#import "UMSocial.h"
 
 
 @implementation AppDelegate
@@ -18,6 +18,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // 友盟
+    [UMSocialData setAppKey:@"57d1559e67e58ea10200456a"];
+    
+    // 百度地图
     // 请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc] init];
     // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
@@ -25,6 +29,9 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+    
+    
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     

@@ -148,9 +148,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSSocialViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>友盟分享</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
