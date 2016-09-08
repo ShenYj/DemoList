@@ -31,6 +31,7 @@
 		F718BBA11D810A5B0001CDC0 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F718BBA01D810A5B0001CDC0 /* mapapi.bundle */; };
 		F718BBDE1D81233C0001CDC0 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BBDD1D81233C0001CDC0 /* BaiduMapAPI_Search.framework */; };
 		F718BBE01D8133590001CDC0 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BBDF1D8133590001CDC0 /* BaiduMapAPI_Location.framework */; };
+		F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BBE61D8160720001CDC0 /* JSSystemSharedViewController.m */; };
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
@@ -159,6 +160,8 @@
 		F718BBA01D810A5B0001CDC0 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 		F718BBDD1D81233C0001CDC0 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		F718BBDF1D8133590001CDC0 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		F718BBE51D8160720001CDC0 /* JSSystemSharedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSystemSharedViewController.h; sourceTree = "<group>"; };
+		F718BBE61D8160720001CDC0 /* JSSystemSharedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSystemSharedViewController.m; sourceTree = "<group>"; };
 		F719BFC71D75976800015113 /* Demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Demos.plist; path = ../Demos.plist; sourceTree = "<group>"; };
 		F719BFC91D7597A600015113 /* JSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSectionModel.h; sourceTree = "<group>"; };
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
@@ -476,6 +479,39 @@
 				F718BB8B1D8106F20001CDC0 /* BaiduMapAPI_Map.framework */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		F718BBE11D8160570001CDC0 /* 系统分享 */ = {
+			isa = PBXGroup;
+			children = (
+				F718BBE21D8160570001CDC0 /* Controller */,
+				F718BBE31D8160570001CDC0 /* Model */,
+				F718BBE41D8160570001CDC0 /* View */,
+			);
+			path = "系统分享";
+			sourceTree = "<group>";
+		};
+		F718BBE21D8160570001CDC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F718BBE51D8160720001CDC0 /* JSSystemSharedViewController.h */,
+				F718BBE61D8160720001CDC0 /* JSSystemSharedViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F718BBE31D8160570001CDC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F718BBE41D8160570001CDC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
@@ -1204,6 +1240,7 @@
 				F70B90251D7E7F9D00840F11 /* UISearchDisplayController */,
 				F743A8921D7DB0E400576254 /* 地图使用 */,
 				F718BB811D80F9B40001CDC0 /* 百度地图演练 */,
+				F718BBE11D8160570001CDC0 /* 系统分享 */,
 				F70B90391D7EE79F00840F11 /* FSCalendar */,
 			);
 			path = "02-视图搭建";
@@ -1609,6 +1646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */,
+				F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */,
 				F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */,
 				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,

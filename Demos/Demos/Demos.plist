@@ -142,6 +142,36 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
+				<string>JSSystemSharedViewController</string>
+				<key>detail</key>
+				<string>使用SLComposeViewController进行新浪分享</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
 				<string></string>
 				<key>detail</key>
 				<string>demo</string>
