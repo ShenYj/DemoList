@@ -130,6 +130,12 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
+				<string>JSBaiduMapViewController</string>
+				<key>detail</key>
+				<string>百度地图使用演练</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
 				<string>JSCalendarViewController</string>
 				<key>detail</key>
 				<string>FSCalendar体验</string>
@@ -138,7 +144,7 @@
 				<key>targetControllerClass</key>
 				<string></string>
 				<key>detail</key>
-				<string>Demo</string>
+				<string>demo</string>
 			</dict>
 		</array>
 	</dict>

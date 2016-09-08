@@ -10,9 +10,7 @@
 #import "JSNavController.h"
 #import "JSRootViewController.h"
 
-@interface AppDelegate ()
 
-@end
 
 @implementation AppDelegate
 
@@ -20,6 +18,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // 请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc] init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    BOOL ret = [_mapManager start:@"Ew7oKDgl3PMv1NGm6aaTG8eOhLLiZxkh"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -31,7 +36,6 @@
     
     [self.window makeKeyAndVisible];
     
-    //NSLog(@"%s",__func__);
     
     return YES;
 }
