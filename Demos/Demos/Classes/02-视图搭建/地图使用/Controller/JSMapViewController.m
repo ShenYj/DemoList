@@ -48,8 +48,6 @@
 
 #pragma mark - ViewControllerMethods
 
-
-
 - (void)viewDidLoad{
     [super viewDidLoad];
     
