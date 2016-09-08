@@ -434,10 +434,12 @@
                     NSLog(@"%@",routeStep.instructions);
                     
                 }
+                
             }
             
             
         }];
+        
         
     }];
     

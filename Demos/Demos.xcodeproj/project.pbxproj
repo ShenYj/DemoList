@@ -1683,7 +1683,7 @@
 				GCC_PREFIX_HEADER = Demos/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = Demos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---ShenYJ---.Demos";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyj4.ryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1696,7 +1696,7 @@
 				GCC_PREFIX_HEADER = Demos/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = Demos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---ShenYJ---.Demos";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyj4.ryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
