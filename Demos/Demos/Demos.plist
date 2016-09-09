@@ -150,7 +150,7 @@
 				<key>targetControllerClass</key>
 				<string>JSSocialViewController</string>
 				<key>detail</key>
-				<string>友盟分享</string>
+				<string>友盟分享、SSO登录、第三方登录(Sina)</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
