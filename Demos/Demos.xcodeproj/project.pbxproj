@@ -368,9 +368,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F718BB9D1D8108290001CDC0 /* CoreTelephony.framework in Frameworks */,
 				F705355A1D818C6F00B53BB8 /* libz.tbd in Frameworks */,
 				F70535581D818C5E00B53BB8 /* libstdc++.tbd in Frameworks */,
-				F718BB9D1D8108290001CDC0 /* CoreTelephony.framework in Frameworks */,
 				F70535561D818C2B00B53BB8 /* libiconv.tbd in Frameworks */,
 				F705354A1D818BC500B53BB8 /* libUMSocial_Sdk_4.2.5.a in Frameworks */,
 				F718BB9F1D81083E0001CDC0 /* libstdc++.6.0.9.tbd in Frameworks */,

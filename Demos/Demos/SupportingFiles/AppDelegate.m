@@ -17,21 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    // 友盟
-    [UMSocialData setAppKey:@"57d1559e67e58ea10200456a"];
-    
+
     // 百度地图
-    // 请先启动BaiduMapManager
-    _mapManager = [[BMKMapManager alloc] init];
-    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-    BOOL ret = [_mapManager start:@"Ew7oKDgl3PMv1NGm6aaTG8eOhLLiZxkh"  generalDelegate:nil];
-    if (!ret) {
-        NSLog(@"manager start failed!");
-    }
-    
-    
-    
+    [self BMKMap];
+    // 友盟分享
+    [self UMShared];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -46,6 +36,26 @@
     
     return YES;
 }
+
+
+- (void)UMShared{
+    
+    // 友盟
+    [UMSocialData setAppKey:@"57d1559e67e58ea10200456a"];
+}
+
+- (void)BMKMap{
+    
+    // 请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc] init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    BOOL ret = [_mapManager start:@"Ew7oKDgl3PMv1NGm6aaTG8eOhLLiZxkh"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
