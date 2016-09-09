@@ -9,7 +9,12 @@
 #import "JSSocialViewController.h"
 #import "UMSocial.h"
 
-//AK: 57d1559e67e58ea10200456a
+//AK: 57d1559e67e58ea10200456a  (UMengSocialShared)
+
+/* Sina
+ App Key：3833247638
+ App Secret：5655f7be82f952bab7ab2af537a88358
+ */
 
 @interface JSSocialViewController () <UMSocialUIDelegate>
 
