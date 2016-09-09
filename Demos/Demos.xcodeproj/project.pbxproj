@@ -32,6 +32,10 @@
 		F70B903F1D7EE7CF00840F11 /* JSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B903E1D7EE7CF00840F11 /* JSCalendarViewController.m */; };
 		F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90431D7EFE5900840F11 /* JSNavigationButton.m */; };
 		F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */; };
+		F7146EF61D82C30F00EBE281 /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EE81D82C30F00EBE281 /* libSocialSinaSSO.a */; };
+		F7146EF71D82C30F00EBE281 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */; };
+		F7146EF81D82C30F00EBE281 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7146EF31D82C30F00EBE281 /* WeiboSDK.bundle */; };
+		F7146EFA1D82C32A00EBE281 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EF91D82C32A00EBE281 /* ImageIO.framework */; };
 		F718BB871D80F9C40001CDC0 /* JSBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */; };
 		F718BB8C1D8106F20001CDC0 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */; };
 		F718BB8D1D8106F20001CDC0 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8B1D8106F20001CDC0 /* BaiduMapAPI_Map.framework */; };
@@ -189,6 +193,21 @@
 		F70B90431D7EFE5900840F11 /* JSNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationButton.m; sourceTree = "<group>"; };
 		F70B90451D7F0DB800840F11 /* JSNavigationInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationInfoView.h; sourceTree = "<group>"; };
 		F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationInfoView.m; sourceTree = "<group>"; };
+		F7146EE81D82C30F00EBE281 /* libSocialSinaSSO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSinaSSO.a; sourceTree = "<group>"; };
+		F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		F7146EEA1D82C30F00EBE281 /* UMSocialSinaSSOHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaSSOHandler.h; sourceTree = "<group>"; };
+		F7146EEB1D82C30F00EBE281 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		F7146EEC1D82C30F00EBE281 /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		F7146EED1D82C30F00EBE281 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		F7146EEE1D82C30F00EBE281 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		F7146EEF1D82C30F00EBE281 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		F7146EF01D82C30F00EBE281 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		F7146EF11D82C30F00EBE281 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		F7146EF21D82C30F00EBE281 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		F7146EF31D82C30F00EBE281 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		F7146EF41D82C30F00EBE281 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		F7146EF51D82C30F00EBE281 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		F7146EF91D82C32A00EBE281 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F718BB851D80F9C40001CDC0 /* JSBaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaiduMapViewController.h; sourceTree = "<group>"; };
 		F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaiduMapViewController.m; sourceTree = "<group>"; };
 		F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
@@ -368,6 +387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7146EFA1D82C32A00EBE281 /* ImageIO.framework in Frameworks */,
 				F718BB9D1D8108290001CDC0 /* CoreTelephony.framework in Frameworks */,
 				F705355A1D818C6F00B53BB8 /* libz.tbd in Frameworks */,
 				F70535581D818C5E00B53BB8 /* libstdc++.tbd in Frameworks */,
@@ -375,8 +395,10 @@
 				F705354A1D818BC500B53BB8 /* libUMSocial_Sdk_4.2.5.a in Frameworks */,
 				F718BB9F1D81083E0001CDC0 /* libstdc++.6.0.9.tbd in Frameworks */,
 				F718BB9B1D81081E0001CDC0 /* libsqlite3.0.tbd in Frameworks */,
+				F7146EF61D82C30F00EBE281 /* libSocialSinaSSO.a in Frameworks */,
 				F718BB991D8108120001CDC0 /* Security.framework in Frameworks */,
 				F718BB971D8108090001CDC0 /* CoreGraphics.framework in Frameworks */,
+				F7146EF71D82C30F00EBE281 /* libWeiboSDK.a in Frameworks */,
 				F718BBE01D8133590001CDC0 /* BaiduMapAPI_Location.framework in Frameworks */,
 				F718BB951D8107F80001CDC0 /* SystemConfiguration.framework in Frameworks */,
 				F718BB931D8107F00001CDC0 /* OpenGLES.framework in Frameworks */,
@@ -396,6 +418,7 @@
 		4E49FCF286B012FB8712C507 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7146EF91D82C32A00EBE281 /* ImageIO.framework */,
 				F70535591D818C6F00B53BB8 /* libz.tbd */,
 				F70535571D818C5E00B53BB8 /* libstdc++.tbd */,
 				F70535551D818C2B00B53BB8 /* libiconv.tbd */,
@@ -425,6 +448,7 @@
 		F70535291D81864200B53BB8 /* 友盟分享 */ = {
 			isa = PBXGroup;
 			children = (
+				F7146EE71D82C30F00EBE281 /* SinaSSO */,
 				F705352D1D818BC500B53BB8 /* UMSocial_Sdk_4.2.5 */,
 				F705352A1D81864200B53BB8 /* Controller */,
 				F705352B1D81864200B53BB8 /* Model */,
@@ -566,6 +590,27 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F7146EE71D82C30F00EBE281 /* SinaSSO */ = {
+			isa = PBXGroup;
+			children = (
+				F7146EE81D82C30F00EBE281 /* libSocialSinaSSO.a */,
+				F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */,
+				F7146EEA1D82C30F00EBE281 /* UMSocialSinaSSOHandler.h */,
+				F7146EEB1D82C30F00EBE281 /* WBHttpRequest+WeiboGame.h */,
+				F7146EEC1D82C30F00EBE281 /* WBHttpRequest+WeiboShare.h */,
+				F7146EED1D82C30F00EBE281 /* WBHttpRequest+WeiboToken.h */,
+				F7146EEE1D82C30F00EBE281 /* WBHttpRequest+WeiboUser.h */,
+				F7146EEF1D82C30F00EBE281 /* WBHttpRequest.h */,
+				F7146EF01D82C30F00EBE281 /* WBSDKBasicButton.h */,
+				F7146EF11D82C30F00EBE281 /* WBSDKCommentButton.h */,
+				F7146EF21D82C30F00EBE281 /* WBSDKRelationshipButton.h */,
+				F7146EF31D82C30F00EBE281 /* WeiboSDK.bundle */,
+				F7146EF41D82C30F00EBE281 /* WeiboSDK.h */,
+				F7146EF51D82C30F00EBE281 /* WeiboUser.h */,
+			);
+			path = SinaSSO;
 			sourceTree = "<group>";
 		};
 		F718BB811D80F9B40001CDC0 /* 百度地图演练 */ = {
@@ -1708,6 +1753,7 @@
 				F718BBA11D810A5B0001CDC0 /* mapapi.bundle in Resources */,
 				F743A8AF1D7DB0E400576254 /* JSRotateView.xib in Resources */,
 				F70535531D818BC500B53BB8 /* UMSShareListController.xib in Resources */,
+				F7146EF81D82C30F00EBE281 /* WeiboSDK.bundle in Resources */,
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
 				F70535501D818BC500B53BB8 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */,
@@ -1986,6 +2032,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demos/Classes/02-视图搭建/友盟分享/UMSocial_Sdk_4.2.5",
+					"$(PROJECT_DIR)/Demos/Classes/02-视图搭建/友盟分享/SinaSSO",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenyj4.ryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2008,6 +2055,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demos/Classes/02-视图搭建/友盟分享/UMSocial_Sdk_4.2.5",
+					"$(PROJECT_DIR)/Demos/Classes/02-视图搭建/友盟分享/SinaSSO",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenyj4.ryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,6 +10,7 @@
 #import "JSNavController.h"
 #import "JSRootViewController.h"
 #import "UMSocial.h"
+#import "UMSocialSinaSSOHandler.h"
 
 
 @implementation AppDelegate
@@ -42,7 +43,29 @@
     
     // 友盟
     [UMSocialData setAppKey:@"57d1559e67e58ea10200456a"];
+    
+//    // SSO
+//    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954"
+//                                              secret:@"04b48b094faeb16683c32669824ebdad"
+//                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    
+    // 4.2版本
+    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
 }
+
+// 当App被其他App打开时会调用此代理方法
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    if (result == FALSE) {
+        //调用其他SDK，例如支付宝SDK等
+        
+        
+        
+    }
+    return result;
+}
+
 
 - (void)BMKMap{
     
