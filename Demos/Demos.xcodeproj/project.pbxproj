@@ -108,6 +108,8 @@
 		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
 		F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F573E1D85113500E3CC61 /* JSContactViewController.m */; };
+		F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57411D8524A500E3CC61 /* JSContactLabel.m */; };
+		F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57441D85298C00E3CC61 /* JSContactModel.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
@@ -330,6 +332,10 @@
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F74F573D1D85113500E3CC61 /* JSContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContactViewController.h; sourceTree = "<group>"; };
 		F74F573E1D85113500E3CC61 /* JSContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactViewController.m; sourceTree = "<group>"; };
+		F74F57401D8524A500E3CC61 /* JSContactLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContactLabel.h; sourceTree = "<group>"; };
+		F74F57411D8524A500E3CC61 /* JSContactLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactLabel.m; sourceTree = "<group>"; };
+		F74F57431D85298C00E3CC61 /* JSContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContactModel.h; sourceTree = "<group>"; };
+		F74F57441D85298C00E3CC61 /* JSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactModel.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1503,6 +1509,8 @@
 		F74F573B1D8510FC00E3CC61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F74F57431D85298C00E3CC61 /* JSContactModel.h */,
+				F74F57441D85298C00E3CC61 /* JSContactModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1510,6 +1518,8 @@
 		F74F573C1D8510FC00E3CC61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F74F57401D8524A500E3CC61 /* JSContactLabel.h */,
+				F74F57411D8524A500E3CC61 /* JSContactLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1910,6 +1920,7 @@
 				F743A8BD1D7DB0E400576254 /* JSFriendsModel.m in Sources */,
 				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,
 				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
+				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
@@ -1941,6 +1952,7 @@
 				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
 				F743A8B91D7DB0E400576254 /* JSDetailModel.m in Sources */,
 				F743A8A31D7DB0E400576254 /* JSDetailTableView.m in Sources */,
+				F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */,
 				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,

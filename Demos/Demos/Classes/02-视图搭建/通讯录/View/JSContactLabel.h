@@ -1,5 +1,5 @@
 //
-//  JSContactViewController.h
+//  JSContactLabel.h
 //  Demos
 //
 //  Created by ShenYj on 16/9/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JSContactViewController : UITableViewController
+@interface JSContactLabel : UILabel
 
 @end
