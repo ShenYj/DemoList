@@ -37,7 +37,7 @@
 
 - (void)prepareView{
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor js_randomColor];
     
     [self.view addSubview:self.sharedButton];
     [self.view addSubview:self.loginButton];

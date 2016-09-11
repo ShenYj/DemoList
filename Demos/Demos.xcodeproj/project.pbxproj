@@ -107,6 +107,7 @@
 		F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A8C91D7DB22C00576254 /* JSMapViewController.m */; };
 		F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */; };
 		F74A69A61D7683BB00783D78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */; };
+		F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F573E1D85113500E3CC61 /* JSContactViewController.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
@@ -327,6 +328,8 @@
 		F745C25D1D7AC44900DFC2B1 /* NSObject+JSObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
 		F745C25E1D7AC44900DFC2B1 /* NSObject+JSObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		F74A69A51D7683BB00783D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F74F573D1D85113500E3CC61 /* JSContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContactViewController.h; sourceTree = "<group>"; };
+		F74F573E1D85113500E3CC61 /* JSContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactViewController.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1421,6 +1424,7 @@
 				F718BBE11D8160570001CDC0 /* 系统分享 */,
 				F70535291D81864200B53BB8 /* 友盟分享 */,
 				F70B90391D7EE79F00840F11 /* FSCalendar */,
+				F74F57391D8510FC00E3CC61 /* 通讯录 */,
 			);
 			path = "02-视图搭建";
 			sourceTree = "<group>";
@@ -1475,6 +1479,39 @@
 			children = (
 			);
 			path = "03-多媒体类";
+			sourceTree = "<group>";
+		};
+		F74F57391D8510FC00E3CC61 /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				F74F573A1D8510FC00E3CC61 /* Controller */,
+				F74F573B1D8510FC00E3CC61 /* Model */,
+				F74F573C1D8510FC00E3CC61 /* View */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		F74F573A1D8510FC00E3CC61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F74F573D1D85113500E3CC61 /* JSContactViewController.h */,
+				F74F573E1D85113500E3CC61 /* JSContactViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F74F573B1D8510FC00E3CC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F74F573C1D8510FC00E3CC61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F76265491D7142FC0055ECBA = {
@@ -1876,6 +1913,7 @@
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
+				F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
 				F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */,

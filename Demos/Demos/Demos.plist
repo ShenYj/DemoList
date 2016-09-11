@@ -154,9 +154,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSContactViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>通讯录使用</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
