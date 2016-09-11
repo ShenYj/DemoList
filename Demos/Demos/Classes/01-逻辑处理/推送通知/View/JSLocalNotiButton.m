@@ -14,7 +14,7 @@
     
     self = [super init];
     if (self) {
-        self.titleLabel.font = [UIFont systemFontOfSize:12];
+        self.titleLabel.font = [UIFont systemFontOfSize:15];
         self.layer.borderColor = [UIColor js_colorWithHex:0x8A2BE2].CGColor;
         self.layer.borderWidth = 2;
         [self setTitleColor:[UIColor js_colorWithHex:0x8A2BE2] forState:UIControlStateNormal];
@@ -42,6 +42,10 @@
             
         default:
             break;
+    }
+    
+    if (self.targetHandler) {
+        self.targetHandler(sender.notificationType);
     }
     
     

@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger,JSLocalNotificationType){
 /**
  *  按钮点击事件回调
  */
-@property (nonatomic,copy) void(^targetHandler)(JSLocalNotificationType *notificationType);
+@property (nonatomic,copy) void(^targetHandler)(JSLocalNotificationType notificationType);
 
 
 @end
