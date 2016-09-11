@@ -26,15 +26,9 @@
 @property (nonatomic, copy) NSString *departmentName;
 @property (nonatomic, copy) NSString *jobTitle;
 @property (nonatomic, copy) NSString *note;
-@property (nonatomic, copy) NSString *phoneNumber;
-@property (nonatomic, copy) NSString *emailAddress;
-@property (nonatomic, copy) NSString *postalAddress;
-@property (nonatomic, copy) NSString *urlAddress;
-@property (nonatomic, copy) NSString *contactRelation;
-@property (nonatomic, copy) NSString *socialProfile;
-@property (nonatomic, copy) NSString *instantMessageAddress;
-@property (nonatomic, copy) NSString *birthday;
-@property (nonatomic, copy) NSString *nonGregorianBirthday;
-@property (nonatomic, copy) NSString *date;
+
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)contactModelWithDict:(NSDictionary *)dict;
 
 @end

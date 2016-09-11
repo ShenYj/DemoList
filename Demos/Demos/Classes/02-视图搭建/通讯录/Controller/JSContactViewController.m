@@ -16,41 +16,23 @@ static NSString * const reuseID = @"abc";
 
 @interface JSContactViewController () <CNContactPickerDelegate>
 
-@property (nonatomic,strong) UIButton *contactButton;
-
 // 数据容器
 @property (nonatomic,strong) NSArray *dataArr;
 
+// 选中的联系人
+@property (nonatomic,strong) CNContact *selectedContact;
+// 选中的联系人信息
+@property (nonatomic,weak) NSMutableDictionary *contactInfo;
 
-// 属性展示
-@property (nonatomic, strong) JSContactLabel *namePrefix;
-@property (nonatomic, strong) JSContactLabel *givenName;
-@property (nonatomic, strong) JSContactLabel *middleName;
-@property (nonatomic, strong) JSContactLabel *familyName;
-@property (nonatomic, strong) JSContactLabel *previousFamilyName;
-@property (nonatomic, strong) JSContactLabel *nameSuffix;
-@property (nonatomic, strong) JSContactLabel *nickname;
-@property (nonatomic, strong) JSContactLabel *phoneticGivenName;
-@property (nonatomic, strong) JSContactLabel *phoneticMiddleName;
-@property (nonatomic, strong) JSContactLabel *phoneticFamilyName;
-@property (nonatomic, strong) JSContactLabel *organizationName;
-@property (nonatomic, strong) JSContactLabel *departmentName;
-@property (nonatomic, strong) JSContactLabel *jobTitle;
-@property (nonatomic, strong) JSContactLabel *note;
-@property (nonatomic, strong) JSContactLabel *phoneNumber;
-@property (nonatomic, strong) JSContactLabel *emailAddress;
-@property (nonatomic, strong) JSContactLabel *postalAddress;
-@property (nonatomic, strong) JSContactLabel *urlAddress;
-@property (nonatomic, strong) JSContactLabel *contactRelation;
-@property (nonatomic, strong) JSContactLabel *socialProfile;
-@property (nonatomic, strong) JSContactLabel *instantMessageAddress;
-@property (nonatomic, strong) JSContactLabel *birthday;
-@property (nonatomic, strong) JSContactLabel *nonGregorianBirthday;
-@property (nonatomic, strong) JSContactLabel *date;
 
 @end
 
 @implementation JSContactViewController
+
+- (NSString *)title{
+    
+    return @"CNContact属性列表";
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -65,11 +47,12 @@ static NSString * const reuseID = @"abc";
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.contactButton];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickContactButton:)];
     
 }
 
 #pragma mark - target 
+
 
 - (void)clickContactButton:(UIButton *)sender{
     
@@ -84,6 +67,8 @@ static NSString * const reuseID = @"abc";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
 }
 
 
@@ -99,6 +84,7 @@ static NSString * const reuseID = @"abc";
  */
 - (void)contactPickerDidCancel:(CNContactPickerViewController *)picker{
     
+    [self.tableView reloadData];
 }
 
 /*!
@@ -108,7 +94,46 @@ static NSString * const reuseID = @"abc";
 - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact{
     
     
+    if (self.contactInfo.count > 0) {
+        
+        [self.contactInfo removeAllObjects];
+    }
+    
+    NSLog(@"%@",[JSContactModel js_objProperties]);
+    
+//    self.selectedContact = contact;
+
+    NSDictionary *dict = [contact dictionaryWithValuesForKeys:[JSContactModel js_objProperties]];
+
+    JSContactModel *contactModel = [JSContactModel contactModelWithDict:dict];
+    
+    NSLog(@"%@",contactModel);
+    
+    
+//    // [CNContact js_objProperties]
+//    for (NSString *propertyName in self.dataArr) {
+//        
+//        SEL propertyMethod = NSSelectorFromString(propertyName);
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+//        
+//        id result = [contact performSelector:propertyMethod];
+//        
+//        if ( result ) {
+//            
+//            [self.contactInfo setObject:result forKey:propertyName];
+//#pragma clang diagnostic pop
+//            
+//            
+//        }
+//        
+//    }
+//
+
+   
 }
+
+
 - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty{
     
 }
@@ -118,19 +143,25 @@ static NSString * const reuseID = @"abc";
  * @discussion These delegate methods will be invoked when the user is done selecting multiple contacts or properties.
  * Implementing one of these methods will configure the picker for multi-selection.
  */
-- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContacts:(NSArray<CNContact*> *)contacts{
-    
-}
-
-- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperties:(NSArray<CNContactProperty*> *)contactProperties{
-    
-}
+//- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContacts:(NSArray<CNContact*> *)contacts{
+//    
+//}
+//
+//- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperties:(NSArray<CNContactProperty*> *)contactProperties{
+//    
+//}
 
 
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    
+    if (self.selectedContact) {
+        
+        return self.contactInfo.count;
+    }
     
     return self.dataArr.count;
 }
@@ -149,6 +180,7 @@ static NSString * const reuseID = @"abc";
     
     cell.textLabel.text = propertyName;
     cell.textLabel.textColor = [UIColor purpleColor];
+    
     cell.detailTextLabel.text = propertyName;
     
     return cell;
@@ -157,15 +189,12 @@ static NSString * const reuseID = @"abc";
 
 #pragma mark - lazy
 
-- (UIButton *)contactButton {
+- (NSMutableDictionary *)contactInfo{
     
-    if (_contactButton == nil) {
-        _contactButton = [[UIButton alloc] init];
-        [_contactButton setTitle:@"打开通讯录" forState:UIControlStateNormal];
-        [_contactButton setTitleColor:[UIColor js_randomColor] forState:UIControlStateNormal];
-        [_contactButton addTarget:self action:@selector(clickContactButton:) forControlEvents:UIControlEventTouchUpInside];
+    if (_contactInfo == nil) {
+        _contactInfo = [NSMutableDictionary dictionaryWithCapacity:5];
     }
-    return _contactButton;
+    return _contactInfo;
 }
 
 - (NSArray *)dataArr{
@@ -176,182 +205,10 @@ static NSString * const reuseID = @"abc";
     return _dataArr;
 }
 
-- (JSContactLabel *)namePrefix{
-    if (_namePrefix == nil) {
-        _namePrefix = [[JSContactLabel alloc] init];
-    }
-    return _namePrefix;
-}
 
-- (JSContactLabel *)givenName{
-    if (_givenName == nil) {
-        _givenName = [[JSContactLabel alloc] init];
-    }
-    return _givenName;
-}
 
-- (JSContactLabel *)middleName{
-    if (_middleName == nil) {
-        _middleName = [[JSContactLabel alloc] init];
-    }
-    return _middleName;
-}
 
-- (JSContactLabel *)familyName{
-    if (_familyName == nil) {
-        _familyName = [[JSContactLabel alloc] init];
-    }
-    return _familyName;
-}
 
-- (JSContactLabel *)previousFamilyName{
-    if (_previousFamilyName == nil) {
-        _previousFamilyName = [[JSContactLabel alloc] init];
-    }
-    return _previousFamilyName;
-}
 
-- (JSContactLabel *)nameSuffix{
-    if (_nameSuffix == nil) {
-        _nameSuffix = [[JSContactLabel alloc] init];
-    }
-    return _nameSuffix;
-}
-
-- (JSContactLabel *)nickname{
-    if (_nickname == nil) {
-        _nickname = [[JSContactLabel alloc] init];
-    }
-    return _nickname;
-}
-
-- (JSContactLabel *)phoneticGivenName{
-    if (_phoneticGivenName == nil) {
-        _phoneticGivenName = [[JSContactLabel alloc] init];
-    }
-    return _phoneticGivenName;
-}
-
-- (JSContactLabel *)phoneticMiddleName{
-    if (_phoneticMiddleName == nil) {
-        _phoneticMiddleName = [[JSContactLabel alloc] init];
-    }
-    return _phoneticMiddleName;
-}
-
-- (JSContactLabel *)phoneticFamilyName{
-    if (_phoneticFamilyName == nil) {
-        _phoneticFamilyName = [[JSContactLabel alloc] init];
-    }
-    return _phoneticFamilyName;
-}
-
-- (JSContactLabel *)organizationName{
-    if (_organizationName == nil) {
-        _organizationName = [[JSContactLabel alloc] init];
-    }
-    return _organizationName;
-}
-
-- (JSContactLabel *)departmentName{
-    if (_departmentName == nil) {
-        _departmentName = [[JSContactLabel alloc] init];
-    }
-    return _departmentName;
-}
-
-- (JSContactLabel *)jobTitle{
-    if (_jobTitle == nil) {
-        _jobTitle = [[JSContactLabel alloc] init];
-    }
-    return _jobTitle;
-}
-
-- (JSContactLabel *)note{
-    if (_note == nil) {
-        _note = [[JSContactLabel alloc] init];
-    }
-    return _note;
-}
-
-- (JSContactLabel *)phoneNumber{
-    if (_phoneNumber == nil) {
-        _phoneNumber = [[JSContactLabel alloc] init];
-    }
-    return _phoneNumber;
-}
-
-- (JSContactLabel *)emailAddress{
-    if (_emailAddress == nil) {
-        _emailAddress = [[JSContactLabel alloc] init];
-    }
-    return _emailAddress;
-}
-
-- (JSContactLabel *)postalAddress{
-    if (_postalAddress == nil) {
-        _postalAddress = [[JSContactLabel alloc] init];
-    }
-    return _postalAddress;
-}
-
-- (JSContactLabel *)urlAddress{
-    if (_urlAddress == nil) {
-        _urlAddress = [[JSContactLabel alloc] init];
-    }
-    return _urlAddress;
-}
-
-- (JSContactLabel *)contactRelation{
-    if (_contactRelation == nil) {
-        _contactRelation = [[JSContactLabel alloc] init];
-    }
-    return _contactRelation;
-}
-
-- (JSContactLabel *)socialProfile{
-    if (_socialProfile == nil) {
-        _socialProfile = [[JSContactLabel alloc] init];
-    }
-    return _socialProfile;
-}
-
-- (JSContactLabel *)instantMessageAddress{
-    if (_instantMessageAddress == nil) {
-        _instantMessageAddress = [[JSContactLabel alloc] init];
-    }
-    return _instantMessageAddress;
-}
-
-- (JSContactLabel *)birthday{
-    if (_birthday == nil) {
-        _birthday = [[JSContactLabel alloc] init];
-    }
-    return _birthday;
-}
-
-- (JSContactLabel *)nonGregorianBirthday{
-    if (_nonGregorianBirthday == nil) {
-        _nonGregorianBirthday = [[JSContactLabel alloc] init];
-    }
-    return _nonGregorianBirthday;
-}
-
-- (JSContactLabel *)date{
-    if (_date == nil) {
-        _date = [[JSContactLabel alloc] init];
-    }
-    return _date;
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
