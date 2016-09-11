@@ -22,7 +22,7 @@ static NSString * const reuseID = @"abc";
 // 选中的联系人
 @property (nonatomic,strong) CNContact *selectedContact;
 // 选中的联系人信息
-@property (nonatomic,weak) NSMutableDictionary *contactInfo;
+@property (nonatomic,strong) NSMutableDictionary *contactInfo;
 
 
 @end
@@ -67,8 +67,6 @@ static NSString * const reuseID = @"abc";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    
-    
 }
 
 
@@ -84,7 +82,6 @@ static NSString * const reuseID = @"abc";
  */
 - (void)contactPickerDidCancel:(CNContactPickerViewController *)picker{
     
-    [self.tableView reloadData];
 }
 
 /*!
@@ -98,17 +95,16 @@ static NSString * const reuseID = @"abc";
         
         [self.contactInfo removeAllObjects];
     }
-    
-    NSLog(@"%@",[JSContactModel js_objProperties]);
-    
-//    self.selectedContact = contact;
 
     NSDictionary *dict = [contact dictionaryWithValuesForKeys:[JSContactModel js_objProperties]];
+    
+    self.contactInfo = [NSMutableDictionary dictionaryWithDictionary:dict];
+    
+    NSLog(@"%@",self.contactInfo);
 
-    JSContactModel *contactModel = [JSContactModel contactModelWithDict:dict];
     
-    NSLog(@"%@",contactModel);
-    
+    [self.tableView reloadData];
+    //JSContactModel *contactModel = [JSContactModel contactModelWithDict:dict];
     
 //    // [CNContact js_objProperties]
 //    for (NSString *propertyName in self.dataArr) {
@@ -143,6 +139,7 @@ static NSString * const reuseID = @"abc";
  * @discussion These delegate methods will be invoked when the user is done selecting multiple contacts or properties.
  * Implementing one of these methods will configure the picker for multi-selection.
  */
+
 //- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContacts:(NSArray<CNContact*> *)contacts{
 //    
 //}
@@ -156,12 +153,6 @@ static NSString * const reuseID = @"abc";
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    
-    if (self.selectedContact) {
-        
-        return self.contactInfo.count;
-    }
     
     return self.dataArr.count;
 }
@@ -180,22 +171,26 @@ static NSString * const reuseID = @"abc";
     
     cell.textLabel.text = propertyName;
     cell.textLabel.textColor = [UIColor purpleColor];
+    cell.detailTextLabel.text = @" ";
+    cell.detailTextLabel.textColor = [UIColor js_randomColor];
     
-    cell.detailTextLabel.text = propertyName;
+    if (self.contactInfo.count > 0) {
+        
+        cell.detailTextLabel.text = self.contactInfo[propertyName];
+    }
     
     return cell;
-    
 }
 
 #pragma mark - lazy
 
-- (NSMutableDictionary *)contactInfo{
-    
-    if (_contactInfo == nil) {
-        _contactInfo = [NSMutableDictionary dictionaryWithCapacity:5];
-    }
-    return _contactInfo;
-}
+//- (NSMutableDictionary *)contactInfo{
+//    
+//    if (_contactInfo == nil) {
+//        _contactInfo = [NSMutableDictionary dictionaryWithCapacity:5];
+//    }
+//    return _contactInfo;
+//}
 
 - (NSArray *)dataArr{
     
