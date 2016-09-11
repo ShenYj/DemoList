@@ -8,6 +8,16 @@
 
 #import "JSLocalNotiButton.h"
 
+@interface JSLocalNotiButton ()
+
+/**
+ *  通知类型
+ */
+@property (nonatomic,assign) UIUserNotificationType userNotificationType;
+
+
+@end
+
 @implementation JSLocalNotiButton
 
 - (instancetype)init{
@@ -28,25 +38,52 @@
     
     switch (sender.notificationType) {
         case JSLocalNotificationTypeNone:
-            NSLog(@"1");
+            self.userNotificationType = UIUserNotificationTypeNone;
+            NSLog(@"UIUserNotificationTypeNone");
             break;
         case JSLocalNotificationTypeBadge:
-            NSLog(@"2");
+            self.userNotificationType = UIUserNotificationTypeBadge;
+            NSLog(@"UIUserNotificationTypeBadge");
             break;
         case JSLocalNotificationTypeSound:
-            NSLog(@"3");
+            self.userNotificationType = UIUserNotificationTypeSound;
+            NSLog(@"UIUserNotificationTypeSound");
             break;
         case JSLocalNotificationTypeAlert:
-            NSLog(@"4");
+            self.userNotificationType = UIUserNotificationTypeAlert;
+            NSLog(@"UIUserNotificationTypeAlert");
             break;
             
         default:
             break;
     }
     
-    if (self.targetHandler) {
-        self.targetHandler(sender.notificationType);
+    // 注册通知
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:self.userNotificationType categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    
+    // 实例化本地推送通知
+    // 默认没有任何效果
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:3];
+    
+    // 通知含有角标
+    if (self.userNotificationType == UIUserNotificationTypeBadge) {
+        
+        localNotification.applicationIconBadgeNumber = 1;
     }
+    // 通知带有声音
+    if (self.userNotificationType == UIUserNotificationTypeSound) {
+        
+        localNotification.soundName = @"buyao.wav";
+    }
+    // 提示文字
+    if (self.userNotificationType == UIUserNotificationTypeAlert) {
+        
+        localNotification.alertBody = @"这是一条以Alert方式提示的本地推送通知";
+    }
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     
 }

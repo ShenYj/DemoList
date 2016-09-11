@@ -12,6 +12,7 @@
 @interface JSNotificationViewController ()
 
 @property (nonatomic,strong) UILabel *localNotiLabel;
+@property (nonatomic,strong) UILabel *localNotiDescriptionLabel;
 
 // 本地通知按钮
 @property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeNoneButton;
@@ -38,9 +39,11 @@
 
 - (void)prepareView{
     
+    
     self.view.backgroundColor = [UIColor js_randomColor];
     
     [self.view addSubview:self.localNotiLabel];
+    [self.view addSubview:self.localNotiDescriptionLabel];
     [self.view addSubview:self.localNotificationTypeNoneButton];
     [self.view addSubview:self.localNotificationTypeBadgeButton];
     [self.view addSubview:self.localNotificationTypeSoundButton];
@@ -54,6 +57,12 @@
         make.height.mas_equalTo(34);
     }];
     
+    [self.localNotiDescriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.localNotiLabel.mas_bottom).mas_offset(10);
+        make.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(30);
+    }];
+    
     NSArray *buttons = @[
                          self.localNotificationTypeNoneButton,
                          self.localNotificationTypeBadgeButton,
@@ -63,7 +72,7 @@
     
     [buttons mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:20 leadSpacing:10 tailSpacing:20];
     [buttons mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.localNotiLabel.mas_bottom).mas_offset(20);
+        make.top.mas_equalTo(self.localNotiDescriptionLabel.mas_bottom).mas_offset(20);
         make.height.mas_equalTo(44);
     }];
     
@@ -104,6 +113,18 @@
         _localNotiLabel.textColor = [UIColor js_colorWithHex:0x8B7765];
     }
     return _localNotiLabel;
+}
+
+- (UILabel *)localNotiDescriptionLabel {
+    
+    if (_localNotiDescriptionLabel == nil) {
+        _localNotiDescriptionLabel = [[UILabel alloc] init];
+        _localNotiDescriptionLabel.text = @"本地通知:点击按钮定时3s推送本地通知";
+        _localNotiDescriptionLabel.textAlignment = NSTextAlignmentCenter;
+        _localNotiDescriptionLabel.font = [UIFont systemFontOfSize:14];
+        _localNotiDescriptionLabel.textColor = [UIColor js_colorWithHex:0xFFA500];
+    }
+    return _localNotiDescriptionLabel;
 }
 
 - (JSLocalNotiButton *)localNotificationTypeNoneButton {
