@@ -22,6 +22,7 @@
     
     self.navigationBar.barTintColor = [UIColor js_colorWithHex:0xE6E6FA];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor js_RGBColorWithRed:132 withGreen:112 withBlue:255]};
+    self.navigationBar.tintColor = [UIColor js_RGBColorWithRed:132 withGreen:112 withBlue:255];
     
 }
 

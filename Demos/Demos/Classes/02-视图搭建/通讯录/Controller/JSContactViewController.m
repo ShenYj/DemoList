@@ -50,10 +50,7 @@ static NSString * const reuseID = @"abc";
 
 @end
 
-@implementation JSContactViewController{
-    
-    NSArray         *_dataArr;          // 数据容器
-}
+@implementation JSContactViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,7 +61,7 @@ static NSString * const reuseID = @"abc";
 
 - (void)prepareView{
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseID];
+    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseID];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -142,9 +139,17 @@ static NSString * const reuseID = @"abc";
     
     NSString *propertyName = self.dataArr[indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseID];
+    }
     
     cell.textLabel.text = propertyName;
+    cell.textLabel.textColor = [UIColor purpleColor];
+    cell.detailTextLabel.text = propertyName;
     
     return cell;
     

@@ -10,6 +10,8 @@
 
 @interface JSContactModel : NSObject
 
+
+// Contact的部分属性
 @property (nonatomic, copy) NSString *namePrefix;
 @property (nonatomic, copy) NSString *givenName;
 @property (nonatomic, copy) NSString *middleName;
