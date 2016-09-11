@@ -110,6 +110,8 @@
 		F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F573E1D85113500E3CC61 /* JSContactViewController.m */; };
 		F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57411D8524A500E3CC61 /* JSContactLabel.m */; };
 		F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57441D85298C00E3CC61 /* JSContactModel.m */; };
+		F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */; };
+		F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
@@ -336,6 +338,10 @@
 		F74F57411D8524A500E3CC61 /* JSContactLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactLabel.m; sourceTree = "<group>"; };
 		F74F57431D85298C00E3CC61 /* JSContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContactModel.h; sourceTree = "<group>"; };
 		F74F57441D85298C00E3CC61 /* JSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSContactModel.m; sourceTree = "<group>"; };
+		F74F574A1D858AFF00E3CC61 /* JSNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNotificationViewController.h; sourceTree = "<group>"; };
+		F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNotificationViewController.m; sourceTree = "<group>"; };
+		F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocalNotiButton.h; sourceTree = "<group>"; };
+		F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLocalNotiButton.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -704,6 +710,7 @@
 		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
 			isa = PBXGroup;
 			children = (
+				F74F57461D858AE400E3CC61 /* 推送通知 */,
 				F743A7E11D7DB0E400576254 /* OC与JS交互Demo */,
 				F743A7EA1D7DB0E400576254 /* ScaleHeaderView */,
 				F743A7F01D7DB0E400576254 /* SyncDownLoadImg */,
@@ -1524,6 +1531,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F74F57461D858AE400E3CC61 /* 推送通知 */ = {
+			isa = PBXGroup;
+			children = (
+				F74F57471D858AE400E3CC61 /* Controller */,
+				F74F57481D858AE400E3CC61 /* Model */,
+				F74F57491D858AE400E3CC61 /* View */,
+			);
+			path = "推送通知";
+			sourceTree = "<group>";
+		};
+		F74F57471D858AE400E3CC61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F74F574A1D858AFF00E3CC61 /* JSNotificationViewController.h */,
+				F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F74F57481D858AE400E3CC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F74F57491D858AE400E3CC61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */,
+				F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F76265491D7142FC0055ECBA = {
 			isa = PBXGroup;
 			children = (
@@ -1885,6 +1927,7 @@
 			files = (
 				F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */,
 				F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */,
+				F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */,
 				F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */,
 				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
@@ -1921,6 +1964,7 @@
 				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,
 				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
 				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
+				F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,

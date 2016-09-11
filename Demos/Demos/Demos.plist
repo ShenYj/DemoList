@@ -105,9 +105,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSNotificationViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>推送通知</string>
 			</dict>
 		</array>
 	</dict>
@@ -156,7 +156,7 @@
 				<key>targetControllerClass</key>
 				<string>JSContactViewController</string>
 				<key>detail</key>
-				<string>通讯录使用</string>
+				<string>ContactUI使用,选中联系人后,回调部分联系人信息</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
