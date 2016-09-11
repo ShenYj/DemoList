@@ -9,7 +9,7 @@
 #import "JSContactViewController.h"
 #import <ContactsUI/ContactsUI.h>
 
-@interface JSContactViewController ()
+@interface JSContactViewController () <CNContactPickerDelegate>
 
 @property (nonatomic,strong) UIButton *contactButton;
 
@@ -43,6 +43,8 @@
     
     CNContactPickerViewController *picterViewController = [[CNContactPickerViewController alloc] init];
     
+    picterViewController.delegate = self;
+    
     [self presentViewController:picterViewController animated:YES completion:nil];
     
 }
@@ -63,6 +65,41 @@
         [_contactButton addTarget:self action:@selector(clickContactButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _contactButton;
+}
+
+#pragma mark - CNContactPickerDelegate
+
+/*!
+ * @abstract Invoked when the picker is closed.
+ * @discussion The picker will be dismissed automatically after a contact or property is picked.
+ */
+- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker{
+    
+}
+
+/*!
+ * @abstract Singular delegate methods.
+ * @discussion These delegate methods will be invoked when the user selects a single contact or property.
+ */
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact{
+    
+    
+}
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty{
+    
+}
+
+/*!
+ * @abstract Plural delegate methods.
+ * @discussion These delegate methods will be invoked when the user is done selecting multiple contacts or properties.
+ * Implementing one of these methods will configure the picker for multi-selection.
+ */
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContacts:(NSArray<CNContact*> *)contacts{
+    
+}
+
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperties:(NSArray<CNContactProperty*> *)contactProperties{
+    
 }
 
 /*
