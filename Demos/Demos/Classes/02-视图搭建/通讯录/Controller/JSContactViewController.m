@@ -36,6 +36,13 @@
     
 }
 
+#pragma mark - target 
+
+- (void)clickContactButton:(UIButton *)sender{
+    
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -49,6 +56,7 @@
         _contactButton = [[UIButton alloc] init];
         [_contactButton setTitle:@"打开通讯录" forState:UIControlStateNormal];
         [_contactButton setTitleColor:[UIColor js_randomColor] forState:UIControlStateNormal];
+        [_contactButton addTarget:self action:@selector(clickContactButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _contactButton;
 }
