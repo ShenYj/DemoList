@@ -17,7 +17,14 @@ typedef NS_ENUM(NSUInteger,JSLocalNotificationType){
 };
 
 @interface JSLocalNotiButton : UIButton
-
+/**
+ *  通知类型
+ */
 @property (nonatomic,assign) JSLocalNotificationType notificationType;
+/**
+ *  按钮点击事件回调
+ */
+@property (nonatomic,copy) void(^targetHandler)(JSLocalNotificationType *notificationType);
+
 
 @end
