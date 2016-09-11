@@ -7,6 +7,7 @@
 //
 
 #import "JSContactViewController.h"
+#import <ContactsUI/ContactsUI.h>
 
 @interface JSContactViewController ()
 
@@ -40,6 +41,9 @@
 
 - (void)clickContactButton:(UIButton *)sender{
     
+    CNContactPickerViewController *picterViewController = [[CNContactPickerViewController alloc] init];
+    
+    [self presentViewController:picterViewController animated:YES completion:nil];
     
 }
 
