@@ -83,6 +83,9 @@
         localNotification.alertBody = @"这是一条以Alert方式提示的本地推送通知";
     }
     
+    // 传递信息
+    localNotification.userInfo = @{@"message": @"这是一条推送通知传递的信息"};
+    
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     

@@ -59,7 +59,7 @@
     [self.localNotiDescriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.localNotiLabel.mas_bottom).mas_offset(10);
         make.left.right.mas_equalTo(self.view);
-        make.height.mas_equalTo(30);
+        make.height.mas_equalTo(60);
     }];
     
     NSArray *buttons = @[
@@ -119,7 +119,8 @@
         _localNotiDescriptionLabel.text = @"本地通知:点击按钮定时3s推送本地通知,请在点击按钮后将应用进入后台";
         _localNotiDescriptionLabel.textAlignment = NSTextAlignmentCenter;
         _localNotiDescriptionLabel.font = [UIFont systemFontOfSize:14];
-        _localNotiDescriptionLabel.textColor = [UIColor js_colorWithHex:0xFFA500];
+        _localNotiDescriptionLabel.numberOfLines = 0;
+        _localNotiDescriptionLabel.textColor = [UIColor js_colorWithHex:0xFF0000];
     }
     return _localNotiDescriptionLabel;
 }
