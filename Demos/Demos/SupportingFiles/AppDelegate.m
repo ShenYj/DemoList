@@ -155,7 +155,27 @@
     }
 
 }
-
+/**
+ *  当已经收到本地通知后调用  (当使用了iOS8动作类别的通知后调用,didReceiveLocalNotification代理方法将不被执行)
+ *
+ *  @param application       应用对象
+ *  @param identifier        动作标识符
+ *  @param notification      接收到的本地通知对象
+ *  @param __TVOS_PROHIBITED <#__TVOS_PROHIBITED description#>
+ */
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandler {
+    
+    if ([identifier isEqualToString:@"foreground"]) {
+        NSLog(@"点击了前台按钮");
+    }
+    
+    if ([identifier isEqualToString:@"background"]) {
+        NSLog(@"点击了后台按钮");
+    }
+    
+    //调用完成回调 (用来更新快照&设置应用的挂起)
+    completionHandler();
+}
 
 
 

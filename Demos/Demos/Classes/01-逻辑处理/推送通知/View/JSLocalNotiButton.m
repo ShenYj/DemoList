@@ -58,19 +58,60 @@
             // 取消推送通知
             [self cancelLocalNotification];
             NSLog(@"JSLocalNotificationTypeCancel");
+            return ;
             break;
             
         default:
             break;
     }
     
+    
+    // 推送本地通知
+    [self postLocalNotificationWithType:0];
+    
+}
+
+#pragma mark - 推送本地通知
+
+- (void)postLocalNotificationWithType:(UIUserNotificationType)notificationType{
+    
+    // 实例化类别动作
+    UIMutableUserNotificationAction *foregroundAction = [[UIMutableUserNotificationAction alloc] init];
+    UIMutableUserNotificationAction *backgroundAction = [[UIMutableUserNotificationAction alloc] init];
+    
+    // 设置动作标识符
+    foregroundAction.identifier = @"foreground";
+    backgroundAction.identifier = @"background";
+    
+    // 设置动作标题
+    foregroundAction.title = @"进入前台";
+    backgroundAction.title = @"进入按钮";
+    
+    // 设置动作类型
+    foregroundAction.activationMode = UIUserNotificationActivationModeForeground;
+    backgroundAction.activationMode = UIUserNotificationActivationModeBackground;
+    
+    // 设置类别
+    UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc] init];
+    
+    // 设置类别的标识符
+    category.identifier = @"localNotification";
+    
+    // 设置类别动作          UIUserNotificationActionContextDefault类型下,弹窗型最多可以显示6个按钮
+    [category setActions:@[foregroundAction,backgroundAction] forContext:UIUserNotificationActionContextDefault];
+    
     // 注册通知
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:self.userNotificationType categories:nil];
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:self.userNotificationType categories:[NSSet setWithObject:category]];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     
     // 实例化本地推送通知
     // 默认没有任何效果
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    
+    // 将推送通知的类型与上面设置的类型进行绑定
+    localNotification.category = @"localNotification";
+    
+    // 5s后推送本地通知
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
     
     // 通知含有角标
@@ -94,13 +135,17 @@
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
-    
 }
+
+
+#pragma mark - 取消所以本地推送通知
 
 - (void)cancelLocalNotification{
     
     // 取消了所有的推送通知
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
+
+
 
 @end
