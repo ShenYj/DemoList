@@ -21,6 +21,7 @@
 @property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeAlertButton;
 
 @property (nonatomic,strong) UIView *seperatorLine;
+@property (nonatomic,strong) UILabel *noteLabel;
 
 @property (nonatomic,strong) UILabel *remoteNotiLabel;
 
@@ -34,14 +35,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLocalNote:) name:@"localNotification" object:nil];
+    
+    
     [self prepareView];
+}
+
+// 展示本地通知
+- (void)showLocalNote:(NSNotification *)notification{
+    
+    NSString *key = notification.userInfo.keyEnumerator.nextObject;
+    
+    self.noteLabel.text = [notification.userInfo objectForKey:key];
+    
 }
 
 - (void)prepareView{
     
-    self.view.backgroundColor = [UIColor js_randomColor];
+    self.view.backgroundColor = [UIColor js_colorWithHex:0xFFE7BA];
     
     [self.view addSubview:self.localNotiLabel];
+    [self.view addSubview:self.noteLabel];
     [self.view addSubview:self.localNotiDescriptionLabel];
     [self.view addSubview:self.localNotificationTypeNoneButton];
     [self.view addSubview:self.localNotificationTypeBadgeButton];
@@ -75,8 +90,14 @@
         make.height.mas_equalTo(44);
     }];
     
-    [self.seperatorLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.noteLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.localNotificationTypeNoneButton.mas_bottom).mas_offset(20);
+        make.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(60);
+    }];
+    
+    [self.seperatorLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.noteLabel.mas_bottom).mas_offset(20);
         make.left.mas_equalTo(self.view);
         make.width.mas_equalTo(self.view);
         make.height.mas_equalTo(2);
@@ -184,6 +205,22 @@
         _remoteNotiLabel.textColor = [UIColor js_colorWithHex:0x8B7765];
     }
     return _remoteNotiLabel;
+}
+
+- (UILabel *)noteLabel {
+    
+    if (_noteLabel == nil) {
+        _noteLabel = [[UILabel alloc] init];
+        _noteLabel.textAlignment = NSTextAlignmentCenter;
+        _noteLabel.font = [UIFont systemFontOfSize:16];
+        _noteLabel.textColor = [UIColor js_colorWithHex:0xEE00EE];
+    }
+    return _noteLabel;
+}
+
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
