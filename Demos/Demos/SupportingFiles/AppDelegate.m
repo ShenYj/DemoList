@@ -12,6 +12,8 @@
 #import "UMSocial.h"
 #import "UMSocialSinaSSOHandler.h"
 
+NSInteger appBadgeNumber;
+
 @interface AppDelegate  ()
 
 // 记录接收到的通知
@@ -188,12 +190,20 @@
  */
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;{
     
+    
+    appBadgeNumber--;
+    application.applicationIconBadgeNumber = appBadgeNumber;
+    
     if ([identifier isEqualToString:@"foreground"]) {
+        
         NSLog(@"点击了前台按钮");
+        
     }
     
     if ([identifier isEqualToString:@"background"]) {
+        
         NSLog(@"%@",responseInfo[UIUserNotificationActionResponseTypedTextKey]);
+        
     }
     
     //调用完成回调 (用来更新快照&设置应用的挂起)

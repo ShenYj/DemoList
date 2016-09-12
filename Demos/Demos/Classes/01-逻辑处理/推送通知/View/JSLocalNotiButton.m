@@ -8,6 +8,8 @@
 
 #import "JSLocalNotiButton.h"
 
+extern NSInteger appBadgeNumber;
+
 @interface JSLocalNotiButton ()
 
 /**
@@ -123,7 +125,8 @@
     // 通知含有角标
     if (self.userNotificationType == UIUserNotificationTypeBadge) {
         
-        localNotification.applicationIconBadgeNumber = 1;
+        localNotification.applicationIconBadgeNumber = ++appBadgeNumber;
+        NSLog(@"%zd",appBadgeNumber);
     }
     // 通知带有声音
     if (self.userNotificationType == UIUserNotificationTypeSound) {
