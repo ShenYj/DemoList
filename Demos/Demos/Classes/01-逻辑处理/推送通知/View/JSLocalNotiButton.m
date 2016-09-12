@@ -90,16 +90,18 @@
     backgroundAction.identifier = @"background";
     
     // 设置动作标题
-    foregroundAction.title = @"进入前台";
-    backgroundAction.title = @"进入后台";
+    foregroundAction.title = @"进入应用";
+    backgroundAction.title = @"快速回复";
     
     // 设置动作类型
     foregroundAction.activationMode = UIUserNotificationActivationModeForeground;
     backgroundAction.activationMode = UIUserNotificationActivationModeBackground;
     
-    // 设置行为
+    // 设置行为 (iOS 9新特性)
     foregroundAction.behavior = UIUserNotificationActionBehaviorDefault;
     backgroundAction.behavior = UIUserNotificationActionBehaviorTextInput;
+    // 设置行为参数
+    backgroundAction.parameters = @{UIUserNotificationTextInputActionButtonTitleKey:@"快速回复"};
     
     // 设置类别动作          UIUserNotificationActionContextDefault类型下,弹窗型最多可以显示6个按钮
     [category setActions:@[foregroundAction,backgroundAction] forContext:UIUserNotificationActionContextDefault];

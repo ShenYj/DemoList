@@ -161,7 +161,7 @@
  *  @param application       应用对象
  *  @param identifier        动作标识符
  *  @param notification      接收到的本地通知对象
- *  @param __TVOS_PROHIBITED <#__TVOS_PROHIBITED description#>
+ *  @param __TVOS_PROHIBITED 完成回调
  */
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandler {
     
@@ -177,6 +177,30 @@
     completionHandler();
 }
 
+/**
+ *  当已经收到本地通知后调用 (当使用了iOS9动作行为(快捷回复)的通知后调用,handleActionWithIdentifier及didReceiveLocalNotification代理方法将不被执行)
+ *
+ *  @param application       应用对象
+ *  @param identifier        动作标识符
+ *  @param notification      接收到本地通知对象
+ *  @param responseInfo      快速回复的信息
+ *  @param __TVOS_PROHIBITED 完成回调
+ */
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;{
+    
+    if ([identifier isEqualToString:@"foreground"]) {
+        NSLog(@"点击了前台按钮");
+    }
+    
+    if ([identifier isEqualToString:@"background"]) {
+        NSLog(@"%@",responseInfo[UIUserNotificationActionResponseTypedTextKey]);
+    }
+    
+    //调用完成回调 (用来更新快照&设置应用的挂起)
+    completionHandler();
+    
+    
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
