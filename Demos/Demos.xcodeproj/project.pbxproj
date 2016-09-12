@@ -112,6 +112,7 @@
 		F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57441D85298C00E3CC61 /* JSContactModel.m */; };
 		F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */; };
 		F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */; };
+		F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
 		F762657D1D7143400055ECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265781D7143400055ECBA /* main.m */; };
@@ -342,6 +343,8 @@
 		F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNotificationViewController.m; sourceTree = "<group>"; };
 		F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocalNotiButton.h; sourceTree = "<group>"; };
 		F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLocalNotiButton.m; sourceTree = "<group>"; };
+		F75F0D4E1D86F22500549EC3 /* JSRemoteNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRemoteNotiButton.h; sourceTree = "<group>"; };
+		F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRemoteNotiButton.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76265661D7142FC0055ECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F76265711D7143400055ECBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1562,6 +1565,8 @@
 			children = (
 				F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */,
 				F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */,
+				F75F0D4E1D86F22500549EC3 /* JSRemoteNotiButton.h */,
+				F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1979,6 +1984,7 @@
 				F743A8A21D7DB0E400576254 /* JSAppCell.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
+				F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */,
 				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
 				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,

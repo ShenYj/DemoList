@@ -8,6 +8,7 @@
 
 #import "JSNotificationViewController.h"
 #import "JSLocalNotiButton.h"
+#import "JSRemoteNotiButton.h"
 
 @interface JSNotificationViewController ()
 
