@@ -39,7 +39,6 @@
 
 - (void)prepareView{
     
-    
     self.view.backgroundColor = [UIColor js_randomColor];
     
     [self.view addSubview:self.localNotiLabel];
@@ -88,8 +87,6 @@
         make.left.right.mas_equalTo(self.view);
         make.height.mas_equalTo(34);
     }];
-    
-#pragma mark - target
     
     
     
@@ -146,6 +143,7 @@
     }
     return _localNotificationTypeBadgeButton;
 }
+
 - (JSLocalNotiButton *)localNotificationTypeSoundButton {
     
     if (_localNotificationTypeSoundButton == nil) {
@@ -155,6 +153,7 @@
     }
     return _localNotificationTypeSoundButton;
 }
+
 - (JSLocalNotiButton *)localNotificationTypeAlertButton {
     
     if (_localNotificationTypeAlertButton == nil) {
