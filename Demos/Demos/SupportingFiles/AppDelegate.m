@@ -38,7 +38,6 @@
     // 设置Window
     [self prepareRootController];
     
-    
     // 接收到本地通知后发送通知(这里因为控制器层级关系的问题,没有做进一步处理,所以杀死应用后暂时无法获取到推送通知)
     UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
     NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
@@ -62,7 +61,6 @@
     self.noticeLabel.text = [localNotification.userInfo objectForKey:key];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
         
         [UIView animateWithDuration:10 animations:^{
             

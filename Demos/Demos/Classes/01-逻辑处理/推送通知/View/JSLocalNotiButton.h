@@ -13,7 +13,8 @@ typedef NS_ENUM(NSUInteger,JSLocalNotificationType){
     JSLocalNotificationTypeNone,
     JSLocalNotificationTypeBadge,
     JSLocalNotificationTypeSound,
-    JSLocalNotificationTypeAlert
+    JSLocalNotificationTypeAlert,
+    JSLocalNotificationTypeCancel
 };
 
 @interface JSLocalNotiButton : UIButton

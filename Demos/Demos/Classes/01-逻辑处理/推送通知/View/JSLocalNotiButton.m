@@ -24,10 +24,11 @@
     
     self = [super init];
     if (self) {
-        self.titleLabel.font = [UIFont systemFontOfSize:15];
+        self.titleLabel.font = [UIFont systemFontOfSize:14];
         self.layer.borderColor = [UIColor js_colorWithHex:0x8A2BE2].CGColor;
         self.layer.borderWidth = 2;
         [self setTitleColor:[UIColor js_colorWithHex:0x8A2BE2] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor js_colorWithHex:0xF0FFF0] forState:UIControlStateHighlighted];
         [self addTarget:self action:@selector(clickLocalNotiButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
@@ -52,6 +53,11 @@
         case JSLocalNotificationTypeAlert:
             self.userNotificationType = UIUserNotificationTypeAlert;
             NSLog(@"UIUserNotificationTypeAlert");
+            break;
+        case JSLocalNotificationTypeCancel:
+            // 取消推送通知
+            [self cancelLocalNotification];
+            NSLog(@"JSLocalNotificationTypeCancel");
             break;
             
         default:
@@ -89,6 +95,12 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     
+}
+
+- (void)cancelLocalNotification{
+    
+    // 取消了所有的推送通知
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 
 @end

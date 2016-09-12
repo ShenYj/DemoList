@@ -19,9 +19,10 @@
 @property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeBadgeButton;
 @property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeSoundButton;
 @property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeAlertButton;
+@property (nonatomic,strong) JSLocalNotiButton *localNotificationTypeCancelButton;
 
-@property (nonatomic,strong) UIView *seperatorLine;
 @property (nonatomic,strong) UILabel *noteLabel;
+@property (nonatomic,strong) UIView *seperatorLine;
 
 @property (nonatomic,strong) UILabel *remoteNotiLabel;
 
@@ -37,7 +38,6 @@
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLocalNote:) name:@"localNotification" object:nil];
-    
     
     [self prepareView];
 }
@@ -62,6 +62,7 @@
     [self.view addSubview:self.localNotificationTypeBadgeButton];
     [self.view addSubview:self.localNotificationTypeSoundButton];
     [self.view addSubview:self.localNotificationTypeAlertButton];
+    [self.view addSubview:self.localNotificationTypeCancelButton];
     [self.view addSubview:self.seperatorLine];
     [self.view addSubview:self.remoteNotiLabel];
     
@@ -81,7 +82,8 @@
                          self.localNotificationTypeNoneButton,
                          self.localNotificationTypeBadgeButton,
                          self.localNotificationTypeSoundButton,
-                         self.localNotificationTypeAlertButton
+                         self.localNotificationTypeAlertButton,
+                         self.localNotificationTypeCancelButton
                          ];
     
     [buttons mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:20 leadSpacing:10 tailSpacing:20];
@@ -186,6 +188,17 @@
     return _localNotificationTypeAlertButton;
 }
 
+- (JSLocalNotiButton *)localNotificationTypeCancelButton {
+    
+    if (_localNotificationTypeCancelButton == nil) {
+        _localNotificationTypeCancelButton = [[JSLocalNotiButton alloc] init];
+        _localNotificationTypeCancelButton.notificationType = JSLocalNotificationTypeCancel;
+        [_localNotificationTypeCancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+        [_localNotificationTypeCancelButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    }
+    return _localNotificationTypeCancelButton;
+}
+
 - (UIView *)seperatorLine {
     
     if (_seperatorLine == nil) {
@@ -217,6 +230,7 @@
     }
     return _noteLabel;
 }
+
 
 - (void)dealloc{
     
