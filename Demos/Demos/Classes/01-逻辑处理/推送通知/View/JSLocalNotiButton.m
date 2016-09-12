@@ -75,6 +75,12 @@
 
 - (void)postLocalNotificationWithType:(UIUserNotificationType)notificationType{
     
+    // 设置类别
+    UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc] init];
+    
+    // 设置类别的标识符
+    category.identifier = @"localNotification";
+    
     // 实例化类别动作
     UIMutableUserNotificationAction *foregroundAction = [[UIMutableUserNotificationAction alloc] init];
     UIMutableUserNotificationAction *backgroundAction = [[UIMutableUserNotificationAction alloc] init];
@@ -85,17 +91,15 @@
     
     // 设置动作标题
     foregroundAction.title = @"进入前台";
-    backgroundAction.title = @"进入按钮";
+    backgroundAction.title = @"进入后台";
     
     // 设置动作类型
     foregroundAction.activationMode = UIUserNotificationActivationModeForeground;
     backgroundAction.activationMode = UIUserNotificationActivationModeBackground;
     
-    // 设置类别
-    UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc] init];
-    
-    // 设置类别的标识符
-    category.identifier = @"localNotification";
+    // 设置行为
+    foregroundAction.behavior = UIUserNotificationActionBehaviorDefault;
+    backgroundAction.behavior = UIUserNotificationActionBehaviorTextInput;
     
     // 设置类别动作          UIUserNotificationActionContextDefault类型下,弹窗型最多可以显示6个按钮
     [category setActions:@[foregroundAction,backgroundAction] forContext:UIUserNotificationActionContextDefault];
