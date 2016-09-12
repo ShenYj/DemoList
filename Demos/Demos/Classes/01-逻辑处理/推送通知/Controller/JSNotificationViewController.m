@@ -137,7 +137,7 @@
     
     if (_localNotiDescriptionLabel == nil) {
         _localNotiDescriptionLabel = [[UILabel alloc] init];
-        _localNotiDescriptionLabel.text = @"本地通知:点击按钮定时3s推送本地通知,请在点击按钮后将应用进入后台";
+        _localNotiDescriptionLabel.text = @"本地通知:点击按钮定时5s推送本地通知,请在点击按钮后将应用进入后台";
         _localNotiDescriptionLabel.textAlignment = NSTextAlignmentCenter;
         _localNotiDescriptionLabel.font = [UIFont systemFontOfSize:14];
         _localNotiDescriptionLabel.numberOfLines = 0;

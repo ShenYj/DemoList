@@ -65,7 +65,7 @@
     // 实例化本地推送通知
     // 默认没有任何效果
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:3];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
     
     // 通知含有角标
     if (self.userNotificationType == UIUserNotificationTypeBadge) {

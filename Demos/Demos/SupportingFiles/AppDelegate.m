@@ -12,20 +12,66 @@
 #import "UMSocial.h"
 #import "UMSocialSinaSSOHandler.h"
 
+@interface AppDelegate  ()
+
+// 记录接收到的通知
+@property (nonatomic,strong) NSMutableDictionary *localNotification;
+
+@end
+
 
 @implementation AppDelegate
 
 
-
+// 应用被杀死后接收通知
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
     // 百度地图
     [self BMKMap];
+    
     // 友盟分享
     [self UMShared];
     
-    // 应用被杀死后接收通知
+    // 设置Window
+    [self prepareRootController];
+    
+    
+    // 接收到本地通知后发送通知(这里因为控制器层级关系的问题,没有做进一步处理,所以杀死应用后暂时无法获取到推送通知)
+    UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
+    NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
+    NSLog(@"%@",[localNotification.userInfo objectForKey:key]);
+    
+    [self showLocalNote:localNotification];
+    
+    // 记录收到的推送通知
+    [self.localNotification setObject:[localNotification.userInfo objectForKey:key] forKey:key];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"localNotification" object:nil userInfo:localNotification.userInfo];
+    
+    return YES;
+}
+
+- (void)showLocalNote:(UILocalNotification *)localNotification{
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 44)];
+    label.textColor = [UIColor blueColor];
+    
+    NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
+    label.text = [localNotification.userInfo objectForKey:key];
+    
+    JSNavController *nav = (JSNavController *)self.window.rootViewController;
+    [nav.navigationBar addSubview:label];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        label.alpha = 0.01;
+    });
+    
+}
+
+#pragma mark - 设置根视图
+
+- (void)prepareRootController{
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -36,9 +82,6 @@
     self.window.rootViewController = Nav;
     
     [self.window makeKeyAndVisible];
-    
-    
-    return YES;
 }
 
 #pragma mark - 友盟分享
@@ -47,12 +90,10 @@
     
     // 友盟
     [UMSocialData setAppKey:@"57d1559e67e58ea10200456a"];
-    
-//    // SSO
-//    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954"
-//                                              secret:@"04b48b094faeb16683c32669824ebdad"
-//                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
-    
+    // SSO
+    //    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954"
+    //                                              secret:@"04b48b094faeb16683c32669824ebdad"
+    //                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
     // 4.2版本
     [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
 }
@@ -63,8 +104,6 @@
     BOOL result = [UMSocialSnsService handleOpenURL:url];
     if (result == FALSE) {
         //调用其他SDK，例如支付宝SDK等
-        
-        
         
     }
     return result;
@@ -95,8 +134,7 @@
  */
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     
-    //NSLog(@"%@",notification.userInfo[@"message"]);
-    
+    // 接收到本地通知后发送通知
     [[NSNotificationCenter defaultCenter] postNotificationName:@"localNotification" object:nil userInfo:notification.userInfo];
     
 }
