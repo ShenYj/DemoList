@@ -42,7 +42,6 @@
     // 接收到本地通知后发送通知(这里因为控制器层级关系的问题,没有做进一步处理,所以杀死应用后暂时无法获取到推送通知)
     UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
     NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
-    NSLog(@"%@",[localNotification.userInfo objectForKey:key]);
     
     [self showLocalNote:localNotification];
     
@@ -143,9 +142,20 @@
  */
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     
-    // 接收到本地通知后发送通知
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"localNotification" object:nil userInfo:notification.userInfo];
     
+    /*
+     UIApplicationStateActive,//前台
+     UIApplicationStateInactive,//中断(电话打断)
+     UIApplicationStateBackground//后台
+
+     */
+    if ([UIApplication sharedApplication].applicationState != UIApplicationStateBackground ) {
+        
+        // 接收到本地通知后发送通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"localNotification" object:nil userInfo:notification.userInfo];
+        
+    }
+
 }
 
 
