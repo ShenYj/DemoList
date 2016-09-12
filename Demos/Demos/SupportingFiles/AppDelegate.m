@@ -38,6 +38,7 @@
     return YES;
 }
 
+#pragma mark - 友盟分享
 
 - (void)UMShared{
     
@@ -67,6 +68,8 @@
 }
 
 
+#pragma mark - 百度地图
+
 - (void)BMKMap{
     
     // 请先启动BaiduMapManager
@@ -77,6 +80,14 @@
         NSLog(@"manager start failed!");
     }
     
+}
+
+
+#pragma mark - 推送通知
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    
+    NSLog(@"%@",notification.userInfo[@"message"]);
 }
 
 
