@@ -17,6 +17,8 @@
 // 记录接收到的通知
 @property (nonatomic,strong) NSMutableDictionary *localNotification;
 
+@property (nonatomic,strong) UILabel *noticeLabel;
+
 @end
 
 
@@ -54,17 +56,24 @@
 
 - (void)showLocalNote:(UILocalNotification *)localNotification{
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 44)];
-    label.textColor = [UIColor blueColor];
+    JSNavController *nav = (JSNavController *)self.window.rootViewController;
+    [nav.navigationBar addSubview:self.noticeLabel];
     
     NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
-    label.text = [localNotification.userInfo objectForKey:key];
+    self.noticeLabel.text = [localNotification.userInfo objectForKey:key];
     
-    JSNavController *nav = (JSNavController *)self.window.rootViewController;
-    [nav.navigationBar addSubview:label];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        label.alpha = 0.01;
+        
+        [UIView animateWithDuration:10 animations:^{
+            
+            self.noticeLabel.transform = CGAffineTransformMakeTranslation(-SCREEN_SIZE.width, 0);
+            
+        } completion:^(BOOL finished) {
+            
+            [self.noticeLabel removeFromSuperview];
+        }];
+        
     });
     
 }
@@ -172,7 +181,15 @@
 }
 
 
-
-
+- (UILabel *)noticeLabel {
+    
+    if (_noticeLabel == nil) {
+        _noticeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, 44)];
+        _noticeLabel.textColor = [UIColor blueColor];
+        _noticeLabel.font = [UIFont systemFontOfSize:15];
+        _noticeLabel.textAlignment = NSTextAlignmentRight;
+    }
+    return _noticeLabel;
+}
 
 @end
