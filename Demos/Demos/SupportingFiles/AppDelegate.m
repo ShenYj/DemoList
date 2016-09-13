@@ -30,6 +30,16 @@ NSInteger appBadgeNumber;
 // 应用被杀死后接收通知
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+#pragma mark - 远程推送请求授权和注册远程通知
+    
+    // 请求授权 (与本地通知一样需要获取授权)
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    
+    // 注册远程通知 获取DeviceToken
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
 
     // 百度地图
     [self BMKMap];
@@ -44,6 +54,10 @@ NSInteger appBadgeNumber;
     UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
     NSString *key = localNotification.userInfo.keyEnumerator.nextObject;
     
+    // 应用退出时接收到远程推送,和本地通知一样,需要从该方法中获取到通知推送的内容
+    NSDictionary *userInfo = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+     
+    
     [self showLocalNote:localNotification];
     
     // 记录收到的推送通知
@@ -54,6 +68,23 @@ NSInteger appBadgeNumber;
     return YES;
 }
 
+/**
+ *  已经注册远程推送通知后调用
+ *
+ *  @param application 应用对象
+ *  @param deviceToken 设备令牌  (APNs通过它来找获取远程推送的设备)
+ */
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    
+    NSLog(@"%@",[[NSString alloc] initWithData:deviceToken encoding:NSUTF8StringEncoding]);
+    
+}
+
+/**
+ *  展示接收到的通知信息
+ *
+ *  @param localNotification 接收到的通知
+ */
 - (void)showLocalNote:(UILocalNotification *)localNotification{
     
     JSNavController *nav = (JSNavController *)self.window.rootViewController;
@@ -133,7 +164,7 @@ NSInteger appBadgeNumber;
 }
 
 
-#pragma mark - 推送通知
+#pragma mark - 推送通知(本地推送通知)
 /**
  *  当已经接收到本地通知后调用(应用在后台时,点击通知进入应用后调用;应用在前台时,接收到通知直接调用)
  *
@@ -212,6 +243,17 @@ NSInteger appBadgeNumber;
     
 }
 
+#pragma mark - 推送通知(远程推送通知)
+
+/**
+ *  已经接收到远程通知后调用
+ *
+ *  @param application 应用对象
+ *  @param userInfo    json字符串转成的字典
+ */
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

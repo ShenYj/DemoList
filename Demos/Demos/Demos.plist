@@ -109,6 +109,30 @@
 				<key>detail</key>
 				<string>推送通知</string>
 			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
