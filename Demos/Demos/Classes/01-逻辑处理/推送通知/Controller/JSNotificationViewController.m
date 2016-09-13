@@ -26,6 +26,7 @@
 @property (nonatomic,strong) UIView *seperatorLine;
 
 @property (nonatomic,strong) UILabel *remoteNotiLabel;
+@property (nonatomic,strong) UILabel *remoteDescriptionLabel;
 
 // 远程通知按钮
 
@@ -66,6 +67,7 @@
     [self.view addSubview:self.localNotificationTypeCancelButton];
     [self.view addSubview:self.seperatorLine];
     [self.view addSubview:self.remoteNotiLabel];
+    [self.view addSubview:self.remoteDescriptionLabel];
     
     [self.localNotiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.view).mas_offset(90);
@@ -110,6 +112,12 @@
         make.top.mas_equalTo(self.seperatorLine.mas_bottom).mas_offset(20);
         make.left.right.mas_equalTo(self.view);
         make.height.mas_equalTo(34);
+    }];
+    
+    [self.remoteDescriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.remoteNotiLabel.mas_bottom).mas_offset(20);
+        make.height.mas_equalTo(60);
     }];
     
     
@@ -230,6 +238,19 @@
         _noteLabel.textColor = [UIColor js_colorWithHex:0xEE00EE];
     }
     return _noteLabel;
+}
+
+- (UILabel *)remoteDescriptionLabel{
+    
+    if (_remoteDescriptionLabel == nil) {
+        _remoteDescriptionLabel = [[UILabel alloc ]init];
+        _remoteDescriptionLabel.text = @"需要使用付费的开发者账号...";
+        _remoteDescriptionLabel.textAlignment = NSTextAlignmentCenter;
+        _remoteDescriptionLabel.font = [UIFont systemFontOfSize:14];
+        _remoteDescriptionLabel.numberOfLines = 0;
+        _remoteDescriptionLabel.textColor = [UIColor js_colorWithHex:0xFF0000];
+    }
+    return _remoteDescriptionLabel;
 }
 
 
