@@ -150,6 +150,7 @@
 		F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759101D742E6C0041A7DC /* 泡沫.lrc */; };
 		F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */; };
 		F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */; };
+		F7CA815A1D8857AA00289973 /* JSPlaySoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -400,6 +401,8 @@
 		F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "稳稳的幸福.lrc"; sourceTree = "<group>"; };
 		F7CA81551D8854B400289973 /* JSPlaySoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaySoundsViewController.h; sourceTree = "<group>"; };
 		F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundsViewController.m; sourceTree = "<group>"; };
+		F7CA81581D8857AA00289973 /* JSPlaySoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaySoundButton.h; sourceTree = "<group>"; };
+		F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundButton.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1798,6 +1801,8 @@
 		F7CA81541D88548700289973 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7CA81581D8857AA00289973 /* JSPlaySoundButton.h */,
+				F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1988,6 +1993,7 @@
 				F743A8C31D7DB0E400576254 /* JSLayout.m in Sources */,
 				F743A8BB1D7DB0E400576254 /* JSHeadViewController.m in Sources */,
 				F743A8991D7DB0E400576254 /* JSCartView.m in Sources */,
+				F7CA815A1D8857AA00289973 /* JSPlaySoundButton.m in Sources */,
 				F743A8B21D7DB0E400576254 /* JSEmieViewController.m in Sources */,
 				F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */,
 				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,

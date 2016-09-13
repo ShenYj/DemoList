@@ -7,10 +7,11 @@
 //
 
 #import "JSPlaySoundsViewController.h"
+#import "JSPlaySoundButton.h"
 
 @interface JSPlaySoundsViewController ()
 
-@property (nonatomic,strong) UIButton *playButton;
+@property (nonatomic,strong) JSPlaySoundButton *playButton;
 
 @end
 
@@ -27,13 +28,18 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-}
-
-#pragma mark - target 
-
-- (void)clickPlayButton:(UIButton *)sender {
+    [self.view addSubview:self.playButton];
+    
+    [self.playButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.mas_equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(200, 44));
+    }];
+    
+    
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -42,12 +48,10 @@
 
 #pragma mark - lazy
 
-- (UIButton *)playButton {
+- (JSPlaySoundButton *)playButton {
     
     if (_playButton == nil) {
-        _playButton = [[UIButton alloc] init];
-        [_playButton setTitle:@"播放自定义音效" forState:UIControlStateNormal];
-        [_playButton addTarget:self action:@selector(clickPlayButton:) forControlEvents:UIControlEventTouchUpInside];
+        _playButton = [[JSPlaySoundButton alloc] init];
     }
     return _playButton;
 }
