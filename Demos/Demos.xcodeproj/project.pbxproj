@@ -151,6 +151,7 @@
 		F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */; };
 		F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */; };
 		F7CA815A1D8857AA00289973 /* JSPlaySoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */; };
+		F7CA815C1D8858BB00289973 /* buyao.caf in Resources */ = {isa = PBXBuildFile; fileRef = F7CA815B1D8858BB00289973 /* buyao.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -403,6 +404,7 @@
 		F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundsViewController.m; sourceTree = "<group>"; };
 		F7CA81581D8857AA00289973 /* JSPlaySoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaySoundButton.h; sourceTree = "<group>"; };
 		F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundButton.m; sourceTree = "<group>"; };
+		F7CA815B1D8858BB00289973 /* buyao.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = buyao.caf; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1621,6 +1623,7 @@
 		F76265701D7143400055ECBA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F7CA815B1D8858BB00289973 /* buyao.caf */,
 				F719BFC71D75976800015113 /* Demos.plist */,
 				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
 				F76265731D7143400055ECBA /* Assets.xcassets */,
@@ -1904,6 +1907,7 @@
 				F79759211D742E6C0041A7DC /* 张译 - 稳稳的幸福.mp3 in Resources */,
 				F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */,
 				F70535511D818BC500B53BB8 /* UMSLoginViewController.xib in Resources */,
+				F7CA815C1D8858BB00289973 /* buyao.caf in Resources */,
 				F79759221D742E6C0041A7DC /* 月半小夜曲.lrc in Resources */,
 				F79759181D742E6C0041A7DC /* lamazhengzhuan.jpg in Resources */,
 				F797591A1D742E6C0041A7DC /* paomo.jpg in Resources */,
