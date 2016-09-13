@@ -9,6 +9,7 @@
 #import "JSPlayMusicViewController.h"
 #import "JSPlayMusicButton.h"
 #import "JSMModel.h"
+#import "JSMusicListTableViewCell.h"
 
 static NSString * const reuseId = @"lalalalallalalalala";
 
@@ -58,10 +59,10 @@ static NSString * const reuseId = @"lalalalallalalalala";
     
     JSMModel *model = self.dataArr[indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    JSMusicListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
+        cell = [[JSMusicListTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
     }
     
     cell.textLabel.text = model.name;

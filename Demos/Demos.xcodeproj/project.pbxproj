@@ -156,6 +156,7 @@
 		F7CA816A1D885CEE00289973 /* JSPlayMusicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */; };
 		F7CA816C1D88602500289973 /* mlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7CA816B1D88602500289973 /* mlist.plist */; };
 		F7CA816F1D8860E500289973 /* JSMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA816E1D8860E500289973 /* JSMModel.m */; };
+		F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -416,6 +417,8 @@
 		F7CA816B1D88602500289973 /* mlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mlist.plist; sourceTree = "<group>"; };
 		F7CA816D1D8860E500289973 /* JSMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMModel.h; sourceTree = "<group>"; };
 		F7CA816E1D8860E500289973 /* JSMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMModel.m; sourceTree = "<group>"; };
+		F7CA81701D88640F00289973 /* JSMusicListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMusicListTableViewCell.h; sourceTree = "<group>"; };
+		F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMusicListTableViewCell.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1856,6 +1859,8 @@
 			children = (
 				F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */,
 				F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */,
+				F7CA81701D88640F00289973 /* JSMusicListTableViewCell.h */,
+				F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2054,6 +2059,7 @@
 				F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */,
 				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
+				F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */,
 				F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
 				F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */,
