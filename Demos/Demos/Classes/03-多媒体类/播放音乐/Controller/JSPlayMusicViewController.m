@@ -64,12 +64,14 @@ static NSString * const reuseId = @"lalalalallalalalala";
     if (!cell) {
         cell = [[JSMusicListTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
     }
-    
-    cell.textLabel.text = model.name;
-    
-    cell.detailTextLabel.text = model.singer;
-    
-    cell.imageView.image = [UIImage imageNamed:model.image];
+
+    // 传递数据
+    cell.model = model;
+//    cell.textLabel.text = model.name;
+//    
+//    cell.detailTextLabel.text = model.singer;
+//    
+//    cell.imageView.image = [UIImage imageNamed:model.image];
     
     return cell;
 }

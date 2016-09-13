@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSMModel.h"
 
 @interface JSMusicListTableViewCell : UITableViewCell
+
+
+@property (nonatomic,strong) JSMModel *model;
+
 
 @end
