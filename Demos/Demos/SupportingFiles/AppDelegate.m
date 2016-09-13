@@ -270,6 +270,18 @@ NSInteger appBadgeNumber;
     
 }
 
+/**
+ *  当注册失败后调用 (kdevicenToken没有获取到的原因)
+ *
+ *  @param application 应用对象
+ *  @param error       报错信息
+ */
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    
+    NSLog(@"didFailToRegisterForRemoteNotificationsWithError:%@",error)
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
