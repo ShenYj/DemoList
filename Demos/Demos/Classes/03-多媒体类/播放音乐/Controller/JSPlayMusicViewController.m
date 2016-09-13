@@ -33,7 +33,8 @@ static NSString * const reuseId = @"lalalalallalalalala";
 
 - (void)prepareView {
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseId];
+    // 设置Cell样式
+    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseId];
     
     self.view.backgroundColor = [UIColor whiteColor];
 }
@@ -55,7 +56,19 @@ static NSString * const reuseId = @"lalalalallalalalala";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId forIndexPath:indexPath];
+    JSMModel *model = self.dataArr[indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
+    }
+    
+    cell.textLabel.text = model.name;
+    
+    cell.detailTextLabel.text = model.singer;
+    
+    cell.imageView.image = [UIImage imageNamed:model.image];
     
     return cell;
 }
