@@ -10,6 +10,8 @@
 
 @interface JSPlaySoundsViewController ()
 
+@property (nonatomic,strong) UIButton *playButton;
+
 @end
 
 @implementation JSPlaySoundsViewController
@@ -27,19 +29,27 @@
     
 }
 
+#pragma mark - target 
+
+- (void)clickPlayButton:(UIButton *)sender {
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - lazy
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIButton *)playButton {
+    
+    if (_playButton == nil) {
+        _playButton = [[UIButton alloc] init];
+        [_playButton setTitle:@"播放自定义音效" forState:UIControlStateNormal];
+        [_playButton addTarget:self action:@selector(clickPlayButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _playButton;
 }
-*/
 
 @end
