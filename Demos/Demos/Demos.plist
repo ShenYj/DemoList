@@ -209,21 +209,15 @@
 		<array>
 			<dict>
 				<key>targetControllerClass</key>
-				<string>JSMusicViewController</string>
-				<key>detail</key>
-				<string>仿QQ音乐播放器(播放本地音乐)--待更新</string>
-			</dict>
-			<dict>
-				<key>targetControllerClass</key>
 				<string>JSPlaySoundsViewController</string>
 				<key>detail</key>
 				<string>演示自定义音效的播放(AVFoundation使用)</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSPlayMusicViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>播放音乐</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
@@ -272,6 +266,12 @@
 				<string></string>
 				<key>detail</key>
 				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string>JSMusicViewController</string>
+				<key>detail</key>
+				<string>仿QQ音乐播放器(播放本地音乐)--待更新</string>
 			</dict>
 		</array>
 	</dict>

@@ -152,6 +152,8 @@
 		F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */; };
 		F7CA815A1D8857AA00289973 /* JSPlaySoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */; };
 		F7CA815C1D8858BB00289973 /* buyao.caf in Resources */ = {isa = PBXBuildFile; fileRef = F7CA815B1D8858BB00289973 /* buyao.caf */; };
+		F7CA81671D885CBB00289973 /* JSPlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */; };
+		F7CA816A1D885CEE00289973 /* JSPlayMusicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -405,6 +407,10 @@
 		F7CA81581D8857AA00289973 /* JSPlaySoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaySoundButton.h; sourceTree = "<group>"; };
 		F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundButton.m; sourceTree = "<group>"; };
 		F7CA815B1D8858BB00289973 /* buyao.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = buyao.caf; sourceTree = "<group>"; };
+		F7CA81651D885CBB00289973 /* JSPlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlayMusicViewController.h; sourceTree = "<group>"; };
+		F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlayMusicViewController.m; sourceTree = "<group>"; };
+		F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlayMusicButton.h; sourceTree = "<group>"; };
+		F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlayMusicButton.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1502,6 +1508,7 @@
 			isa = PBXGroup;
 			children = (
 				F7CA81511D88548700289973 /* 播放音效 */,
+				F7CA81611D885C8F00289973 /* 播放音乐 */,
 			);
 			path = "03-多媒体类";
 			sourceTree = "<group>";
@@ -1623,10 +1630,10 @@
 		F76265701D7143400055ECBA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				F7CA815B1D8858BB00289973 /* buyao.caf */,
 				F719BFC71D75976800015113 /* Demos.plist */,
 				F76265B01D7145BF0055ECBA /* PrefixHeader.pch */,
 				F76265731D7143400055ECBA /* Assets.xcassets */,
+				F7CA815B1D8858BB00289973 /* buyao.caf */,
 				F76265661D7142FC0055ECBA /* Info.plist */,
 				F76265711D7143400055ECBA /* AppDelegate.h */,
 				F76265721D7143400055ECBA /* AppDelegate.m */,
@@ -1806,6 +1813,41 @@
 			children = (
 				F7CA81581D8857AA00289973 /* JSPlaySoundButton.h */,
 				F7CA81591D8857AA00289973 /* JSPlaySoundButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7CA81611D885C8F00289973 /* 播放音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA81621D885C8F00289973 /* Controller */,
+				F7CA81631D885C8F00289973 /* Model */,
+				F7CA81641D885C8F00289973 /* View */,
+			);
+			path = "播放音乐";
+			sourceTree = "<group>";
+		};
+		F7CA81621D885C8F00289973 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA81651D885CBB00289973 /* JSPlayMusicViewController.h */,
+				F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7CA81631D885C8F00289973 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7CA81641D885C8F00289973 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */,
+				F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1995,6 +2037,7 @@
 				F76265A91D7145A40055ECBA /* NSString+Emoji.m in Sources */,
 				F76265AA1D7145A40055ECBA /* NSString+Hash.m in Sources */,
 				F743A8C31D7DB0E400576254 /* JSLayout.m in Sources */,
+				F7CA816A1D885CEE00289973 /* JSPlayMusicButton.m in Sources */,
 				F743A8BB1D7DB0E400576254 /* JSHeadViewController.m in Sources */,
 				F743A8991D7DB0E400576254 /* JSCartView.m in Sources */,
 				F7CA815A1D8857AA00289973 /* JSPlaySoundButton.m in Sources */,
@@ -2058,6 +2101,7 @@
 				F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */,
+				F7CA81671D885CBB00289973 /* JSPlayMusicViewController.m in Sources */,
 				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
