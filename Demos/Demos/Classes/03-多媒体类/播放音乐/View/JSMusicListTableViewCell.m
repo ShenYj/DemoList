@@ -6,14 +6,13 @@
 //  Copyright © 2016年 ___ShenYJ___. All rights reserved.
 //
 
-static CGFloat const JSMusicListTableViewCellMusicNameLabelHeight = 30;
+static CGFloat const JSMusicListTableViewCellMusicNameLabelHeight = 25;
 static CGFloat const JSMusicListTableViewCellMusicNameLabelHorizontalMargin = 20;
-
-static CGFloat const JSMusicListTableViewCellSingerNameLabelHeight = 30;
-static CGFloat const JSMusicListTableViewCellSingerNameLabelVerticalMargin = 20;
-
+static CGFloat const JSMusicListTableViewCellSingerNameLabelHeight = 25;
+static CGFloat const JSMusicListTableViewCellSingerNameLabelVerticalMargin = 5;
 static CGFloat const JSMusicListTableViewCellAlbumImageViewSize = 40;
 static CGFloat const JSMusicListTableViewCellAlbumImageViewMargin = 10;
+static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
 
 #import "JSMusicListTableViewCell.h"
 
@@ -68,6 +67,11 @@ static CGFloat const JSMusicListTableViewCellAlbumImageViewMargin = 10;
         make.top.mas_equalTo(self.albumImageView.mas_bottom).mas_offset(JSMusicListTableViewCellSingerNameLabelVerticalMargin);
         make.right.mas_equalTo(self.musicNameLabel);
         make.height.mas_equalTo(JSMusicListTableViewCellSingerNameLabelHeight);
+    }];
+    
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.mas_equalTo(self);
+        make.bottom.mas_equalTo(self.singerNameLabel).mas_offset(JSMusicListTableViewCellBottomMargin);
     }];
 }
 

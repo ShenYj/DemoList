@@ -10,7 +10,7 @@
 		<key>mp3</key>
 		<string>李克勤 - 月半小夜曲.mp3</string>
 		<key>name</key>
-		<string>李克勤 - 月半小夜曲</string>
+		<string>月半小夜曲</string>
 		<key>singer</key>
 		<string>李克勤</string>
 		<key>album</key>
@@ -97,22 +97,6 @@
 		<string>unknown</string>
 		<key>type</key>
 		<integer>2</integer>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>st.jpg</string>
-		<key>lrc</key>
-		<string>The salt water room.lrc</string>
-		<key>mp3</key>
-		<string>Owl City - The Saltwater Room.mp3</string>
-		<key>name</key>
-		<string>The Saltwater Room</string>
-		<key>singer</key>
-		<string>owl city</string>
-		<key>album</key>
-		<string>unknown</string>
-		<key>type</key>
-		<integer>4</integer>
 	</dict>
 </array>
 </plist>

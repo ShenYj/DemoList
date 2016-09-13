@@ -36,8 +36,10 @@ static NSString * const reuseId = @"lalalalallalalalala";
     
     // 设置Cell样式
     //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseId];
+    self.tableView.estimatedRowHeight = 80;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
 
