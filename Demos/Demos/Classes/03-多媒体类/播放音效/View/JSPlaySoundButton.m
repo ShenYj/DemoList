@@ -80,4 +80,21 @@
     return _soundIdCache;
 }
 
+
+// 内存紧张时调用
++ (void)didReceiveMemoryWarning{
+    
+    for (NSNumber *soundIDNumber in self.soundIdCache.allValues) {
+        // 销毁内存中的音效
+        AudioServicesRemoveSystemSoundCompletion(soundIDNumber.unsignedIntValue);
+        NSLog(@"删除内存中的音效");
+    }
+    // 移除缓存中存放的ID
+    // [self.soundIdCache removeAllObjects]; soundIdCache还存在,只清除了内部存放的内容
+    self.soundIdCache = nil;
+    NSLog(@"清除缓存");
+    
+}
+
+
 @end
