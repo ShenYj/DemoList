@@ -149,6 +149,7 @@
 		F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F797590F1D742E6C0041A7DC /* 李克勤.jpg */; };
 		F79759251D742E6C0041A7DC /* 泡沫.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759101D742E6C0041A7DC /* 泡沫.lrc */; };
 		F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */; };
+		F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -397,6 +398,8 @@
 		F797590F1D742E6C0041A7DC /* 李克勤.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "李克勤.jpg"; sourceTree = "<group>"; };
 		F79759101D742E6C0041A7DC /* 泡沫.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泡沫.lrc"; sourceTree = "<group>"; };
 		F79759111D742E6C0041A7DC /* 稳稳的幸福.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "稳稳的幸福.lrc"; sourceTree = "<group>"; };
+		F7CA81551D8854B400289973 /* JSPlaySoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaySoundsViewController.h; sourceTree = "<group>"; };
+		F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaySoundsViewController.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1493,6 +1496,7 @@
 		F743A8961D7DB0E400576254 /* 03-多媒体类 */ = {
 			isa = PBXGroup;
 			children = (
+				F7CA81511D88548700289973 /* 播放音效 */,
 			);
 			path = "03-多媒体类";
 			sourceTree = "<group>";
@@ -1765,6 +1769,39 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		F7CA81511D88548700289973 /* 播放音效 */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA81521D88548700289973 /* Controller */,
+				F7CA81531D88548700289973 /* Model */,
+				F7CA81541D88548700289973 /* View */,
+			);
+			path = "播放音效";
+			sourceTree = "<group>";
+		};
+		F7CA81521D88548700289973 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA81551D8854B400289973 /* JSPlaySoundsViewController.h */,
+				F7CA81561D8854B400289973 /* JSPlaySoundsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7CA81531D88548700289973 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7CA81541D88548700289973 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1965,6 +2002,7 @@
 				F743A8B11D7DB0E400576254 /* UnlockView.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F743A89A1D7DB0E400576254 /* JSHeaderViewController.m in Sources */,
+				F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */,
 				F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */,
 				F743A8C11D7DB0E400576254 /* JSLoopRootViewController.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,

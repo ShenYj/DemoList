@@ -40,7 +40,6 @@ NSInteger appBadgeNumber;
     // 注册远程通知 获取DeviceToken
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
-
     // 百度地图
     [self BMKMap];
     
@@ -57,7 +56,7 @@ NSInteger appBadgeNumber;
     // 应用退出时接收到远程推送,和本地通知一样,需要从该方法中获取到通知推送的内容
     NSDictionary *userInfo = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
      
-    
+    // 在TableView的NavigationBar上展示接收到的本地推送通知信息
     [self showLocalNote:localNotification];
     
     // 记录收到的推送通知
