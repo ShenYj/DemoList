@@ -254,6 +254,21 @@ NSInteger appBadgeNumber;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     
 }
+/**
+ *  已经接收到后台远程通知后调用 (如果实现了该方法,默认的接收通知的方法就不会再被调用didReceiveRemoteNotification↑)
+ *
+ *  @param application       应用对象
+ *  @param userInfo          接收到的后台远程通知传递的信息
+ *  @param completionHandler 完成回调(负责更新快照,后台处理有效性的评估)
+ */
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+    
+    NSLog(@"%@",userInfo);
+    
+    // 系统会根据UIBackgroundFetchResult来判断后台处理的有效性,如果后台处理效率较低,会延迟发送后台推送通知
+    completionHandler(UIBackgroundFetchResultNewData);
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
