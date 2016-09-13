@@ -278,7 +278,7 @@ NSInteger appBadgeNumber;
  */
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
     
-    NSLog(@"didFailToRegisterForRemoteNotificationsWithError:%@",error)
+    NSLog(@"didFailToRegisterForRemoteNotificationsWithError:%@",error);
     
 }
 

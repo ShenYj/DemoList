@@ -14,21 +14,26 @@
 static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 @interface JSTableViewController ()
+
 @property (nonatomic,strong) NSArray <JSSectionModel *> *datas;
+
 @end
 
 @implementation JSTableViewController
 
 - (instancetype)init{
+    
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style{
+    
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
     // 显示导航栏
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
@@ -40,22 +45,25 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 //    self.automaticallyAdjustsScrollViewInsets= NO;
     self.tableView.sectionFooterHeight = 0;
     self.tableView.backgroundColor = [UIColor whiteColor];
 //    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
 //    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseIdentifier];
     [self.tableView setContentInset:UIEdgeInsetsMake(-20, 0, 0, 0)];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
     return self.datas.count;
 }
 
@@ -97,6 +105,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
     return 34;
 }
 
@@ -114,6 +123,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (BOOL)prefersStatusBarHidden{
+    
     return YES;
 }
 
