@@ -69,11 +69,6 @@ static NSString * const reuseId = @"lalalalallalalalala";
 
     // 传递数据
     cell.model = model;
-//    cell.textLabel.text = model.name;
-//    
-//    cell.detailTextLabel.text = model.singer;
-//    
-//    cell.imageView.image = [UIImage imageNamed:model.image];
     
     return cell;
 }
@@ -98,14 +93,7 @@ static NSString * const reuseId = @"lalalalallalalalala";
     }
     return _dataArr;
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end

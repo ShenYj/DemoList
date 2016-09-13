@@ -1857,10 +1857,10 @@
 		F7CA81641D885C8F00289973 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */,
-				F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */,
 				F7CA81701D88640F00289973 /* JSMusicListTableViewCell.h */,
 				F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */,
+				F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */,
+				F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

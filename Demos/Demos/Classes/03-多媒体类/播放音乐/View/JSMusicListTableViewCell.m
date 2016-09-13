@@ -8,10 +8,11 @@
 
 static CGFloat const JSMusicListTableViewCellMusicNameLabelHeight = 25;
 static CGFloat const JSMusicListTableViewCellMusicNameLabelHorizontalMargin = 20;
-static CGFloat const JSMusicListTableViewCellSingerNameLabelHeight = 25;
-static CGFloat const JSMusicListTableViewCellSingerNameLabelVerticalMargin = 5;
+static CGFloat const JSMusicListTableViewCellMusicNameLabelWidth = 200;
 static CGFloat const JSMusicListTableViewCellAlbumImageViewSize = 40;
 static CGFloat const JSMusicListTableViewCellAlbumImageViewMargin = 10;
+static CGFloat const JSMusicListTableViewCellSingerNameLabelHeight = 25;
+static CGFloat const JSMusicListTableViewCellSingerNameLabelHorizontalMargin = 5;
 static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
 
 #import "JSMusicListTableViewCell.h"
@@ -54,24 +55,23 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
         make.size.mas_equalTo(CGSizeMake(JSMusicListTableViewCellAlbumImageViewSize, JSMusicListTableViewCellAlbumImageViewSize));
     }];
     
-    
     [self.musicNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.albumImageView.mas_right).mas_offset(JSMusicListTableViewCellMusicNameLabelHorizontalMargin);
         make.centerY.mas_equalTo(self.albumImageView);
         make.height.mas_equalTo(JSMusicListTableViewCellMusicNameLabelHeight);
-        make.right.mas_equalTo(self.contentView).mas_offset(-JSMusicListTableViewCellMusicNameLabelHorizontalMargin);
+        make.width.mas_equalTo(JSMusicListTableViewCellMusicNameLabelWidth);
     }];
     
     [self.singerNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.albumImageView);
-        make.top.mas_equalTo(self.albumImageView.mas_bottom).mas_offset(JSMusicListTableViewCellSingerNameLabelVerticalMargin);
-        make.right.mas_equalTo(self.musicNameLabel);
+        make.right.mas_equalTo(self.contentView).mas_offset(-JSMusicListTableViewCellSingerNameLabelHorizontalMargin);
+        make.centerY.mas_equalTo(self.albumImageView);
+        make.left.mas_equalTo(self.musicNameLabel.mas_right).mas_offset(JSMusicListTableViewCellSingerNameLabelHorizontalMargin);
         make.height.mas_equalTo(JSMusicListTableViewCellSingerNameLabelHeight);
     }];
     
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.mas_equalTo(self);
-        make.bottom.mas_equalTo(self.singerNameLabel).mas_offset(JSMusicListTableViewCellBottomMargin);
+        make.bottom.mas_equalTo(self.albumImageView).mas_offset(JSMusicListTableViewCellBottomMargin);
     }];
 }
 
@@ -90,6 +90,9 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
     
     if (_musicNameLabel == nil) {
         _musicNameLabel = [[UILabel alloc] init];
+        _musicNameLabel.font = [UIFont systemFontOfSize:16];
+        _musicNameLabel.textAlignment = NSTextAlignmentLeft;
+        _musicNameLabel.textColor = [UIColor js_randomColor];
     }
     return _musicNameLabel;
 }
@@ -98,6 +101,9 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
     
     if (_singerNameLabel == nil) {
         _singerNameLabel = [[UILabel alloc] init];
+        _singerNameLabel.font = [UIFont systemFontOfSize:12];
+        _singerNameLabel.textAlignment = NSTextAlignmentRight;
+        _singerNameLabel.textColor = [UIColor js_colorWithHex:0xDAA520];
     }
     return _singerNameLabel;
 }
