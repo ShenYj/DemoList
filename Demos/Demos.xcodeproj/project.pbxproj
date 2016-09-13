@@ -154,6 +154,8 @@
 		F7CA815C1D8858BB00289973 /* buyao.caf in Resources */ = {isa = PBXBuildFile; fileRef = F7CA815B1D8858BB00289973 /* buyao.caf */; };
 		F7CA81671D885CBB00289973 /* JSPlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */; };
 		F7CA816A1D885CEE00289973 /* JSPlayMusicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */; };
+		F7CA816C1D88602500289973 /* mlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7CA816B1D88602500289973 /* mlist.plist */; };
+		F7CA816F1D8860E500289973 /* JSMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA816E1D8860E500289973 /* JSMModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +413,9 @@
 		F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlayMusicViewController.m; sourceTree = "<group>"; };
 		F7CA81681D885CEE00289973 /* JSPlayMusicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlayMusicButton.h; sourceTree = "<group>"; };
 		F7CA81691D885CEE00289973 /* JSPlayMusicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlayMusicButton.m; sourceTree = "<group>"; };
+		F7CA816B1D88602500289973 /* mlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mlist.plist; sourceTree = "<group>"; };
+		F7CA816D1D8860E500289973 /* JSMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMModel.h; sourceTree = "<group>"; };
+		F7CA816E1D8860E500289973 /* JSMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMModel.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1640,6 +1645,7 @@
 				F762658E1D71446A0055ECBA /* Main.storyboard */,
 				F74A69A41D7683BB00783D78 /* Launch Screen.storyboard */,
 				F76265781D7143400055ECBA /* main.m */,
+				F7CA816B1D88602500289973 /* mlist.plist */,
 				F79758FC1D742E6C0041A7DC /* Assets */,
 			);
 			path = SupportingFiles;
@@ -1839,6 +1845,8 @@
 		F7CA81631D885C8F00289973 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7CA816D1D8860E500289973 /* JSMModel.h */,
+				F7CA816E1D8860E500289973 /* JSMModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1960,6 +1968,7 @@
 				F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */,
 				F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */,
 				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
+				F7CA816C1D88602500289973 /* mlist.plist in Resources */,
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
 				F705354E1D818BC500B53BB8 /* UMSCommentInputControlleriPad.xib in Resources */,
 				F719BFC81D75976800015113 /* Demos.plist in Resources */,
@@ -2060,6 +2069,7 @@
 				F743A8C11D7DB0E400576254 /* JSLoopRootViewController.m in Sources */,
 				F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */,
 				F762657D1D7143400055ECBA /* main.m in Sources */,
+				F7CA816F1D8860E500289973 /* JSMModel.m in Sources */,
 				F743A8C01D7DB0E400576254 /* JSSparkViewController.m in Sources */,
 				F743A8BD1D7DB0E400576254 /* JSFriendsModel.m in Sources */,
 				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,

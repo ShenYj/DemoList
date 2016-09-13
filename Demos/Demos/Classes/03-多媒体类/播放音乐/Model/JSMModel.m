@@ -1,13 +1,13 @@
 //
-//  JSPlayMusicViewController.h
+//  JSMModel.m
 //  Demos
 //
 //  Created by ShenYj on 16/9/14.
 //  Copyright © 2016年 ___ShenYJ___. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JSMModel.h"
 
-@interface JSPlayMusicViewController : UITableViewController
+@implementation JSMModel
 
 @end

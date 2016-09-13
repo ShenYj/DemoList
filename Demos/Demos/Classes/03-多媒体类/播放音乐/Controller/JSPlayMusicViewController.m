@@ -8,8 +8,13 @@
 
 #import "JSPlayMusicViewController.h"
 #import "JSPlayMusicButton.h"
+#import "JSMModel.h"
+
+static NSString * const reuseId = @"lalalalallalalalala";
 
 @interface JSPlayMusicViewController ()
+
+@property (nonatomic,strong) NSArray <JSMModel *>*dataArr;
 
 @property (nonatomic,strong) JSPlayMusicButton *playLocalMusicButton;
 
@@ -28,33 +33,53 @@
 
 - (void)prepareView {
     
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseId];
+    
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self.view addSubview:self.playLocalMusicButton];
-    
-    [self.playLocalMusicButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.centerY.mas_equalTo(self.view);
-        make.size.mas_equalTo(CGSizeMake(200, 44));
-    }];
-    
 }
 
 
 #pragma mark - lazy
-
-- (JSPlayMusicButton *)playLocalMusicButton {
-    
-    if (_playLocalMusicButton == nil) {
-        _playLocalMusicButton = [[JSPlayMusicButton alloc] init];
-    }
-    return _playLocalMusicButton;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.dataArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId forIndexPath:indexPath];
+    
+    return cell;
+}
+
+
+#pragma mark - lazy
+
+- (NSArray <JSMModel *>*)dataArr {
+    
+    if (_dataArr == nil) {
+        
+        NSArray *arr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mlist" ofType:@"plist"]];
+        
+        NSMutableArray *mArr = [NSMutableArray array];
+        for (NSDictionary *dict in arr) {
+            
+            JSMModel *model = [JSMModel yy_modelWithDictionary:dict];
+            [mArr addObject:model];
+        }
+        
+        _dataArr = mArr.copy;
+    }
+    return _dataArr;
+}
 /*
 #pragma mark - Navigation
 
