@@ -82,7 +82,7 @@
 
 
 // 内存紧张时调用
-+ (void)didReceiveMemoryWarning{
+- (void)didReceiveMemoryWarning{
     
     for (NSNumber *soundIDNumber in self.soundIdCache.allValues) {
         // 销毁内存中的音效

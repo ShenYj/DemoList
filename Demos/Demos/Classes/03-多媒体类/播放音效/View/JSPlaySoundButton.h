@@ -11,6 +11,6 @@
 @interface JSPlaySoundButton : UIButton
 
 // 内存紧张时调用
-+ (void)didReceiveMemoryWarning;
+- (void)didReceiveMemoryWarning;
 
 @end

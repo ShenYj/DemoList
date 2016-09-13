@@ -35,18 +35,14 @@
         make.size.mas_equalTo(CGSizeMake(200, 44));
     }];
     
-    
-    
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
     // 内存紧张时清理音效缓存
-    [JSPlaySoundButton didReceiveMemoryWarning];
+    [self.playButton didReceiveMemoryWarning];
 }
 
 #pragma mark - lazy
