@@ -107,9 +107,13 @@
     
 }
 
-// 加载失败
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     NSLog(@"%@",error);
 }
+
+// 加载失败
+//- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
+//   NSLog(@"%@",error);
+//}
 
 @end
