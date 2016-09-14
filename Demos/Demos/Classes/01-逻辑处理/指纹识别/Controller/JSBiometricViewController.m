@@ -33,7 +33,6 @@
 
     [self.view addSubview:self.descriptionLabel];
     [self.view addSubview:self.biometricButton];
-    [self.view addSubview:self.authenticationResultLabel];
     
     [self.descriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.view).mas_offset(70);
