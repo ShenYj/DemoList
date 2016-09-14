@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0018B0B44085F5353E313E /* libPods-Demos.a */; };
+		F70447361D8949EB0006ED5A /* MJKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70447271D8949EB0006ED5A /* MJKBaseView.m */; };
+		F70447371D8949EB0006ED5A /* MJKBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70447291D8949EB0006ED5A /* MJKBlueView.m */; };
+		F70447381D8949EB0006ED5A /* MJKGreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = F704472B1D8949EB0006ED5A /* MJKGreenView.m */; };
+		F70447391D8949EB0006ED5A /* MJKOrangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F704472D1D8949EB0006ED5A /* MJKOrangeView.m */; };
+		F704473A1D8949EB0006ED5A /* MJKPurpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F704472F1D8949EB0006ED5A /* MJKPurpleView.m */; };
+		F704473B1D8949EB0006ED5A /* MJKRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70447311D8949EB0006ED5A /* MJKRedView.m */; };
+		F704473C1D8949EB0006ED5A /* MJKWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70447331D8949EB0006ED5A /* MJKWhiteView.m */; };
+		F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70447351D8949EB0006ED5A /* MJKYellowView.m */; };
+		F70447401D894A070006ED5A /* JSTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F704473F1D894A070006ED5A /* JSTargetViewController.m */; };
 		F70535491D818BC500B53BB8 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F705352E1D818BC500B53BB8 /* UMSocialLocalizable.strings */; };
 		F705354A1D818BC500B53BB8 /* libUMSocial_Sdk_4.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F705353C1D818BC500B53BB8 /* libUMSocial_Sdk_4.2.5.a */; };
 		F705354B1D818BC500B53BB8 /* libUMSocial_Sdk_Comment_4.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F705353D1D818BC500B53BB8 /* libUMSocial_Sdk_Comment_4.2.5.a */; };
@@ -162,6 +171,24 @@
 /* Begin PBXFileReference section */
 		75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
 		8C0018B0B44085F5353E313E /* libPods-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70447261D8949EB0006ED5A /* MJKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKBaseView.h; sourceTree = "<group>"; };
+		F70447271D8949EB0006ED5A /* MJKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKBaseView.m; sourceTree = "<group>"; };
+		F70447281D8949EB0006ED5A /* MJKBlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKBlueView.h; sourceTree = "<group>"; };
+		F70447291D8949EB0006ED5A /* MJKBlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKBlueView.m; sourceTree = "<group>"; };
+		F704472A1D8949EB0006ED5A /* MJKGreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKGreenView.h; sourceTree = "<group>"; };
+		F704472B1D8949EB0006ED5A /* MJKGreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKGreenView.m; sourceTree = "<group>"; };
+		F704472C1D8949EB0006ED5A /* MJKOrangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKOrangeView.h; sourceTree = "<group>"; };
+		F704472D1D8949EB0006ED5A /* MJKOrangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKOrangeView.m; sourceTree = "<group>"; };
+		F704472E1D8949EB0006ED5A /* MJKPurpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKPurpleView.h; sourceTree = "<group>"; };
+		F704472F1D8949EB0006ED5A /* MJKPurpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKPurpleView.m; sourceTree = "<group>"; };
+		F70447301D8949EB0006ED5A /* MJKRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKRedView.h; sourceTree = "<group>"; };
+		F70447311D8949EB0006ED5A /* MJKRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKRedView.m; sourceTree = "<group>"; };
+		F70447321D8949EB0006ED5A /* MJKWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKWhiteView.h; sourceTree = "<group>"; };
+		F70447331D8949EB0006ED5A /* MJKWhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKWhiteView.m; sourceTree = "<group>"; };
+		F70447341D8949EB0006ED5A /* MJKYellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJKYellowView.h; sourceTree = "<group>"; };
+		F70447351D8949EB0006ED5A /* MJKYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJKYellowView.m; sourceTree = "<group>"; };
+		F704473E1D894A070006ED5A /* JSTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTargetViewController.h; sourceTree = "<group>"; };
+		F704473F1D894A070006ED5A /* JSTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTargetViewController.m; sourceTree = "<group>"; };
 		F705352F1D818BC500B53BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		F70535311D818BC500B53BB8 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		F70535321D818BC500B53BB8 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -483,6 +510,55 @@
 				75E3C2F32797F1A818DFDBD3 /* Pods-Demos.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F70447221D8948C10006ED5A /* 交互 */ = {
+			isa = PBXGroup;
+			children = (
+				F70447231D8948C10006ED5A /* Controller */,
+				F70447241D8948C10006ED5A /* Model */,
+				F70447251D8948C10006ED5A /* View */,
+			);
+			path = "交互";
+			sourceTree = "<group>";
+		};
+		F70447231D8948C10006ED5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F704473E1D894A070006ED5A /* JSTargetViewController.h */,
+				F704473F1D894A070006ED5A /* JSTargetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F70447241D8948C10006ED5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F70447251D8948C10006ED5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F70447261D8949EB0006ED5A /* MJKBaseView.h */,
+				F70447271D8949EB0006ED5A /* MJKBaseView.m */,
+				F70447281D8949EB0006ED5A /* MJKBlueView.h */,
+				F70447291D8949EB0006ED5A /* MJKBlueView.m */,
+				F704472A1D8949EB0006ED5A /* MJKGreenView.h */,
+				F704472B1D8949EB0006ED5A /* MJKGreenView.m */,
+				F704472C1D8949EB0006ED5A /* MJKOrangeView.h */,
+				F704472D1D8949EB0006ED5A /* MJKOrangeView.m */,
+				F704472E1D8949EB0006ED5A /* MJKPurpleView.h */,
+				F704472F1D8949EB0006ED5A /* MJKPurpleView.m */,
+				F70447301D8949EB0006ED5A /* MJKRedView.h */,
+				F70447311D8949EB0006ED5A /* MJKRedView.m */,
+				F70447321D8949EB0006ED5A /* MJKWhiteView.h */,
+				F70447331D8949EB0006ED5A /* MJKWhiteView.m */,
+				F70447341D8949EB0006ED5A /* MJKYellowView.h */,
+				F70447351D8949EB0006ED5A /* MJKYellowView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F70535291D81864200B53BB8 /* 友盟分享 */ = {
@@ -1456,6 +1532,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F70447221D8948C10006ED5A /* 交互 */,
 				F70B90251D7E7F9D00840F11 /* UISearchDisplayController */,
 				F743A8921D7DB0E400576254 /* 地图使用 */,
 				F718BB811D80F9B40001CDC0 /* 百度地图演练 */,
@@ -2040,6 +2117,7 @@
 				F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */,
 				F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */,
 				F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */,
+				F70447381D8949EB0006ED5A /* MJKGreenView.m in Sources */,
 				F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */,
 				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
@@ -2062,6 +2140,8 @@
 				F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */,
 				F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
+				F70447371D8949EB0006ED5A /* MJKBlueView.m in Sources */,
+				F704473C1D8949EB0006ED5A /* MJKWhiteView.m in Sources */,
 				F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */,
 				F743A8A11D7DB0E400576254 /* JSAppsModel.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
@@ -2083,17 +2163,20 @@
 				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
 				F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
+				F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
 				F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
+				F70447391D8949EB0006ED5A /* MJKOrangeView.m in Sources */,
 				F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */,
 				F743A8BA1D7DB0E400576254 /* JSSectionHeadView.m in Sources */,
 				F743A89E1D7DB0E400576254 /* NSString+JSAppendPath.m in Sources */,
 				F70B90311D7E900100840F11 /* JSCoordinateView.m in Sources */,
 				F743A8A61D7DB0E400576254 /* JSSectionHeaderView.m in Sources */,
 				F743A8A21D7DB0E400576254 /* JSAppCell.m in Sources */,
+				F70447401D894A070006ED5A /* JSTargetViewController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
 				F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */,
@@ -2108,14 +2191,17 @@
 				F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */,
 				F76265AD1D7145A40055ECBA /* UIImage+JSExtension.m in Sources */,
 				F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */,
+				F70447361D8949EB0006ED5A /* MJKBaseView.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
 				F705355D1D818D4A00B53BB8 /* JSSocialViewController.m in Sources */,
 				F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */,
 				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
+				F704473B1D8949EB0006ED5A /* MJKRedView.m in Sources */,
 				F743A8B91D7DB0E400576254 /* JSDetailModel.m in Sources */,
 				F743A8A31D7DB0E400576254 /* JSDetailTableView.m in Sources */,
 				F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
+				F704473A1D8949EB0006ED5A /* MJKPurpleView.m in Sources */,
 				F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */,
 				F7CA81671D885CBB00289973 /* JSPlayMusicViewController.m in Sources */,
 				F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */,

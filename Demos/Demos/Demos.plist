@@ -184,9 +184,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSTargetViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>演示控件能否接收到事件</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
