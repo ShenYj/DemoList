@@ -111,9 +111,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSBiometricViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>指纹识别使用</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

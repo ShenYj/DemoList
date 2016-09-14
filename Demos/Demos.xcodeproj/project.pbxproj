@@ -33,6 +33,7 @@
 		F70535581D818C5E00B53BB8 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F70535571D818C5E00B53BB8 /* libstdc++.tbd */; };
 		F705355A1D818C6F00B53BB8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F70535591D818C6F00B53BB8 /* libz.tbd */; };
 		F705355D1D818D4A00B53BB8 /* JSSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F705355C1D818D4A00B53BB8 /* JSSocialViewController.m */; };
+		F70980921D89661700DB47CD /* JSBiometricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70980911D89661700DB47CD /* JSBiometricViewController.m */; };
 		F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90231D7E71F300840F11 /* JSZoomButton.m */; };
 		F70B902B1D7E7F9D00840F11 /* JSSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90281D7E7F9D00840F11 /* JSSearchTableViewController.m */; };
 		F70B902E1D7E850D00840F11 /* JSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B902D1D7E850D00840F11 /* JSAnnotation.m */; };
@@ -218,6 +219,8 @@
 		F70535591D818C6F00B53BB8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F705355B1D818D4A00B53BB8 /* JSSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSocialViewController.h; sourceTree = "<group>"; };
 		F705355C1D818D4A00B53BB8 /* JSSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSocialViewController.m; sourceTree = "<group>"; };
+		F70980901D89661700DB47CD /* JSBiometricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBiometricViewController.h; sourceTree = "<group>"; };
+		F70980911D89661700DB47CD /* JSBiometricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBiometricViewController.m; sourceTree = "<group>"; };
 		F70B90221D7E71F300840F11 /* JSZoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZoomButton.h; sourceTree = "<group>"; };
 		F70B90231D7E71F300840F11 /* JSZoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZoomButton.m; sourceTree = "<group>"; };
 		F70B90271D7E7F9D00840F11 /* JSSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSearchTableViewController.h; sourceTree = "<group>"; };
@@ -642,6 +645,39 @@
 			path = SocialSDKXib;
 			sourceTree = "<group>";
 		};
+		F709808C1D8965C300DB47CD /* 指纹识别 */ = {
+			isa = PBXGroup;
+			children = (
+				F709808D1D8965C300DB47CD /* Controller */,
+				F709808E1D8965C300DB47CD /* Model */,
+				F709808F1D8965C300DB47CD /* View */,
+			);
+			path = "指纹识别";
+			sourceTree = "<group>";
+		};
+		F709808D1D8965C300DB47CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F70980901D89661700DB47CD /* JSBiometricViewController.h */,
+				F70980911D89661700DB47CD /* JSBiometricViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F709808E1D8965C300DB47CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F709808F1D8965C300DB47CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F70B90251D7E7F9D00840F11 /* UISearchDisplayController */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,7 +847,6 @@
 		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
 			isa = PBXGroup;
 			children = (
-				F74F57461D858AE400E3CC61 /* 推送通知 */,
 				F743A7E11D7DB0E400576254 /* OC与JS交互Demo */,
 				F743A7EA1D7DB0E400576254 /* ScaleHeaderView */,
 				F743A7F01D7DB0E400576254 /* SyncDownLoadImg */,
@@ -827,6 +862,8 @@
 				F743A8761D7DB0E400576254 /* 跟随手指移动的特效 */,
 				F743A87C1D7DB0E400576254 /* 轮播器 */,
 				F743A8881D7DB0E400576254 /* 键盘处理(TF&PickerView) */,
+				F74F57461D858AE400E3CC61 /* 推送通知 */,
+				F709808C1D8965C300DB47CD /* 指纹识别 */,
 			);
 			path = "01-逻辑处理";
 			sourceTree = "<group>";
@@ -2138,6 +2175,7 @@
 				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
 				F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */,
+				F70980921D89661700DB47CD /* JSBiometricViewController.m in Sources */,
 				F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
 				F70447371D8949EB0006ED5A /* MJKBlueView.m in Sources */,
