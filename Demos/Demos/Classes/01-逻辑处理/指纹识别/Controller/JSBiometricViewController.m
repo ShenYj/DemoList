@@ -74,10 +74,10 @@
                 
                 switch (error.code) {
                     case -2:
-                        NSLog(@"用户取消");
+                        [self showAuthenResult:@"用户取消"];
                         break;
                     case -1: // 3次错误就会自动停止指纹识别
-                        NSLog(@"到达尝试错误次数");
+                        [self showAuthenResult:@"到达尝试错误次数"];
                         break;
                     case -8: // 5次错误就不再使用指纹识别
                         [self showAuthenResult:@"取消指纹识别,使用密码进行验证"];
