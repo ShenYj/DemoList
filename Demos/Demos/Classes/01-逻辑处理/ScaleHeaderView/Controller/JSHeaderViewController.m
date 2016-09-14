@@ -204,6 +204,25 @@ static NSString * const reuseId = @"Identifier";
     
     NSLog(@"按钮被点击了");
     
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"点击导航按钮" message:@"这是模拟的导航栏按钮" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel
+                                                   handler:^(UIAlertAction * _Nonnull action) {
+                                                       
+                                                   }];
+    
+    UIAlertAction *okay = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertController addAction:cancel];
+    [alertController addAction:okay];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+       
+        
+    }];
+    
 }
 
 #pragma mark - 设置导航栏样式
@@ -220,6 +239,7 @@ static NSString * const reuseId = @"Identifier";
         _navigationButton = [[UIButton alloc] init];
         _navigationButton.titleLabel.font = [UIFont systemFontOfSize:12];
         _navigationButton.alpha = 0.01;
+        
         [_navigationButton setTitle:@"导航按钮" forState:UIControlStateNormal];
         [_navigationButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_navigationButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
