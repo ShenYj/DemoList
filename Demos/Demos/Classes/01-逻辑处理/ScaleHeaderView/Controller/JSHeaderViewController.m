@@ -146,7 +146,7 @@ static NSString * const reuseId = @"Identifier";
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     CGFloat offSetY = scrollView.contentOffset.y + scrollView.contentInset.top;
-    
+
     if (offSetY > 0) {
 
         _headerView.h = kHeaderHeight;
@@ -165,7 +165,15 @@ static NSString * const reuseId = @"Identifier";
         _headerImageView.alpha = alpha;
         
         // 显示导航栏的按钮
-        self.navigationButton.alpha = 1 - alpha;
+        if ( alpha <= 0.1) {
+            
+            self.navigationButton.alpha = 1 - alpha;
+            self.navigationButton.userInteractionEnabled = YES;
+        }else{
+            
+            self.navigationButton.alpha = 0.01;
+        }
+        
         
 #pragma mark - 状态栏处理
         
@@ -182,6 +190,9 @@ static NSString * const reuseId = @"Identifier";
         _headerView.y = 0;
         _headerView.h = kHeaderHeight - offSetY;
         _headerImageView.h = _headerView.h;
+        
+        // 设置导航栏按钮透明度
+        //self.navigationButton.alpha = 0.01;
 
     }
     
@@ -239,7 +250,7 @@ static NSString * const reuseId = @"Identifier";
         _navigationButton = [[UIButton alloc] init];
         _navigationButton.titleLabel.font = [UIFont systemFontOfSize:12];
         _navigationButton.alpha = 0.01;
-        
+        _navigationButton.userInteractionEnabled = NO;
         [_navigationButton setTitle:@"导航按钮" forState:UIControlStateNormal];
         [_navigationButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_navigationButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
