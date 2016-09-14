@@ -16,9 +16,6 @@
 // 按钮
 @property (nonatomic,strong) UIButton *biometricButton;
 
-// 指纹认证结果
-@property (nonatomic,strong) UILabel *authenticationResultLabel;
-
 @end
 
 @implementation JSBiometricViewController
@@ -51,13 +48,6 @@
         make.height.mas_equalTo(44);
     }];
     
-    [self.authenticationResultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.biometricButton.mas_bottom).mas_offset(20);
-        make.left.right.mas_equalTo(self.view);
-        make.bottom.mas_equalTo(self.view).mas_offset(-80);
-    }];
-    
-    
     
 }
 
@@ -69,10 +59,7 @@
     // 判断系统版本
     if ([[UIDevice currentDevice].systemVersion floatValue] <= 8.0) {
         
-        NSLog(@"硬件没有达到要求");
-        
-        self.authenticationResultLabel.text = @"硬件没有达到要求";
-        
+        [self showAuthenResult:@"系统没有到达要求"];
         return;
     }
     
@@ -89,14 +76,11 @@
                 switch (error.code) {
                     case -2:
                         NSLog(@"用户取消");
-                        [self showAuthenResult:@"用户取消"];
                         break;
                     case -1: // 3次错误就会自动停止指纹识别
                         NSLog(@"到达尝试错误次数");
-                        [self showAuthenResult:@"到达尝试错误次数"];
                         break;
                     case -8: // 5次错误就不再使用指纹识别
-                        NSLog(@"取消指纹识别,使用密码进行验证");
                         [self showAuthenResult:@"取消指纹识别,使用密码进行验证"];
                         break;
                         
@@ -165,20 +149,6 @@
         [_biometricButton addTarget:self action:@selector(clickBiometricButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _biometricButton;
-}
-
-- (UILabel *)authenticationResultLabel {
-    
-    if (_authenticationResultLabel == nil) {
-        _authenticationResultLabel = [[UILabel alloc] init];
-        _authenticationResultLabel.font = [UIFont systemFontOfSize:16];
-        _authenticationResultLabel.numberOfLines = 0;
-        _authenticationResultLabel.alpha = 0.01;
-        _authenticationResultLabel.textAlignment = NSTextAlignmentCenter;
-        _authenticationResultLabel.backgroundColor = [UIColor js_colorWithHex:0xFF69B4];
-        _authenticationResultLabel.textColor = [UIColor js_colorWithHex:0x1E90FF];
-    }
-    return _authenticationResultLabel;
 }
 
 
