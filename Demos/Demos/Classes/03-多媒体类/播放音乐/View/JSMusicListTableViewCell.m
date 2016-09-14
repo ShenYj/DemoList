@@ -116,10 +116,9 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
     return _albumImageView;
 }
 
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    NSLog(@"%s",__func__);
     // Configure the view for the selected state
 }
 
