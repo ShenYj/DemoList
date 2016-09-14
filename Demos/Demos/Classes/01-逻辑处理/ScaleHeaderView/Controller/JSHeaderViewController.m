@@ -13,6 +13,8 @@
 
 @interface JSHeaderViewController () <UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) UIButton *navigationButton;
+
 @end
 
 static NSString * const reuseId = @"Identifier";
@@ -48,7 +50,7 @@ static NSString * const reuseId = @"Identifier";
     
 }
 
-#pragma mark -- 准备顶部视图
+#pragma mark - 准备顶部视图
 - (void)prepareHeaderView{
     
     _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kHeaderHeight)];
@@ -73,7 +75,11 @@ static NSString * const reuseId = @"Identifier";
     // 设置等比例拉伸
     _headerImageView.contentMode = UIViewContentModeScaleAspectFill;
     
-#pragma mark -- 添加分割线 1个像素点
+#pragma mark - 在HeaderView上添加一个Button
+    // 设置导航栏按钮视图
+    [self prepareNavigationView];
+    
+#pragma mark - 添加分割线 1个像素点
     
     CGFloat lineHeight = 1 / [UIScreen mainScreen].scale;
     
@@ -85,7 +91,7 @@ static NSString * const reuseId = @"Identifier";
     
 }
 
-#pragma mark -- 准备TableView
+#pragma mark - 准备TableView
 - (void)prepareTableView{
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -102,7 +108,20 @@ static NSString * const reuseId = @"Identifier";
     
 }
 
-#pragma mark -- UITableViewDataSource
+#pragma mark - 添加模拟导航栏处的按钮
+
+- (void)prepareNavigationView{
+    
+    [_headerView addSubview:self.navigationButton];
+    
+    [self.navigationButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(_headerView).mas_offset(-10);
+        make.right.mas_equalTo(_headerView).mas_offset(-10);
+        make.size.mas_equalTo(CGSizeMake(60, 36));
+    }];
+}
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 100;
@@ -122,7 +141,7 @@ static NSString * const reuseId = @"Identifier";
     return cell;
 }
 
-#pragma mark -- UITableViewDelegate
+#pragma mark - UITableViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
@@ -145,7 +164,10 @@ static NSString * const reuseId = @"Identifier";
         // 随着顶部视图向上滚动,设置透明度
         _headerImageView.alpha = alpha;
         
-#pragma mark -- 状态栏处理
+        // 显示导航栏的按钮
+        self.navigationButton.alpha = 1 - alpha;
+        
+#pragma mark - 状态栏处理
         
         // 设置状态栏状态
         _statusBarStyle = (alpha < 0.5) ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent;
@@ -176,10 +198,35 @@ static NSString * const reuseId = @"Identifier";
 }
 
 
-#pragma mark -- 设置导航栏样式
+#pragma mark - target
+
+- (void)clickNavigationButton:(UIButton *)sender {
+    
+    NSLog(@"按钮被点击了");
+    
+}
+
+#pragma mark - 设置导航栏样式
 - (UIStatusBarStyle)preferredStatusBarStyle{
 
     return _statusBarStyle;
+}
+
+#pragma mark - lazy
+
+- (UIButton *)navigationButton {
+    
+    if (_navigationButton == nil) {
+        _navigationButton = [[UIButton alloc] init];
+        _navigationButton.titleLabel.font = [UIFont systemFontOfSize:12];
+        _navigationButton.alpha = 0.01;
+        [_navigationButton setTitle:@"导航按钮" forState:UIControlStateNormal];
+        [_navigationButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_navigationButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+        [_navigationButton addTarget:self action:@selector(clickNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return _navigationButton;
 }
 
 @end
