@@ -49,28 +49,6 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
     [self.contentView addSubview:self.musicNameLabel];
     [self.contentView addSubview:self.singerNameLabel];
     
-    
-    /*
-     
-     (
- <MASLayoutConstraint:0x6080000abac0 UIImageView:0x7fb77863c000.top == UITableViewCellContentView:0x7fb77863b470.top + 10>,
- <MASLayoutConstraint:0x6000000b1700 UITableViewCellContentView:0x7fb77863b470.bottom == UIImageView:0x7fb77863c000.bottom - 5>,
- <NSLayoutConstraint:0x60800028c6c0 UITableViewCellContentView:0x7fb77863b470.height == 0>,
-     )
-
-     (
- <MASLayoutConstraint:0x6080000abac0 UIImageView:0x7fb77863c000.top == UITableViewCellContentView:0x7fb77863b470.top + 10>,
-     <MASLayoutConstraint:0x6080000abc40 UIImageView:0x7fb77863c000.height == 40>,
- <MASLayoutConstraint:0x6000000b1700 UITableViewCellContentView:0x7fb77863b470.bottom == UIImageView:0x7fb77863c000.bottom - 5>,
- <NSLayoutConstraint:0x60800028c6c0 UITableViewCellContentView:0x7fb77863b470.height == 0>,
-     )
-     
-     
-     Will attempt to recover by breaking constraint
-     <MASLayoutConstraint:0x6080000abc40 UIImageView:0x7fb77863c000.height == 40>
-     
-     */
-    
     [self.albumImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.mas_equalTo(self.contentView).mas_offset(JSMusicListTableViewCellAlbumImageViewMargin);
         make.size.mas_equalTo(CGSizeMake(JSMusicListTableViewCellAlbumImageViewSize, JSMusicListTableViewCellAlbumImageViewSize));
@@ -91,11 +69,6 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
         make.height.mas_equalTo(JSMusicListTableViewCellSingerNameLabelHeight);
     }];
     
-//    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.top.mas_equalTo(self);
-//        make.height.mas_equalTo(60);
-//        //make.bottom.mas_equalTo(self.albumImageView).mas_offset(-JSMusicListTableViewCellBottomMargin);
-//    }];
 }
 
 - (void)setModel:(JSMModel *)model{

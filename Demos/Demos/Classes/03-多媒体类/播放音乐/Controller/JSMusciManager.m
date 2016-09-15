@@ -14,7 +14,6 @@ static JSMusciManager *_instanceType = nil;
 
 @interface JSMusciManager ()
 
-
 @property (nonatomic,copy) NSString *currentMusicName;
 
 @end
@@ -113,7 +112,6 @@ static JSMusciManager *_instanceType = nil;
         [self.audioPlayer play];
         
     });
-    
     
     
 }
