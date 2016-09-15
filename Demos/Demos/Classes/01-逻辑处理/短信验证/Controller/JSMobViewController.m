@@ -87,13 +87,17 @@
      *  @param result            请求结果回调(Results of the request)
      */
     
-    [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.phoneNumberInputTextField.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+    [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodVoice phoneNumber:self.phoneNumberInputTextField.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
         
         if (!error) {
+            
             NSLog(@"获取验证码成功");
+            self.resultLabel.text = @"获取验证码成功,请查看手机";
             
         } else {
+            
             NSLog(@"错误信息：%@",error);
+            self.resultLabel.text = @"获取验证码失败";
         }
     }];
     
@@ -105,13 +109,17 @@
     [SMSSDK commitVerificationCode:self.authenCodeInputTextField.text phoneNumber:self.phoneNumberInputTextField.text zone:@"86" result:^(NSError *error) {
         
         if (!error) {
+            
             NSLog(@"验证成功");
+            self.resultLabel.text = @"验证成功";
         }
         else
         {
             NSLog(@"错误信息:%@",error);
+            self.resultLabel.text = @"验证失败,错误信息:error";
         }
     }];
+    
     
 }
 
@@ -127,7 +135,7 @@
         _detailLabel.textAlignment = NSTextAlignmentCenter;
         _detailLabel.layer.borderColor = [UIColor redColor].CGColor;
         _detailLabel.layer.borderWidth = 2;
-        _detailLabel.textColor = [UIColor js_colorWithHex:0x90EE90];
+        _detailLabel.textColor = [UIColor purpleColor];
     }
     return _detailLabel;
 }
