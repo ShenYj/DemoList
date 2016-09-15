@@ -10,6 +10,7 @@
 #import "JSPlayMusicButton.h"
 #import "JSMModel.h"
 #import "JSMusicListTableViewCell.h"
+#import "JSMusciManager.h"
 #import <AVFoundation/AVFoundation.h>
 
 static NSString * const reuseId = @"lalalalallalalalala";
@@ -23,6 +24,8 @@ static NSString * const reuseId = @"lalalalallalalalala";
 @property (nonatomic,strong) JSPlayMusicButton *playOnlineMusicButton;
 
 @property (nonatomic,strong) AVAudioPlayer *audioPlayer;
+
+@property (nonatomic,copy) NSString *currentMusicName;
 
 @end
 
@@ -39,17 +42,10 @@ static NSString * const reuseId = @"lalalalallalalalala";
     
     // 设置Cell样式
     //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseId];
-    self.tableView.estimatedRowHeight = 80;
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 80;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.tableView.backgroundColor = [UIColor whiteColor];
-}
-
-#pragma mark - lazy
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UITableViewDataSource
@@ -57,6 +53,11 @@ static NSString * const reuseId = @"lalalalallalalalala";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return self.dataArr.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 60;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -78,28 +79,17 @@ static NSString * const reuseId = @"lalalalallalalalala";
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    JSMModel *model = self.dataArr[indexPath.row];
     
-    [self prepareToPlayMusicPlayerWithIndexPath:indexPath];
+    // 播放控制 : 开始、暂停和停止播放
+    [[JSMusciManager sharedMusicManager] playMusicWithFileName:model.mp3];
+    
 }
 
 
+
+
 - (void)prepareToPlayMusicPlayerWithIndexPath:(NSIndexPath *)indexPath {
-    
-    // 正常情况下AVAudioPlayer会根据音乐的后缀来进行类型判断  如果类型后缀错误,可以通过设置fileTypeHint类型帮助iOS系统更好的识别文件类型
-    //[AVAudioPlayer alloc]initWithData:<#(nonnull NSData *)#> fileTypeHint:<#(NSString * _Nullable)#> error:<#(NSError * _Nullable __autoreleasing * _Nullable)#>]
-    
-    JSMModel *model = self.dataArr[indexPath.row];
-    
-    // 1. 设置播放音乐的路径
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:model.mp3 ofType:nil];
-    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
-    
-    // 2. 创建播放器
-    self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:nil];
-    
-    // 3. 准备播放 (音效可以转换为系统的:AudioServicesCreateSystemSoundID,立即就能播放,音乐需要一个缓冲)
-    [self.audioPlayer prepareToPlay];
-    
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"准备播放音乐:" message:@"点击确定开始播放" preferredStyle:UIAlertControllerStyleAlert];
     
@@ -110,10 +100,7 @@ static NSString * const reuseId = @"lalalalallalalalala";
     */
     UIAlertAction *play = [UIAlertAction actionWithTitle:@"开始" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
-            [self.audioPlayer play];
-        });
+        [self.audioPlayer play];
         
     }];
     
@@ -128,7 +115,6 @@ static NSString * const reuseId = @"lalalalallalalalala";
     [alertController addAction:play];
     [alertController addAction:pause];
     [alertController addAction:stop];
-    
     
     [self presentViewController:alertController animated:YES completion:nil];
 }
