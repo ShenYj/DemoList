@@ -44,7 +44,6 @@ static CGFloat const JSMusicListTableViewCellBottomMargin = 5;
 
 - (void)prepareView{
     
-    
     [self.contentView addSubview:self.albumImageView];
     [self.contentView addSubview:self.musicNameLabel];
     [self.contentView addSubview:self.singerNameLabel];

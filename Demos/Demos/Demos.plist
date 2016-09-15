@@ -117,9 +117,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSMobViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>短信验证</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

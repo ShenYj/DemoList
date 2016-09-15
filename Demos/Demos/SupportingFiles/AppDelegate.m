@@ -11,6 +11,7 @@
 #import "JSRootViewController.h"
 #import "UMSocial.h"
 #import "UMSocialSinaSSOHandler.h"
+#import <SMS_SDK/SMSSDK.h>
 
 NSInteger appBadgeNumber;
 
@@ -147,6 +148,15 @@ NSInteger appBadgeNumber;
     return result;
 }
 
+
+#pragma mark - 短信验证
+
+- (void)SMSSDK {
+    
+    //初始化应用，appKey和appSecret从后台申请得
+    [SMSSDK registerApp:@"172325bbd7b6b"
+             withSecret:@"f9aa6ba4a4e430d0214eab9b77350e0c"];
+}
 
 #pragma mark - 百度地图
 
