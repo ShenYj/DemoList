@@ -68,8 +68,6 @@
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
 		F74203C91D8A4B6100B05A6F /* JSMusciManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203C81D8A4B6100B05A6F /* JSMusciManager.m */; };
 		F74203D01D8A62A400B05A6F /* JSMobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203CF1D8A62A400B05A6F /* JSMobViewController.m */; };
-		F74203D61D8A689700B05A6F /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203D41D8A689700B05A6F /* MOBFoundation.framework */; };
-		F74203D71D8A689700B05A6F /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203D51D8A689700B05A6F /* SMS_SDK.framework */; };
 		F74203D91D8A68D100B05A6F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203D81D8A68D100B05A6F /* libicucore.tbd */; };
 		F74203DB1D8A68DD00B05A6F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203DA1D8A68DD00B05A6F /* MessageUI.framework */; };
 		F74203DD1D8A68E700B05A6F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203DC1D8A68E700B05A6F /* JavaScriptCore.framework */; };
@@ -130,6 +128,8 @@
 		F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57441D85298C00E3CC61 /* JSContactModel.m */; };
 		F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */; };
 		F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */; };
+		F750075D1D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F75007591D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings */; };
+		F750075E1D8BA5B3001C7B98 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F750075B1D8BA5B3001C7B98 /* SMS_SDK.framework */; };
 		F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */; };
 		F76265791D7143400055ECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265721D7143400055ECBA /* AppDelegate.m */; };
 		F762657A1D7143400055ECBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76265731D7143400055ECBA /* Assets.xcassets */; };
@@ -289,8 +289,6 @@
 		F74203C81D8A4B6100B05A6F /* JSMusciManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMusciManager.m; sourceTree = "<group>"; };
 		F74203CE1D8A62A400B05A6F /* JSMobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMobViewController.h; sourceTree = "<group>"; };
 		F74203CF1D8A62A400B05A6F /* JSMobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMobViewController.m; sourceTree = "<group>"; };
-		F74203D41D8A689700B05A6F /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
-		F74203D51D8A689700B05A6F /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		F74203D81D8A68D100B05A6F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		F74203DA1D8A68DD00B05A6F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F74203DC1D8A68E700B05A6F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -399,6 +397,9 @@
 		F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNotificationViewController.m; sourceTree = "<group>"; };
 		F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocalNotiButton.h; sourceTree = "<group>"; };
 		F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLocalNotiButton.m; sourceTree = "<group>"; };
+		F750075A1D8BA5B3001C7B98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		F750075B1D8BA5B3001C7B98 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		F750075C1D8BA5B3001C7B98 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
 		F75F0D4E1D86F22500549EC3 /* JSRemoteNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRemoteNotiButton.h; sourceTree = "<group>"; };
 		F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRemoteNotiButton.m; sourceTree = "<group>"; };
 		F76265521D7142FC0055ECBA /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -488,16 +489,15 @@
 				F718BB9F1D81083E0001CDC0 /* libstdc++.6.0.9.tbd in Frameworks */,
 				F718BB9B1D81081E0001CDC0 /* libsqlite3.0.tbd in Frameworks */,
 				F7146EF61D82C30F00EBE281 /* libSocialSinaSSO.a in Frameworks */,
-				F74203D71D8A689700B05A6F /* SMS_SDK.framework in Frameworks */,
 				F718BB991D8108120001CDC0 /* Security.framework in Frameworks */,
 				F718BB971D8108090001CDC0 /* CoreGraphics.framework in Frameworks */,
 				F7146EF71D82C30F00EBE281 /* libWeiboSDK.a in Frameworks */,
-				F74203D61D8A689700B05A6F /* MOBFoundation.framework in Frameworks */,
 				F718BBE01D8133590001CDC0 /* BaiduMapAPI_Location.framework in Frameworks */,
 				F718BB951D8107F80001CDC0 /* SystemConfiguration.framework in Frameworks */,
 				F718BB931D8107F00001CDC0 /* OpenGLES.framework in Frameworks */,
 				F718BB911D8107E80001CDC0 /* QuartzCore.framework in Frameworks */,
 				F718BBDE1D81233C0001CDC0 /* BaiduMapAPI_Search.framework in Frameworks */,
+				F750075E1D8BA5B3001C7B98 /* SMS_SDK.framework in Frameworks */,
 				F705354B1D818BC500B53BB8 /* libUMSocial_Sdk_Comment_4.2.5.a in Frameworks */,
 				F718BB8F1D8107DE0001CDC0 /* CoreLocation.framework in Frameworks */,
 				0F1D3E5811F4C913A2D98F3D /* libPods-Demos.a in Frameworks */,
@@ -909,18 +909,9 @@
 		F74203D21D8A688900B05A6F /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				F74203D31D8A689700B05A6F /* SMS_SDK */,
+				F75007581D8BA5B3001C7B98 /* SMS_SDK */,
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		F74203D31D8A689700B05A6F /* SMS_SDK */ = {
-			isa = PBXGroup;
-			children = (
-				F74203D41D8A689700B05A6F /* MOBFoundation.framework */,
-				F74203D51D8A689700B05A6F /* SMS_SDK.framework */,
-			);
-			path = SMS_SDK;
 			sourceTree = "<group>";
 		};
 		F743A7E01D7DB0E400576254 /* 01-逻辑处理 */ = {
@@ -1789,6 +1780,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F75007581D8BA5B3001C7B98 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F75007591D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings */,
+				F750075B1D8BA5B3001C7B98 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
 		F76265491D7142FC0055ECBA = {
 			isa = PBXGroup;
 			children = (
@@ -2131,6 +2131,7 @@
 			files = (
 				F705354F1D818BC500B53BB8 /* UMShareEditViewController.xib in Resources */,
 				F743A8AB1D7DB0E400576254 /* DrawingBoardView.xib in Resources */,
+				F750075D1D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings in Resources */,
 				F797591B1D742E6C0041A7DC /* st.jpg in Resources */,
 				F743A8C61D7DB0E400576254 /* provinces.plist in Resources */,
 				F70535521D818BC500B53BB8 /* UMSnsAccountViewController.xib in Resources */,
@@ -2348,6 +2349,15 @@
 				F74A69A51D7683BB00783D78 /* Base */,
 			);
 			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+		F75007591D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F750075A1D8BA5B3001C7B98 /* en */,
+				F750075C1D8BA5B3001C7B98 /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

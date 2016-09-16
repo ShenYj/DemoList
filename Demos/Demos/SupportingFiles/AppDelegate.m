@@ -11,7 +11,8 @@
 #import "JSRootViewController.h"
 #import "UMSocial.h"
 #import "UMSocialSinaSSOHandler.h"
-#import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/SMS_SDK.h>
+
 
 NSInteger appBadgeNumber;
 
@@ -153,9 +154,14 @@ NSInteger appBadgeNumber;
 
 - (void)SMSSDK {
     
+    
+    // 1.1.0
+    [SMS_SDK registerApp:@"172325bbd7b6b"
+              withSecret:@"f9aa6ba4a4e430d0214eab9b77350e0c"];
+    
     //初始化应用，appKey和appSecret从后台申请得
-    [SMSSDK registerApp:@"172325bbd7b6b"
-             withSecret:@"f9aa6ba4a4e430d0214eab9b77350e0c"];
+//    [SMSSDK registerApp:@"172325bbd7b6b"
+//             withSecret:@"f9aa6ba4a4e430d0214eab9b77350e0c"];
 }
 
 #pragma mark - 百度地图

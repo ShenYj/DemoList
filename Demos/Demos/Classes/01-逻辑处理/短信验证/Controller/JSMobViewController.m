@@ -7,7 +7,7 @@
 //
 
 #import "JSMobViewController.h"
-#import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/SMS_SDK.h>
 
 @interface JSMobViewController ()
 
@@ -76,6 +76,18 @@
 
 - (void)clickGetCodeButton:(UIButton *)sender {
     
+    
+    // 1.1.0版本
+    [SMS_SDK  getVerificationCodeBySMSWithPhone:self.phoneNumberInputTextField.text zone:@"86" customIdentifier:nil result:^(SMS_SDKError *error) {
+        if (!error) {
+            NSLog(@"获取验证码成功");
+            self.resultLabel.text = @"获取验证码成功";
+        } else {
+            NSLog(@"错误信息：%@",error);
+            self.resultLabel.text = [NSString stringWithFormat:@"获取验证码失败:%@",error];
+        }
+    }];
+    
     /**
      *  @from                    v1.1.1
      *  @brief                   获取验证码(Get verification code)
@@ -87,38 +99,59 @@
      *  @param result            请求结果回调(Results of the request)
      */
     
-    [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodVoice phoneNumber:self.phoneNumberInputTextField.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
-        
-        if (!error) {
-            
-            NSLog(@"获取验证码成功");
-            self.resultLabel.text = @"获取验证码成功,请查看手机";
-            
-        } else {
-            
-            NSLog(@"错误信息：%@",error);
-            self.resultLabel.text = @"获取验证码失败";
-        }
-    }];
+#pragma mark - 2.0.0版本
+//    [SMS_SDK getVerificationCodeByMethod:SMSGetCodeMethodVoice phoneNumber:self.phoneNumberInputTextField.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+//        
+//        if (error) {
+//            
+//            NSLog(@"错误信息：%@",error);
+//            self.resultLabel.text = @"获取验证码失败";
+//            return ;
+//        }
+//        
+//        
+//        NSLog(@"获取验证码成功");
+//        self.resultLabel.text = @"获取验证码成功,请查看手机";
+//        
+//    }];
     
     
 }
 
 - (void)clickRegisterButton:(UIButton *)sender {
     
-    [SMSSDK commitVerificationCode:self.authenCodeInputTextField.text phoneNumber:self.phoneNumberInputTextField.text zone:@"86" result:^(NSError *error) {
+    [SMS_SDK commitVerifyCode:self.authenCodeInputTextField.text result:^(enum SMS_ResponseState state) {
         
-        if (!error) {
-            
-            NSLog(@"验证成功");
-            self.resultLabel.text = @"验证成功";
-        }
-        else
-        {
-            NSLog(@"错误信息:%@",error);
-            self.resultLabel.text = @"验证失败,错误信息:error";
+       
+        switch (state) {
+            case SMS_ResponseStateFail:
+                NSLog(@"验证失败");
+                self.resultLabel.text = @"验证失败";
+                break;
+            case SMS_ResponseStateSuccess:
+                NSLog(@"验证陈宫");
+                self.resultLabel.text = @"验证成功";
+                break;
+            default:
+                break;
         }
     }];
+    
+    
+#pragma mark - 2.0.0版本
+//    [SMS_SDK commitVerificationCode:self.authenCodeInputTextField.text phoneNumber:self.phoneNumberInputTextField.text zone:@"86" result:^(NSError *error) {
+//        
+//        if (!error) {
+//            
+//            NSLog(@"验证成功");
+//            self.resultLabel.text = @"验证成功";
+//        }
+//        else
+//        {
+//            NSLog(@"错误信息:%@",error);
+//            self.resultLabel.text =[NSString stringWithFormat:@"获取验证码失败:%@",error];
+//        }
+//    }];
     
     
 }
@@ -181,7 +214,7 @@
     if (_authenButton == nil) {
         _authenButton = [[UIButton alloc] init];
         [_authenButton setTitle:@"短信验证" forState:UIControlStateNormal];
-        _authenButton.layer.borderColor = [UIColor blackColor].CGColor;
+        _authenButton.layer.borderColor = [UIColor js_colorWithHex:0xFFA500].CGColor;
         _authenButton.layer.borderWidth = 1;
         [_authenButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_authenButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
@@ -196,7 +229,7 @@
     if (_getCodeButton == nil) {
         _getCodeButton = [[UIButton alloc] init];
         [_getCodeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-        _getCodeButton.layer.borderColor = [UIColor blackColor].CGColor;
+        _getCodeButton.layer.borderColor = [UIColor js_colorWithHex:0xFFA500].CGColor;
         _getCodeButton.layer.borderWidth = 1;
         [_getCodeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_getCodeButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
