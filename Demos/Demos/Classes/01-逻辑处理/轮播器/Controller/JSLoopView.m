@@ -48,6 +48,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(autoScrollLoopView) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     
+    
 }
 - (void)stopTimer{
     

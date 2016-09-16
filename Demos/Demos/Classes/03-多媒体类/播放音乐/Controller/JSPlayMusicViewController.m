@@ -69,7 +69,6 @@ static NSString * const reuseId = @"lalalalallalalalala";
     if (!cell) {
         cell = [[JSMusicListTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
     }
-
     // 传递数据
     cell.model = model;
     
@@ -117,6 +116,8 @@ static NSString * const reuseId = @"lalalalallalalalala";
     [alertController addAction:stop];
     
     [self presentViewController:alertController animated:YES completion:nil];
+    
+    
 }
 
 #pragma mark - lazy
