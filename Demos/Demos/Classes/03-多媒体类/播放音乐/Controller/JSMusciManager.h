@@ -15,8 +15,7 @@
 @property (nonatomic,assign) NSTimeInterval duration;
 // 当前时间
 @property (nonatomic,assign) NSTimeInterval currentTime;
-// 音乐播放器
-@property (nonatomic,strong) AVAudioPlayer *audioPlayer;
+
 
 + (instancetype)sharedMusicManager;
 

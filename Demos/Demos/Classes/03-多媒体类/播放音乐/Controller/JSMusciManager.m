@@ -14,6 +14,9 @@ static JSMusciManager *_instanceType = nil;
 
 @interface JSMusciManager ()
 
+// 音乐播放器
+@property (nonatomic,strong) AVAudioPlayer *audioPlayer;
+
 @property (nonatomic,copy) NSString *currentMusicName;
 
 @end
@@ -73,7 +76,6 @@ static JSMusciManager *_instanceType = nil;
          }
 
      */
-    
     int type = [notification.userInfo[AVAudioSessionInterruptionOptionKey] intValue];
     
     switch (type) {
@@ -96,6 +98,9 @@ static JSMusciManager *_instanceType = nil;
         
         // 获取路径
         NSString *filePath = [[NSBundle mainBundle]pathForResource:fileName ofType:nil];
+        
+        NSLog(@"%@",filePath);
+        
         // 创建播放器
         self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:nil];
         
