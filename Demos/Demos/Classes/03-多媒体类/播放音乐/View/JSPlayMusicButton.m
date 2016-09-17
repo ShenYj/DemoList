@@ -10,10 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-@implementation JSPlayMusicButton{
-    
-    AVAudioPlayer *_audioPlayer;
-}
+@implementation JSPlayMusicButton
 
 - (instancetype)init {
     
@@ -35,21 +32,40 @@
 
 - (void)clickPlayButton:(JSPlayMusicButton *)sender {
     
-    // 正常情况下AVAudioPlayer会根据音乐的后缀来进行类型判断  如果类型后缀错误,可以通过设置fileTypeHint类型帮助iOS系统更好的识别文件类型
-    //[AVAudioPlayer alloc]initWithData:<#(nonnull NSData *)#> fileTypeHint:<#(NSString * _Nullable)#> error:<#(NSError * _Nullable __autoreleasing * _Nullable)#>]
-    
-    // 1. 设置播放音乐的路径
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"马克西姆.姆尔维察 - Croatian Rhapsody.mp3" ofType:nil];
-    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
-    
-    // 2. 创建播放器
-//    _audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:nil];
-    
-    // 3. 准备播放 (音效可以转换为系统的:AudioServicesCreateSystemSoundID,立即就能播放,音乐需要一个缓冲)
-    [_audioPlayer prepareToPlay];
-    
+    switch (sender.buttonType) {
+        case JSPlayButtonTypePlay:
+            [self playButtonClick:sender];
+            break;
+        case JSPlayButtonTypePause:
+            [self pauseButtonClick:sender];
+            break;
+        case JSPlayButtonTypeStop:
+            [self stopButtonClick:sender];
+            break;
+        default:
+            break;
+    }
     
     
 }
+
+
+// 开始播放
+- (void)playButtonClick:(UIButton *)sender {
+    
+    [self.audioPlayer play];
+}
+// 暂停播放
+- (void)pauseButtonClick:(id)sender {
+    
+    [self.audioPlayer pause];
+    
+}
+// 停止播放
+- (void)stopButtonClick:(id)sender {
+    
+    [self.audioPlayer stop];
+}
+
 
 @end

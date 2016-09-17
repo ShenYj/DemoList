@@ -215,7 +215,7 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string>JSPlayMusicViewController</string>
+				<string>JSPlayMusicDemoViewController</string>
 				<key>detail</key>
 				<string>播放音乐</string>
 			</dict>

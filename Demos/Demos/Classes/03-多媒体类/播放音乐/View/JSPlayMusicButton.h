@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <Foundation/Foundation.h>
+
+typedef NS_ENUM(NSUInteger, JSPlayButtonType) {
+    JSPlayButtonTypePlay,
+    JSPlayButtonTypePause,
+    JSPlayButtonTypeStop,
+};
 
 @interface JSPlayMusicButton : UIButton
 
+@property (nonatomic,assign) JSPlayButtonType playButtonType;
 
+@property (nonatomic,strong) AVAudioPlayer *audioPlayer;
 
 @end

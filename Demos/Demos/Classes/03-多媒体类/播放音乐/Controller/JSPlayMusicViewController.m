@@ -36,6 +36,7 @@ static NSString * const reuseId = @"lalalalallalalalala";
     // Do any additional setup after loading the view.
     
     [self prepareView];
+    
 }
 
 - (void)prepareView {

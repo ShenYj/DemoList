@@ -42,6 +42,8 @@
 		F70B903F1D7EE7CF00840F11 /* JSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B903E1D7EE7CF00840F11 /* JSCalendarViewController.m */; };
 		F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90431D7EFE5900840F11 /* JSNavigationButton.m */; };
 		F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */; };
+		F70E9EE31D8D9488003AB9FA /* JSPlayMusicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E9EE21D8D9488003AB9FA /* JSPlayMusicDemoViewController.m */; };
+		F70E9EE91D8D9BC3003AB9FA /* 马克西姆.姆尔维察 - Croatian Rhapsody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F70E9EE81D8D9BC3003AB9FA /* 马克西姆.姆尔维察 - Croatian Rhapsody.mp3 */; };
 		F7146EF61D82C30F00EBE281 /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EE81D82C30F00EBE281 /* libSocialSinaSSO.a */; };
 		F7146EF71D82C30F00EBE281 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */; };
 		F7146EF81D82C30F00EBE281 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7146EF31D82C30F00EBE281 /* WeiboSDK.bundle */; };
@@ -245,6 +247,9 @@
 		F70B90431D7EFE5900840F11 /* JSNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationButton.m; sourceTree = "<group>"; };
 		F70B90451D7F0DB800840F11 /* JSNavigationInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationInfoView.h; sourceTree = "<group>"; };
 		F70B90461D7F0DB800840F11 /* JSNavigationInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationInfoView.m; sourceTree = "<group>"; };
+		F70E9EE11D8D9488003AB9FA /* JSPlayMusicDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlayMusicDemoViewController.h; sourceTree = "<group>"; };
+		F70E9EE21D8D9488003AB9FA /* JSPlayMusicDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlayMusicDemoViewController.m; sourceTree = "<group>"; };
+		F70E9EE81D8D9BC3003AB9FA /* 马克西姆.姆尔维察 - Croatian Rhapsody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "马克西姆.姆尔维察 - Croatian Rhapsody.mp3"; sourceTree = "<group>"; };
 		F7146EE81D82C30F00EBE281 /* libSocialSinaSSO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSinaSSO.a; sourceTree = "<group>"; };
 		F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		F7146EEA1D82C30F00EBE281 /* UMSocialSinaSSOHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaSSOHandler.h; sourceTree = "<group>"; };
@@ -1960,6 +1965,7 @@
 		F79758FC1D742E6C0041A7DC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F70E9EE81D8D9BC3003AB9FA /* 马克西姆.姆尔维察 - Croatian Rhapsody.mp3 */,
 				F79758FD1D742E6C0041A7DC /* buyao.wav */,
 				F79758FE1D742E6C0041A7DC /* chatcome.wav */,
 				F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */,
@@ -2033,6 +2039,8 @@
 		F7CA81621D885C8F00289973 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F70E9EE11D8D9488003AB9FA /* JSPlayMusicDemoViewController.h */,
+				F70E9EE21D8D9488003AB9FA /* JSPlayMusicDemoViewController.m */,
 				F7CA81651D885CBB00289973 /* JSPlayMusicViewController.h */,
 				F7CA81661D885CBB00289973 /* JSPlayMusicViewController.m */,
 				F74203C71D8A4B6100B05A6F /* JSMusciManager.h */,
@@ -2139,6 +2147,7 @@
 				F79759261D742E6C0041A7DC /* 稳稳的幸福.lrc in Resources */,
 				F79759131D742E6C0041A7DC /* chatcome.wav in Resources */,
 				F79759231D742E6C0041A7DC /* 李克勤 - 月半小夜曲.mp3 in Resources */,
+				F70E9EE91D8D9BC3003AB9FA /* 马克西姆.姆尔维察 - Croatian Rhapsody.mp3 in Resources */,
 				F705354D1D818BC500B53BB8 /* UMSCommentInputController.xib in Resources */,
 				F762658F1D71446A0055ECBA /* Main.storyboard in Resources */,
 				F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */,
@@ -2315,6 +2324,7 @@
 				F70B90471D7F0DB800840F11 /* JSNavigationInfoView.m in Sources */,
 				F70447361D8949EB0006ED5A /* MJKBaseView.m in Sources */,
 				F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */,
+				F70E9EE31D8D9488003AB9FA /* JSPlayMusicDemoViewController.m in Sources */,
 				F705355D1D818D4A00B53BB8 /* JSSocialViewController.m in Sources */,
 				F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */,
 				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
