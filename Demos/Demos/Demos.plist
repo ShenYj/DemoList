@@ -190,6 +190,48 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
+				<string>JSSearViewController</string>
+				<key>detail</key>
+				<string>TableViewController和SearchController视图搭建Demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string>demo</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
 				<string></string>
 				<key>detail</key>
 				<string>demo</string>

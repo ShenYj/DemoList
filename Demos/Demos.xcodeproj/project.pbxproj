@@ -711,13 +711,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F70B90251D7E7F9D00840F11 /* UISearchDisplayController */ = {
+		F70B90251D7E7F9D00840F11 /* 自定义视图(UISearchController_1) */ = {
 			isa = PBXGroup;
 			children = (
 				F70B90261D7E7F9D00840F11 /* Controller */,
 				F70B90291D7E7F9D00840F11 /* Model */,
 				F70B902A1D7E7F9D00840F11 /* View */,
 			);
+			name = "自定义视图(UISearchController_1)";
 			path = UISearchDisplayController;
 			sourceTree = "<group>";
 		};
@@ -1645,8 +1646,8 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F70B90251D7E7F9D00840F11 /* 自定义视图(UISearchController_1) */,
 				F70447221D8948C10006ED5A /* 交互 */,
-				F70B90251D7E7F9D00840F11 /* UISearchDisplayController */,
 				F743A8921D7DB0E400576254 /* 地图使用 */,
 				F718BB811D80F9B40001CDC0 /* 百度地图演练 */,
 				F718BBE11D8160570001CDC0 /* 系统分享 */,
