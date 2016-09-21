@@ -58,6 +58,8 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
               @{@"category":@"Other", @"name":@"Gummi Bear3"}
               ];
     
+
+    
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     
     

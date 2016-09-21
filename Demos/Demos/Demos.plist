@@ -190,9 +190,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string>JSSearViewController</string>
+				<string>JSPopoverViewController</string>
 				<key>detail</key>
-				<string>TableViewController和SearchController视图搭建Demo</string>
+				<string>Popover展示</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
