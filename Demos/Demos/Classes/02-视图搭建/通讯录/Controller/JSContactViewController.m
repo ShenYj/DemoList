@@ -10,6 +10,9 @@
 #import "JSContactLabel.h"
 #import "JSContactModel.h"
 #import <ContactsUI/ContactsUI.h>
+#import <Contacts/Contacts.h>
+
+
 
 
 static NSString * const reuseID = @"abc";
