@@ -60,6 +60,8 @@
     
     // 设置modal样式
     self.menum.modalPresentationStyle = UIModalPresentationPopover;
+    // 设置Popover控制器的尺寸
+    self.menum.preferredContentSize = CGSizeMake(100, 200);
     // 从目标控制器中获取Popover对象
     UIPopoverPresentationController *popover = self.menum.popoverPresentationController;
     
@@ -75,6 +77,7 @@
     } else {
         
         popover.barButtonItem = sender;
+        
     }
     // Popover展示
     [self presentViewController:self.menum animated:YES completion:nil];
