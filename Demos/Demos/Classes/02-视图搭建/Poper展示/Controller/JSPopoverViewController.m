@@ -20,7 +20,6 @@
 @implementation JSPopoverViewController
 
 
-
 /**
  iPhone下Popover默认进行全屏展示,原因iOS系统对modal展示进行了界面自适应
  解决方法: 取消界面自适应,设置代理 <UIAdaptivePresentationControllerDelegate>协议
@@ -69,7 +68,9 @@
     // 判断来源视图类型(BarButtonItem类型和非BarButtonItem类型)
     if ([sender isKindOfClass:[UIButton class]]) {
         
-        popover.sourceView = sender;
+        UIButton *button = (UIButton *)sender;
+        popover.sourceView = button;
+        popover.sourceRect = button.bounds;
         
     } else {
         
