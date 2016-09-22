@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) JSMenum *menum;
 @property (nonatomic,strong) UIButton *button;
+@property (nonatomic,strong) UILabel *detail;
 
 @end
 
@@ -47,11 +48,17 @@
     self.view.backgroundColor = [UIColor js_randomColor];
     
     [self.view addSubview:self.button];
+    [self.view addSubview:self.detail];
+    
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.view).mas_offset(-200);
         make.centerX.mas_equalTo(self.view);
     }];
     
+    [self.detail mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.button.mas_bottom).mas_offset(10);
+        make.left.right.bottom.mas_equalTo(self.view);
+    }];
 }
 
 
@@ -116,6 +123,20 @@
     }
     return _button;
 }
+
+- (UILabel *)detail {
+
+    if (_detail == nil) {
+        _detail = [[UILabel alloc] init];
+        _detail.textAlignment = NSTextAlignmentCenter;
+        _detail.font = [UIFont systemFontOfSize:16];
+        _detail.textColor = [UIColor js_randomColor];
+        _detail.numberOfLines = 0;
+        _detail.text = @"1.iPhone上设置Modal样式为Popover,系统会自动进行适配\n,需要通过设置代理手动取消系统的自动适配\n设置代理时,需要使用UIPopoverPresentationControllerDelegate的父协议(UIAdaptivePresentationControllerDelegate)中的代理方法\n2.Popover的来源视图控制器分为两种:\nBarButtonItem(设置barButtonItem属性)\n非BarButtonItem(设置sourceView属性)\n3.当来源视图为非BarButtonItem时,参考点默认是来源视图的左上角,设置sourceRect属性为来源视图的bounds后,将以来源视图的中心作为参考点,BarButtonItem不需要设置参考点\n4.获取Popover对象前必须先要设置Modal展示样式为Popover,否则取出值为nil\n";
+    }
+    return _detail;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
