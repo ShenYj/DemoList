@@ -39,13 +39,7 @@
 - (void)prepareView {
     
     self.view.backgroundColor = [UIColor orangeColor];
-    
-    self.userName_TF.borderStyle = UITextBorderStyleNone;
-    self.userName_TF.clearButtonMode = UITextFieldViewModeWhileEditing;
-    self.userName_TF.secureTextEntry = NO;
-    self.password_TF.clearButtonMode = UITextFieldViewModeWhileEditing;
-    self.password_TF.borderStyle = UITextBorderStyleNone;
-    self.password_TF.secureTextEntry = YES;
+
     
     // 设置TextField的左右视图
     self.userName_TF.leftView = self.leftView_UN;
@@ -173,12 +167,26 @@
     
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    [textField becomeFirstResponder];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+}
+
 #pragma mark - lazy
 
 - (UITextField *)userName_TF {
     
     if (_userName_TF == nil) {
         _userName_TF = [[UITextField alloc] init];
+        _userName_TF.borderStyle = UITextBorderStyleNone;
+        _userName_TF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _userName_TF.secureTextEntry = NO;
+        _userName_TF.autocapitalizationType = UITextAutocapitalizationTypeNone;
         _userName_TF.delegate = self;
     }
     return _userName_TF;
@@ -188,6 +196,10 @@
     
     if (_password_TF == nil) {
         _password_TF = [[UITextField alloc] init];
+        _password_TF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _password_TF.borderStyle = UITextBorderStyleNone;
+        _password_TF.secureTextEntry = YES;
+        _password_TF.autocapitalizationType = UITextAutocapitalizationTypeNone;
         _password_TF.delegate = self;
     }
     return _password_TF;
@@ -275,7 +287,7 @@
         _detailLabel.textColor = [UIColor purpleColor];
         _detailLabel.numberOfLines = 0;
         _detailLabel.textAlignment = NSTextAlignmentCenter;
-        _detailLabel.text = @"自定义UITextField的LeftView和RightView\n没有对应的图片所以随便设置的\n账号列表使用的是Popover进行实现";
+        _detailLabel.text = @"自定义UITextField的LeftView和RightView\n没有对应的图片所以随便设置的\n账号列表使用的是Popover进行实现\n账号和密码分别作了长度限制:\n账号10位,密码12位\n";
     }
     return _detailLabel;
 }
