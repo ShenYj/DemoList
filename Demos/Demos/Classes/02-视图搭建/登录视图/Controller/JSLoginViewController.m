@@ -124,6 +124,25 @@
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    for (UITouch *touch in touches) {
+        
+        CGPoint point = [touch locationInView:self.view];
+        
+        if ( !CGRectContainsPoint(self.userName_TF.frame, point) ) {
+            
+            [self.userName_TF resignFirstResponder];
+        }
+        
+        if (!CGRectContainsPoint(self.password_TF.frame, point)) {
+            
+            [self.password_TF resignFirstResponder];
+        }
+        
+    }
+}
+
 
 #pragma mark - target
 
@@ -172,10 +191,10 @@
     [textField becomeFirstResponder];
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    
-    [textField resignFirstResponder];
-}
+//- (void)textFieldDidEndEditing:(UITextField *)textField {
+//    
+//    [textField resignFirstResponder];
+//}
 
 #pragma mark - lazy
 
