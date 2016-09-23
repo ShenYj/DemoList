@@ -150,6 +150,9 @@
 		F76265AF1D7145A40055ECBA /* UIView+JSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265A71D7145A40055ECBA /* UIView+JSFrame.m */; };
 		F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B21D71466F0055ECBA /* JSRootViewController.m */; };
 		F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76265B51D7147EA0055ECBA /* JSTableViewController.m */; };
+		F786952E1D950B640075C603 /* JSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F786952D1D950B640075C603 /* JSLoginViewController.m */; };
+		F78695311D950BB00075C603 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = F78695301D950BB00075C603 /* LeftView.m */; };
+		F78695341D950BB80075C603 /* UserNameListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78695331D950BB80075C603 /* UserNameListTableViewController.m */; };
 		F79759121D742E6C0041A7DC /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FD1D742E6C0041A7DC /* buyao.wav */; };
 		F79759131D742E6C0041A7DC /* chatcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79758FE1D742E6C0041A7DC /* chatcome.wav */; };
 		F79759141D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */; };
@@ -444,6 +447,12 @@
 		F76265B21D71466F0055ECBA /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewController.m; sourceTree = "<group>"; };
 		F76265B41D7147EA0055ECBA /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
 		F76265B51D7147EA0055ECBA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
+		F786952C1D950B640075C603 /* JSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewController.h; sourceTree = "<group>"; };
+		F786952D1D950B640075C603 /* JSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewController.m; sourceTree = "<group>"; };
+		F786952F1D950BB00075C603 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		F78695301D950BB00075C603 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		F78695321D950BB80075C603 /* UserNameListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameListTableViewController.h; sourceTree = "<group>"; };
+		F78695331D950BB80075C603 /* UserNameListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameListTableViewController.m; sourceTree = "<group>"; };
 		F79758FD1D742E6C0041A7DC /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
 		F79758FE1D742E6C0041A7DC /* chatcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chatcome.wav; sourceTree = "<group>"; };
 		F79758FF1D742E6C0041A7DC /* G.E.M. 邓紫棋 - 泡沫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G.E.M. 邓紫棋 - 泡沫.mp3"; sourceTree = "<group>"; };
@@ -1688,6 +1697,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F78695281D950B400075C603 /* 登录视图 */,
 				F72691C71D92B766004EBE47 /* Popover展示 */,
 				F70B90251D7E7F9D00840F11 /* 自定义视图(UISearchController_1) */,
 				F70447221D8948C10006ED5A /* 交互 */,
@@ -2006,6 +2016,43 @@
 			path = "UIKit+JSExtension";
 			sourceTree = "<group>";
 		};
+		F78695281D950B400075C603 /* 登录视图 */ = {
+			isa = PBXGroup;
+			children = (
+				F78695291D950B400075C603 /* Controller */,
+				F786952A1D950B400075C603 /* Model */,
+				F786952B1D950B400075C603 /* View */,
+			);
+			path = "登录视图";
+			sourceTree = "<group>";
+		};
+		F78695291D950B400075C603 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F786952C1D950B640075C603 /* JSLoginViewController.h */,
+				F786952D1D950B640075C603 /* JSLoginViewController.m */,
+				F78695321D950BB80075C603 /* UserNameListTableViewController.h */,
+				F78695331D950BB80075C603 /* UserNameListTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F786952A1D950B400075C603 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F786952B1D950B400075C603 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F786952F1D950BB00075C603 /* LeftView.h */,
+				F78695301D950BB00075C603 /* LeftView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F79758FC1D742E6C0041A7DC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -2288,6 +2335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */,
+				F786952E1D950B640075C603 /* JSLoginViewController.m in Sources */,
 				F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */,
 				F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */,
 				F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */,
@@ -2336,6 +2384,7 @@
 				F743A8C01D7DB0E400576254 /* JSSparkViewController.m in Sources */,
 				F743A8BD1D7DB0E400576254 /* JSFriendsModel.m in Sources */,
 				F745C25F1D7AC44900DFC2B1 /* NSObject+JSObjc.m in Sources */,
+				F78695311D950BB00075C603 /* LeftView.m in Sources */,
 				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
 				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
 				F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */,
@@ -2358,6 +2407,7 @@
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
 				F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */,
 				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
+				F78695341D950BB80075C603 /* UserNameListTableViewController.m in Sources */,
 				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,

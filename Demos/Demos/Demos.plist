@@ -196,9 +196,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSLoginViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>普通方式实现登录界面的账号密码框搭建</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
