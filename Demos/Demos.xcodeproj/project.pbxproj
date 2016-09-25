@@ -70,6 +70,8 @@
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
 		F72691CD1D92B78D004EBE47 /* JSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72691CC1D92B78D004EBE47 /* JSPopoverViewController.m */; };
 		F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */ = {isa = PBXBuildFile; fileRef = F72691CF1D92BDE9004EBE47 /* JSMenum.m */; };
+		F731D1D21D97F989001C7B72 /* JSPopoverLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F731D1D11D97F989001C7B72 /* JSPopoverLoginViewController.m */; };
+		F731D1D81D97F9DF001C7B72 /* PopoverBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F731D1D71D97F9DF001C7B72 /* PopoverBackGroundView.m */; };
 		F74203C91D8A4B6100B05A6F /* JSMusciManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203C81D8A4B6100B05A6F /* JSMusciManager.m */; };
 		F74203D01D8A62A400B05A6F /* JSMobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203CF1D8A62A400B05A6F /* JSMobViewController.m */; };
 		F74203D91D8A68D100B05A6F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203D81D8A68D100B05A6F /* libicucore.tbd */; };
@@ -299,6 +301,10 @@
 		F72691CC1D92B78D004EBE47 /* JSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPopoverViewController.m; sourceTree = "<group>"; };
 		F72691CE1D92BDE9004EBE47 /* JSMenum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenum.h; sourceTree = "<group>"; };
 		F72691CF1D92BDE9004EBE47 /* JSMenum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenum.m; sourceTree = "<group>"; };
+		F731D1D01D97F989001C7B72 /* JSPopoverLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPopoverLoginViewController.h; sourceTree = "<group>"; };
+		F731D1D11D97F989001C7B72 /* JSPopoverLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPopoverLoginViewController.m; sourceTree = "<group>"; };
+		F731D1D61D97F9DF001C7B72 /* PopoverBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverBackGroundView.h; sourceTree = "<group>"; };
+		F731D1D71D97F9DF001C7B72 /* PopoverBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverBackGroundView.m; sourceTree = "<group>"; };
 		F74203C71D8A4B6100B05A6F /* JSMusciManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMusciManager.h; sourceTree = "<group>"; };
 		F74203C81D8A4B6100B05A6F /* JSMusciManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMusciManager.m; sourceTree = "<group>"; };
 		F74203CE1D8A62A400B05A6F /* JSMobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMobViewController.h; sourceTree = "<group>"; };
@@ -925,6 +931,41 @@
 			children = (
 				F72691CE1D92BDE9004EBE47 /* JSMenum.h */,
 				F72691CF1D92BDE9004EBE47 /* JSMenum.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F731D1CC1D97F95C001C7B72 /* 登录视图(Popover) */ = {
+			isa = PBXGroup;
+			children = (
+				F731D1CD1D97F95C001C7B72 /* Controller */,
+				F731D1CE1D97F95C001C7B72 /* Model */,
+				F731D1CF1D97F95C001C7B72 /* View */,
+			);
+			path = "登录视图(Popover)";
+			sourceTree = "<group>";
+		};
+		F731D1CD1D97F95C001C7B72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F731D1D01D97F989001C7B72 /* JSPopoverLoginViewController.h */,
+				F731D1D11D97F989001C7B72 /* JSPopoverLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F731D1CE1D97F95C001C7B72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F731D1CF1D97F95C001C7B72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F731D1D61D97F9DF001C7B72 /* PopoverBackGroundView.h */,
+				F731D1D71D97F9DF001C7B72 /* PopoverBackGroundView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1697,6 +1738,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F731D1CC1D97F95C001C7B72 /* 登录视图(Popover) */,
 				F78695281D950B400075C603 /* 登录视图 */,
 				F72691C71D92B766004EBE47 /* Popover展示 */,
 				F70B90251D7E7F9D00840F11 /* 自定义视图(UISearchController_1) */,
@@ -2340,6 +2382,7 @@
 				F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */,
 				F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */,
 				F70447381D8949EB0006ED5A /* MJKGreenView.m in Sources */,
+				F731D1D21D97F989001C7B72 /* JSPopoverLoginViewController.m in Sources */,
 				F743A89B1D7DB0E400576254 /* JSAppsTableController.m in Sources */,
 				F743A8BE1D7DB0E400576254 /* JSFooterView.m in Sources */,
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
@@ -2407,6 +2450,7 @@
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
 				F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */,
 				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
+				F731D1D81D97F9DF001C7B72 /* PopoverBackGroundView.m in Sources */,
 				F78695341D950BB80075C603 /* UserNameListTableViewController.m in Sources */,
 				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,

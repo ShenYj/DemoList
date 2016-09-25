@@ -198,13 +198,13 @@
 				<key>targetControllerClass</key>
 				<string>JSLoginViewController</string>
 				<key>detail</key>
-				<string>普通方式实现登录界面的账号密码框搭建</string>
+				<string>用户登录界面,预先布局好控件,通过显示隐藏控件的效果,实现账号选择列表的弹出和收起效果</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSPopoverLoginViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>用户登录界面, Popover的使用(自定义视图 , Popover外侧视图交互的设置等),通过设置Modal展示样式为Popover实现账号列表的弹出和收起</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
