@@ -19,13 +19,12 @@
 @property (nonatomic) UITextField *password_TF;
 @property (nonatomic) LeftView *leftView_UN;
 @property (nonatomic) LeftView *leftView_PW;
-@property (nonatomic) UIButton *userNameListButton; // 显示账号列号
+@property (nonatomic) UIButton *userNameListButton; // 显示账号列表
 @property (nonatomic) UIButton *showPassWordButton; // 显示密码明文
 @property (nonatomic) UserNameListTableViewController *nameList;
 @property (nonatomic) UILabel *detailLabel;
 @property (nonatomic) UIView *border_UN;
 @property (nonatomic) UIView *border_PW;
-
 @end
 
 @implementation JSLoginViewController
@@ -130,17 +129,48 @@
         
         CGPoint point = [touch locationInView:self.view];
         
+        // 当点击屏幕的点不在账号框内时
         if ( !CGRectContainsPoint(self.userName_TF.frame, point) ) {
             
             [self.userName_TF resignFirstResponder];
+            
+            // 当展开账户列表情况下(列表显示状态),点击屏幕后
+            if (!self.nameList.tableView.isHidden) {
+                
+                [self clickButton:self.userNameListButton];
+            }
+            
+        } else {
+            
+            //点击屏幕后,如果点在账号输入框内时
+            if ( !self.nameList.tableView.isHidden) {
+                
+                [self clickButton:self.userNameListButton];
+            }
+            
         }
         
+        // 当点击屏幕的点不在密码框内时
         if (!CGRectContainsPoint(self.password_TF.frame, point)) {
             
             [self.password_TF resignFirstResponder];
         }
         
+        
+        
+        // 当展开账户列表情况下(列表显示状态),点击屏幕后,如果点不在账号列表内时
+//        if ( !self.nameList.tableView.isHidden && !CGRectContainsPoint(self.nameList.tableView.frame, point) ) {
+//            
+//            [self clickButton:self.userNameListButton];
+//            
+//        }
+        // 当展开账户列表情况下(列表显示状态),
+//        if ( !self.nameList.tableView.isHidden && CGRectContainsPoint(self.userName_TF.frame, point)) {
+//            
+//            [self clickButton:self.userNameListButton];
+//        }
     }
+    
 }
 
 
@@ -148,6 +178,7 @@
 
 - (void)clickButton:(UIButton *)sender {
     
+    // 设置按钮的选中(调整图片方向)
     sender.selected = !sender.isSelected;
     
     if (sender.tag == 1001) {
@@ -188,7 +219,10 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     
+    self.nameList.tableView.hidden = YES;
+    self.userNameListButton.selected = NO;
     [textField becomeFirstResponder];
+    
 }
 
 //- (void)textFieldDidEndEditing:(UITextField *)textField {
