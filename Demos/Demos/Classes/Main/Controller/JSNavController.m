@@ -26,6 +26,13 @@
     
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [super pushViewController:viewController animated:animated];
+    // 通过此方式设置后,当push到下级控制器后,全部隐藏导航条
+    //[self.navigationBar setHidden:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
