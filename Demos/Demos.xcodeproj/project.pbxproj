@@ -391,8 +391,8 @@
 		F743A8791D7DB0E400576254 /* JSSparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSparkViewController.m; sourceTree = "<group>"; };
 		F743A87E1D7DB0E400576254 /* JSLoopRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopRootViewController.h; sourceTree = "<group>"; };
 		F743A87F1D7DB0E400576254 /* JSLoopRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopRootViewController.m; sourceTree = "<group>"; };
-		F743A8801D7DB0E400576254 /* JSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopView.h; sourceTree = "<group>"; };
-		F743A8811D7DB0E400576254 /* JSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoopView.m; sourceTree = "<group>"; };
+		F743A8801D7DB0E400576254 /* JSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSLoopView.h; path = ../Controller/JSLoopView.h; sourceTree = "<group>"; };
+		F743A8811D7DB0E400576254 /* JSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSLoopView.m; path = ../Controller/JSLoopView.m; sourceTree = "<group>"; };
 		F743A8841D7DB0E400576254 /* JSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLayout.h; sourceTree = "<group>"; };
 		F743A8851D7DB0E400576254 /* JSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLayout.m; sourceTree = "<group>"; };
 		F743A8861D7DB0E400576254 /* JSLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoopViewCell.h; sourceTree = "<group>"; };
@@ -1675,8 +1675,6 @@
 			children = (
 				F743A87E1D7DB0E400576254 /* JSLoopRootViewController.h */,
 				F743A87F1D7DB0E400576254 /* JSLoopRootViewController.m */,
-				F743A8801D7DB0E400576254 /* JSLoopView.h */,
-				F743A8811D7DB0E400576254 /* JSLoopView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1691,6 +1689,8 @@
 		F743A8831D7DB0E400576254 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F743A8801D7DB0E400576254 /* JSLoopView.h */,
+				F743A8811D7DB0E400576254 /* JSLoopView.m */,
 				F743A8841D7DB0E400576254 /* JSLayout.h */,
 				F743A8851D7DB0E400576254 /* JSLayout.m */,
 				F743A8861D7DB0E400576254 /* JSLoopViewCell.h */,

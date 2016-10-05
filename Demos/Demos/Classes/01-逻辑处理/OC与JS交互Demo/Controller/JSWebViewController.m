@@ -43,8 +43,6 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     self.webView.delegate = self;
     
-    
-    
 }
 
 #pragma mark - 拦截URL后执行的OC方法

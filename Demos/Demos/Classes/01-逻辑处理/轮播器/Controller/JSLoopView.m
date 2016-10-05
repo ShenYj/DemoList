@@ -14,13 +14,14 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 
 @implementation JSLoopView{
 
-    NSArray <NSURL *> *_data;           // 数据
+    NSArray <NSURL *> *_data;            // 数据
     NSTimer           *_timer;           // 定时器
 }
 
 - (instancetype)initWithUrlArr:(NSArray <NSURL *> *)urls{
     self = [super initWithFrame:CGRectZero collectionViewLayout:[[JSLayout alloc] init]];
     if (self) {
+        
         
         _data = urls;
         [self prepareView];
