@@ -32,17 +32,21 @@ static NSString *reuseId = @"friends";
     
     self.tableView.estimatedRowHeight = 250;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    
+    // 自定义一个BackgroundView
     UIView *backgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height)];
-    
+    // 在自定义的BackgroundView中添加一个图片框UIImageView
     UIImageView *imageView = [[UIImageView alloc]init];
     self.imageView = imageView;
     imageView.image = [UIImage imageNamed:@"headerView"];
+    
+    // 自定义一个空的HeaderView占位使用
     UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, 200)];
     
+    // 将图片框UIImageView添加到自定义的BackgroundView中
     [backgroundView addSubview:imageView];
     imageView.frame = CGRectMake(0, 0, SCREEN_SIZE.width, 200);
     
+    // 给TableView设置自定义的Background和HeaderView
     self.tableView.backgroundView = backgroundView;
     self.tableView.tableHeaderView = headView;
     

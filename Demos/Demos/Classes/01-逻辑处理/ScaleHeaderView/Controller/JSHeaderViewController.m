@@ -8,7 +8,6 @@
 
 #import "JSHeaderViewController.h"
 
-
 #define kHeaderHeight 200
 
 @interface JSHeaderViewController () <UITableViewDelegate,UITableViewDataSource>
