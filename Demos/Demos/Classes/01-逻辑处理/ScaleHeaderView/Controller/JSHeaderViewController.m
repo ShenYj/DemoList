@@ -146,10 +146,11 @@ static NSString * const reuseId = @"Identifier";
     
     CGFloat offSetY = scrollView.contentOffset.y + scrollView.contentInset.top;
 
+    // 向上拉动表格
     if (offSetY > 0) {
 
         _headerView.h = kHeaderHeight;
-        _headerImageView.h = _headerView.h;
+        //_headerImageView.h = _headerView.h;
         
         // _headerView 滚动后的最小y值
         CGFloat minY = kHeaderHeight - 64;
@@ -182,18 +183,21 @@ static NSString * const reuseId = @"Identifier";
         // 手动更新状态栏状态
         [self.navigationController setNeedsStatusBarAppearanceUpdate];
         
-    }else {
+    } else {  // 向下拉动表格
 
         // 调整HeaderView和HeaderImageView
         _headerImageView.alpha = 1;
         _headerView.y = 0;
         _headerView.h = kHeaderHeight - offSetY;
-        _headerImageView.h = _headerView.h;
+        //_headerImageView.h = _headerView.h;
         
         // 设置导航栏按钮透明度
         //self.navigationButton.alpha = 0.01;
 
     }
+    
+    // 设置头视图中的UIImageView高度
+    _headerImageView.h = _headerView.h;
     
     // 设置分割线的Y轴坐标,随着顶部视图的放大而向下偏移
     _lineView.y = _headerView.h - _lineView.h;
