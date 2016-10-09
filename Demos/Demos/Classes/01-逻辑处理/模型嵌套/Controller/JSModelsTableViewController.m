@@ -31,7 +31,7 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.sectionFooterHeight = 0;
+    //self.tableView.sectionFooterHeight = 0;
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseIdentifier];
     
@@ -90,9 +90,9 @@ static NSString * const reuseIdentifier = @"reuseIdentifier";
     return headerView;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 44;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 44;
+//}
 
 
 - (BOOL)prefersStatusBarHidden{
