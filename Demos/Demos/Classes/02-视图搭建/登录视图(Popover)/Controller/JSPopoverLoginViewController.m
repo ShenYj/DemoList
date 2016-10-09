@@ -14,7 +14,7 @@
 #import "LeftView.h"
 #import "UserNameListTableViewController.h"
 
-@interface JSPopoverLoginViewController () <UIPopoverPresentationControllerDelegate>
+@interface JSPopoverLoginViewController () <UIPopoverPresentationControllerDelegate,UITextFieldDelegate>
 
 @property (nonatomic) UITextField *userName_TF;
 @property (nonatomic) UITextField *password_TF;

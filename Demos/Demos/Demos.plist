@@ -208,9 +208,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSBlurViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>iOS 8新API视觉视效(毛玻璃,内容鲜活)演示</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

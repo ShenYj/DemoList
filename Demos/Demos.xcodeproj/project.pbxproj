@@ -48,6 +48,7 @@
 		F7146EF71D82C30F00EBE281 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EE91D82C30F00EBE281 /* libWeiboSDK.a */; };
 		F7146EF81D82C30F00EBE281 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7146EF31D82C30F00EBE281 /* WeiboSDK.bundle */; };
 		F7146EFA1D82C32A00EBE281 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7146EF91D82C32A00EBE281 /* ImageIO.framework */; };
+		F715AC171DAA75C70019F6DE /* JSBlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F715AC141DAA75C70019F6DE /* JSBlurViewController.m */; };
 		F718BB871D80F9C40001CDC0 /* JSBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */; };
 		F718BB8C1D8106F20001CDC0 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */; };
 		F718BB8D1D8106F20001CDC0 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8B1D8106F20001CDC0 /* BaiduMapAPI_Map.framework */; };
@@ -272,6 +273,8 @@
 		F7146EF41D82C30F00EBE281 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		F7146EF51D82C30F00EBE281 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
 		F7146EF91D82C32A00EBE281 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F715AC131DAA75C70019F6DE /* JSBlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBlurViewController.h; sourceTree = "<group>"; };
+		F715AC141DAA75C70019F6DE /* JSBlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBlurViewController.m; sourceTree = "<group>"; };
 		F718BB851D80F9C40001CDC0 /* JSBaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaiduMapViewController.h; sourceTree = "<group>"; };
 		F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaiduMapViewController.m; sourceTree = "<group>"; };
 		F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
@@ -818,6 +821,39 @@
 				F7146EF51D82C30F00EBE281 /* WeiboUser.h */,
 			);
 			path = SinaSSO;
+			sourceTree = "<group>";
+		};
+		F715AC111DAA75C70019F6DE /* 视效 */ = {
+			isa = PBXGroup;
+			children = (
+				F715AC121DAA75C70019F6DE /* Controller */,
+				F715AC151DAA75C70019F6DE /* Model */,
+				F715AC161DAA75C70019F6DE /* View */,
+			);
+			path = "视效";
+			sourceTree = "<group>";
+		};
+		F715AC121DAA75C70019F6DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F715AC131DAA75C70019F6DE /* JSBlurViewController.h */,
+				F715AC141DAA75C70019F6DE /* JSBlurViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F715AC151DAA75C70019F6DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F715AC161DAA75C70019F6DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F718BB811D80F9B40001CDC0 /* 百度地图演练 */ = {
@@ -1738,6 +1774,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F715AC111DAA75C70019F6DE /* 视效 */,
 				F731D1CC1D97F95C001C7B72 /* 登录视图(Popover) */,
 				F78695281D950B400075C603 /* 登录视图 */,
 				F72691C71D92B766004EBE47 /* Popover展示 */,
@@ -2434,6 +2471,7 @@
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
+				F715AC171DAA75C70019F6DE /* JSBlurViewController.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
 				F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
