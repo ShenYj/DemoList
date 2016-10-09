@@ -123,9 +123,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSQRCodeViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>生成二维码(CIFilter)</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
