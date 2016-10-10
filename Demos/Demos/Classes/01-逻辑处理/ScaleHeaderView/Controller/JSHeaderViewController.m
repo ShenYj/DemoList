@@ -54,15 +54,14 @@ static NSString * const reuseId = @"Identifier";
     
     _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kHeaderHeight)];
     
+    // 设置顶部视图背景色 等于 导航栏背景色
+    _headerView.backgroundColor = [UIColor js_RGBColorWithRed:248 withGreen:248 withBlue:248];
+    
     [self.view addSubview:_headerView];
     
     // 顶部视图添加UIImageView
     _headerImageView = [[UIImageView alloc] initWithFrame:_headerView.bounds];
-    
     [_headerView addSubview:_headerImageView];
-    
-    // 设置顶部视图背景色 等于 导航栏背景色
-    _headerView.backgroundColor = [UIColor js_RGBColorWithRed:248 withGreen:248 withBlue:248];
     
     // 设置图像 (使用图片需要考虑性能优化)
     UIImage *image = [UIImage imageNamed:@"headerView"];

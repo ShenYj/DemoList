@@ -129,9 +129,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSChangeSkinViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>换肤(运行时)</string>
 			</dict>
 		</array>
 	</dict>
