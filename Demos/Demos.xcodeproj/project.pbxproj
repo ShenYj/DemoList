@@ -52,6 +52,7 @@
 		F715AC1E1DAA7CED0019F6DE /* JSQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F715AC1D1DAA7CED0019F6DE /* JSQRCodeViewController.m */; };
 		F715AC251DAB3C9F0019F6DE /* JSChangeSkinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F715AC241DAB3C9F0019F6DE /* JSChangeSkinViewController.m */; };
 		F715AC281DAB3CD80019F6DE /* UIImage+JSSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = F715AC271DAB3CD80019F6DE /* UIImage+JSSkin.m */; };
+		F715AC3A1DAB530F0019F6DE /* skin in Resources */ = {isa = PBXBuildFile; fileRef = F715AC391DAB530F0019F6DE /* skin */; };
 		F718BB871D80F9C40001CDC0 /* JSBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */; };
 		F718BB8C1D8106F20001CDC0 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */; };
 		F718BB8D1D8106F20001CDC0 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718BB8B1D8106F20001CDC0 /* BaiduMapAPI_Map.framework */; };
@@ -284,6 +285,7 @@
 		F715AC241DAB3C9F0019F6DE /* JSChangeSkinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSChangeSkinViewController.m; sourceTree = "<group>"; };
 		F715AC261DAB3CD80019F6DE /* UIImage+JSSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSSkin.h"; sourceTree = "<group>"; };
 		F715AC271DAB3CD80019F6DE /* UIImage+JSSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSSkin.m"; sourceTree = "<group>"; };
+		F715AC391DAB530F0019F6DE /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
 		F718BB851D80F9C40001CDC0 /* JSBaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaiduMapViewController.h; sourceTree = "<group>"; };
 		F718BB861D80F9C40001CDC0 /* JSBaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaiduMapViewController.m; sourceTree = "<group>"; };
 		F718BB8A1D8106F20001CDC0 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
@@ -920,6 +922,7 @@
 		F715AC211DAB3C8B0019F6DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F715AC391DAB530F0019F6DE /* skin */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2434,6 +2437,7 @@
 				F719BFC81D75976800015113 /* Demos.plist in Resources */,
 				F743A8981D7DB0E400576254 /* JS与OC交互Demo.html in Resources */,
 				F743A8BC1D7DB0E400576254 /* friends.plist in Resources */,
+				F715AC3A1DAB530F0019F6DE /* skin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

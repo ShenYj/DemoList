@@ -12,6 +12,7 @@
  */
 
 
+#import "UIImage+JSSkin.h"
 #import "JSChangeSkinViewController.h"
 
 @interface JSChangeSkinViewController ()
@@ -33,21 +34,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view
     
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    self.isNightSwitch.on = [userDefault boolForKey:@"isNight"];
+    // 获取当前皮肤模式,同步Switch状态
+    self.isNightSwitch.on = [UIImage isNight];
     
     // 准备视图
     [self prepareView];
     
     // 设置图片
-    [self downImageWithFlag:self.isNightSwitch.isOn];
-    
-    
+    self.picImageView.image = [UIImage imageNamed:@"image"];
+    self.view.backgroundColor = [UIImage loadColorWithKey:@"one_view_bg"];
+    self.detailLabel.textColor = [UIImage loadColorWithKey:@"vc_label_text"];
 }
 
-- (void)prepareView {
+
+
+#pragma mark
+#pragma mark - target
+
+- (void)clickIsNightSwitch:(UISwitch *)isNight {
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    // 本地化存储(偏好设置)
+    [UIImage saveSkinModeWithNight:isNight.isOn];
+    // 设置图片
+    self.picImageView.image = [UIImage imageNamed:@"image"];
+    self.view.backgroundColor = [UIImage loadColorWithKey:@"one_view_bg"];
+    self.detailLabel.textColor = [UIImage loadColorWithKey:@"vc_label_text"];
+}
+
+
+- (void)prepareView {
     
     [self.view addSubview:self.picImageView];
     [self.view addSubview:self.isNightSwitch];
@@ -73,75 +88,9 @@
     
 }
 
-- (void)downImageWithFlag:(BOOL)isNight {
-    
-    [[NSUserDefaults standardUserDefaults] setBool:isNight forKey:@"isNight"];
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        NSURL *url_Night = [NSURL URLWithString:@"http://hbimg.b0.upaiyun.com/f4b2f8d83014dd460cdb4d0712210f5fbb5caf211e424-z32BlP_fw658"];
-        NSURL *url_Light = [NSURL URLWithString:@"http://hbimg.b0.upaiyun.com/4225f0168f6b9b54d771a042606010efbd5de19f9be28-t8umOo_fw658"];
-        NSData *imageData = nil;
-        
-        if (isNight) {
-            
-            imageData = [NSData dataWithContentsOfURL:url_Night];
-            
-        } else {
-            
-            imageData = [NSData dataWithContentsOfURL:url_Light];
-        }
-        
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            // 设置图片
-            self.picImageView.image = [UIImage imageWithData:imageData];
-        });
-        
-        
-    });
-    
-    
-}
 
 
 
-
-#pragma mark 
-#pragma mark - target
-
-- (void)clickIsNightSwitch:(UISwitch *)isNight {
-    
-    [[NSUserDefaults standardUserDefaults] setBool:isNight.isOn forKey:@"isNight"];
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        NSURL *url_Night = [NSURL URLWithString:@"http://hbimg.b0.upaiyun.com/f4b2f8d83014dd460cdb4d0712210f5fbb5caf211e424-z32BlP_fw658"];
-        NSURL *url_Light = [NSURL URLWithString:@"http://hbimg.b0.upaiyun.com/4225f0168f6b9b54d771a042606010efbd5de19f9be28-t8umOo_fw658"];
-        NSData *imageData = nil;
-        
-        if (isNight.isOn) {
-            
-            imageData = [NSData dataWithContentsOfURL:url_Night];
-            
-        } else {
-            
-            imageData = [NSData dataWithContentsOfURL:url_Light];
-        }
-        
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            // 设置图片
-            self.picImageView.image = [UIImage imageWithData:imageData];
-        });
-        
-        
-    });
-
-    
-}
 
 #pragma mark 
 #pragma mark - lazy
