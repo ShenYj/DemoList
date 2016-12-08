@@ -263,7 +263,7 @@
     if (_leftView_UN == nil) {
         _leftView_UN = [[LeftView alloc] init];
         _leftView_UN.title = @"账号:";
-        _leftView_UN.imageName = @"v2_my";
+        _leftView_UN.imageName = @"v2_my.jpg";
     }
     return _leftView_UN;
 }
@@ -273,7 +273,7 @@
     if (_leftView_PW == nil) {
         _leftView_PW = [[LeftView alloc] init];
         _leftView_PW.title = @"密码:";
-        _leftView_PW.imageName = @"v2_order";
+        _leftView_PW.imageName = @"v2_order.jpg";
     }
     return _leftView_PW;
 }
@@ -283,8 +283,8 @@
     if (_userNameListButton == nil) {
         _userNameListButton = [[UIButton alloc] init];
         _userNameListButton.tag = 1002;
-        [_userNameListButton setImage:[UIImage imageNamed:@"cell_arrow_down_accessory"] forState:UIControlStateNormal];
-        [_userNameListButton setImage:[UIImage imageNamed:@"cell_arrow_up_accessory"] forState:UIControlStateSelected];
+        [_userNameListButton setImage:[UIImage imageNamed:@"cell_arrow_down_accessory.jpg"] forState:UIControlStateNormal];
+        [_userNameListButton setImage:[UIImage imageNamed:@"cell_arrow_up_accessory.jpg"] forState:UIControlStateSelected];
         [_userNameListButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _userNameListButton;
@@ -295,8 +295,8 @@
     if (_showPassWordButton == nil) {
         _showPassWordButton = [[UIButton alloc] init];
         _showPassWordButton.tag = 1001;
-        [_showPassWordButton setImage:[UIImage imageNamed:@"icon_black_scancode"] forState:UIControlStateNormal];
-        [_showPassWordButton setImage:[UIImage imageNamed:@"scanicon"] forState:UIControlStateSelected];
+        [_showPassWordButton setImage:[UIImage imageNamed:@"icon_black_scancode.jpg"] forState:UIControlStateNormal];
+        [_showPassWordButton setImage:[UIImage imageNamed:@"scanicon.jpg"] forState:UIControlStateSelected];
         [_showPassWordButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _showPassWordButton;
