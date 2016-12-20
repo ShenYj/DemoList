@@ -72,6 +72,8 @@
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
+		F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D174F1E0978570099F65B /* JSWKWebViewController.m */; };
+		F71D17521E0979120099F65B /* JS与OC交互WK.html in Resources */ = {isa = PBXBuildFile; fileRef = F71D17511E0979120099F65B /* JS与OC交互WK.html */; };
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
 		F72691CD1D92B78D004EBE47 /* JSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72691CC1D92B78D004EBE47 /* JSPopoverViewController.m */; };
 		F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */ = {isa = PBXBuildFile; fileRef = F72691CF1D92BDE9004EBE47 /* JSMenum.m */; };
@@ -309,6 +311,9 @@
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
 		F719BFCC1D75989A00015113 /* JSMenumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumHeader.h; sourceTree = "<group>"; };
 		F719BFCD1D75989A00015113 /* JSMenumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumHeader.m; sourceTree = "<group>"; };
+		F71D174E1E0978570099F65B /* JSWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWKWebViewController.h; sourceTree = "<group>"; };
+		F71D174F1E0978570099F65B /* JSWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWKWebViewController.m; sourceTree = "<group>"; };
+		F71D17511E0979120099F65B /* JS与OC交互WK.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互WK.html"; sourceTree = "<group>"; };
 		F720A5D11D72F9CF009B6754 /* JSSubControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSubControllerModel.h; sourceTree = "<group>"; };
 		F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSubControllerModel.m; sourceTree = "<group>"; };
 		F72691CB1D92B78D004EBE47 /* JSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPopoverViewController.h; sourceTree = "<group>"; };
@@ -1015,6 +1020,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F71D174A1E0978390099F65B /* OC与JS交互(WKWebView) */ = {
+			isa = PBXGroup;
+			children = (
+				F71D174B1E0978390099F65B /* Controller */,
+				F71D174C1E0978390099F65B /* Model */,
+				F71D174D1E0978390099F65B /* View */,
+			);
+			path = "OC与JS交互(WKWebView)";
+			sourceTree = "<group>";
+		};
+		F71D174B1E0978390099F65B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F71D174E1E0978570099F65B /* JSWKWebViewController.h */,
+				F71D174F1E0978570099F65B /* JSWKWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F71D174C1E0978390099F65B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F71D17511E0979120099F65B /* JS与OC交互WK.html */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F71D174D1E0978390099F65B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F72691C71D92B766004EBE47 /* Popover展示 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1135,6 +1174,7 @@
 				F715AC181DAA7CA10019F6DE /* 生成二维码 */,
 				F74203CA1D8A627E00B05A6F /* 短信验证 */,
 				F743A7E11D7DB0E400576254 /* OC与JS交互Demo */,
+				F71D174A1E0978390099F65B /* OC与JS交互(WKWebView) */,
 				F743A7EA1D7DB0E400576254 /* ScaleHeaderView */,
 				F743A7F01D7DB0E400576254 /* SyncDownLoadImg */,
 				F743A8041D7DB0E400576254 /* TableView联动 */,
@@ -2435,6 +2475,7 @@
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
 				F705354E1D818BC500B53BB8 /* UMSCommentInputControlleriPad.xib in Resources */,
 				F719BFC81D75976800015113 /* Demos.plist in Resources */,
+				F71D17521E0979120099F65B /* JS与OC交互WK.html in Resources */,
 				F743A8981D7DB0E400576254 /* JS与OC交互Demo.html in Resources */,
 				F743A8BC1D7DB0E400576254 /* friends.plist in Resources */,
 				F715AC3A1DAB530F0019F6DE /* skin in Resources */,
@@ -2555,6 +2596,7 @@
 				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
 				F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
+				F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */,
 				F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F715AC171DAA75C70019F6DE /* JSBlurViewController.m in Sources */,

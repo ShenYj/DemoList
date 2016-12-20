@@ -78,13 +78,10 @@
             if (idx >= 2) {
                 [tempArr addObject:obj];
             }
-            
         }];
-        
         // 执行OC方法
         //[self demoMethod];
         [self demoMethodWithParameters:tempArr];
-        
         
         return NO;
     }

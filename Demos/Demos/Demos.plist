@@ -133,6 +133,18 @@
 				<key>detail</key>
 				<string>换肤(运行时)</string>
 			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string>JSWKWebViewController</string>
+				<key>detail</key>
+				<string>OS与JS交互(WKWebView)</string>
+			</dict>
+			<dict>
+				<key>targetControllerClass</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
