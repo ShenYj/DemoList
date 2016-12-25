@@ -3,6 +3,7 @@
 ## 将一些小的Demo,以列表的方式呈现 [ShenYj](https://github.com/ShenYj)
 
 ## 内容包含:
+
 ### 逻辑处理:
 - [X] 自定义Operation,模拟图片SDWebImage图片下载处理
 - [X] 摇奖机Demo
@@ -26,8 +27,6 @@
 - [X] 短信验证 (Mob)
 - [X] 生成二维码
 - [X] 运行时换肤
-
-<br>
 
 ### 试图搭建:
 - [X] 演示搜索栏使用
