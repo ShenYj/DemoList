@@ -72,6 +72,8 @@ static NSString * const reuseId = @"Identifier";
     
     // 设置等比例拉伸
     _headerImageView.contentMode = UIViewContentModeScaleAspectFill;
+    // 超出部分裁切 (上面对尺寸尽心过出路,若不对尺寸处理,需要将超出部分裁切掉,避免返回时图片尺寸过大,超出视图)
+    //_headerView.clipsToBounds = YES;
     
 #pragma mark - 在HeaderView上添加一个Button
     // 设置导航栏按钮视图
