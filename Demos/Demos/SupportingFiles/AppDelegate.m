@@ -36,7 +36,7 @@ NSInteger appBadgeNumber;
 #pragma mark - 远程推送请求授权和注册远程通知
     
     // 请求授权 (与本地通知一样需要获取授权)
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert categories:nil];
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     
     // 注册远程通知 获取DeviceToken

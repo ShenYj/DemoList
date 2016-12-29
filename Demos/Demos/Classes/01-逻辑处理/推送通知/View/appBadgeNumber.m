@@ -109,6 +109,7 @@ extern NSInteger appBadgeNumber;
     [category setActions:@[foregroundAction,backgroundAction] forContext:UIUserNotificationActionContextDefault];
     
     // 注册通知
+    // UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:[NSSet setWithObject:category]];
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:self.userNotificationType categories:[NSSet setWithObject:category]];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     
@@ -141,7 +142,7 @@ extern NSInteger appBadgeNumber;
     
     // 传递信息
     localNotification.userInfo = @{@"message": @"UserInfo: 这是一条推送通知传递的信息"};
-    
+    // localNotification.applicationIconBadgeNumber = 4;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
 }

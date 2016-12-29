@@ -140,7 +140,7 @@
 		F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57411D8524A500E3CC61 /* JSContactLabel.m */; };
 		F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F57441D85298C00E3CC61 /* JSContactModel.m */; };
 		F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */; };
-		F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */; };
+		F74F574F1D858BDD00E3CC61 /* appBadgeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F74F574E1D858BDD00E3CC61 /* appBadgeNumber.m */; };
 		F750075D1D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F75007591D8BA5B3001C7B98 /* SMS_SDKLocalizable.strings */; };
 		F750075E1D8BA5B3001C7B98 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F750075B1D8BA5B3001C7B98 /* SMS_SDK.framework */; };
 		F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */; };
@@ -435,7 +435,7 @@
 		F74F574A1D858AFF00E3CC61 /* JSNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNotificationViewController.h; sourceTree = "<group>"; };
 		F74F574B1D858AFF00E3CC61 /* JSNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNotificationViewController.m; sourceTree = "<group>"; };
 		F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocalNotiButton.h; sourceTree = "<group>"; };
-		F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLocalNotiButton.m; sourceTree = "<group>"; };
+		F74F574E1D858BDD00E3CC61 /* appBadgeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appBadgeNumber.m; sourceTree = "<group>"; };
 		F750075A1D8BA5B3001C7B98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
 		F750075B1D8BA5B3001C7B98 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		F750075C1D8BA5B3001C7B98 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
@@ -2033,7 +2033,7 @@
 			isa = PBXGroup;
 			children = (
 				F74F574D1D858BDD00E3CC61 /* JSLocalNotiButton.h */,
-				F74F574E1D858BDD00E3CC61 /* JSLocalNotiButton.m */,
+				F74F574E1D858BDD00E3CC61 /* appBadgeNumber.m */,
 				F75F0D4E1D86F22500549EC3 /* JSRemoteNotiButton.h */,
 				F75F0D4F1D86F22500549EC3 /* JSRemoteNotiButton.m */,
 			);
@@ -2594,7 +2594,7 @@
 				F78695311D950BB00075C603 /* LeftView.m in Sources */,
 				F743A8A91D7DB0E400576254 /* BezierPathWithLIneColour.m in Sources */,
 				F74F57451D85298C00E3CC61 /* JSContactModel.m in Sources */,
-				F74F574F1D858BDD00E3CC61 /* JSLocalNotiButton.m in Sources */,
+				F74F574F1D858BDD00E3CC61 /* appBadgeNumber.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */,
 				F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */,
