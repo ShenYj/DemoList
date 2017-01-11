@@ -226,9 +226,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSTextKitDemoViewController</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>TextKit使用Demo</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

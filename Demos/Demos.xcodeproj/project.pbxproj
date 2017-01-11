@@ -191,6 +191,8 @@
 		F7CA816C1D88602500289973 /* mlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7CA816B1D88602500289973 /* mlist.plist */; };
 		F7CA816F1D8860E500289973 /* JSMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA816E1D8860E500289973 /* JSMModel.m */; };
 		F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */; };
+		F7E8BA771E25DE790094DC3F /* JSTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA761E25DE790094DC3F /* JSTextLabel.m */; };
+		F7E8BA7A1E25DE8C0094DC3F /* JSTextKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA791E25DE8C0094DC3F /* JSTextKitDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -513,6 +515,10 @@
 		F7CA816E1D8860E500289973 /* JSMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMModel.m; sourceTree = "<group>"; };
 		F7CA81701D88640F00289973 /* JSMusicListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMusicListTableViewCell.h; sourceTree = "<group>"; };
 		F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMusicListTableViewCell.m; sourceTree = "<group>"; };
+		F7E8BA751E25DE790094DC3F /* JSTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextLabel.h; sourceTree = "<group>"; };
+		F7E8BA761E25DE790094DC3F /* JSTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextLabel.m; sourceTree = "<group>"; };
+		F7E8BA781E25DE8C0094DC3F /* JSTextKitDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextKitDemoViewController.h; sourceTree = "<group>"; };
+		F7E8BA791E25DE8C0094DC3F /* JSTextKitDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextKitDemoViewController.m; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1896,6 +1902,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F7E8BA711E25DE790094DC3F /* TextKitDemo */,
 				F715AC111DAA75C70019F6DE /* 视效 */,
 				F731D1CC1D97F95C001C7B72 /* 登录视图(Popover) */,
 				F78695281D950B400075C603 /* 登录视图 */,
@@ -2361,6 +2368,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F7E8BA711E25DE790094DC3F /* TextKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA721E25DE790094DC3F /* Controller */,
+				F7E8BA731E25DE790094DC3F /* Model */,
+				F7E8BA741E25DE790094DC3F /* View */,
+			);
+			path = TextKitDemo;
+			sourceTree = "<group>";
+		};
+		F7E8BA721E25DE790094DC3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA781E25DE8C0094DC3F /* JSTextKitDemoViewController.h */,
+				F7E8BA791E25DE8C0094DC3F /* JSTextKitDemoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7E8BA731E25DE790094DC3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7E8BA741E25DE790094DC3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA751E25DE790094DC3F /* JSTextLabel.h */,
+				F7E8BA761E25DE790094DC3F /* JSTextLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2621,8 +2663,10 @@
 				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
+				F7E8BA7A1E25DE8C0094DC3F /* JSTextKitDemoViewController.m in Sources */,
 				F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */,
 				F70B902E1D7E850D00840F11 /* JSAnnotation.m in Sources */,
+				F7E8BA771E25DE790094DC3F /* JSTextLabel.m in Sources */,
 				F70B903F1D7EE7CF00840F11 /* JSCalendarViewController.m in Sources */,
 				F743A8A81D7DB0E400576254 /* JSDrawingBoardViewController.m in Sources */,
 				F743A8AC1D7DB0E400576254 /* JSLukyViewController.m in Sources */,
