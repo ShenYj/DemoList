@@ -193,6 +193,28 @@
 		F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA81711D88640F00289973 /* JSMusicListTableViewCell.m */; };
 		F7E8BA771E25DE790094DC3F /* JSTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA761E25DE790094DC3F /* JSTextLabel.m */; };
 		F7E8BA7A1E25DE8C0094DC3F /* JSTextKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA791E25DE8C0094DC3F /* JSTextKitDemoViewController.m */; };
+		F7E8BAAB1E25E18A0094DC3F /* JSADPictureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA7E1E25E18A0094DC3F /* JSADPictureCollectionViewController.m */; };
+		F7E8BAAC1E25E18A0094DC3F /* JSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA801E25E18A0094DC3F /* JSBaseViewController.m */; };
+		F7E8BAAD1E25E18A0094DC3F /* JSNewsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA821E25E18A0094DC3F /* JSNewsNavigationController.m */; };
+		F7E8BAAE1E25E18A0094DC3F /* JSNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA841E25E18A0094DC3F /* JSNewsTableViewController.m */; };
+		F7E8BAAF1E25E18A0094DC3F /* JSADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA871E25E18A0094DC3F /* JSADModel.m */; };
+		F7E8BAB01E25E18A0094DC3F /* JSChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA891E25E18A0094DC3F /* JSChannelModel.m */; };
+		F7E8BAB11E25E18A0094DC3F /* JSNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA8B1E25E18A0094DC3F /* JSNewsModel.m */; };
+		F7E8BAB21E25E18A0094DC3F /* JSADPictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA8E1E25E18A0094DC3F /* JSADPictureCollectionViewCell.m */; };
+		F7E8BAB31E25E18A0094DC3F /* JSChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA901E25E18A0094DC3F /* JSChannelLabel.m */; };
+		F7E8BAB41E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA921E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m */; };
+		F7E8BAB51E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA941E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.m */; };
+		F7E8BAB61E25E18A0094DC3F /* JSPicturesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA961E25E18A0094DC3F /* JSPicturesCollectionView.m */; };
+		F7E8BAB71E25E18A0094DC3F /* JSNewsBigImgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA991E25E18A0094DC3F /* JSNewsBigImgTableViewCell.m */; };
+		F7E8BAB81E25E18A0094DC3F /* JSNewsImgsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA9B1E25E18A0094DC3F /* JSNewsImgsTableViewCell.m */; };
+		F7E8BAB91E25E18A0094DC3F /* JSNewsNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA9D1E25E18A0094DC3F /* JSNewsNormalTableViewCell.m */; };
+		F7E8BABA1E25E18A0094DC3F /* JSStatusTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BA9F1E25E18A0094DC3F /* JSStatusTipCell.m */; };
+		F7E8BABB1E25E18A0094DC3F /* JSNetworkTool+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BAA21E25E18A0094DC3F /* JSNetworkTool+JSExtension.m */; };
+		F7E8BABC1E25E18A0094DC3F /* JSNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BAA41E25E18A0094DC3F /* JSNetworkTool.m */; };
+		F7E8BABD1E25E18A0094DC3F /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7E8BAA61E25E18A0094DC3F /* assets.bundle */; };
+		F7E8BABE1E25E18A0094DC3F /* JSRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BAA81E25E18A0094DC3F /* JSRefreshControl.m */; };
+		F7E8BABF1E25E18A0094DC3F /* JSRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8BAAA1E25E18A0094DC3F /* JSRefreshView.m */; };
+		F7E8BAC11E25E30C0094DC3F /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = F7E8BAC01E25E30C0094DC3F /* topic_news.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -519,6 +541,48 @@
 		F7E8BA761E25DE790094DC3F /* JSTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextLabel.m; sourceTree = "<group>"; };
 		F7E8BA781E25DE8C0094DC3F /* JSTextKitDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextKitDemoViewController.h; sourceTree = "<group>"; };
 		F7E8BA791E25DE8C0094DC3F /* JSTextKitDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextKitDemoViewController.m; sourceTree = "<group>"; };
+		F7E8BA7D1E25E18A0094DC3F /* JSADPictureCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSADPictureCollectionViewController.h; sourceTree = "<group>"; };
+		F7E8BA7E1E25E18A0094DC3F /* JSADPictureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSADPictureCollectionViewController.m; sourceTree = "<group>"; };
+		F7E8BA7F1E25E18A0094DC3F /* JSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseViewController.h; sourceTree = "<group>"; };
+		F7E8BA801E25E18A0094DC3F /* JSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseViewController.m; sourceTree = "<group>"; };
+		F7E8BA811E25E18A0094DC3F /* JSNewsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsNavigationController.h; sourceTree = "<group>"; };
+		F7E8BA821E25E18A0094DC3F /* JSNewsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsNavigationController.m; sourceTree = "<group>"; };
+		F7E8BA831E25E18A0094DC3F /* JSNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsTableViewController.h; sourceTree = "<group>"; };
+		F7E8BA841E25E18A0094DC3F /* JSNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsTableViewController.m; sourceTree = "<group>"; };
+		F7E8BA861E25E18A0094DC3F /* JSADModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSADModel.h; sourceTree = "<group>"; };
+		F7E8BA871E25E18A0094DC3F /* JSADModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSADModel.m; sourceTree = "<group>"; };
+		F7E8BA881E25E18A0094DC3F /* JSChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSChannelModel.h; sourceTree = "<group>"; };
+		F7E8BA891E25E18A0094DC3F /* JSChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSChannelModel.m; sourceTree = "<group>"; };
+		F7E8BA8A1E25E18A0094DC3F /* JSNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsModel.h; sourceTree = "<group>"; };
+		F7E8BA8B1E25E18A0094DC3F /* JSNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsModel.m; sourceTree = "<group>"; };
+		F7E8BA8D1E25E18A0094DC3F /* JSADPictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSADPictureCollectionViewCell.h; sourceTree = "<group>"; };
+		F7E8BA8E1E25E18A0094DC3F /* JSADPictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSADPictureCollectionViewCell.m; sourceTree = "<group>"; };
+		F7E8BA8F1E25E18A0094DC3F /* JSChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSChannelLabel.h; sourceTree = "<group>"; };
+		F7E8BA901E25E18A0094DC3F /* JSChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSChannelLabel.m; sourceTree = "<group>"; };
+		F7E8BA911E25E18A0094DC3F /* JSNewsItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsItemCollectionViewCell.h; sourceTree = "<group>"; };
+		F7E8BA921E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsItemCollectionViewCell.m; sourceTree = "<group>"; };
+		F7E8BA931E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsItemCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F7E8BA941E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsItemCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		F7E8BA951E25E18A0094DC3F /* JSPicturesCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPicturesCollectionView.h; sourceTree = "<group>"; };
+		F7E8BA961E25E18A0094DC3F /* JSPicturesCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPicturesCollectionView.m; sourceTree = "<group>"; };
+		F7E8BA981E25E18A0094DC3F /* JSNewsBigImgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsBigImgTableViewCell.h; sourceTree = "<group>"; };
+		F7E8BA991E25E18A0094DC3F /* JSNewsBigImgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsBigImgTableViewCell.m; sourceTree = "<group>"; };
+		F7E8BA9A1E25E18A0094DC3F /* JSNewsImgsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsImgsTableViewCell.h; sourceTree = "<group>"; };
+		F7E8BA9B1E25E18A0094DC3F /* JSNewsImgsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsImgsTableViewCell.m; sourceTree = "<group>"; };
+		F7E8BA9C1E25E18A0094DC3F /* JSNewsNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewsNormalTableViewCell.h; sourceTree = "<group>"; };
+		F7E8BA9D1E25E18A0094DC3F /* JSNewsNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewsNormalTableViewCell.m; sourceTree = "<group>"; };
+		F7E8BA9E1E25E18A0094DC3F /* JSStatusTipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStatusTipCell.h; sourceTree = "<group>"; };
+		F7E8BA9F1E25E18A0094DC3F /* JSStatusTipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStatusTipCell.m; sourceTree = "<group>"; };
+		F7E8BAA11E25E18A0094DC3F /* JSNetworkTool+JSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSNetworkTool+JSExtension.h"; sourceTree = "<group>"; };
+		F7E8BAA21E25E18A0094DC3F /* JSNetworkTool+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSNetworkTool+JSExtension.m"; sourceTree = "<group>"; };
+		F7E8BAA31E25E18A0094DC3F /* JSNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNetworkTool.h; sourceTree = "<group>"; };
+		F7E8BAA41E25E18A0094DC3F /* JSNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNetworkTool.m; sourceTree = "<group>"; };
+		F7E8BAA61E25E18A0094DC3F /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
+		F7E8BAA71E25E18A0094DC3F /* JSRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRefreshControl.h; sourceTree = "<group>"; };
+		F7E8BAA81E25E18A0094DC3F /* JSRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRefreshControl.m; sourceTree = "<group>"; };
+		F7E8BAA91E25E18A0094DC3F /* JSRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRefreshView.h; sourceTree = "<group>"; };
+		F7E8BAAA1E25E18A0094DC3F /* JSRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRefreshView.m; sourceTree = "<group>"; };
+		F7E8BAC01E25E30C0094DC3F /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		FCDAA5606FE2F23E2475CFAB /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1595,160 +1659,10 @@
 		F743A8551D7DB0E400576254 /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
-				F743A8561D7DB0E400576254 /* Channel */,
-				F743A85B1D7DB0E400576254 /* Cycle */,
-				F743A85F1D7DB0E400576254 /* Home */,
-				F743A8631D7DB0E400576254 /* Navigation */,
-				F743A8641D7DB0E400576254 /* NetworkTool */,
-				F743A8651D7DB0E400576254 /* News */,
+				F7E8BA7B1E25E18A0094DC3F /* Classes */,
+				F7E8BAA01E25E18A0094DC3F /* Tools */,
 			);
 			path = "网易新闻";
-			sourceTree = "<group>";
-		};
-		F743A8561D7DB0E400576254 /* Channel */ = {
-			isa = PBXGroup;
-			children = (
-				F743A8571D7DB0E400576254 /* Controllers */,
-				F743A8581D7DB0E400576254 /* Models */,
-				F743A8591D7DB0E400576254 /* Others */,
-				F743A85A1D7DB0E400576254 /* Views */,
-			);
-			path = Channel;
-			sourceTree = "<group>";
-		};
-		F743A8571D7DB0E400576254 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F743A8581D7DB0E400576254 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F743A8591D7DB0E400576254 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		F743A85A1D7DB0E400576254 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F743A85B1D7DB0E400576254 /* Cycle */ = {
-			isa = PBXGroup;
-			children = (
-				F743A85C1D7DB0E400576254 /* Controllers */,
-				F743A85D1D7DB0E400576254 /* Models */,
-				F743A85E1D7DB0E400576254 /* Views */,
-			);
-			path = Cycle;
-			sourceTree = "<group>";
-		};
-		F743A85C1D7DB0E400576254 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F743A85D1D7DB0E400576254 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F743A85E1D7DB0E400576254 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F743A85F1D7DB0E400576254 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				F743A8601D7DB0E400576254 /* Controllers */,
-				F743A8611D7DB0E400576254 /* Models */,
-				F743A8621D7DB0E400576254 /* Views */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		F743A8601D7DB0E400576254 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F743A8611D7DB0E400576254 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F743A8621D7DB0E400576254 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F743A8631D7DB0E400576254 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		F743A8641D7DB0E400576254 /* NetworkTool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkTool;
-			sourceTree = "<group>";
-		};
-		F743A8651D7DB0E400576254 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				F743A8661D7DB0E400576254 /* Controllers */,
-				F743A8671D7DB0E400576254 /* Models */,
-				F743A8681D7DB0E400576254 /* Views */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		F743A8661D7DB0E400576254 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F743A8671D7DB0E400576254 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F743A8681D7DB0E400576254 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		F743A8691D7DB0E400576254 /* 自定义顶部视图 */ = {
@@ -2403,6 +2317,102 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F7E8BA7B1E25E18A0094DC3F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA7C1E25E18A0094DC3F /* Controllers */,
+				F7E8BA851E25E18A0094DC3F /* Models */,
+				F7E8BA8C1E25E18A0094DC3F /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7E8BA7C1E25E18A0094DC3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA7D1E25E18A0094DC3F /* JSADPictureCollectionViewController.h */,
+				F7E8BA7E1E25E18A0094DC3F /* JSADPictureCollectionViewController.m */,
+				F7E8BA7F1E25E18A0094DC3F /* JSBaseViewController.h */,
+				F7E8BA801E25E18A0094DC3F /* JSBaseViewController.m */,
+				F7E8BA811E25E18A0094DC3F /* JSNewsNavigationController.h */,
+				F7E8BA821E25E18A0094DC3F /* JSNewsNavigationController.m */,
+				F7E8BA831E25E18A0094DC3F /* JSNewsTableViewController.h */,
+				F7E8BA841E25E18A0094DC3F /* JSNewsTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F7E8BA851E25E18A0094DC3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BAC01E25E30C0094DC3F /* topic_news.json */,
+				F7E8BA861E25E18A0094DC3F /* JSADModel.h */,
+				F7E8BA871E25E18A0094DC3F /* JSADModel.m */,
+				F7E8BA881E25E18A0094DC3F /* JSChannelModel.h */,
+				F7E8BA891E25E18A0094DC3F /* JSChannelModel.m */,
+				F7E8BA8A1E25E18A0094DC3F /* JSNewsModel.h */,
+				F7E8BA8B1E25E18A0094DC3F /* JSNewsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7E8BA8C1E25E18A0094DC3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA8D1E25E18A0094DC3F /* JSADPictureCollectionViewCell.h */,
+				F7E8BA8E1E25E18A0094DC3F /* JSADPictureCollectionViewCell.m */,
+				F7E8BA8F1E25E18A0094DC3F /* JSChannelLabel.h */,
+				F7E8BA901E25E18A0094DC3F /* JSChannelLabel.m */,
+				F7E8BA911E25E18A0094DC3F /* JSNewsItemCollectionViewCell.h */,
+				F7E8BA921E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m */,
+				F7E8BA931E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.h */,
+				F7E8BA941E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.m */,
+				F7E8BA951E25E18A0094DC3F /* JSPicturesCollectionView.h */,
+				F7E8BA961E25E18A0094DC3F /* JSPicturesCollectionView.m */,
+				F7E8BA971E25E18A0094DC3F /* NewsCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7E8BA971E25E18A0094DC3F /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BA981E25E18A0094DC3F /* JSNewsBigImgTableViewCell.h */,
+				F7E8BA991E25E18A0094DC3F /* JSNewsBigImgTableViewCell.m */,
+				F7E8BA9A1E25E18A0094DC3F /* JSNewsImgsTableViewCell.h */,
+				F7E8BA9B1E25E18A0094DC3F /* JSNewsImgsTableViewCell.m */,
+				F7E8BA9C1E25E18A0094DC3F /* JSNewsNormalTableViewCell.h */,
+				F7E8BA9D1E25E18A0094DC3F /* JSNewsNormalTableViewCell.m */,
+				F7E8BA9E1E25E18A0094DC3F /* JSStatusTipCell.h */,
+				F7E8BA9F1E25E18A0094DC3F /* JSStatusTipCell.m */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		F7E8BAA01E25E18A0094DC3F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BAA11E25E18A0094DC3F /* JSNetworkTool+JSExtension.h */,
+				F7E8BAA21E25E18A0094DC3F /* JSNetworkTool+JSExtension.m */,
+				F7E8BAA31E25E18A0094DC3F /* JSNetworkTool.h */,
+				F7E8BAA41E25E18A0094DC3F /* JSNetworkTool.m */,
+				F7E8BAA51E25E18A0094DC3F /* JSRefreshExtension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F7E8BAA51E25E18A0094DC3F /* JSRefreshExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8BAA61E25E18A0094DC3F /* assets.bundle */,
+				F7E8BAA71E25E18A0094DC3F /* JSRefreshControl.h */,
+				F7E8BAA81E25E18A0094DC3F /* JSRefreshControl.m */,
+				F7E8BAA91E25E18A0094DC3F /* JSRefreshView.h */,
+				F7E8BAAA1E25E18A0094DC3F /* JSRefreshView.m */,
+			);
+			path = JSRefreshExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2495,6 +2505,7 @@
 				F7146EF81D82C30F00EBE281 /* WeiboSDK.bundle in Resources */,
 				F762657A1D7143400055ECBA /* Assets.xcassets in Resources */,
 				F70535501D818BC500B53BB8 /* UMShareEditViewControlleriPad.xib in Resources */,
+				F7E8BABD1E25E18A0094DC3F /* assets.bundle in Resources */,
 				F79759151D742E6C0041A7DC /* I'm yours.lrc in Resources */,
 				F705354C1D818BC500B53BB8 /* UMSCommentDetailController.xib in Resources */,
 				F79759201D742E6C0041A7DC /* 小苹果.mp3 in Resources */,
@@ -2512,6 +2523,7 @@
 				F70535491D818BC500B53BB8 /* UMSocialLocalizable.strings in Resources */,
 				F797591F1D742E6C0041A7DC /* 小苹果.lrc in Resources */,
 				F79759161D742E6C0041A7DC /* Jason Mraz - I'm Yours.mp3 in Resources */,
+				F7E8BAC11E25E30C0094DC3F /* topic_news.json in Resources */,
 				F797591C1D742E6C0041A7DC /* test.wav in Resources */,
 				F7CA816C1D88602500289973 /* mlist.plist in Resources */,
 				F79759241D742E6C0041A7DC /* 李克勤.jpg in Resources */,
@@ -2582,6 +2594,9 @@
 				F70B90341D7EB5E500840F11 /* JSAnnotationView.m in Sources */,
 				F786952E1D950B640075C603 /* JSLoginViewController.m in Sources */,
 				F718BBE71D8160720001CDC0 /* JSSystemSharedViewController.m in Sources */,
+				F7E8BAAC1E25E18A0094DC3F /* JSBaseViewController.m in Sources */,
+				F7E8BAB21E25E18A0094DC3F /* JSADPictureCollectionViewCell.m in Sources */,
+				F7E8BAB51E25E18A0094DC3F /* JSNewsItemCollectionViewFlowLayout.m in Sources */,
 				F74F574C1D858AFF00E3CC61 /* JSNotificationViewController.m in Sources */,
 				F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */,
 				F70447381D8949EB0006ED5A /* MJKGreenView.m in Sources */,
@@ -2591,6 +2606,7 @@
 				F743A8A51D7DB0E400576254 /* JSViewController.m in Sources */,
 				F743A8B01D7DB0E400576254 /* JSGestureViewController.m in Sources */,
 				F70B902B1D7E7F9D00840F11 /* JSSearchTableViewController.m in Sources */,
+				F7E8BABC1E25E18A0094DC3F /* JSNetworkTool.m in Sources */,
 				F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */,
 				F743A89C1D7DB0E400576254 /* JSDownLoadImageOperation.m in Sources */,
 				F718BB871D80F9C40001CDC0 /* JSBaiduMapViewController.m in Sources */,
@@ -2605,6 +2621,7 @@
 				F743A8B21D7DB0E400576254 /* JSEmieViewController.m in Sources */,
 				F743A8AD1D7DB0E400576254 /* JSLucyButton.m in Sources */,
 				F743A8B81D7DB0E400576254 /* JSCategoryModel.m in Sources */,
+				F7E8BAB81E25E18A0094DC3F /* JSNewsImgsTableViewCell.m in Sources */,
 				F76265B31D71466F0055ECBA /* JSRootViewController.m in Sources */,
 				F7CA81721D88640F00289973 /* JSMusicListTableViewCell.m in Sources */,
 				F70980921D89661700DB47CD /* JSBiometricViewController.m in Sources */,
@@ -2612,17 +2629,22 @@
 				F70B90241D7E71F300840F11 /* JSZoomButton.m in Sources */,
 				F715AC281DAB3CD80019F6DE /* UIImage+JSSkin.m in Sources */,
 				F72691CD1D92B78D004EBE47 /* JSPopoverViewController.m in Sources */,
+				F7E8BAAE1E25E18A0094DC3F /* JSNewsTableViewController.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
 				F70447371D8949EB0006ED5A /* MJKBlueView.m in Sources */,
+				F7E8BAAB1E25E18A0094DC3F /* JSADPictureCollectionViewController.m in Sources */,
+				F7E8BAB41E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m in Sources */,
 				F704473C1D8949EB0006ED5A /* MJKWhiteView.m in Sources */,
 				F743A8971D7DB0E400576254 /* JSWebViewController.m in Sources */,
 				F743A8A11D7DB0E400576254 /* JSAppsModel.m in Sources */,
 				F76265AC1D7145A40055ECBA /* UIColor+JSExtension.m in Sources */,
 				F743A8AE1D7DB0E400576254 /* JSRotateView.m in Sources */,
 				F743A8C41D7DB0E400576254 /* JSLoopViewCell.m in Sources */,
+				F7E8BAB91E25E18A0094DC3F /* JSNewsNormalTableViewCell.m in Sources */,
 				F715AC251DAB3C9F0019F6DE /* JSChangeSkinViewController.m in Sources */,
 				F743A8B11D7DB0E400576254 /* UnlockView.m in Sources */,
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
+				F7E8BAB11E25E18A0094DC3F /* JSNewsModel.m in Sources */,
 				F743A89A1D7DB0E400576254 /* JSHeaderViewController.m in Sources */,
 				F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */,
 				F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */,
@@ -2639,14 +2661,18 @@
 				F74F574F1D858BDD00E3CC61 /* appBadgeNumber.m in Sources */,
 				F76265941D71454A0055ECBA /* JSNavController.m in Sources */,
 				F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */,
+				F7E8BABF1E25E18A0094DC3F /* JSRefreshView.m in Sources */,
 				F704473D1D8949EB0006ED5A /* MJKYellowView.m in Sources */,
 				F743A8C71D7DB0E400576254 /* SJProvinces.m in Sources */,
 				F715AC171DAA75C70019F6DE /* JSBlurViewController.m in Sources */,
 				F743A8C21D7DB0E400576254 /* JSLoopView.m in Sources */,
 				F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */,
+				F7E8BAB61E25E18A0094DC3F /* JSPicturesCollectionView.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
+				F7E8BAAD1E25E18A0094DC3F /* JSNewsNavigationController.m in Sources */,
 				F70447391D8949EB0006ED5A /* MJKOrangeView.m in Sources */,
+				F7E8BAB01E25E18A0094DC3F /* JSChannelModel.m in Sources */,
 				F743A8B51D7DB0E400576254 /* JSClockViewController.m in Sources */,
 				F743A8BA1D7DB0E400576254 /* JSSectionHeadView.m in Sources */,
 				F743A89E1D7DB0E400576254 /* NSString+JSAppendPath.m in Sources */,
@@ -2656,12 +2682,16 @@
 				F70447401D894A070006ED5A /* JSTargetViewController.m in Sources */,
 				F76265B61D7147EA0055ECBA /* JSTableViewController.m in Sources */,
 				F743A8AA1D7DB0E400576254 /* DrawingBoard.m in Sources */,
+				F7E8BAAF1E25E18A0094DC3F /* JSADModel.m in Sources */,
+				F7E8BABB1E25E18A0094DC3F /* JSNetworkTool+JSExtension.m in Sources */,
 				F75F0D501D86F22500549EC3 /* JSRemoteNotiButton.m in Sources */,
 				F743A89F1D7DB0E400576254 /* UIImageView+JSWebCache.m in Sources */,
 				F731D1D81D97F9DF001C7B72 /* PopoverBackGroundView.m in Sources */,
+				F7E8BABA1E25E18A0094DC3F /* JSStatusTipCell.m in Sources */,
 				F78695341D950BB80075C603 /* UserNameListTableViewController.m in Sources */,
 				F743A8CA1D7DB22C00576254 /* JSMapViewController.m in Sources */,
 				F76265AB1D7145A40055ECBA /* NSString+JSExtension.m in Sources */,
+				F7E8BAB31E25E18A0094DC3F /* JSChannelLabel.m in Sources */,
 				F76265791D7143400055ECBA /* AppDelegate.m in Sources */,
 				F7E8BA7A1E25DE8C0094DC3F /* JSTextKitDemoViewController.m in Sources */,
 				F743A89D1D7DB0E400576254 /* JSDownLoadOperationManager.m in Sources */,
@@ -2679,10 +2709,12 @@
 				F743A8BF1D7DB0E400576254 /* JSHeadCell.m in Sources */,
 				F743A8B31D7DB0E400576254 /* JSButton.m in Sources */,
 				F704473B1D8949EB0006ED5A /* MJKRedView.m in Sources */,
+				F7E8BAB71E25E18A0094DC3F /* JSNewsBigImgTableViewCell.m in Sources */,
 				F743A8B91D7DB0E400576254 /* JSDetailModel.m in Sources */,
 				F743A8A31D7DB0E400576254 /* JSDetailTableView.m in Sources */,
 				F74F57421D8524A500E3CC61 /* JSContactLabel.m in Sources */,
 				F74203D01D8A62A400B05A6F /* JSMobViewController.m in Sources */,
+				F7E8BABE1E25E18A0094DC3F /* JSRefreshControl.m in Sources */,
 				F76265AE1D7145A40055ECBA /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
 				F704473A1D8949EB0006ED5A /* MJKPurpleView.m in Sources */,
 				F70B90441D7EFE5900840F11 /* JSNavigationButton.m in Sources */,

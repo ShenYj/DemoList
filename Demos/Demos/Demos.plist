@@ -87,7 +87,7 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string>JSNewsHomeController</string>
+				<string>JSBaseViewController</string>
 				<key>detail</key>
 				<string>模仿网易新闻首页(待更新)</string>
 			</dict>

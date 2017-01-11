@@ -33,10 +33,16 @@
 #import "YYModel.h"
 #import "MJRefresh.h"
 #import "FSCalendar.h"
+#import "JSUIkitExtension.h"
+#import "AFNetworking.h"
 
 #pragma mark - 宏定义
 
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define THEME_COLOR [UIColor js_colorWithHex:0x9370DB]
+
 
 
 #endif /* PrefixHeader_pch */

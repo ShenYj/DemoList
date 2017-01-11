@@ -33,6 +33,8 @@ NSInteger appBadgeNumber;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
 #pragma mark - 远程推送请求授权和注册远程通知
     
     // 请求授权 (与本地通知一样需要获取授权)
