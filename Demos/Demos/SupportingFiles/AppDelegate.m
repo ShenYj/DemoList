@@ -12,11 +12,12 @@
 #import "UMSocial.h"
 #import "UMSocialSinaSSOHandler.h"
 #import <SMS_SDK/SMS_SDK.h>
+#import <UserNotifications/UserNotifications.h>
 
 
 NSInteger appBadgeNumber;
 
-@interface AppDelegate  ()
+@interface AppDelegate  () <UNUserNotificationCenterDelegate>
 
 // 记录接收到的通知
 @property (nonatomic,strong) NSMutableDictionary *localNotification;
@@ -37,12 +38,28 @@ NSInteger appBadgeNumber;
     
 #pragma mark - 远程推送请求授权和注册远程通知
     
-    // 请求授权 (与本地通知一样需要获取授权)
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
-    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
+        
+        // 请求授权 (与本地通知一样需要获取授权)
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        // 注册远程通知 获取DeviceToken
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else if ([[UIDevice currentDevice].systemVersion doubleValue] < 8.0 ) {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeAlert ];
+    } else {
+        // iOS 10
+        UNUserNotificationCenter *userNotificationCenter = [UNUserNotificationCenter currentNotificationCenter];
+        [userNotificationCenter requestAuthorizationWithOptions:UNAuthorizationOptionBadge | UNAuthorizationOptionAlert | UNAuthorizationOptionSound completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (granted) {
+                NSLog(@"注册成功");
+            } else {
+                NSLog(@"注册失败");
+            }
+        }];
+        userNotificationCenter.delegate = self;
+    }
     
-    // 注册远程通知 获取DeviceToken
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
     
     // 百度地图
     [self BMKMap];
@@ -271,9 +288,11 @@ NSInteger appBadgeNumber;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     
 }
+
+
 /**
  *  已经接收到后台远程通知后调用 (如果实现了该方法,默认的接收通知的方法就不会再被调用didReceiveRemoteNotification↑)
- *
+ *      iOS 10中用作静默通知,iOS前实现该方法可以用于前台/后台/退出/静默推送都可以处理
  *  @param application       应用对象
  *  @param userInfo          接收到的后台远程通知传递的信息
  *  @param completionHandler 完成回调(负责更新快照,后台处理有效性的评估)
@@ -298,6 +317,19 @@ NSInteger appBadgeNumber;
     NSLog(@"didFailToRegisterForRemoteNotificationsWithError:%@",error);
     
 }
+
+
+
+#pragma mark
+#pragma mark - UNUserNotificationCenterDelegate
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
+    // 前台处理
+}
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler {
+    // 后台处理
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
