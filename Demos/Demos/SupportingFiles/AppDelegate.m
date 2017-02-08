@@ -57,6 +57,7 @@ NSInteger appBadgeNumber;
                 NSLog(@"注册失败");
             }
         }];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
         userNotificationCenter.delegate = self;
     }
     
