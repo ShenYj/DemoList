@@ -52,9 +52,9 @@ NSInteger appBadgeNumber;
         UNUserNotificationCenter *userNotificationCenter = [UNUserNotificationCenter currentNotificationCenter];
         [userNotificationCenter requestAuthorizationWithOptions:UNAuthorizationOptionBadge | UNAuthorizationOptionAlert | UNAuthorizationOptionSound completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
-                NSLog(@"注册成功");
+                NSLog(@"授权成功");
             } else {
-                NSLog(@"注册失败");
+                NSLog(@"授权失败");
             }
         }];
         [[UIApplication sharedApplication] registerForRemoteNotifications];
