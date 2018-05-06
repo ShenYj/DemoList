@@ -32,8 +32,36 @@
     [self.view addSubview:relativeLayout];
     // view1
     UIView *redView = [[UIView alloc] init];
+    redView.backgroundColor = [UIColor redColor];
     redView.leftPos.equalTo(relativeLayout).offset(20);
     redView.topPos.equalTo(relativeLayout).offset(20);
+    redView.heightSize.equalTo(@80);
+    redView.widthSize.equalTo(redView.heightSize);
+    [relativeLayout addSubview:redView];
+    // view2
+    UIView *blueView = [[UIView alloc] init];
+    blueView.backgroundColor = [UIColor blueColor];
+    blueView.leftPos.equalTo(redView).offset(20);
+    blueView.topPos.equalTo(redView.bottomPos).offset(10);
+    blueView.widthSize.equalTo(@50);
+    blueView.heightSize.equalTo(blueView.widthSize);
+    [relativeLayout addSubview:blueView];
+    // view3
+    UIView *yellowView = [[UIView alloc] init];
+    yellowView.backgroundColor = [UIColor yellowColor];
+    yellowView.topPos.equalTo(redView.bottomPos).offset(-25);
+    yellowView.leftPos.equalTo(blueView.rightPos).offset(20);
+    yellowView.heightSize.equalTo(@80);
+    yellowView.widthSize.equalTo(@100);
+    [relativeLayout addSubview:yellowView];
+    // view4
+    UIView *purpleView = [[UIView alloc] init];
+    purpleView.backgroundColor = [UIColor purpleColor];
+    purpleView.topPos.equalTo(blueView.bottomPos).offset(10);
+    purpleView.leftPos.equalTo(relativeLayout).offset(5);
+    purpleView.rightPos.equalTo(relativeLayout).offset(70);
+    purpleView.bottomPos.equalTo(relativeLayout).offset(20);
+    [relativeLayout addSubview:purpleView];
     
 }
 
