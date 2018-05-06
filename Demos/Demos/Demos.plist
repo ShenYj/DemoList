@@ -232,9 +232,9 @@
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>
-				<string></string>
+				<string>JSMyLayoutVC</string>
 				<key>detail</key>
-				<string>demo</string>
+				<string>MyLayout约束使用</string>
 			</dict>
 			<dict>
 				<key>targetControllerClass</key>

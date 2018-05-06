@@ -72,6 +72,7 @@
 		F719BFC81D75976800015113 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F719BFC71D75976800015113 /* Demos.plist */; };
 		F719BFCB1D7597A600015113 /* JSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCA1D7597A600015113 /* JSSectionModel.m */; };
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
+		F71ABF4F209F051900145670 /* JSMyRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */; };
 		F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D174F1E0978570099F65B /* JSWKWebViewController.m */; };
 		F71D17521E0979120099F65B /* JS与OC交互WK.html in Resources */ = {isa = PBXBuildFile; fileRef = F71D17511E0979120099F65B /* JS与OC交互WK.html */; };
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
@@ -79,6 +80,8 @@
 		F72691D01D92BDE9004EBE47 /* JSMenum.m in Sources */ = {isa = PBXBuildFile; fileRef = F72691CF1D92BDE9004EBE47 /* JSMenum.m */; };
 		F731D1D21D97F989001C7B72 /* JSPopoverLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F731D1D11D97F989001C7B72 /* JSPopoverLoginViewController.m */; };
 		F731D1D81D97F9DF001C7B72 /* PopoverBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F731D1D71D97F9DF001C7B72 /* PopoverBackGroundView.m */; };
+		F73324A4209852F400211C49 /* JSMyLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F73324A3209852F400211C49 /* JSMyLayoutVC.m */; };
+		F73324A82098946400211C49 /* JSMyLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F73324A72098946400211C49 /* JSMyLinearLayout.m */; };
 		F74203C91D8A4B6100B05A6F /* JSMusciManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203C81D8A4B6100B05A6F /* JSMusciManager.m */; };
 		F74203D01D8A62A400B05A6F /* JSMobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74203CF1D8A62A400B05A6F /* JSMobViewController.m */; };
 		F74203D91D8A68D100B05A6F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74203D81D8A68D100B05A6F /* libicucore.tbd */; };
@@ -335,6 +338,8 @@
 		F719BFCA1D7597A600015113 /* JSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSectionModel.m; sourceTree = "<group>"; };
 		F719BFCC1D75989A00015113 /* JSMenumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMenumHeader.h; sourceTree = "<group>"; };
 		F719BFCD1D75989A00015113 /* JSMenumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMenumHeader.m; sourceTree = "<group>"; };
+		F71ABF4D209F051900145670 /* JSMyRelativeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMyRelativeLayout.h; sourceTree = "<group>"; };
+		F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyRelativeLayout.m; sourceTree = "<group>"; };
 		F71D174E1E0978570099F65B /* JSWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWKWebViewController.h; sourceTree = "<group>"; };
 		F71D174F1E0978570099F65B /* JSWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWKWebViewController.m; sourceTree = "<group>"; };
 		F71D17511E0979120099F65B /* JS与OC交互WK.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互WK.html"; sourceTree = "<group>"; };
@@ -348,6 +353,10 @@
 		F731D1D11D97F989001C7B72 /* JSPopoverLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPopoverLoginViewController.m; sourceTree = "<group>"; };
 		F731D1D61D97F9DF001C7B72 /* PopoverBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverBackGroundView.h; sourceTree = "<group>"; };
 		F731D1D71D97F9DF001C7B72 /* PopoverBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverBackGroundView.m; sourceTree = "<group>"; };
+		F73324A2209852F400211C49 /* JSMyLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMyLayoutVC.h; sourceTree = "<group>"; };
+		F73324A3209852F400211C49 /* JSMyLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyLayoutVC.m; sourceTree = "<group>"; };
+		F73324A62098946400211C49 /* JSMyLinearLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMyLinearLayout.h; sourceTree = "<group>"; };
+		F73324A72098946400211C49 /* JSMyLinearLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyLinearLayout.m; sourceTree = "<group>"; };
 		F74203C71D8A4B6100B05A6F /* JSMusciManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMusciManager.h; sourceTree = "<group>"; };
 		F74203C81D8A4B6100B05A6F /* JSMusciManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMusciManager.m; sourceTree = "<group>"; };
 		F74203CE1D8A62A400B05A6F /* JSMobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMobViewController.h; sourceTree = "<group>"; };
@@ -1195,6 +1204,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F73324A0209852C500211C49 /* MyLayout约束 */ = {
+			isa = PBXGroup;
+			children = (
+				F73324A1209852D600211C49 /* Controllers */,
+			);
+			path = "MyLayout约束";
+			sourceTree = "<group>";
+		};
+		F73324A1209852D600211C49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F73324A2209852F400211C49 /* JSMyLayoutVC.h */,
+				F73324A3209852F400211C49 /* JSMyLayoutVC.m */,
+				F73324A52098944400211C49 /* SubVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F73324A52098944400211C49 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				F73324A62098946400211C49 /* JSMyLinearLayout.h */,
+				F73324A72098946400211C49 /* JSMyLinearLayout.m */,
+				F71ABF4D209F051900145670 /* JSMyRelativeLayout.h */,
+				F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
 		F74203CA1D8A627E00B05A6F /* 短信验证 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1816,6 +1854,7 @@
 		F743A8911D7DB0E400576254 /* 02-视图搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				F73324A0209852C500211C49 /* MyLayout约束 */,
 				F7E8BA711E25DE790094DC3F /* TextKitDemo */,
 				F715AC111DAA75C70019F6DE /* 视效 */,
 				F731D1CC1D97F95C001C7B72 /* 登录视图(Popover) */,
@@ -2444,7 +2483,7 @@
 			attributes = {
 				CLASSPREFIX = JS;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = ___ShenYJ___;
+				ORGANIZATIONNAME = "___ShenYJ___";
 				TargetAttributes = {
 					F76265511D7142FC0055ECBA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -2638,6 +2677,7 @@
 				F7E8BAAE1E25E18A0094DC3F /* JSNewsTableViewController.m in Sources */,
 				F743A8B61D7DB0E400576254 /* JSModelsTableViewController.m in Sources */,
 				F70447371D8949EB0006ED5A /* MJKBlueView.m in Sources */,
+				F73324A82098946400211C49 /* JSMyLinearLayout.m in Sources */,
 				F7E8BAAB1E25E18A0094DC3F /* JSADPictureCollectionViewController.m in Sources */,
 				F7E8BAB41E25E18A0094DC3F /* JSNewsItemCollectionViewCell.m in Sources */,
 				F704473C1D8949EB0006ED5A /* MJKWhiteView.m in Sources */,
@@ -2652,6 +2692,7 @@
 				F76265A81D7145A40055ECBA /* NSArray+JSLog.m in Sources */,
 				F7E8BAB11E25E18A0094DC3F /* JSNewsModel.m in Sources */,
 				F743A89A1D7DB0E400576254 /* JSHeaderViewController.m in Sources */,
+				F71ABF4F209F051900145670 /* JSMyRelativeLayout.m in Sources */,
 				F7CA81571D8854B400289973 /* JSPlaySoundsViewController.m in Sources */,
 				F743A8A41D7DB0E400576254 /* JSMenumTableView.m in Sources */,
 				F743A8C11D7DB0E400576254 /* JSLoopRootViewController.m in Sources */,
@@ -2676,6 +2717,7 @@
 				F7E8BAB61E25E18A0094DC3F /* JSPicturesCollectionView.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
+				F73324A4209852F400211C49 /* JSMyLayoutVC.m in Sources */,
 				F7E8BAAD1E25E18A0094DC3F /* JSNewsNavigationController.m in Sources */,
 				F70447391D8949EB0006ED5A /* MJKOrangeView.m in Sources */,
 				F7E8BAB01E25E18A0094DC3F /* JSChannelModel.m in Sources */,

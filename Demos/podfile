@@ -13,5 +13,6 @@ pod 'AFNetworking'
 pod ‘MJRefresh’
 pod ‘YYModel’
 pod 'FSCalendar'
+pod 'MyLayout'
 
 end
