@@ -74,6 +74,7 @@
 		F719BFCE1D75989A00015113 /* JSMenumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F719BFCD1D75989A00015113 /* JSMenumHeader.m */; };
 		F71ABF4F209F051900145670 /* JSMyRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */; };
 		F71ABF5220A08ADF00145670 /* JSMyFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F71ABF5120A08ADF00145670 /* JSMyFrameLayout.m */; };
+		F71ABF5520A08EAB00145670 /* JSMyTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F71ABF5420A08EAB00145670 /* JSMyTableLayout.m */; };
 		F71D17501E0978570099F65B /* JSWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D174F1E0978570099F65B /* JSWKWebViewController.m */; };
 		F71D17521E0979120099F65B /* JS与OC交互WK.html in Resources */ = {isa = PBXBuildFile; fileRef = F71D17511E0979120099F65B /* JS与OC交互WK.html */; };
 		F720A5D31D72F9CF009B6754 /* JSSubControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F720A5D21D72F9CF009B6754 /* JSSubControllerModel.m */; };
@@ -343,6 +344,8 @@
 		F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyRelativeLayout.m; sourceTree = "<group>"; };
 		F71ABF5020A08ADF00145670 /* JSMyFrameLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMyFrameLayout.h; sourceTree = "<group>"; };
 		F71ABF5120A08ADF00145670 /* JSMyFrameLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyFrameLayout.m; sourceTree = "<group>"; };
+		F71ABF5320A08EAB00145670 /* JSMyTableLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMyTableLayout.h; sourceTree = "<group>"; };
+		F71ABF5420A08EAB00145670 /* JSMyTableLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMyTableLayout.m; sourceTree = "<group>"; };
 		F71D174E1E0978570099F65B /* JSWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWKWebViewController.h; sourceTree = "<group>"; };
 		F71D174F1E0978570099F65B /* JSWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWKWebViewController.m; sourceTree = "<group>"; };
 		F71D17511E0979120099F65B /* JS与OC交互WK.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "JS与OC交互WK.html"; sourceTree = "<group>"; };
@@ -1234,6 +1237,8 @@
 				F71ABF4E209F051900145670 /* JSMyRelativeLayout.m */,
 				F71ABF5020A08ADF00145670 /* JSMyFrameLayout.h */,
 				F71ABF5120A08ADF00145670 /* JSMyFrameLayout.m */,
+				F71ABF5320A08EAB00145670 /* JSMyTableLayout.h */,
+				F71ABF5420A08EAB00145670 /* JSMyTableLayout.m */,
 			);
 			path = SubVC;
 			sourceTree = "<group>";
@@ -2722,6 +2727,7 @@
 				F74F573F1D85113500E3CC61 /* JSContactViewController.m in Sources */,
 				F7E8BAB61E25E18A0094DC3F /* JSPicturesCollectionView.m in Sources */,
 				F743A8B41D7DB0E400576254 /* JSNumLabel.m in Sources */,
+				F71ABF5520A08EAB00145670 /* JSMyTableLayout.m in Sources */,
 				F743A8C51D7DB0E400576254 /* JSKeyboardViewController.m in Sources */,
 				F73324A4209852F400211C49 /* JSMyLayoutVC.m in Sources */,
 				F7E8BAAD1E25E18A0094DC3F /* JSNewsNavigationController.m in Sources */,
