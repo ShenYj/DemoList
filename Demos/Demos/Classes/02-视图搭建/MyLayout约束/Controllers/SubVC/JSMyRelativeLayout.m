@@ -17,10 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setUpMylinearLayoutView];
+    [self setUpMyRelativeLayoutView];
 }
 
-- (void)setUpMylinearLayoutView {
+- (void)setUpMyRelativeLayoutView {
     self.view.backgroundColor = [UIColor whiteColor];
     self.title                = [NSStringFromClass(self.class) substringFromIndex:2];
     
@@ -58,7 +58,7 @@
     UIView *purpleView = [[UIView alloc] init];
     purpleView.backgroundColor = [UIColor purpleColor];
     purpleView.topPos.equalTo(blueView.bottomPos).offset(10);
-    purpleView.leftPos.equalTo(relativeLayout).offset(5);
+    purpleView.leftPos.equalTo(relativeLayout).offset(50);
     purpleView.rightPos.equalTo(relativeLayout).offset(70);
     purpleView.bottomPos.equalTo(relativeLayout).offset(20);
     [relativeLayout addSubview:purpleView];
